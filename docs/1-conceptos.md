@@ -102,9 +102,14 @@ El propósito fundamental de las **variables** es permitirnos guardar un valor y
 
 El proceso de crear una variable y darle un valor se llama **asignación**, y se realiza con el operador de asignación =. La sintaxis es simple:
 
+```python
 nombre = expresión
+```
 
-Por ejemplo, para almacenar el precio por hora en un programa de estacionamiento, escribiríamos: pesos_por_hora = 200
+Por ejemplo, para almacenar el precio por hora en un programa de estacionamiento, escribiríamos: 
+```python
+pesos_por_hora = 200
+```
 
 Una vez que una variable ha sido creada, su valor puede ser actualizado en cualquier momento con una nueva asignación, un proceso conocido como **reasignación**.
 

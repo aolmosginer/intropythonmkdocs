@@ -5,14 +5,6 @@ Esta web está pensada para ser una guía en los primeros pasos de la programaci
 A lo largo de sus apartados, se abordarán desde los tipos de datos más básicos y cómo manipularlos, hasta las estructuras que permiten a nuestros programas tomar decisiones y repetir tareas, culminando con el manejo de colecciones de datos (como las listas) y la creación y uso de funciones.
 
 
-[Empezar →](./contenidos/0-introduccion)
+[Empezar →](0-introduccion.md)
 
 
-
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

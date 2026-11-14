@@ -1,7 +1,16 @@
-site_name: MkLorum
+site_name: Intro Python
 
 nav:
   - Home: index.md
+  - ¿Qué aprenderemos?: 0-introduccion.md
+  - 01-Conceptos: 1-conceptos.md
+  - 02-Control del Flujo: 2-controlflujo.md
+  - 03-Bucles: 3-bucles.md
+  - 04-Listas: 4-colecciones.md
+  - 05-Funciones: 5-funciones.md
+  - 06-Ámbito: 6-ambito.md
+  - 07-Módulos: 7-modulos.md
+  - 08-Cosas chulas: 8-cosaschulas.md
   - About: about.md
 
 theme: readthedocs
