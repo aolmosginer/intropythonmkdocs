@@ -8,9 +8,9 @@ aside: true
 
 # 7. Módulos
 
-Un módulo es simplemente un fichero de *Python* con extensión .py que contiene definiciones de funciones, clases y variables. Puedes reutilizar el código de un módulo importándolo en otros archivos o programas. Veamos un ejemplo:
+Un módulo es simplemente un fichero de *Python* con extensión `.py` que contiene definiciones de funciones, clases y variables. Puedes reutilizar el código de un módulo importándolo en otros archivos o programas. Veamos un ejemplo:
 
-El siguiente código pertenece al módulo “mi_modulo.py”.
+El siguiente código pertenece al módulo `mi_modulo.py`.
 
 ```python
 # mi_modulo.py
@@ -28,7 +28,7 @@ print(mi_modulo.saludar("Juan"))  # Salida: Hola, Juan!
 print(mi_modulo.PI)               # Salida: 3.14159
 ```
 
-Cuando hemos importado un módulo y queremos utilizar algún elemento del mismo, tenemos que usar su espacio de nombres seguido de un punto y el nombre del elemento que queremos utilizar. El espacio de nombres no es más que el nombre que hemos indicado después del import.
+Cuando hemos importado un módulo y queremos utilizar algún elemento del mismo, tenemos que usar su espacio de nombres seguido de un punto y el nombre del elemento que queremos utilizar. El espacio de nombres no es más que el nombre que hemos indicado después del `import`.
 
 ## 7.1 Formas de importar módulos
 
@@ -64,28 +64,28 @@ print(mm.PI)                # Es necesario usar el nuevo espacio de nombres
 
 *Python* incluye muchos módulos estándar listos para utilizar. Algunos ejemplos comunes son:
 
-- Funciones matemáticas math:
+### Funciones matemáticas `math`
 
 ```python
 import math
 print(math.sqrt(16))  # Salida: 4.0
 ```
 
-- Operaciones del Sistema Operativo os:
+### Operaciones del Sistema Operativo `os`
 
 ```python
 import os
 print(os.getcwd())  # Obtiene el directorio actual
 ```
 
-- Generación de números aleatorios random:
+### Generación de números aleatorios `random`
 
 ```python
 import random
 print(random.randint(1, 10))  # Número aleatorio entre 1 y 10
 ```
 
-- Tratamiento de fechas y horas datetime:
+### Tratamiento de fechas y horas `datetime`
 
 ```python
 from datetime import datetime, date
@@ -97,21 +97,21 @@ print(hoy.month) # Salida: 1
 print(ahora)   # Salida: 2026-01-25 18:35:47.188487
 ```
 
-## 7.3 Uso de \_\_main\_\_
+## 7.3 Uso de `__main__`
 
-La construcción if \_\_name\_\_ == "\_\_main\_\_": es una forma estándar de asegurarse que un bloque de código solo se ejecute cuando el fichero se ejecuta directamente, y no cuando se importa como un módulo en otro fichero.
+La construcción `if __name__ == "__main__":` es una forma estándar de asegurarse que un bloque de código solo se ejecute cuando el fichero se ejecuta directamente, y no cuando se importa como un módulo en otro fichero.
 
 **Desglose de su función:**
 
-- \_\_name\_\_: Es una variable especial que se define automáticamente.
+- `__name__`: Es una variable especial que se define automáticamente.
 
-Si el fichero se ejecuta directamente, \_\_name\_\_ toma el valor de "\_\_main\_\_".
+Si el fichero se ejecuta directamente, `__name__` toma el valor de `__main__`.
 
-Si el fichero se importa como módulo, \_\_name\_\_ toma el nombre del fichero (sin la extensión .py).
+Si el fichero se importa como módulo, `__name__` toma el nombre del fichero (sin la extensión `.py`).
 
-- if \_\_name\_\_ == "\_\_main\_\_":
+- `if __name__ == "__main__":`
 
-Este condicional evalúa si el fichero está siendo ejecutado directamente (y por lo tanto no importado). Si la condición es verdadera, el código dentro del bloque se ejecutará.
+Este condicional evalúa si el fichero está siendo ejecutado directamente (y por lo tanto no importado). Si la condición es `True`, el código dentro del bloque se ejecutará.
 
 **¿Por qué es útil?:**
 
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     funcion_util()
 ```
 
-Si ejecutamos *mi_script.py* directamente por consola.
+Si ejecutamos `mi_script.py` directamente por consola.
 
 ```python
 $ python mi_script.py
@@ -143,7 +143,7 @@ Este script se está ejecutando directamente.
 Esta función se puede usar en otros módulos.
 ```
 
-Si importamos *mi_script.py* desde otro fichero.
+Si importamos `mi_script.py` desde otro fichero.
 
 ```python
 import mi_script
@@ -152,11 +152,11 @@ mi_script.funcion_util()
 Esta función se puede usar en otros módulos.
 ```
 
-El bloque dentro de if \_\_name\_\_ == "\_\_main\_\_": no se ejecutará porque el fichero no se está ejecutando directamente.
+El bloque dentro de `if __name__ == "__main__":` no se ejecutará porque el fichero no se está ejecutando directamente.
 
 ## 7.4 Estructura de un programa
 
-Una vez vistas las diferentes variables, bloques, funciones e importaciones, podemos resumir todo lo expuesto mediante un ejemplo de programa que muestra la estructura típica de un script en Python.
+Una vez vistas las diferentes variables, bloques, funciones e importaciones, podemos resumir todo lo expuesto mediante un ejemplo de programa que muestra la estructura típica de un script en *Python*.
 
 ```python
 # 1. Imports (módulos externos o propios)
@@ -180,5 +180,5 @@ if __name__ == "__main__":
     main()
 ```
 
-Típicamente, el código principal de un programa Python se define dentro de la función main(), que será llamada directamente tras evaluar el if \_\_name\_\_ == "\_\_main\_\_".
+Típicamente, el código principal de un programa *Python* se define dentro de la función `main()`, que será llamada directamente tras evaluar el `if __name__ == "__main__"`.
 

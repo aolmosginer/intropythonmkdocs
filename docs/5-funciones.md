@@ -25,9 +25,9 @@ Cuando llamamos a la función (la usamos), debemos proporcionar los valores que 
 mi_funcion(valor1, valor2)
 ```
 
-El **valor de retorno** es el "resultado" que una función entrega al finalizar su ejecución. Para devolver un valor, se utiliza la palabra clave return, seguida del valor que se desea entregar.
+El **valor de retorno** es el "resultado" que una función entrega al finalizar su ejecución. Para devolver un valor, se utiliza la palabra clave `return`, seguida del valor que se desea entregar.
 
-Es importante destacar que la ejecución de la función termina inmediatamente en cuanto se encuentra una instrucción return. Cualquier código dentro de la función que se encuentre después de un return no será ejecutado.
+Es importante destacar que la ejecución de la función termina inmediatamente en cuanto se encuentra una instrucción `return`. Cualquier código dentro de la función que se encuentre después de un `return` no será ejecutado.
 
 Veamos un ejemplo que combina ambos conceptos. La siguiente función recibe un número como parámetro, realiza un cálculo y devuelve el resultado:
 
@@ -63,11 +63,11 @@ print(multiplicar(4))  # Salida: 4
 print(multiplicar())  # Salida:  0
 ```
 
-Si no se pasa ningún valor a la función, utilizará los valores por defecto a=0 y b=1. Si se pasa un solo valor, será asignado a la primera variable a y por lo tanto b tomará el valor por defecto (0).
+Si no se pasa ningún valor a la función, utilizará los valores por defecto `a=0` y `b=1`. Si se pasa un solo valor, será asignado a la primera variable `a` y por lo tanto `b` tomará el valor por defecto `0`.
 
 ## 5.3. Varios valores de retorno
 
-También podemos diseñar funciones que devuelvan más de un valor, asignando los diferentes valores separados por comas “, “ después del return.
+También podemos diseñar funciones que devuelvan más de un valor, asignando los diferentes valores separados por comas `,` después del `return`.
 
 ```python
 def operaciones(a, b):
@@ -80,9 +80,9 @@ print("suma =", s, "resta =", r, "multiplicación =", m)
 # Salida: suma = 15 resta = 5 multiplicación = 50
 ```
 
-Al utilizar este tipo de funciones, debemos prever los valores que nos devolverá y almacenarlos en tantas variables como sea necesario (s,r,m = operaciones(10,5)).
+Al utilizar este tipo de funciones, debemos prever los valores que nos devolverá y almacenarlos en tantas variables como sea necesario `s,r,m = operaciones(10,5)`.
 
-Si no lo hacemos así, porque por ejemplo no sabemos cuántos valores nos va a devolver la función, **se devolverán todos los valores dentro de una *tupla*** que deberemos tratar como corresponda.
+Si no lo hacemos así, porque por ejemplo no sabemos cuántos valores nos va a devolver la función, **se devolverán todos los valores dentro de una `tupla`** que deberemos tratar como corresponda.
 
 ```python
 def operaciones(a, b):
@@ -96,13 +96,13 @@ print("resta =", resultados[1]) # Salida: resta = 5
 print("multiplicación =", resultados[2]) # Salida: multiplicación = 50
 ```
 
-De momento asumiremos que una *tupla* es como una lista\[\], pero que guarda valores inmutables (que no podemos modificar).
+De momento asumiremos que una `tupla` es como una `lista[]`, pero que guarda valores inmutables (que no podemos modificar).
 
 ## 5.4. Ejemplo Práctico: Funciones Booleanas
 
-Una función booleana es un tipo específico de función cuyo propósito es responder a una pregunta con un "sí" o un "no", es decir, que siempre devuelve un valor booleano (True o False). Son extremadamente útiles para encapsular la lógica de las condiciones.
+Una función booleana es un tipo específico de función cuyo propósito es responder a una pregunta con un "sí" o un "no", es decir, que siempre devuelve un valor booleano (`True` o `False`). Son extremadamente útiles para encapsular la lógica de las condiciones.
 
-Un ejemplo claro es una función que determina si un número es par. Recibe un número como parámetro y devuelve True si el número es divisible por 2, y False en caso contrario.
+Un ejemplo claro es una función que determina si un número es par. Recibe un número como parámetro y devuelve `True` si el número es divisible por 2, y `False` en caso contrario.
 
 ```python
 def es_par(numero):
@@ -116,7 +116,7 @@ print(es_par(7)) # Salida: False
 
 **Refinando el Código Booleano**
 
-La función es_par anterior es perfectamente correcta y funcional. Sin embargo, un programador con experiencia buscaría una forma más directa y concisa de escribirla. La expresión numero % 2 == 0 ya es en sí misma una expresión booleana: se evalúa como True si el número es par y False si no lo es.
+La función `es_par` anterior es perfectamente correcta y funcional. Sin embargo, un programador con experiencia buscaría una forma más directa y concisa de escribirla. La expresión `numero % 2 == 0` ya es en sí misma una expresión booleana: se evalúa como `True` si el número es par y `False` si no lo es.
 
 Por lo tanto, podemos reescribir la función a una sola línea que devuelve directamente el resultado de esta expresión.
 
@@ -125,10 +125,10 @@ def es_par(numero):
     return numero % 2 == 0
 ```
 
-Este estilo es considerado más "Pythonic" —elegante, legible y eficiente.
+Este estilo es considerado más "Pythonic" — elegante, legible y eficiente.
 
 Ambas versiones de la función producen exactamente el mismo resultado, pero la segunda demuestra una comprensión más profunda del lenguaje.
 
-El uso de funciones para encapsular la lógica, como en es_par, hace que el código principal sea mucho más limpio y fácil de entender, promoviendo una buena organización y reutilización.
+El uso de funciones para encapsular la lógica, como en `es_par`, hace que el código principal sea mucho más limpio y fácil de entender, promoviendo una buena organización y reutilización.
 
 

@@ -13,3 +13,11 @@ MODIFICAR WEB
 HACER EL BUILD en ~/Documents/mkdocsEnvironment/intropython
 mkdocs build
 
+ACTUALIZAR GIT
+git add .
+git commit -m "listas actualitzat"
+git push -u origin main
+
+FER DEPLOY
+mkdocs gh-deploy
+

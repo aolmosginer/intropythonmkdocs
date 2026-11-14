@@ -21,7 +21,7 @@ funcion()   # Salida: 5
 print(y)  # Error: NameError, 'y' no está definida en ámbito global  
 ```
 
-En cambio, **los bloques** (if, for, while) **no crean un nuevo ámbito** (*scope*). Solo las funciones, clases y módulos crean ámbitos nuevos.
+En cambio, **los bloques `if`, `for` y `while` no crean un nuevo ámbito** (*scope*). Solo las funciones, clases y módulos crean ámbitos nuevos.
 
 ```python
 for i in range(3):
