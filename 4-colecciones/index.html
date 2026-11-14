@@ -296,7 +296,7 @@
               <h1 id="4-trabajando-con-colecciones-listas">4: Trabajando con Colecciones: Listas</h1>
 <h2 id="41-creacion-y-definicion-de-listas">4.1. Creación y Definición de Listas</h2>
 <p>Hasta ahora, hemos trabajado con datos individuales en variables. Las listas representan un salto fundamental, permitiéndonos gestionar colecciones enteras de datos, sobre las cuales podemos iterar con los bucles for que ya conocemos. Una <strong>lista</strong> es una secuencia ordenada de elementos que nos permite agrupar múltiples valores, de cualquier tipo, en una sola variable.</p>
-<p>La sintaxis para crear una lista es sencilla: se encierran los elementos, separados por comas, entre corchetes [].</p>
+<p>La sintaxis para crear una lista es sencilla: se encierran entre corchetes <code>[]</code> los elementos separados por comas.</p>
 <pre><code class="language-python">[elemento0, elemento1, ...]
 </code></pre>
 <p>Las listas son muy flexibles y pueden contener elementos de diferentes tipos de datos, incluso mezclados en la misma lista.</p>
@@ -310,7 +310,7 @@ vacia2 = list()
 <p>Una vez que hemos creado una lista, el siguiente paso es aprender a acceder y manipular los elementos que contiene.</p>
 <h2 id="42-acceso-y-modificacion-de-elementos-de-una-lista">4.2. Acceso y Modificación de Elementos de una Lista</h2>
 <p>Una característica clave de las listas en <em>Python</em> es que son <strong>mutables</strong>, lo que significa que su contenido puede ser modificado después de su creación. Podemos cambiar, agregar o eliminar elementos.</p>
-<p>Para acceder a un elemento individual dentro de una lista, utilizamos su <strong>índice</strong>, que es su posición numérica. Es muy importante recordar que en <em>Python</em> (y en la gran mayoría de los lenguajes de programación), <strong>la numeración de los índices comienza en 0</strong>. El primer elemento está en el índice 0, el segundo en el índice 1, y así sucesivamente. La sintaxis para acceder es nombre_lista[indice].</p>
+<p>Para acceder a un elemento individual dentro de una lista, utilizamos su <strong>índice</strong>, que es su posición numérica. Es muy importante recordar que en <em>Python</em> (y en la gran mayoría de los lenguajes de programación), <strong>la numeración de los índices comienza en 0</strong>. El primer elemento está en el índice 0, el segundo en el índice 1, y así sucesivamente. La sintaxis para acceder es <code>nombre_lista[indice]</code>.</p>
 <pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;platanos&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
 print(no_olvidar[2]) 
 # Salida: lechuga
@@ -320,15 +320,15 @@ print(no_olvidar[2])
 print(no_olvidar) 
 # Salida: ['huevos', 'queso', 'lechuga', 'naranjas', 7000]
 </code></pre>
-<p>Además de acceder a elementos individuales, podemos acceder a sub-secciones de una lista usando la técnica de <strong><em>slicing</em></strong>. La sintaxis es lista[inicio:fin:step], y extrae una nueva lista que contiene los elementos desde el índice inicio hasta fin - 1.</p>
+<p>Además de acceder a elementos individuales, podemos acceder a sub-secciones de una lista usando la técnica de <strong><em>slicing</em></strong>. La sintaxis es <code>lista[inicio:fin:step]</code>, y extrae una nueva lista que contiene los elementos desde el índice inicio hasta fin - 1.</p>
 <pre><code class="language-python">print(no_olvidar[1:4]) 
 # Salida: ['queso', 'lechuga', 'naranjas']
 </code></pre>
-<p>Para recorrer todos los elementos de una lista de manera sencilla, podemos usar un bucle for:</p>
+<p>Para recorrer todos los elementos de una lista de manera sencilla, podemos usar un bucle <code>for</code>:</p>
 <pre><code class="language-python">for elemento in no_olvidar:
     print(&quot;No olvides&quot;, elemento)
 </code></pre>
-<p>En este ejemplo, en cada iteración del bucle for, la variable elemento tomará un valor diferente de la lista no_olvidar, comenzando por el primero (queso) y llegando hasta el último (7000).</p>
+<p>En este ejemplo, en cada iteración del bucle <code>for</code>, la variable elemento tomará un valor diferente de la lista <code>no_olvidar</code>, comenzando por el primero <code>queso</code> y llegando hasta el último <code>7000</code>.</p>
 <pre><code class="language-python"># Salida
 No olvides huevos
 No olvides palta
@@ -341,7 +341,7 @@ No olvides 7000
 <p>Las listas son dinámicas, lo que significa que su tamaño puede cambiar durante la ejecución de un programa. <em>Python</em> ofrece varios métodos para agregar y quitar elementos de una lista de forma controlada.</p>
 <p>Para agregar elementos, podemos utilizar los siguientes métodos:</p>
 <ul>
-<li>lista.append(elemento): Agrega un único elemento al <strong>final</strong> de la lista</li>
+<li><strong><code>lista.append(elemento)</code></strong>: Agrega un único <code>elemento</code> al <strong>final</strong> de la lista</li>
 </ul>
 <pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;pera&quot;]
 frutas.append(&quot;naranja&quot;)
@@ -349,7 +349,7 @@ print(frutas)
 # Resultado: ['manzana', 'pera', 'naranja']
 </code></pre>
 <ul>
-<li>lista.extend(lista2): Agrega todos los elementos de lista2 al final de la lista original, extendiéndola.</li>
+<li><strong><code>lista.extend(lista2)</code></strong>: Agrega todos los elementos de <code>lista2</code> al final de la lista original, extendiéndola.</li>
 </ul>
 <pre><code class="language-python">numeros = [1, 2, 3]
 mas_numeros = [4, 5, 6]
@@ -358,7 +358,7 @@ print(numeros)
 # Resultado: [1, 2, 3, 4, 5, 6]
 </code></pre>
 <ul>
-<li>lista.insert(index, elemento): Inserta un elemento en la posición específica indicada por index, desplazando los elementos existentes hacia la derecha.</li>
+<li><strong><code>lista.insert(index, elemento)</code></strong>: Inserta un <code>elemento</code> en la posición específica indicada por <code>index</code>, desplazando los elementos existentes hacia la derecha.</li>
 </ul>
 <pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;]
 colores.insert(1, &quot;amarillo&quot;)  # Inserta en la posición 1
@@ -367,7 +367,7 @@ print(colores)
 </code></pre>
 <p>Para eliminar elementos podemos usar los siguientes métodos:</p>
 <ul>
-<li>variable = lista.<em>pop</em>(): Elimina y retorna el <strong>último</strong> elemento de la lista.</li>
+<li><strong><code>variable = lista.pop()</code></strong>: Elimina y retorna el <strong>último</strong> elemento de la lista.</li>
 </ul>
 <pre><code class="language-python">animales = [&quot;gato&quot;, &quot;perro&quot;, &quot;conejo&quot;]
 ultimo = animales.pop()
@@ -378,14 +378,14 @@ print(animales)
 # ['gato', 'perro']
 </code></pre>
 <ul>
-<li>variable = lista.pop(indice): Si quieres eliminar un elemento por índice.</li>
+<li><strong><code>variable = lista.pop(indice)</code></strong>: Si quieres eliminar un elemento por <code>indice</code>.</li>
 </ul>
 <pre><code class="language-python">primer_animal = animales.pop(0)
 print(&quot;Primer animal eliminado:&quot;, primer_animal)
 # Resultado: Primer animal eliminado: gato
 </code></pre>
 <ul>
-<li>variable = lista.remove(valor): Elimina la primera aparición del valor indicado.</li>
+<li><strong><code>variable = lista.remove(valor)</code></strong>: Elimina la primera aparición del <code>valor</code> indicado.</li>
 </ul>
 <pre><code class="language-python">numeros = [10, 20, 30, 20, 40]
 numeros.remove(20)  # Elimina el primer 20 encontrado
@@ -396,7 +396,7 @@ print(numeros)
 <h2 id="44-funciones-incorporadas">4.4. Funciones incorporadas</h2>
 <p><em>Python</em> proporciona un conjunto de funciones y métodos incorporados (<a href="https://docs.python.org/es/3.13/library/functions.html"><em>Built-In Functions</em></a>) que nos permiten realizar operaciones comunes sobre las listas de manera muy eficiente, sin tener que escribir la lógica nosotros mismos.</p>
 <ul>
-<li>len(lista): Devuelve un número entero que representa la cantidad de elementos que hay en la lista.</li>
+<li><strong><code>len(lista)</code></strong>: Devuelve un número entero que representa la cantidad de elementos que hay en la <code>lista</code>.</li>
 </ul>
 <pre><code class="language-python">edades = [18, 25, 30, 22]
 cantidad = len(edades)
@@ -404,14 +404,14 @@ print(&quot;Número de elementos:&quot;, cantidad)
 # Resultado: Número de elementos: 4
 </code></pre>
 <ul>
-<li>elemento in lista: Es un operador que verifica si un elemento existe dentro de una lista. Devuelve True si lo encuentra, y False en caso contrario.</li>
+<li><strong><code>elemento in lista</code></strong>: Es un operador que verifica si un <code>elemento</code> existe dentro de una <code>lista</code>. Devuelve <code>True</code> si lo encuentra, y <code>False</code> en caso contrario.</li>
 </ul>
 <pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;naranja&quot;, &quot;pera&quot;]
 print(&quot;manzana&quot; in frutas)  # True
 print(&quot;sandía&quot; in frutas)   # False
 </code></pre>
 <ul>
-<li>lista.index(elemento): Devuelve la posición (índice) de la primera aparición de un elemento en la lista. Si el elemento no se encuentra en la lista, genera un error de tipo ValueError.</li>
+<li><strong><code>lista.index(elemento)</code></strong>: Devuelve la posición (índice) de la primera aparición de un <code>elemento</code> en la lista. Si el elemento no se encuentra en la lista, genera un error de tipo <code>ValueError</code>.</li>
 </ul>
 <pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;, &quot;verde&quot;]
 posicion = colores.index(&quot;verde&quot;)
@@ -421,7 +421,7 @@ print(&quot;Primer 'verde' encontrado en el índice:&quot;, posicion)
 # colores.index(&quot;amarillo&quot;)  # ValueError
 </code></pre>
 <ul>
-<li>string.split(separador): Aunque es un método de las cadenas de texto (<em>str</em>), es extremadamente útil para crear listas. Convierte una cadena de texto en una lista de subcadenas, dividiéndola en cada aparición del separador especificado.</li>
+<li><strong><code>string.split(separador)</code></strong>: Aunque es un método de las cadenas de texto <code>str</code>, es extremadamente útil para crear listas. Convierte una cadena de texto en una lista de subcadenas, dividiéndola en cada aparición del <code>separador</code> especificado.</li>
 </ul>
 <pre><code class="language-python">texto = &quot;Python,Java,C++,JavaScript&quot;
 lenguajes = texto.split(&quot;,&quot;)
@@ -433,7 +433,7 @@ print(palabras)
 # Resultado: ['Hola', 'mundo', 'desde', 'Python']
 </code></pre>
 <ul>
-<li>lista.sort(): Ordena los elementos de la lista de forma ascendente. <strong>Este método modifica la lista original</strong>. Si se aplica a una lista de listas, ordena las sub-listas basándose en el primer elemento de cada una.</li>
+<li><strong><code>lista.sort()</code></strong>: Ordena los elementos de la lista de forma ascendente. <strong>Este método modifica la lista original</strong>. Si se aplica a una lista de listas, ordena las sub-listas basándose en el primer elemento de cada una.</li>
 </ul>
 <pre><code class="language-python">numeros = [5, 2, 9, 1]
 numeros.sort()
@@ -483,7 +483,7 @@ print(numeros)
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-14 18:42:01.818830+00:00
+  Docs Build Date UTC : 2026-11-14 19:13:10.425512+00:00
   -->
 
   <!--
