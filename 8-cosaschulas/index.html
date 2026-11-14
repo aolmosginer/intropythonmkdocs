@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>08-Cosas chulas - Intro Python</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "08-Cosas chulas";
+        var mkdocs_page_input_path = "8-cosaschulas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Intro Python
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0-introduccion/">¿Qué aprenderemos?</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1-conceptos/">01-Conceptos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2-controlflujo/">02-Control del Flujo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../3-bucles/">03-Bucles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../4-colecciones/">04-Listas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../5-funciones/">05-Funciones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6-ambito/">06-Ámbito</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../7-modulos/">07-Módulos</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">08-Cosas chulas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#81-lectura-de-datos-de-un-csv">8.1 Lectura de datos de un CSV</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#82-escritura-de-datos-en-un-csv">8.2 Escritura de datos en un CSV</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#83-manipulacion-de-imagenes">8.3 Manipulación de imágenes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#caracteristicas-de-las-imagenes">Características de las imágenes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#recortar-copiar-y-pegar">Recortar, copiar y pegar</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#redimensionar-y-rotar">Redimensionar y rotar</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#84-creacion-de-graficos">8.4 Creación de gráficos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#lineas-y-dispersion">Líneas y Dispersión</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#barras-y-graficos-circulares">Barras y gráficos circulares</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Intro Python</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">08-Cosas chulas</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="8-hagamos-cosas-chulas-con-python">8. Hagamos cosas chulas con Python</h1>
+<h2 id="81-lectura-de-datos-de-un-csv">8.1 Lectura de datos de un CSV</h2>
+<p>Un archivo CSV (<em>Comma Separated Values</em>) contiene datos organizados por filas en las que la información se separa normalmente mediante comas (aunque se pueden utilizar otros caracteres de separación). Se suelen utilizar mucho en informática para guardar y procesar gran cantidad de datos, puesto que son ficheros que ocupan muy poco (archivos de texto plano) y que son compatibles con todas las plataformas (Windows, MacOS, Linux …).</p>
+<p>El siguiente ejemplo muestra un archivo que almacena información sobre un pedido de frutas. Cada fila contiene, separado por comas “,”:</p>
+<ul>
+<li>
+<p>la fecha del pedido</p>
+</li>
+<li>
+<p>la fruta</p>
+</li>
+<li>
+<p>un entero que indica la cantidad de piezas solicitadas</p>
+</li>
+<li>
+<p>un número real que es el precio por unidad de esa fruta</p>
+</li>
+</ul>
+<p><img alt="" src="../imagenes/image7.png" /></p>
+<p>Si queremos leer y procesar los datos de un archivo CSV necesitamos realizar los siguientes pasos:</p>
+<ol>
+<li>
+<p>Importar el módulo csv que nos permitirá usar funciones específicas para el procesado de archivos CSV</p>
+</li>
+<li>
+<p>Abrir el archivo CSV que queremos procesar mediante la función incorporada open() y guardar el objeto que ésta crea en una variable</p>
+</li>
+<li>
+<p>Utilizar la función csv.reader() sobre la variable creada para obtener un objeto de tipo reader que podremos iterar para ir leyendo fila a fila todo el archivo CSV</p>
+</li>
+</ol>
+<p><img alt="" src="../imagenes/image8.png" /></p>
+<p>Una vez creado el objeto iterable, lo podemos recorrer con un bucle for-in que nos devolverá, en cada iteración del bucle, <strong>una lista con los datos de cada fila</strong>.</p>
+<p><img alt="" src="../imagenes/image9.png" /></p>
+<p><img alt="" src="../imagenes/image10.png" /></p>
+<p>La lista fila, en cada iteración, contendrá la información de una de las frutas del pedido. Podemos acceder a los diferentes valores de la lista mediante indexación para extraer los datos que nos interesen.</p>
+<p><img alt="" src="../imagenes/image11.png" /></p>
+<p><img alt="" src="../imagenes/image12.png" /></p>
+<p>En función del tipo de datos, tendremos que hacer el cambio de tipo correspondiente para poder tratar los datos correctamente (int(), str(), float() …).</p>
+<p>Es importante saber que <strong>sólo se puede iterar el objeto reader una vez</strong>. Para volver a leer el archivo CSV, se debe volver a llamar a open() y csv.reader() para crear otro objeto reader.</p>
+<p>Una precaución que se debe tener al trabajar con archivos, es cerrar cualquier referencia a éstos una vez acabemos de procesarlos (al leerlos y especialmente al escribirlos). Para ellos simplemente llamaremos al método close() del objeto sobre el que se abrió el archivo.</p>
+<p><img alt="" src="../imagenes/image13.png" /></p>
+<h2 id="82-escritura-de-datos-en-un-csv">8.2 Escritura de datos en un CSV</h2>
+<p>Si queremos guardar datos utilizados por nuestro programa Python para un posterior procesado o para compartirlos, podemos almacenarlos en un fichero CSV.</p>
+<p>Los pasos que tendremos que seguir son:</p>
+<ol>
+<li>
+<p>Importar el módulo csv que nos permitirá usar funciones específicas para el procesado de archivos CSV</p>
+</li>
+<li>
+<p>Abrir <strong>en modo escritura</strong> (‘w’) el archivo CSV en el que queremos guardar los datos mediante la función open(archivo, ‘w’, newline=’’) y guardar el objeto que ésta crea en una variable</p>
+</li>
+<li>
+<p>Utilizar la función csv.writer() sobre la variable creada para obtener un objeto de tipo writer que podremos usar para ir guardando listas (línea a línea).</p>
+</li>
+</ol>
+<p><img alt="" src="../imagenes/image14.png" /></p>
+<p>En Windows, se debe pasar una cadena en blanco como argumento de newline=’’ en la función open(). Si se olvida esto, las filas del archivo CSV se mostrarán a doble espacio.</p>
+<p>Una vez creado el objeto writer, utilizaremos su función writerow() para almacenar una lista en la última fila del archivo.</p>
+<p><img alt="" src="../imagenes/image15.png" /></p>
+<p><img alt="" src="../imagenes/image16.png" /></p>
+<p>De este modo, los valores de la lista se guardarán separados por comas “,”. Recordad que <strong>es muy importante cerrar el uso del archivo</strong> una vez acabéis de usarlo close(). En algunos lenguajes de programación es justo en ese momento en el que el archivo se actualiza con los cambios realizados. Por lo que es buena práctica acostumbrarse a cerrarlo siempre, con independencia del lenguaje usado.</p>
+<p>Si en lugar de tener los valores del CSV separados por comas “,” los queréis guardar con otro delimitador, podéis indicarlo con la propiedad delimiter de llamada a csv.writer().</p>
+<p><img alt="" src="../imagenes/image17.png" /></p>
+<p><img alt="" src="../imagenes/image18.png" /></p>
+<p><img alt="" src="../imagenes/image19.png" /></p>
+<p><img alt="" src="../imagenes/image20.png" /></p>
+<h2 id="83-manipulacion-de-imagenes">8.3 Manipulación de imágenes</h2>
+<p><strong>Pillow</strong> (<strong>PIL)</strong> es un paquete de Python de terceros (<em>third-party</em>) para interactuar con archivos de imagen. Este paquete cuenta con varias funciones que facilitan recortar, redimensionar y editar el contenido de una imagen. Para poder hacerlo, importaremos solamente el módulo Image de la librería.</p>
+<p><img alt="" src="../imagenes/image21.png" /></p>
+<p>Mediante la función open() de Image crearemos un objeto de tipo imagen a partir de un archivo almacenado en el ordenador. Los diferentes métodos y atributos de este objeto nos permitirán modificar la imagen. Por ejemplo, mostraremos la imagen cargada mediate la función show().</p>
+<p><img alt="" src="../imagenes/image22.png" /></p>
+<h3 id="caracteristicas-de-las-imagenes">Características de las imágenes</h3>
+<p>Podemos acceder a los atributos de nombre, formato y tamaño de la imagen de la siguiente forma.</p>
+<p><img alt="" src="../imagenes/image23.png" /></p>
+<p><img alt="" src="../imagenes/image24.png" /></p>
+<p>Como vemos, se puede guardar la imagen en un formato diferente mediante save().</p>
+<p>En Python, los píxeles de una imagen se direccionan mediante las coordenadas <em>x</em> e <em>y</em>, que especifican, respectivamente, su posición horizontal y vertical. El origen es el píxel en la esquina superior izquierda de la imagen y se especifica con la notación (0, 0).</p>
+<p><img alt="Icon of a computer window with the top-left corner labeled (0,0) and the bottom-right corner labeled (27,26). Horizontally, arrow points right and reads “x increases”. Vertically, an arrow points down and reads “y increases”." src="../imagenes/image25.jpeg" /></p>
+<p><img alt="A grid with columns and rows labeled 0 through 9. The cells beginning at row 1, column 3 in top-left corner and going to row 5, column 8 in the bottom-right corner are shaded." src="../imagenes/image26.jpeg" /></p>
+<p>El primer 0 representa la coordenada <em>x</em>, que comienza en 0 en el origen y aumenta de izquierda a derecha. El segundo 0 representa la coordenada <em>y</em>, que comienza en 0 en el origen y aumenta hacia abajo, lo cual es contrario a cómo se explican normalmente en la clase de matemáticas.</p>
+<p>Muchas de las funciones de <em>Pillow</em> toman como argumento una tupla de caja (recuerda que una tupla es “como una lista”, pero inmutable). Esto significa que <em>Pillow</em> espera una tupla de cuatro coordenadas enteras que representan una región rectangular en una imagen. Los cuatro enteros son, en orden, los siguientes:</p>
+<ul>
+<li>
+<p><em>Left</em>: La coordenada <em>x</em> del borde más a la izquierda de la caja</p>
+</li>
+<li>
+<p><em>Top</em>: La coordenada <em>y</em> del borde superior de la caja</p>
+</li>
+<li>
+<p><em>Right</em>: La coordenada <em>x</em> de un píxel a la derecha del borde más a la derecha de la caja. Este entero debe ser mayor que el entero izquierdo</p>
+</li>
+<li>
+<p><em>Bottom</em>: La coordenada <em>y</em> de un píxel por debajo del borde inferior de la caja. Este entero debe ser mayor que el entero superior</p>
+</li>
+</ul>
+<p>Tenga en cuenta que la caja incluye las coordenadas izquierda y superior, y llega hasta, pero no incluye, las coordenadas derecha e inferior. Por ejemplo, la tupla de caja (3, 1, 9, 6) representa todos los píxeles de la caja negra de la figura anterior.</p>
+<h3 id="recortar-copiar-y-pegar">Recortar, copiar y pegar</h3>
+<p>Una vez conocemos la forma de referenciar los píxeles de una imagen en <em>Python</em>, podemos recortar una imagen mediante la función crop(), pasándole la caja a cortar con una tupla de la siguiente forma.</p>
+<p><img alt="" src="../imagenes/image27.png" /></p>
+<p><img alt="" src="../imagenes/image28.png" /></p>
+<p>La imagen recortada podemos, por ejemplo, pegarla en diferentes lugares de la imagen original. Lo haremos sobre una copia de la original, creada mediante la función copy(), para así mantener la original sin cambios.</p>
+<p><img alt="" src="../imagenes/image29.png" /></p>
+<p><img alt="" src="../imagenes/image30.png" /></p>
+<p>La función paste() permite pegar una imagen sobre otra, definiendo el píxel inicial a partir del cual se pegará mediante una tupla de 2 puntos (píxel x, y).</p>
+<p>Jugando con la función paste() y 2 bucles for anidados, podemos conseguir un mosaico de caras de gatos sobre una copia de la imagen original.</p>
+<p><img alt="" src="../imagenes/image31.png" /></p>
+<p><img alt="" src="../imagenes/image32.png" /></p>
+<p>En este ejemplo utilizamos el ancho/alto de la imagen original (ample, alt) y el de la imagen de la cara(ample_cara, alt_cara) para definir los valores left/top a partir de los cuales se pegará cada una de las caras. El primer for recorrerá las filas del mosaico, mientras que el for anidado recorrerá las columnas:</p>
+<ul>
+<li>
+<p>range(0, ample, ample_cara): empieza en el píxel horizontal 0, llega al último píxel del ancho de la imagen original, incrementando en un número de píxeles igual al ancho de la imagen de la cara.</p>
+</li>
+<li>
+<p>range(0, alt, alt_cara): empieza en el píxel vertical 0, llega al último píxel del alto de la imagen original, incrementando en un número de píxeles igual al alto de la imagen de la cara.</p>
+</li>
+</ul>
+<p>A medida que se van realizando iteraciones completas del bucle anidado, la imagen final irá cambiando de la siguiente forma.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../imagenes/image33.png" /></th>
+<th><img alt="" src="../imagenes/image34.png" /></th>
+<th><img alt="" src="../imagenes/image35.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>left = 0</strong></td>
+<td><strong>left = ample_cara</strong></td>
+<td><strong>left = 2*ample_cara</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="redimensionar-y-rotar">Redimensionar y rotar</h3>
+<p>Las funciones resize() y rotate() nos permiten cambiar el tamaño de una imagen y rotarla respectivamente.</p>
+<p><img alt="" src="../imagenes/image36.png" /></p>
+<p>El método resize() devuelve un nuevo objeto Image con el ancho y alto especificados (no modifica el Image original). Acepta una tupla de dos enteros que representa las nuevas dimensiones. Puesto que solo acepta números enteros, es necesario convertir ambas dimensiones mediante int().</p>
+<p>Para asegura la proporcionalidad de la imagen resultante, es conveniente que las nuevas dimensiones sean múltiplos del ancho/alto original (de ahí el uso de ample/2 y alt/2 en este ejemplo).</p>
+<p>Si lo que queremos hacer es rotar una imagen, el método rotate() devuelve un nuevo objeto Image y deja el original sin cambios. El método acepta un entero o <em>float</em> que representa el número de grados que se rotará la imagen en sentido antihorario.</p>
+<p><img alt="" src="../imagenes/image37.png" /></p>
+<p>Como vemos, se pueden encadenar llamadas de método llamando a save() directamente en el objeto Image devuelto desde rotate(), sin necesidad de guardarlo en una variable intermedia. Las imágenes obtenidas son las siguientes.</p>
+<p><img alt="" src="../imagenes/image38.png" /></p>
+<p><img alt="" src="../imagenes/image39.png" /></p>
+<p><img alt="" src="../imagenes/image40.png" /></p>
+<p><img alt="" src="../imagenes/image41.png" /></p>
+<p>El método rotate() tiene el argumento opcional expand, que se puede establecer a True para ampliar las dimensiones de la imagen y que se ajuste a toda la nueva imagen rotada.</p>
+<p>Recordad que, una vez finalicemos el tratamiento de las imágenes, es conveniente cerrar todos los objetos Image.</p>
+<p><img alt="" src="../imagenes/image42.png" /></p>
+<h2 id="84-creacion-de-graficos">8.4 Creación de gráficos</h2>
+<p>La biblioteca <em>Matplotlib</em> permite crear una amplia variedad de gráficos (gráficos de líneas, de barras, de dispersión, circulares básicos, 3D …). Podéis encontrar la documentación completa en <a href="https://matplotlib.org">https://matplotlib.org</a>. Dependiendo del Sistema Operativo y la configuración de <em>Python</em>, tendréis que seguir unos pasos para la <a href="https://matplotlib.org/stable/install/index.html">instalación</a> de <em>Matplotlib</em>.</p>
+<h3 id="lineas-y-dispersion">Líneas y Dispersión</h3>
+<p>Un gráfico de líneas es ideal para mostrar los cambios en una medida a lo largo del tiempo. En <em>Matplotlib</em>, los términos <em>plot</em>, <em>graph</em> y <em>chart</em> se usan indistintamente, y el término <em>figure</em> se refiere a la ventana que contiene uno o más gráficos.</p>
+<p>Importamos matplotlib.pyplot con el nombre plt para facilitar la introducción de sus funciones.</p>
+<p>A continuación, para representar los <strong>puntos de datos en una figura 2D</strong>, debemos llamar a la función plt.plot(). Primero asociaremos al gráfico los valores para los ejes horizontal/vertical guardados en x e y1. Tras llamar a plt.plot() con estos valores, lo invocamos una segunda vez con x ​​e y2 para añadir una segunda línea al gráfico.</p>
+<p><img alt="" src="../imagenes/image43.png" /></p>
+<p><em>Matplotlib</em> seleccionará automáticamente los colores de las líneas y un tamaño adecuado para el gráfico. Podemos guardar el gráfico predeterminado como una imagen PNG llamando a plt.savefig().</p>
+<p><img alt="Gráfico, Gráfico de líneas" src="../imagenes/image44.png" /></p>
+<p><em>Matplotlib</em> cuenta con la función plt.show() de vista previa que muestra el gráfico en una ventana. Remarcar que, si queremos guardar el gráfico, debemos hacerlo antes de llamar a la función plt.show(). La llamada a la función bloqueará la ejecución del código y no regresará hasta que el usuario cierre la ventana.</p>
+<p>Para crear un <strong>gráfico de dispersión</strong> de estos mismos datos, pase los valores del eje x y del eje y a la función plt.scatter().</p>
+<p><img alt="" src="../imagenes/image45.png" /></p>
+<p><img alt="Gráfico, Gráfico de dispersión" src="../imagenes/image46.png" /></p>
+<h3 id="barras-y-graficos-circulares">Barras y gráficos circulares</h3>
+<p>Los <strong>gráficos de barras</strong> son útiles para comparar el mismo tipo de datos en diferentes categorías. A diferencia de un gráfico de líneas, el orden de las categorías no es importante, aunque suelen estar ordenadas alfabéticamente.</p>
+<p><img alt="" src="../imagenes/image47.png" /></p>
+<p>Pasamos las categorías a enumerar en el eje x como la primera lista a plt.bar() y los valores para cada categoría como la segunda lista.</p>
+<p><img alt="Gráfico, Gráfico de barras" src="../imagenes/image48.png" /></p>
+<p>Para crear un gráfico circular, utilizaremos la función plt.pie(). En lugar de categorías y valores, un gráfico circular tiene sectores y etiquetas. La función plt.pie() acepta una lista de tamaños de porción y una lista de etiquetas para cada porción.</p>
+<p><img alt="" src="../imagenes/image49.png" /></p>
+<p>El primer argumento posicional de plt.pie() hace referencia a las porciones x (‘<em>porcions’</em> en este ejemplo), pero el segundo no hace referencia a las etiquetas, sino al atributo explode, por lo que para asignar los valores de ‘etiquetes’ al atributo labels del plt.pie() debemos especificarlo en la llamada a la función. Podéis consultar los detalles de los diferentes parámetros de plt.pie() en su <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html">documentación oficial</a>.</p>
+<p><img alt="" src="../imagenes/image50.png" /></p>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image51.png" /></p>
+<p>Entre la gran diversidad de atributos que podemos modificar para obtener el gráfico deseado, el atributo autopct nos permite mostrar el valor de cada porción como un % respecto del total.</p>
+<p><img alt="" src="../imagenes/image52.png" /></p>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image53.png" /></p>
+<p>El atributo es una cadena de especificación de formato: la cadena '%.1f%%' especifica que el número debe mostrar un dígito después del punto decimal y después del decimal se muestra el símbolo de % (la cadena '%.1f' mostraría el mismo valor, pero sin el símbolo de % final).</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../7-modulos/" class="btn btn-neutral float-left" title="07-Módulos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../7-modulos/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

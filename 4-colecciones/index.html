@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>04-Listas - Intro Python</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "04-Listas";
+        var mkdocs_page_input_path = "4-colecciones.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Intro Python
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../0-introduccion/">¿Qué aprenderemos?</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../1-conceptos/">01-Conceptos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../2-controlflujo/">02-Control del Flujo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../3-bucles/">03-Bucles</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">04-Listas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-creacion-y-definicion-de-listas">4.1. Creación y Definición de Listas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-acceso-y-modificacion-de-elementos-de-una-lista">4.2. Acceso y Modificación de Elementos de una Lista</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#43-agregar-y-eliminar-elementos">4.3. Agregar y Eliminar Elementos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#44-funciones-incorporadas">4.4. Funciones incorporadas</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../5-funciones/">05-Funciones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../6-ambito/">06-Ámbito</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../7-modulos/">07-Módulos</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../8-cosaschulas/">08-Cosas chulas</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Intro Python</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">04-Listas</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="4-trabajando-con-colecciones-listas">4: Trabajando con Colecciones: Listas</h1>
+<h2 id="41-creacion-y-definicion-de-listas">4.1. Creación y Definición de Listas</h2>
+<p>Hasta ahora, hemos trabajado con datos individuales en variables. Las listas representan un salto fundamental, permitiéndonos gestionar colecciones enteras de datos, sobre las cuales podemos iterar con los bucles for que ya conocemos. Una <strong>lista</strong> es una secuencia ordenada de elementos que nos permite agrupar múltiples valores, de cualquier tipo, en una sola variable.</p>
+<p>La sintaxis para crear una lista es sencilla: se encierran los elementos, separados por comas, entre corchetes [].</p>
+<pre><code class="language-python">[elemento0, elemento1, ...]
+</code></pre>
+<p>Las listas son muy flexibles y pueden contener elementos de diferentes tipos de datos, incluso mezclados en la misma lista.</p>
+<pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;palta&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
+</code></pre>
+<p>También es posible crear listas vacías, que pueden ser llenadas más tarde, de dos formas:</p>
+<pre><code class="language-python">vacia1 = []
+vacia2 = list()
+</code></pre>
+<p>Además, un elemento de una lista puede ser, a su vez, otra lista. Esto se conoce como <strong>listas anidadas</strong> y permite crear estructuras de datos más complejas.</p>
+<p>Una vez que hemos creado una lista, el siguiente paso es aprender a acceder y manipular los elementos que contiene.</p>
+<h2 id="42-acceso-y-modificacion-de-elementos-de-una-lista">4.2. Acceso y Modificación de Elementos de una Lista</h2>
+<p>Una característica clave de las listas en <em>Python</em> es que son <strong>mutables</strong>, lo que significa que su contenido puede ser modificado después de su creación. Podemos cambiar, agregar o eliminar elementos.</p>
+<p>Para acceder a un elemento individual dentro de una lista, utilizamos su <strong>índice</strong>, que es su posición numérica. Es muy importante recordar que en <em>Python</em> (y en la gran mayoría de los lenguajes de programación), <strong>la numeración de los índices comienza en 0</strong>. El primer elemento está en el índice 0, el segundo en el índice 1, y así sucesivamente. La sintaxis para acceder es nombre_lista[indice].</p>
+<pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;platanos&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
+print(no_olvidar[2]) 
+# Salida: lechuga
+</code></pre>
+<p>Para modificar un elemento existente, simplemente asignamos un nuevo valor a su posición de índice:</p>
+<pre><code class="language-python">no_olvidar[1] = &quot;queso&quot;
+print(no_olvidar) 
+# Salida: ['huevos', 'queso', 'lechuga', 'naranjas', 7000]
+</code></pre>
+<p>Además de acceder a elementos individuales, podemos acceder a sub-secciones de una lista usando la técnica de <strong><em>slicing</em></strong>. La sintaxis es lista[inicio:fin:step], y extrae una nueva lista que contiene los elementos desde el índice inicio hasta fin - 1.</p>
+<pre><code class="language-python">print(no_olvidar[1:4]) 
+# Salida: ['queso', 'lechuga', 'naranjas']
+</code></pre>
+<p>Para recorrer todos los elementos de una lista de manera sencilla, podemos usar un bucle for:</p>
+<pre><code class="language-python">for elemento in no_olvidar:
+    print(&quot;No olvides&quot;, elemento)
+</code></pre>
+<p>En este ejemplo, en cada iteración del bucle for, la variable elemento tomará un valor diferente de la lista no_olvidar, comenzando por el primero (queso) y llegando hasta el último (7000).</p>
+<pre><code class="language-python"># Salida
+No olvides huevos
+No olvides palta
+No olvides lechuga
+No olvides naranjas
+No olvides 7000
+</code></pre>
+<p>Sabiendo cómo acceder y modificar elementos existentes, el siguiente problema es: ¿cómo podemos cambiar el número total de elementos en una lista?</p>
+<h2 id="43-agregar-y-eliminar-elementos">4.3. Agregar y Eliminar Elementos</h2>
+<p>Las listas son dinámicas, lo que significa que su tamaño puede cambiar durante la ejecución de un programa. <em>Python</em> ofrece varios métodos para agregar y quitar elementos de una lista de forma controlada.</p>
+<p>Para agregar elementos, podemos utilizar los siguientes métodos:</p>
+<ul>
+<li>lista.append(elemento): Agrega un único elemento al <strong>final</strong> de la lista</li>
+</ul>
+<pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;pera&quot;]
+frutas.append(&quot;naranja&quot;)
+print(frutas)
+# Resultado: ['manzana', 'pera', 'naranja']
+</code></pre>
+<ul>
+<li>lista.extend(lista2): Agrega todos los elementos de lista2 al final de la lista original, extendiéndola.</li>
+</ul>
+<pre><code class="language-python">numeros = [1, 2, 3]
+mas_numeros = [4, 5, 6]
+numeros.extend(mas_numeros)
+print(numeros)
+# Resultado: [1, 2, 3, 4, 5, 6]
+</code></pre>
+<ul>
+<li>lista.insert(index, elemento): Inserta un elemento en la posición específica indicada por index, desplazando los elementos existentes hacia la derecha.</li>
+</ul>
+<pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;]
+colores.insert(1, &quot;amarillo&quot;)  # Inserta en la posición 1
+print(colores)
+# Resultado: ['rojo', 'amarillo', 'verde', 'azul']
+</code></pre>
+<p>Para eliminar elementos podemos usar los siguientes métodos:</p>
+<ul>
+<li>variable = lista.<em>pop</em>(): Elimina y retorna el <strong>último</strong> elemento de la lista.</li>
+</ul>
+<pre><code class="language-python">animales = [&quot;gato&quot;, &quot;perro&quot;, &quot;conejo&quot;]
+ultimo = animales.pop()
+print(&quot;Elemento eliminado:&quot;, ultimo)
+print(animales)
+# Resultado:
+# Elemento eliminado: conejo
+# ['gato', 'perro']
+</code></pre>
+<ul>
+<li>variable = lista.pop(indice): Si quieres eliminar un elemento por índice.</li>
+</ul>
+<pre><code class="language-python">primer_animal = animales.pop(0)
+print(&quot;Primer animal eliminado:&quot;, primer_animal)
+# Resultado: Primer animal eliminado: gato
+</code></pre>
+<ul>
+<li>variable = lista.remove(valor): Elimina la primera aparición del valor indicado.</li>
+</ul>
+<pre><code class="language-python">numeros = [10, 20, 30, 20, 40]
+numeros.remove(20)  # Elimina el primer 20 encontrado
+print(numeros)
+# Resultado: [10, 30, 20, 40]
+</code></pre>
+<p>Ahora que sabemos cómo manipular la estructura de las listas, exploremos otras funciones y métodos útiles que nos proporcionan información sobre ellas.</p>
+<h2 id="44-funciones-incorporadas">4.4. Funciones incorporadas</h2>
+<p><em>Python</em> proporciona un conjunto de funciones y métodos incorporados (<a href="https://docs.python.org/es/3.13/library/functions.html"><em>Built-In Functions</em></a>) que nos permiten realizar operaciones comunes sobre las listas de manera muy eficiente, sin tener que escribir la lógica nosotros mismos.</p>
+<ul>
+<li>len(lista): Devuelve un número entero que representa la cantidad de elementos que hay en la lista.</li>
+</ul>
+<pre><code class="language-python">edades = [18, 25, 30, 22]
+cantidad = len(edades)
+print(&quot;Número de elementos:&quot;, cantidad)
+# Resultado: Número de elementos: 4
+</code></pre>
+<ul>
+<li>elemento in lista: Es un operador que verifica si un elemento existe dentro de una lista. Devuelve True si lo encuentra, y False en caso contrario.</li>
+</ul>
+<pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;naranja&quot;, &quot;pera&quot;]
+print(&quot;manzana&quot; in frutas)  # True
+print(&quot;sandía&quot; in frutas)   # False
+</code></pre>
+<ul>
+<li>lista.index(elemento): Devuelve la posición (índice) de la primera aparición de un elemento en la lista. Si el elemento no se encuentra en la lista, genera un error de tipo ValueError.</li>
+</ul>
+<pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;, &quot;verde&quot;]
+posicion = colores.index(&quot;verde&quot;)
+print(&quot;Primer 'verde' encontrado en el índice:&quot;, posicion)
+# Resultado: Primer 'verde' encontrado en el índice: 1
+# OJO: Si el elemento no existe, ocurre un error:
+# colores.index(&quot;amarillo&quot;)  # ValueError
+</code></pre>
+<ul>
+<li>string.split(separador): Aunque es un método de las cadenas de texto (<em>str</em>), es extremadamente útil para crear listas. Convierte una cadena de texto en una lista de subcadenas, dividiéndola en cada aparición del separador especificado.</li>
+</ul>
+<pre><code class="language-python">texto = &quot;Python,Java,C++,JavaScript&quot;
+lenguajes = texto.split(&quot;,&quot;)
+print(lenguajes)
+# Resultado: ['Python', 'Java', 'C++', 'JavaScript']
+frase = &quot;Hola mundo desde Python&quot;
+palabras = frase.split(&quot; &quot;)
+print(palabras)
+# Resultado: ['Hola', 'mundo', 'desde', 'Python']
+</code></pre>
+<ul>
+<li>lista.sort(): Ordena los elementos de la lista de forma ascendente. <strong>Este método modifica la lista original</strong>. Si se aplica a una lista de listas, ordena las sub-listas basándose en el primer elemento de cada una.</li>
+</ul>
+<pre><code class="language-python">numeros = [5, 2, 9, 1]
+numeros.sort()
+print(numeros)
+# Resultado: [1, 2, 5, 9]
+</code></pre>
+<p>Con un buen manejo de las listas, podemos empezar a organizar nuestro código de manera más eficiente utilizando funciones.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../3-bucles/" class="btn btn-neutral float-left" title="03-Bucles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../5-funciones/" class="btn btn-neutral float-right" title="05-Funciones">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../3-bucles/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../5-funciones/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
