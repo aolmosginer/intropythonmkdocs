@@ -1,13 +1,14 @@
-# Welcome to MkLorum
+# 💻 Programación en Python 🐍️
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Esta web está pensada para ser una guía en los primeros pasos de la programación con *Python*. Su propósito es proporcionar a los estudiantes una base sólida y clara en los conceptos fundamentales del lenguaje. 
 
-## Commands
+A lo largo de sus apartados, se abordarán desde los tipos de datos más básicos y cómo manipularlos, hasta las estructuras que permiten a nuestros programas tomar decisiones y repetir tareas, culminando con el manejo de colecciones de datos (como las listas) y la creación y uso de funciones.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+
+[Empezar →](./contenidos/0-introduccion)
+
+
+
 
 ## Project layout
 
