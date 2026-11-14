@@ -14,19 +14,19 @@ aside: true
     - 1.3. Variables y Asignación
     - 1.4. Comentarios
 - [2: Interactividad y Control de Flujo](2-controlflujo.md)
-    - 2.1. La Función *print()*
-    - 2.2. La Función *input()*
+    - 2.1. La Función `print()`
+    - 2.2. La Función `input()`
     - 2.3. Estructuras Condicionales
-        - if-else
-        - if sin else
-        - elif
-        - match-case
+        - `if-else`
+        - `if` sin `else`
+        - `elif`
+        - `match-case`
 - [3: Repitiendo Tareas con Bucles](3-bucles.md)
-    - 3.1. El Bucle *while*
-    - 3.2. El Bucle *for* y *range()*
+    - 3.1. El Bucle `while`
+    - 3.2. El Bucle `for` y `range()`
     - 3.3. Alteración de la ejecución de los bucles
-        - break
-        - continue
+        - `break`
+        - `continue`
 - [4: Trabajando con Colecciones: Listas](4-colecciones.md)
     - 4.1. Creación y Definición de Listas
     - 4.2. Acceso y Modificación de Elementos de una Lista
@@ -45,7 +45,7 @@ aside: true
         - Importar todos los elementos
         - Renombrar el módulo
     - 7.2 Módulos estándar
-    - 7.3 Uso de \_\_main\_\_
+    - 7.3 Uso de `__main__`
     - 7.4 Estructura de un programa
 - [8. Hagamos cosas chulas con Python](8-cosaschulas.md)
     - 8.1 Lectura de datos de un CSV
