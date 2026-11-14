@@ -299,42 +299,43 @@
 
               
               <h1 id="2-interactividad-y-control-de-flujo">2: Interactividad y Control de Flujo</h1>
-<h2 id="21-la-funcion-print">2.1. La Función <em>print()</em></h2>
-<p>La función print() es la herramienta principal en <em>Python</em> para comunicar resultados y mostrar información en la pantalla del usuario (conocida como la salida estándar). Nos permite ver el resultado de nuestras expresiones, el valor de nuestras variables o simplemente mostrar mensajes de texto.</p>
+<h2 id="21-la-funcion-print">2.1. La Función <code>print()</code></h2>
+<p>La función <code>print()</code> es la herramienta principal en <em>Python</em> para comunicar resultados y mostrar información en la pantalla del usuario (conocida como la salida estándar). Nos permite ver el resultado de nuestras expresiones, el valor de nuestras variables o simplemente mostrar mensajes de texto.</p>
 <p>Su uso más básico consiste en pasarle el valor que queremos mostrar:</p>
 <pre><code class="language-python">print(&quot;Hola mundo&quot;) # Muestra el texto Hola mundo
 fahrenheit = 91
 celsius = (fahrenheit - 32) * 5/9
 print(celsius) # Muestra el valor de la variable celsius
 </code></pre>
-<p>También es posible imprimir múltiples elementos en una sola llamada a print(), separándolos por comas. Por defecto, <em>Python</em> los mostrará en la misma línea, separados por un espacio.</p>
+<p>También es posible imprimir múltiples elementos en una sola llamada a <code>print()</code>, separándolos por comas. Por defecto, <em>Python</em> los mostrará en la misma línea, separados por un espacio.</p>
 <pre><code class="language-python">episodio = 3
 print(&quot;Episodio&quot;, episodio, &quot;del libro&quot;)
 # Salida: Episodio 3 del libro
 </code></pre>
-<p>La función print() incluye parámetros opcionales que nos permiten modificar su comportamiento por defecto:</p>
+<p>La función <code>print()</code> incluye parámetros opcionales que nos permiten modificar su comportamiento por defecto:</p>
 <ul>
-<li><strong>sep=str</strong>: Este parámetro permite cambiar el separador que se usa entre los elementos. En lugar del espacio por defecto, podemos usar cualquier otra cadena de texto.</li>
-<li><strong>end=str</strong>: Por defecto, cada llamada a print() termina con un salto de línea. El parámetro end permite especificar un carácter o cadena de texto diferente para el final, lo que posibilita que la siguiente llamada a print() continúe en la misma línea.</li>
+<li><code>sep=str</code>: Este parámetro permite cambiar el separador que se usa entre los elementos. En lugar del espacio por defecto, podemos usar cualquier otra cadena de texto.</li>
+<li><code>end=str</code>: Por defecto, cada llamada a <code>print()</code> termina con un salto de línea. El parámetro end permite especificar un carácter o cadena de texto diferente para el final, lo que posibilita que la siguiente llamada a <code>print()</code> continúe en la misma línea.</li>
 </ul>
 <p>Mostrar información es útil, pero para crear programas verdaderamente dinámicos, también necesitamos que puedan recibir información del usuario.</p>
-<h2 id="22-la-funcion-input">2.2. La Función <em>input()</em></h2>
-<p>La función input() es fundamental para crear programas interactivos. Detiene la ejecución del programa, muestra un mensaje al usuario (si se le proporciona uno) y espera a que este escriba algo con el teclado y presione <em>Enter</em>.</p>
+<h2 id="22-la-funcion-input">2.2. La Función <code>input()</code></h2>
+<p>La función <code>input()</code> es fundamental para crear programas interactivos. Detiene la ejecución del programa, muestra un mensaje al usuario (si se le proporciona uno) y espera a que este escriba algo con el teclado y presione <code>Enter</code>.</p>
 <p>La sintaxis básica para leer la entrada del usuario y almacenarla en una variable es:</p>
-<p>variable = input(texto)</p>
+<pre><code class="language-python">variable = input(texto)
+</code></pre>
 <p>Aquí, texto es el mensaje opcional que se le mostrará al usuario para indicarle qué dato debe ingresar.</p>
-<p>Un punto crítico a recordar es que la función input() <strong>siempre devuelve los datos ingresados por el usuario como una cadena de texto (<em>str</em>)</strong>, sin importar si el usuario escribió números. Intentar realizar operaciones matemáticas directamente con la salida de input() resultará en un TypeError.</p>
+<p>Un punto crítico a recordar es que la función <code>input()</code> <strong>siempre devuelve los datos ingresados por el usuario como una cadena de texto (<code>str</code>)</strong>, sin importar si el usuario escribió números. Intentar realizar operaciones matemáticas directamente con la salida de <code>input()</code> resultará en un <code>TypeError</code>.</p>
 <p>Para poder trabajar correctamente con la entrada del usuario, es necesario realizar una <strong>"conversión de tipos"</strong>. <em>Python</em> proporciona funciones para convertir un valor de un tipo a otro:</p>
 <ul>
-<li>int(): Convierte un valor a un número entero</li>
+<li><code>int()</code>: Convierte un valor a un número entero</li>
 <li>
-<p>float(): Convierte un valor a un número de punto flotante</p>
+<p><code>float()</code>: Convierte un valor a un número de punto flotante</p>
 </li>
 <li>
-<p>bool(): Convierte un valor a un booleano</p>
+<p><code>bool()</code>: Convierte un valor a un booleano</p>
 </li>
 </ul>
-<p>Podemos combinar input() con estas funciones para leer y convertir los datos en un solo paso:</p>
+<p>Podemos combinar <code>input()</code> con estas funciones para leer y convertir los datos en un solo paso:</p>
 <pre><code class="language-python">lec = int(input(&quot;¿Cuántas lecciones has visto? &quot;))
 total = 15
 faltan = total - lec # Ahora esto funciona, porque 'lec' es un int
@@ -345,15 +346,14 @@ Te faltan 12 lecciones. ¡Ánimo!
 </code></pre>
 <p>Ahora que nuestro programa puede recibir una calificación, un nombre o una temperatura del usuario, ¿cómo podemos hacer que reaccione de forma inteligente a esa información? La respuesta está en las estructuras condicionales.</p>
 <h2 id="23-estructuras-condicionales">2.3. Estructuras Condicionales</h2>
-<p>Las estructuras condicionales son la base de la toma de decisiones en programación. Permiten que un programa evalúe una condición (una expresión que resulta ser True o False) y ejecute diferentes bloques de código dependiendo del resultado. Esto le da al programa la capacidad de reaccionar de manera diferente a distintas entradas o situaciones.</p>
+<p>Las estructuras condicionales son la base de la toma de decisiones en programación. Permiten que un programa evalúe una condición (una expresión que resulta ser <code>True</code> o <code>False</code>) y ejecute diferentes bloques de código dependiendo del resultado. Esto le da al programa la capacidad de reaccionar de manera diferente a distintas entradas o situaciones.</p>
 <h3 id="if-else">if-else</h3>
 <p><img alt="Diagrama" src="../imagenes/image2.png" /></p>
-<p>Esta es la estructura condicional más completa. Evalúa una condición (expresión lógica): si es True, ejecuta el bloque de código que sigue al if; si es False, ejecuta un bloque de código alternativo dentro de la cláusula else.</p>
+<p>Esta es la estructura condicional más completa. Evalúa una condición (expresión lógica): si es <code>True</code>, ejecuta el bloque de código que sigue al <code>if</code>; si es <code>False</code>, ejecuta un bloque de código alternativo dentro de la cláusula <code>else</code>.</p>
 <p><strong>La sintaxis requiere que los bloques de código estén indentados</strong> (generalmente con 4 espacios o tabulado) para indicar que pertenecen a la estructura.</p>
 <pre><code class="language-python"># Sintaxis
-</code></pre>
-<p>if \&lt;condición&gt;:</p>
-<pre><code class="language-python">    # Bloque de código si la condición es True
+if &lt;condición&gt;:
+    # Bloque de código si la condición es True
 else:
     # Bloque de código si la condición es False
 # Ejemplo
@@ -366,15 +366,15 @@ else:
 </code></pre>
 <h3 id="if-sin-else">if sin else</h3>
 <p><img alt="" src="../imagenes/image3.png" /></p>
-<p>El bloque else es completamente opcional. Un if puede existir por sí solo. En este caso, el bloque de código indentado se ejecutará únicamente si la condición es True. Si la condición es False, el programa simplemente saltará ese bloque y continuará con la siguiente instrucción fuera del if.</p>
+<p>El bloque <code>else</code> es completamente opcional. Un <code>if</code> puede existir por sí solo. En este caso, el bloque de código indentado se ejecutará únicamente si la condición es <code>True</code>. Si la condición es <code>False</code>, el programa simplemente saltará ese bloque y continuará con la siguiente instrucción fuera del <code>if</code>.</p>
 <pre><code class="language-python">charco = True
 if charco == True:
     print(&quot;A saltar!&quot;)
 print(&quot;Fin de la caminata&quot;) # Esta línea se ejecuta siempre al estar fuera del if
 </code></pre>
-<p>Cabe destacar que no puede existir una cláusula else sin una instrucción if que la preceda.</p>
+<p>Cabe destacar que no puede existir una cláusula <code>else</code> sin una instrucción <code>if</code> que la preceda.</p>
 <h3 id="elif">elif</h3>
-<p>Cuando necesitamos evaluar más de dos posibles caminos, podemos encadenar múltiples condiciones usando elif (contracción de "<em>else if</em>"). El programa evalúa las condiciones en orden: <strong>la primera que resulte True ejecutará su bloque de código, y el resto de la estructura elif/else será ignorada</strong>. El bloque else final es opcional y actúa como un caso por defecto si ninguna de las condiciones anteriores fue True.</p>
+<p>Cuando necesitamos evaluar más de dos posibles caminos, podemos encadenar múltiples condiciones usando <code>elif</code> (contracción de "<code>else if</code>"). El programa evalúa las condiciones en orden: <strong>la primera que resulte <code>True</code> ejecutará su bloque de código, y el resto de la estructura <code>elif/else</code> será ignorada</strong>. El bloque else final es opcional y actúa como un caso por defecto si ninguna de las condiciones anteriores fue <code>True</code>.</p>
 <pre><code class="language-python"># Sintaxis General
 if &lt;condicion1&gt;:
     # ...
@@ -398,7 +398,7 @@ else:
 <h3 id="match-case">match-case</h3>
 <p>Es una estructura que permite comparar un valor contra distintos patrones y ejecutar el bloque de código correspondiente al primer patrón que coincida.</p>
 <p><img alt="" src="../imagenes/image4.png" /></p>
-<p>Es similar al switch de otros lenguajes, pero más flexible.</p>
+<p>Es similar al <code>switch</code> de otros lenguajes, pero más flexible.</p>
 <pre><code class="language-python">match &lt;variable&gt;:
     case &lt;patron1&gt;:
         # código si coincide patron1
@@ -407,8 +407,8 @@ else:
     case _:
         # caso por defecto
 </code></pre>
-<p><em>Python</em> evalúa los case en orden y ejecuta el primero que coincide. El case _ funciona como el else de un if (por defecto, si no se cumple ninguno de los anteriores).</p>
-<p>La estructura match-case sirve para evitar muchos if / elif / else y hacer el código más legible.</p>
+<p><em>Python</em> evalúa los <code>case</code> en orden y ejecuta el primero que coincide. El <code>case _</code> funciona como el <code>else</code> de un <code>if</code> (por defecto, si no se cumple ninguno de los anteriores).</p>
+<p>La estructura <code>match-case</code> sirve para evitar muchos <code>if</code> / <code>elif</code> / <code>else</code> y hacer el código más legible.</p>
 <pre><code class="language-python">valor = int(input(&quot;Dame un entero: &quot;))
 match valor:
     case 1:
@@ -420,7 +420,7 @@ match valor:
     case _:
         print ( &quot;Otro valor&quot; )
 </code></pre>
-<p>En un match-case se pueden poner más de un valor, separando con “|”.</p>
+<p>En un <code>match-case</code> se pueden poner más de un valor, separando con “|”.</p>
 <pre><code class="language-python">valor = int(input(&quot;Dame un entero: &quot;))
 match valor:
     case 1 | 2:
@@ -473,7 +473,7 @@ match valor:
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-14 17:44:38.116712+00:00
+  Docs Build Date UTC : 2026-11-14 18:42:01.816572+00:00
   -->
 
   <!--
