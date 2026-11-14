@@ -1,4 +1,4 @@
-# 💻 Programación en Python 🐍️
+# 💻 Programación a Python 🐍️
 
 Esta web está pensada para ser una guía en los primeros pasos de la programación con *Python*. Su propósito es proporcionar a los estudiantes una base sólida y clara en los conceptos fundamentales del lenguaje. 
 
