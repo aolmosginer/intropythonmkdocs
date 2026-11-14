@@ -303,8 +303,8 @@
 <p>Cuando llamamos a la función (la usamos), debemos proporcionar los valores que tomarán estos parámetros:</p>
 <pre><code class="language-python">mi_funcion(valor1, valor2)
 </code></pre>
-<p>El <strong>valor de retorno</strong> es el "resultado" que una función entrega al finalizar su ejecución. Para devolver un valor, se utiliza la palabra clave return, seguida del valor que se desea entregar.</p>
-<p>Es importante destacar que la ejecución de la función termina inmediatamente en cuanto se encuentra una instrucción return. Cualquier código dentro de la función que se encuentre después de un return no será ejecutado.</p>
+<p>El <strong>valor de retorno</strong> es el "resultado" que una función entrega al finalizar su ejecución. Para devolver un valor, se utiliza la palabra clave <code>return</code>, seguida del valor que se desea entregar.</p>
+<p>Es importante destacar que la ejecución de la función termina inmediatamente en cuanto se encuentra una instrucción <code>return</code>. Cualquier código dentro de la función que se encuentre después de un <code>return</code> no será ejecutado.</p>
 <p>Veamos un ejemplo que combina ambos conceptos. La siguiente función recibe un número como parámetro, realiza un cálculo y devuelve el resultado:</p>
 <pre><code class="language-python">def calculo(numero):
     resultado = (numero - 3) ** 3
@@ -329,9 +329,9 @@ print(multiplicar(4, 3)) # Salida: 12
 print(multiplicar(4))  # Salida: 4 
 print(multiplicar())  # Salida:  0
 </code></pre>
-<p>Si no se pasa ningún valor a la función, utilizará los valores por defecto a=0 y b=1. Si se pasa un solo valor, será asignado a la primera variable a y por lo tanto b tomará el valor por defecto (0).</p>
+<p>Si no se pasa ningún valor a la función, utilizará los valores por defecto <code>a=0</code> y <code>b=1</code>. Si se pasa un solo valor, será asignado a la primera variable <code>a</code> y por lo tanto <code>b</code> tomará el valor por defecto <code>0</code>.</p>
 <h2 id="53-varios-valores-de-retorno">5.3. Varios valores de retorno</h2>
-<p>También podemos diseñar funciones que devuelvan más de un valor, asignando los diferentes valores separados por comas “, “ después del return.</p>
+<p>También podemos diseñar funciones que devuelvan más de un valor, asignando los diferentes valores separados por comas <code>,</code> después del <code>return</code>.</p>
 <pre><code class="language-python">def operaciones(a, b):
     suma = a + b
     resta = a - b
@@ -341,8 +341,8 @@ s,r,m = operaciones(10,5)
 print(&quot;suma =&quot;, s, &quot;resta =&quot;, r, &quot;multiplicación =&quot;, m)
 # Salida: suma = 15 resta = 5 multiplicación = 50
 </code></pre>
-<p>Al utilizar este tipo de funciones, debemos prever los valores que nos devolverá y almacenarlos en tantas variables como sea necesario (s,r,m = operaciones(10,5)).</p>
-<p>Si no lo hacemos así, porque por ejemplo no sabemos cuántos valores nos va a devolver la función, <strong>se devolverán todos los valores dentro de una <em>tupla</em></strong> que deberemos tratar como corresponda.</p>
+<p>Al utilizar este tipo de funciones, debemos prever los valores que nos devolverá y almacenarlos en tantas variables como sea necesario <code>s,r,m = operaciones(10,5)</code>.</p>
+<p>Si no lo hacemos así, porque por ejemplo no sabemos cuántos valores nos va a devolver la función, <strong>se devolverán todos los valores dentro de una <code>tupla</code></strong> que deberemos tratar como corresponda.</p>
 <pre><code class="language-python">def operaciones(a, b):
     suma = a + b
     resta = a - b
@@ -353,10 +353,10 @@ print(&quot;suma =&quot;, resultados[0]) # Salida: suma = 15
 print(&quot;resta =&quot;, resultados[1]) # Salida: resta = 5
 print(&quot;multiplicación =&quot;, resultados[2]) # Salida: multiplicación = 50
 </code></pre>
-<p>De momento asumiremos que una <em>tupla</em> es como una lista[], pero que guarda valores inmutables (que no podemos modificar).</p>
+<p>De momento asumiremos que una <code>tupla</code> es como una <code>lista[]</code>, pero que guarda valores inmutables (que no podemos modificar).</p>
 <h2 id="54-ejemplo-practico-funciones-booleanas">5.4. Ejemplo Práctico: Funciones Booleanas</h2>
-<p>Una función booleana es un tipo específico de función cuyo propósito es responder a una pregunta con un "sí" o un "no", es decir, que siempre devuelve un valor booleano (True o False). Son extremadamente útiles para encapsular la lógica de las condiciones.</p>
-<p>Un ejemplo claro es una función que determina si un número es par. Recibe un número como parámetro y devuelve True si el número es divisible por 2, y False en caso contrario.</p>
+<p>Una función booleana es un tipo específico de función cuyo propósito es responder a una pregunta con un "sí" o un "no", es decir, que siempre devuelve un valor booleano (<code>True</code> o <code>False</code>). Son extremadamente útiles para encapsular la lógica de las condiciones.</p>
+<p>Un ejemplo claro es una función que determina si un número es par. Recibe un número como parámetro y devuelve <code>True</code> si el número es divisible por 2, y <code>False</code> en caso contrario.</p>
 <pre><code class="language-python">def es_par(numero):
     if numero % 2 == 0:
         return True
@@ -366,14 +366,14 @@ print(es_par(8)) # Salida: True
 print(es_par(7)) # Salida: False
 </code></pre>
 <p><strong>Refinando el Código Booleano</strong></p>
-<p>La función es_par anterior es perfectamente correcta y funcional. Sin embargo, un programador con experiencia buscaría una forma más directa y concisa de escribirla. La expresión numero % 2 == 0 ya es en sí misma una expresión booleana: se evalúa como True si el número es par y False si no lo es.</p>
+<p>La función <code>es_par</code> anterior es perfectamente correcta y funcional. Sin embargo, un programador con experiencia buscaría una forma más directa y concisa de escribirla. La expresión <code>numero % 2 == 0</code> ya es en sí misma una expresión booleana: se evalúa como <code>True</code> si el número es par y <code>False</code> si no lo es.</p>
 <p>Por lo tanto, podemos reescribir la función a una sola línea que devuelve directamente el resultado de esta expresión.</p>
 <pre><code class="language-python">def es_par(numero):
     return numero % 2 == 0
 </code></pre>
-<p>Este estilo es considerado más "Pythonic" —elegante, legible y eficiente.</p>
+<p>Este estilo es considerado más "Pythonic" — elegante, legible y eficiente.</p>
 <p>Ambas versiones de la función producen exactamente el mismo resultado, pero la segunda demuestra una comprensión más profunda del lenguaje.</p>
-<p>El uso de funciones para encapsular la lógica, como en es_par, hace que el código principal sea mucho más limpio y fácil de entender, promoviendo una buena organización y reutilización.</p>
+<p>El uso de funciones para encapsular la lógica, como en <code>es_par</code>, hace que el código principal sea mucho más limpio y fácil de entender, promoviendo una buena organización y reutilización.</p>
               
             </div>
           </div>
@@ -416,7 +416,7 @@ print(es_par(7)) # Salida: False
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-14 19:13:10.426867+00:00
+  Docs Build Date UTC : 2026-11-14 20:18:16.155407+00:00
   -->
 
   <!--
