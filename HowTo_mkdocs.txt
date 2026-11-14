@@ -1,0 +1,15 @@
+ARRANCAR EN VENV
+cd /home/profe/Documents/mkdocsEnvironment/
+source bin/activate
+
+ARRANCAR EL SERVER
+cd intropython/
+mkdocs serve
+
+MODIFICAR WEB
+- Abrir VSC en la carpeta ~/Documents/mkdocsEnvironment/intropython
+- Realizar cambios, guardar y ver servidor actualizado (http://127.0.0.1:8000/)
+
+HACER EL BUILD en ~/Documents/mkdocsEnvironment/intropython
+mkdocs build
+
