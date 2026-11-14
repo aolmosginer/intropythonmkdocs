@@ -1,4 +1,4 @@
-# 💻 Programación a Python 🐍️
+# 💻 Programación en Python 🐍️
 
 Esta web está pensada para ser una guía en los primeros pasos de la programación con *Python*. Su propósito es proporcionar a los estudiantes una base sólida y clara en los conceptos fundamentales del lenguaje. 
 
@@ -7,4 +7,12 @@ A lo largo de sus apartados, se abordarán desde los tipos de datos más básico
 
 [Empezar →](0-introduccion.md)
 
+---
+<div style="display: flex; justify-content: center; align-items: center; margin: 0;">
+    <img src="imagenes/buzo.png" style="width: 120px; margin: 0 auto; display: inline-block;" />    
+    <img src="imagenes/xiqueta.png" style="width: 250px; margin: 0 auto; display: inline-block;" />
+    <img src="imagenes/barbaritat.png" style="width: 200px; margin: 0 auto; display: inline-block;" />
+</div>
+
+---
 

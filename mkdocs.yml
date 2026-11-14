@@ -11,6 +11,10 @@ nav:
   - 06-Ámbito: 6-ambito.md
   - 07-Módulos: 7-modulos.md
   - 08-Cosas chulas: 8-cosaschulas.md
-  - About: about.md
+  - Créditos: about.md
 
-theme: readthedocs
+theme: kpn
+#theme: readthedocs
+#theme: windmill
+#theme: dracula
+
