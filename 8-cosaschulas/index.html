@@ -1,136 +1,309 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>08-Cosas chulas - Intro Python</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "08-Cosas chulas";
-        var mkdocs_page_input_path = "8-cosaschulas.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>08-Cosas chulas - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Intro Python
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../0-introduccion/">¿Qué aprenderemos?</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../1-conceptos/">01-Conceptos</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../2-controlflujo/">02-Control del Flujo</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../3-bucles/">03-Bucles</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../4-colecciones/">04-Listas</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../5-funciones/">05-Funciones</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../6-ambito/">06-Ámbito</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../7-modulos/">07-Módulos</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">08-Cosas chulas</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#81-lectura-de-datos-de-un-csv">8.1 Lectura de datos de un CSV</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#82-escritura-de-datos-en-un-csv">8.2 Escritura de datos en un CSV</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#83-manipulacion-de-imagenes">8.3 Manipulación de imágenes</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#caracteristicas-de-las-imagenes">Características de las imágenes</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#recortar-copiar-y-pegar">Recortar, copiar y pegar</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#redimensionar-y-rotar">Redimensionar y rotar</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#84-creacion-de-graficos">8.4 Creación de gráficos</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#lineas-y-dispersion">Líneas y Dispersión</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#barras-y-graficos-circulares">Barras y gráficos circulares</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
-                </li>
-              </ul>
-      </div>
-    </div>
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Intro Python</a>
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
         
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">08-Cosas chulas</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-introduccion/" class="side-bar__link ">
+    ¿Qué aprenderemos?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptos/" class="side-bar__link ">
+    01-Conceptos
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlflujo/" class="side-bar__link ">
+    02-Control del Flujo
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-colecciones/" class="side-bar__link ">
+    04-Listas
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funciones/" class="side-bar__link ">
+    05-Funciones
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambito/" class="side-bar__link ">
+    06-Ámbito
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-modulos/" class="side-bar__link ">
+    07-Módulos
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    08-Cosas chulas
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Créditos
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">08-Cosas chulas</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#81-lectura-de-datos-de-un-csv">8.1 Lectura de datos de un CSV</a></li>
+                
+            
+                <li><a class="a" href="#82-escritura-de-datos-en-un-csv">8.2 Escritura de datos en un CSV</a></li>
+                
+            
+                <li><a class="a" href="#83-manipulacion-de-imagenes">8.3 Manipulación de imágenes</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#caracteristicas-de-las-imagenes">Características de las imágenes</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#recortar-copiar-y-pegar">Recortar, copiar y pegar</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#redimensionar-y-rotar">Redimensionar y rotar</a></li>
+                
+            
+                <li><a class="a" href="#84-creacion-de-graficos">8.4 Creación de gráficos</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#lineas-y-dispersion">Líneas y Dispersión</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#barras-y-graficos-circulares">Barras y gráficos circulares</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
               
-                <h1 id="8-hagamos-cosas-chulas-con-python">8. Hagamos cosas chulas con Python</h1>
+              <h1 id="8-hagamos-cosas-chulas-con-python">8. Hagamos cosas chulas con Python</h1>
 <h2 id="81-lectura-de-datos-de-un-csv">8.1 Lectura de datos de un CSV</h2>
 <p>Un archivo CSV (<em>Comma Separated Values</em>) contiene datos organizados por filas en las que la información se separa normalmente mediante comas (aunque se pueden utilizar otros caracteres de separación). Se suelen utilizar mucho en informática para guardar y procesar gran cantidad de datos, puesto que son ficheros que ocupan muy poco (archivos de texto plano) y que son compatibles con todas las plataformas (Windows, MacOS, Linux …).</p>
 <p>El siguiente ejemplo muestra un archivo que almacena información sobre un pedido de frutas. Cada fila contiene, separado por comas “,”:</p>
@@ -308,49 +481,102 @@
 <p>El atributo es una cadena de especificación de formato: la cadena '%.1f%%' especifica que el número debe mostrar un dígito después del punto decimal y después del decimal se muestra el símbolo de % (la cadena '%.1f' mostraría el mismo valor, pero sin el símbolo de % final).</p>
               
             </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../7-modulos/" class="btn btn-neutral float-left" title="07-Módulos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
+          </div>
         </div>
       </div>
+    </main>
 
-    </section>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../7-modulos/"
+                title="07-Módulos">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../about/"
+                title="Créditos"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
   </div>
 
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../7-modulos/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
-</div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
 
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-14 17:44:38.122901+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
 </body>
 </html>
