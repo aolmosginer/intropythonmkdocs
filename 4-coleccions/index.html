@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>04-Listas - Intro Python</title>
+  <title>04-Llistes - Intro Python</title>
 
   <!-- Page description -->
   
@@ -150,8 +150,8 @@
 -->
 
 <li>
-  <a href="../0-introduccion/" class="side-bar__link ">
-    ¿Qué aprenderemos?
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
   </a>
 </li>
 
@@ -161,8 +161,8 @@
 -->
 
 <li>
-  <a href="../1-conceptos/" class="side-bar__link ">
-    01-Conceptos
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
   </a>
 </li>
 
@@ -172,8 +172,8 @@
 -->
 
 <li>
-  <a href="../2-controlflujo/" class="side-bar__link ">
-    02-Control del Flujo
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
   </a>
 </li>
 
@@ -195,7 +195,7 @@
 
 <li>
   <a href="./" class="side-bar__link side-bar__link--active">
-    04-Listas
+    04-Llistes
   </a>
 </li>
 
@@ -205,8 +205,8 @@
 -->
 
 <li>
-  <a href="../5-funciones/" class="side-bar__link ">
-    05-Funciones
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
   </a>
 </li>
 
@@ -216,8 +216,8 @@
 -->
 
 <li>
-  <a href="../6-ambito/" class="side-bar__link ">
-    06-Ámbito
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
   </a>
 </li>
 
@@ -227,8 +227,8 @@
 -->
 
 <li>
-  <a href="../7-modulos/" class="side-bar__link ">
-    07-Módulos
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
   </a>
 </li>
 
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="../8-cosaschulas/" class="side-bar__link ">
-    08-Cosas chulas
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
   </a>
 </li>
 
@@ -250,7 +250,7 @@
 
 <li>
   <a href="../about/" class="side-bar__link ">
-    Créditos
+    Crèdits
   </a>
 </li>
 
@@ -261,7 +261,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">04-Listas</div>
+        <div class="title-bar__title">04-Llistes</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -270,16 +270,16 @@
         
           
             
-                <li><a class="a" href="#41-creacion-y-definicion-de-listas">4.1. Creación y Definición de Listas</a></li>
+                <li><a class="a" href="#41-creacio-i-definicio-de-llistes">4.1. Creació i Definició de Llistes</a></li>
                 
             
-                <li><a class="a" href="#42-acceso-y-modificacion-de-elementos-de-una-lista">4.2. Acceso y Modificación de Elementos de una Lista</a></li>
+                <li><a class="a" href="#42-acces-i-modificacio-delements-duna-llista">4.2. Accés i Modificació d'Elements d'una Llista</a></li>
                 
             
-                <li><a class="a" href="#43-agregar-y-eliminar-elementos">4.3. Agregar y Eliminar Elementos</a></li>
+                <li><a class="a" href="#43-afegir-i-eliminar-elements">4.3. Afegir i Eliminar Elements</a></li>
                 
             
-                <li><a class="a" href="#44-funciones-incorporadas">4.4. Funciones incorporadas</a></li>
+                <li><a class="a" href="#44-funcions-incorporades">4.4. Funcions incorporades</a></li>
                 
             
           
@@ -293,154 +293,153 @@
             <div class="card__body">
 
               
-              <h1 id="4-trabajando-con-colecciones-listas">4: Trabajando con Colecciones: Listas</h1>
-<h2 id="41-creacion-y-definicion-de-listas">4.1. Creación y Definición de Listas</h2>
-<p>Hasta ahora, hemos trabajado con datos individuales en variables. Las listas representan un salto fundamental, permitiéndonos gestionar colecciones enteras de datos, sobre las cuales podemos iterar con los bucles for que ya conocemos. Una <strong>lista</strong> es una secuencia ordenada de elementos que nos permite agrupar múltiples valores, de cualquier tipo, en una sola variable.</p>
-<p>La sintaxis para crear una lista es sencilla: se encierran entre corchetes <code>[]</code> los elementos separados por comas.</p>
+              <h1 id="4-treballant-amb-colleccions-llistes">4: Treballant amb Col·leccions: Llistes</h1>
+<h2 id="41-creacio-i-definicio-de-llistes">4.1. Creació i Definició de Llistes</h2>
+<p>Fins ara, hem treballat amb dades individuals en variables. Les llistes representen un salt fonamental, permetent-nos gestionar col·leccions senceres de dades, sobre les quals podem iterar amb els bucles for que ja coneixem. Una <strong>llista</strong> és una seqüència ordenada d'elements que ens permet agrupar múltiples valors, de qualsevol tipus, en una sola variable.</p>
+<p>La sintaxi per a crear una llista és senzilla: es tanquen entre claudàtors <code>[]</code> els elements separats per comes.</p>
 <pre><code class="language-python">[elemento0, elemento1, ...]
 </code></pre>
-<p>Las listas son muy flexibles y pueden contener elementos de diferentes tipos de datos, incluso mezclados en la misma lista.</p>
-<pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;palta&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
+<p>Les llistes són molt flexibles i poden contindre elements de diferents tipus de dades, fins i tot barrejats en la mateixa llista.</p>
+<pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;platanos&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
 </code></pre>
-<p>También es posible crear listas vacías, que pueden ser llenadas más tarde, de dos formas:</p>
+<p>També és possible crear llistes buides, que poden ser omplides més tard, de dues maneres:</p>
 <pre><code class="language-python">vacia1 = []
 vacia2 = list()
 </code></pre>
-<p>Además, un elemento de una lista puede ser, a su vez, otra lista. Esto se conoce como <strong>listas anidadas</strong> y permite crear estructuras de datos más complejas.</p>
-<p>Una vez que hemos creado una lista, el siguiente paso es aprender a acceder y manipular los elementos que contiene.</p>
-<h2 id="42-acceso-y-modificacion-de-elementos-de-una-lista">4.2. Acceso y Modificación de Elementos de una Lista</h2>
-<p>Una característica clave de las listas en <em>Python</em> es que son <strong>mutables</strong>, lo que significa que su contenido puede ser modificado después de su creación. Podemos cambiar, agregar o eliminar elementos.</p>
-<p>Para acceder a un elemento individual dentro de una lista, utilizamos su <strong>índice</strong>, que es su posición numérica. Es muy importante recordar que en <em>Python</em> (y en la gran mayoría de los lenguajes de programación), <strong>la numeración de los índices comienza en 0</strong>. El primer elemento está en el índice 0, el segundo en el índice 1, y así sucesivamente. La sintaxis para acceder es <code>nombre_lista[indice]</code>.</p>
+<p>A més, un element d'una llista pot ser, al seu torn, una altra llista. Això es coneix com a <strong>llistes aniuades</strong> i permet crear estructures de dades més complexes.</p>
+<p>Una vegada que hem creat una llista, el següent pas és aprendre a accedir i manipular els elements que conté.</p>
+<h2 id="42-acces-i-modificacio-delements-duna-llista">4.2. Accés i Modificació d'Elements d'una Llista</h2>
+<p>Una característica clau de les llistes en <em>Python</em> és que són <strong>mutables</strong>, la qual cosa significa que el seu contingut pot ser modificat després de la seua creació. Podem canviar, afegir o eliminar elements.</p>
+<p>Per a accedir a un element individual dins d'una llista, utilitzem el seu <strong>índex</strong>, que és la seua posició numèrica. És molt important recordar que en <em>Python</em> (i en la gran majoria dels llenguatges de programació), <strong>la numeració dels índexs comença en 0</strong>. El primer element està en l'índex 0, el segon en l'índex 1, i així successivament. La sintaxi per a accedir és <code>nombre_lista[indice]</code>.</p>
 <pre><code class="language-python">no_olvidar = [&quot;huevos&quot;, &quot;platanos&quot;, &quot;lechuga&quot;, &quot;naranjas&quot;, 7000]
 print(no_olvidar[2]) 
-# Salida: lechuga
+# Eixida: lechuga
 </code></pre>
-<p>Para modificar un elemento existente, simplemente asignamos un nuevo valor a su posición de índice:</p>
+<p>Per a modificar un element existent, simplement assignem un nou valor a la seua posició d'índex:</p>
 <pre><code class="language-python">no_olvidar[1] = &quot;queso&quot;
 print(no_olvidar) 
-# Salida: ['huevos', 'queso', 'lechuga', 'naranjas', 7000]
+# Eixida: ['huevos', 'queso', 'lechuga', 'naranjas', 7000]
 </code></pre>
-<p>Además de acceder a elementos individuales, podemos acceder a sub-secciones de una lista usando la técnica de <strong><em>slicing</em></strong>. La sintaxis es <code>lista[inicio:fin:step]</code>, y extrae una nueva lista que contiene los elementos desde el índice inicio hasta fin - 1.</p>
+<p>A més d'accedir a elements individuals, podem accedir a subseccions d'una llista usant la tècnica de <strong><em>slicing</em></strong>. La sintaxi és <code>lista[inicio:fin:step]</code>, i extrau una nova llista que conté els elements des de l'índex inici fins a fi - 1.</p>
 <pre><code class="language-python">print(no_olvidar[1:4]) 
-# Salida: ['queso', 'lechuga', 'naranjas']
+# Eixida: ['queso', 'lechuga', 'naranjas']
 </code></pre>
-<p>Para recorrer todos los elementos de una lista de manera sencilla, podemos usar un bucle <code>for</code>:</p>
+<p>Per a recórrer tots els elements d'una llista de manera senzilla, podem usar un bucle <code>for</code>:</p>
 <pre><code class="language-python">for elemento in no_olvidar:
     print(&quot;No olvides&quot;, elemento)
 </code></pre>
-<p>En este ejemplo, en cada iteración del bucle <code>for</code>, la variable elemento tomará un valor diferente de la lista <code>no_olvidar</code>, comenzando por el primero <code>queso</code> y llegando hasta el último <code>7000</code>.</p>
-<pre><code class="language-python"># Salida
-No olvides huevos
-No olvides palta
+<p>En aquest exemple, en cada iteració del bucle <code>for</code>, la variable element prendrà un valor diferent de la llista <code>no_olvidar</code>, començant pel primer <code>queso</code> i arribant fins a l'últim <code>7000</code>.</p>
+<pre><code class="language-python">No olvides huevos
+No olvides platanos
 No olvides lechuga
 No olvides naranjas
 No olvides 7000
 </code></pre>
-<p>Sabiendo cómo acceder y modificar elementos existentes, el siguiente problema es: ¿cómo podemos cambiar el número total de elementos en una lista?</p>
-<h2 id="43-agregar-y-eliminar-elementos">4.3. Agregar y Eliminar Elementos</h2>
-<p>Las listas son dinámicas, lo que significa que su tamaño puede cambiar durante la ejecución de un programa. <em>Python</em> ofrece varios métodos para agregar y quitar elementos de una lista de forma controlada.</p>
-<p>Para agregar elementos, podemos utilizar los siguientes métodos:</p>
+<p>Sabent com accedir i modificar elements existents, el següent problema és: com podem canviar el nombre total d'elements en una llista?</p>
+<h2 id="43-afegir-i-eliminar-elements">4.3. Afegir i Eliminar Elements</h2>
+<p>Les llistes són dinàmiques, la qual cosa significa que la seua grandària pot canviar durant l'execució d'un programa. <em>Python</em> ofereix diversos mètodes per a afegir i llevar elements d'una llista de manera controlada.</p>
+<p>Per a afegir elements, podem utilitzar els següents mètodes:</p>
 <ul>
-<li><strong><code>lista.append(elemento)</code></strong>: Agrega un único <code>elemento</code> al <strong>final</strong> de la lista</li>
+<li><strong><code>lista.append(elemento)</code></strong>: Afig un únic <code>elemento</code> al <strong>final</strong> de la llista</li>
 </ul>
 <pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;pera&quot;]
 frutas.append(&quot;naranja&quot;)
 print(frutas)
-# Resultado: ['manzana', 'pera', 'naranja']
+# Resultat: ['manzana', 'pera', 'naranja']
 </code></pre>
 <ul>
-<li><strong><code>lista.extend(lista2)</code></strong>: Agrega todos los elementos de <code>lista2</code> al final de la lista original, extendiéndola.</li>
+<li><strong><code>lista.extend(lista2)</code></strong>: Afig tots els elements de <code>lista2</code> al final de la llista original, estenent-la.</li>
 </ul>
 <pre><code class="language-python">numeros = [1, 2, 3]
 mas_numeros = [4, 5, 6]
 numeros.extend(mas_numeros)
 print(numeros)
-# Resultado: [1, 2, 3, 4, 5, 6]
+# Resultat: [1, 2, 3, 4, 5, 6]
 </code></pre>
 <ul>
-<li><strong><code>lista.insert(index, elemento)</code></strong>: Inserta un <code>elemento</code> en la posición específica indicada por <code>index</code>, desplazando los elementos existentes hacia la derecha.</li>
+<li><strong><code>lista.insert(index, elemento)</code></strong>: Insereix un <code>elemento</code> en la posició específica indicada per <code>index</code>, desplaçant els elements existents cap a la dreta.</li>
 </ul>
 <pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;]
-colores.insert(1, &quot;amarillo&quot;)  # Inserta en la posición 1
+colores.insert(1, &quot;amarillo&quot;)  # Insereix en la posició 1
 print(colores)
-# Resultado: ['rojo', 'amarillo', 'verde', 'azul']
+# Resultat: ['rojo', 'amarillo', 'verde', 'azul']
 </code></pre>
-<p>Para eliminar elementos podemos usar los siguientes métodos:</p>
+<p>Per a eliminar elements podem usar els següents mètodes:</p>
 <ul>
-<li><strong><code>variable = lista.pop()</code></strong>: Elimina y retorna el <strong>último</strong> elemento de la lista.</li>
+<li><strong><code>variable = lista.pop()</code></strong>: Elimina i retorna l'<strong>últim</strong> element de la llista.</li>
 </ul>
 <pre><code class="language-python">animales = [&quot;gato&quot;, &quot;perro&quot;, &quot;conejo&quot;]
 ultimo = animales.pop()
 print(&quot;Elemento eliminado:&quot;, ultimo)
 print(animales)
-# Resultado:
+# Resultat:
 # Elemento eliminado: conejo
 # ['gato', 'perro']
 </code></pre>
 <ul>
-<li><strong><code>variable = lista.pop(indice)</code></strong>: Si quieres eliminar un elemento por <code>indice</code>.</li>
+<li><strong><code>variable = lista.pop(indice)</code></strong>: Si vols eliminar un element per <code>indice</code>.</li>
 </ul>
 <pre><code class="language-python">primer_animal = animales.pop(0)
 print(&quot;Primer animal eliminado:&quot;, primer_animal)
-# Resultado: Primer animal eliminado: gato
+# Resultat: Primer animal eliminado: gato
 </code></pre>
 <ul>
-<li><strong><code>variable = lista.remove(valor)</code></strong>: Elimina la primera aparición del <code>valor</code> indicado.</li>
+<li><strong><code>variable = lista.remove(valor)</code></strong>: Elimina la primera aparició del <code>valor</code> indicat.</li>
 </ul>
 <pre><code class="language-python">numeros = [10, 20, 30, 20, 40]
-numeros.remove(20)  # Elimina el primer 20 encontrado
+numeros.remove(20)  # Elimina el primer 20 trobat
 print(numeros)
-# Resultado: [10, 30, 20, 40]
+# Resultat: [10, 30, 20, 40]
 </code></pre>
-<p>Ahora que sabemos cómo manipular la estructura de las listas, exploremos otras funciones y métodos útiles que nos proporcionan información sobre ellas.</p>
-<h2 id="44-funciones-incorporadas">4.4. Funciones incorporadas</h2>
-<p><em>Python</em> proporciona un conjunto de funciones y métodos incorporados (<a href="https://docs.python.org/es/3.13/library/functions.html"><em>Built-In Functions</em></a>) que nos permiten realizar operaciones comunes sobre las listas de manera muy eficiente, sin tener que escribir la lógica nosotros mismos.</p>
+<p>Ara que sabem com manipular l'estructura de les llistes, explorem altres funcions i mètodes útils que ens proporcionen informació sobre elles.</p>
+<h2 id="44-funcions-incorporades">4.4. Funcions incorporades</h2>
+<p><em>Python</em> proporciona un conjunt de funcions i mètodes incorporats (<a href="https://docs.python.org/es/3.13/library/functions.html"><em>Built-In Functions</em></a>) que ens permeten realitzar operacions comunes sobre les llistes de manera molt eficient, sense haver d'escriure la lògica nosaltres mateixos.</p>
 <ul>
-<li><strong><code>len(lista)</code></strong>: Devuelve un número entero que representa la cantidad de elementos que hay en la <code>lista</code>.</li>
+<li><strong><code>len(lista)</code></strong>: Torna un nombre enter que representa la quantitat d'elements que hi ha en la <code>lista</code>.</li>
 </ul>
 <pre><code class="language-python">edades = [18, 25, 30, 22]
 cantidad = len(edades)
 print(&quot;Número de elementos:&quot;, cantidad)
-# Resultado: Número de elementos: 4
+# Resultat: Número de elementos: 4
 </code></pre>
 <ul>
-<li><strong><code>elemento in lista</code></strong>: Es un operador que verifica si un <code>elemento</code> existe dentro de una <code>lista</code>. Devuelve <code>True</code> si lo encuentra, y <code>False</code> en caso contrario.</li>
+<li><strong><code>elemento in lista</code></strong>: És un operador que verifica si un <code>elemento</code> existeix dins d'una <code>lista</code>. Torna <code>True</code> si el troba, i <code>False</code> en cas contrari.</li>
 </ul>
 <pre><code class="language-python">frutas = [&quot;manzana&quot;, &quot;naranja&quot;, &quot;pera&quot;]
 print(&quot;manzana&quot; in frutas)  # True
 print(&quot;sandía&quot; in frutas)   # False
 </code></pre>
 <ul>
-<li><strong><code>lista.index(elemento)</code></strong>: Devuelve la posición (índice) de la primera aparición de un <code>elemento</code> en la lista. Si el elemento no se encuentra en la lista, genera un error de tipo <code>ValueError</code>.</li>
+<li><strong><code>lista.index(elemento)</code></strong>: Torna la posició (índex) de la primera aparició d'un <code>elemento</code> en la llista. Si l'element no es troba en la llista, genera un error de tipus <code>ValueError</code>.</li>
 </ul>
 <pre><code class="language-python">colores = [&quot;rojo&quot;, &quot;verde&quot;, &quot;azul&quot;, &quot;verde&quot;]
 posicion = colores.index(&quot;verde&quot;)
 print(&quot;Primer 'verde' encontrado en el índice:&quot;, posicion)
-# Resultado: Primer 'verde' encontrado en el índice: 1
-# OJO: Si el elemento no existe, ocurre un error:
+# Resultat: Primer 'verde' encontrado en el índice: 1
+# COMPTE: Si l'element no existeix, ocorre un error:
 # colores.index(&quot;amarillo&quot;)  # ValueError
 </code></pre>
 <ul>
-<li><strong><code>string.split(separador)</code></strong>: Aunque es un método de las cadenas de texto <code>str</code>, es extremadamente útil para crear listas. Convierte una cadena de texto en una lista de subcadenas, dividiéndola en cada aparición del <code>separador</code> especificado.</li>
+<li><strong><code>string.split(separador)</code></strong>: Encara que és un mètode de les cadenes de text <code>str</code>, és extremadament útil per a crear llistes. Converteix una cadena de text en una llista de subcadenes, dividint-la en cada aparició del <code>separador</code> especificat.</li>
 </ul>
 <pre><code class="language-python">texto = &quot;Python,Java,C++,JavaScript&quot;
 lenguajes = texto.split(&quot;,&quot;)
 print(lenguajes)
-# Resultado: ['Python', 'Java', 'C++', 'JavaScript']
+# Resultat: ['Python', 'Java', 'C++', 'JavaScript']
 frase = &quot;Hola mundo desde Python&quot;
 palabras = frase.split(&quot; &quot;)
 print(palabras)
-# Resultado: ['Hola', 'mundo', 'desde', 'Python']
+# Resultat: ['Hola', 'mundo', 'desde', 'Python']
 </code></pre>
 <ul>
-<li><strong><code>lista.sort()</code></strong>: Ordena los elementos de la lista de forma ascendente. <strong>Este método modifica la lista original</strong>. Si se aplica a una lista de listas, ordena las sub-listas basándose en el primer elemento de cada una.</li>
+<li><strong><code>lista.sort()</code></strong>: Ordena els elements de la llista de manera ascendent. <strong>Aquest mètode modifica la llista original</strong>. Si s'aplica a una llista de llistes, ordena les sublistes basant-se en el primer element de cadascuna.</li>
 </ul>
 <pre><code class="language-python">numeros = [5, 2, 9, 1]
 numeros.sort()
 print(numeros)
-# Resultado: [1, 2, 5, 9]
+# Resultat: [1, 2, 5, 9]
 </code></pre>
-<p>Con un buen manejo de las listas, podemos empezar a organizar nuestro código de manera más eficiente utilizando funciones.</p>
+<p>Amb un bon maneig de les llistes, podem començar a organitzar el nostre codi de manera més eficient utilitzant funcions.</p>
               
             </div>
           </div>
@@ -466,8 +465,8 @@ print(numeros)
             
             
               <a class="footer__link padding-top-0 navigation-next"
-                href="../5-funciones/"
-                title="05-Funciones"/>
+                href="../5-funcions/"
+                title="05-Funcions"/>
                 Next Page &#8594;
               </a>
             
@@ -483,7 +482,7 @@ print(numeros)
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-15 08:58:49.942512+00:00
+  Docs Build Date UTC : 2026-11-15 17:31:18.933956+00:00
   -->
 
   <!--

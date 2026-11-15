@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>02-Control del Flujo - Intro Python</title>
+  <title>02-Control del Flux - Intro Python</title>
 
   <!-- Page description -->
   
@@ -150,8 +150,8 @@
 -->
 
 <li>
-  <a href="../0-introduccion/" class="side-bar__link ">
-    ¿Qué aprenderemos?
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
   </a>
 </li>
 
@@ -161,8 +161,8 @@
 -->
 
 <li>
-  <a href="../1-conceptos/" class="side-bar__link ">
-    01-Conceptos
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
   </a>
 </li>
 
@@ -173,7 +173,7 @@
 
 <li>
   <a href="./" class="side-bar__link side-bar__link--active">
-    02-Control del Flujo
+    02-Control del Flux
   </a>
 </li>
 
@@ -194,8 +194,8 @@
 -->
 
 <li>
-  <a href="../4-colecciones/" class="side-bar__link ">
-    04-Listas
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
   </a>
 </li>
 
@@ -205,8 +205,8 @@
 -->
 
 <li>
-  <a href="../5-funciones/" class="side-bar__link ">
-    05-Funciones
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
   </a>
 </li>
 
@@ -216,8 +216,8 @@
 -->
 
 <li>
-  <a href="../6-ambito/" class="side-bar__link ">
-    06-Ámbito
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
   </a>
 </li>
 
@@ -227,8 +227,8 @@
 -->
 
 <li>
-  <a href="../7-modulos/" class="side-bar__link ">
-    07-Módulos
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
   </a>
 </li>
 
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="../8-cosaschulas/" class="side-bar__link ">
-    08-Cosas chulas
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
   </a>
 </li>
 
@@ -250,7 +250,7 @@
 
 <li>
   <a href="../about/" class="side-bar__link ">
-    Créditos
+    Crèdits
   </a>
 </li>
 
@@ -261,7 +261,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">02-Control del Flujo</div>
+        <div class="title-bar__title">02-Control del Flux</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -270,17 +270,17 @@
         
           
             
-                <li><a class="a" href="#21-la-funcion-print">2.1. La Función print()</a></li>
+                <li><a class="a" href="#21-la-funcio-print">2.1. La Funció print()</a></li>
                 
             
-                <li><a class="a" href="#22-la-funcion-input">2.2. La Función input()</a></li>
+                <li><a class="a" href="#22-la-funcio-input">2.2. La Funció input()</a></li>
                 
             
-                <li><a class="a" href="#23-estructuras-condicionales">2.3. Estructuras Condicionales</a></li>
+                <li><a class="a" href="#23-estructures-condicionals">2.3. Estructures Condicionals</a></li>
                 
                     <li class="child-li"><a class="a child" href="#if-else">if-else</a></li>
                 
-                    <li class="child-li"><a class="a child" href="#if-sin-else">if sin else</a></li>
+                    <li class="child-li"><a class="a child" href="#if-sense-else">if sense else</a></li>
                 
                     <li class="child-li"><a class="a child" href="#elif">elif</a></li>
                 
@@ -298,84 +298,84 @@
             <div class="card__body">
 
               
-              <h1 id="2-interactividad-y-control-de-flujo">2: Interactividad y Control de Flujo</h1>
-<h2 id="21-la-funcion-print">2.1. La Función <code>print()</code></h2>
-<p>La función <code>print()</code> es la herramienta principal en <em>Python</em> para comunicar resultados y mostrar información en la pantalla del usuario (conocida como la salida estándar). Nos permite ver el resultado de nuestras expresiones, el valor de nuestras variables o simplemente mostrar mensajes de texto.</p>
-<p>Su uso más básico consiste en pasarle el valor que queremos mostrar:</p>
-<pre><code class="language-python">print(&quot;Hola mundo&quot;) # Muestra el texto Hola mundo
+              <h1 id="2-interactivitat-i-control-de-flux">2: Interactivitat i Control de Flux</h1>
+<h2 id="21-la-funcio-print">2.1. La Funció <code>print()</code></h2>
+<p>La funció <code>print()</code> és l'eina principal en <em>Python</em> per a comunicar resultats i mostrar informació en la pantalla de l'usuari (coneguda com l'eixida estàndard). Ens permet veure el resultat de les nostres expressions, el valor de les nostres variables o simplement mostrar missatges de text.</p>
+<p>El seu ús més bàsic consisteix a passar-li el valor que volem mostrar:</p>
+<pre><code class="language-python">print(&quot;Hola mundo&quot;) # Mostra el text Hola mundo
 fahrenheit = 91
 celsius = (fahrenheit - 32) * 5/9
-print(celsius) # Muestra el valor de la variable celsius
+print(celsius) # Mostra el valor de la variable celsius
 </code></pre>
-<p>También es posible imprimir múltiples elementos en una sola llamada a <code>print()</code>, separándolos por comas. Por defecto, <em>Python</em> los mostrará en la misma línea, separados por un espacio.</p>
+<p>També és possible imprimir múltiples elements en una sola crida a <code>print()</code>, separant-los per comes. Per defecte, <em>Python</em> els mostrarà en la mateixa línia, separats per un espai.</p>
 <pre><code class="language-python">episodio = 3
 print(&quot;Episodio&quot;, episodio, &quot;del libro&quot;)
-# Salida: Episodio 3 del libro
+# Eixida: Episodio 3 del libro
 </code></pre>
-<p>La función <code>print()</code> incluye parámetros opcionales que nos permiten modificar su comportamiento por defecto:</p>
+<p>La funció <code>print()</code> inclou paràmetres opcionals que ens permeten modificar el seu comportament per defecte:</p>
 <ul>
-<li><code>sep=str</code>: Este parámetro permite cambiar el separador que se usa entre los elementos. En lugar del espacio por defecto, podemos usar cualquier otra cadena de texto.</li>
-<li><code>end=str</code>: Por defecto, cada llamada a <code>print()</code> termina con un salto de línea. El parámetro end permite especificar un carácter o cadena de texto diferente para el final, lo que posibilita que la siguiente llamada a <code>print()</code> continúe en la misma línea.</li>
+<li><code>sep=str</code>: Aquest paràmetre permet canviar el separador que s'usa entre els elements. En lloc de l'espai per defecte, podem usar qualsevol altra cadena de text.</li>
+<li><code>end=str</code>: Per defecte, cada crida a <code>print()</code> acaba amb un salt de línia. El paràmetre end permet especificar un caràcter o cadena de text diferent per al final, la qual cosa possibilita que la següent crida a <code>print()</code> continue en la mateixa línia.</li>
 </ul>
-<p>Mostrar información es útil, pero para crear programas verdaderamente dinámicos, también necesitamos que puedan recibir información del usuario.</p>
-<h2 id="22-la-funcion-input">2.2. La Función <code>input()</code></h2>
-<p>La función <code>input()</code> es fundamental para crear programas interactivos. Detiene la ejecución del programa, muestra un mensaje al usuario (si se le proporciona uno) y espera a que este escriba algo con el teclado y presione <code>Enter</code>.</p>
-<p>La sintaxis básica para leer la entrada del usuario y almacenarla en una variable es:</p>
+<p>Mostrar informació és útil, però per a crear programes verdaderament dinàmics, també necessitem que puguen rebre informació de l'usuari.</p>
+<h2 id="22-la-funcio-input">2.2. La Funció <code>input()</code></h2>
+<p>La funció <code>input()</code> és fonamental per a crear programes interactius. Deté l'execució del programa, mostra un missatge a l'usuari (si se li'n proporciona un) i espera que aquest escriga alguna cosa amb el teclat i prema <code>Enter</code>.</p>
+<p>La sintaxi bàsica per a llegir l'entrada de l'usuari i emmagatzemar-la en una variable és:</p>
 <pre><code class="language-python">variable = input(texto)
 </code></pre>
-<p>Aquí, texto es el mensaje opcional que se le mostrará al usuario para indicarle qué dato debe ingresar.</p>
-<p>Un punto crítico a recordar es que la función <code>input()</code> <strong>siempre devuelve los datos ingresados por el usuario como una cadena de texto (<code>str</code>)</strong>, sin importar si el usuario escribió números. Intentar realizar operaciones matemáticas directamente con la salida de <code>input()</code> resultará en un <code>TypeError</code>.</p>
-<p>Para poder trabajar correctamente con la entrada del usuario, es necesario realizar una <strong>"conversión de tipos"</strong>. <em>Python</em> proporciona funciones para convertir un valor de un tipo a otro:</p>
+<p>Ací, text és el missatge opcional que es mostrarà a l'usuari per a indicar-li quina dada ha d'introduir.</p>
+<p>Un punt crític a recordar és que la funció <code>input()</code> <strong>sempre torna les dades introduïdes per l'usuari com una cadena de text (<code>str</code>)</strong>, sense importar si l'usuari va escriure nombres. Intentar realitzar operacions matemàtiques directament amb l'eixida d'<code>input()</code> resultarà en un <code>TypeError</code>.</p>
+<p>Per a poder treballar correctament amb l'entrada de l'usuari, és necessari realitzar una <strong>"conversió de tipus"</strong>. <em>Python</em> proporciona funcions per a convertir un valor d'un tipus a un altre:</p>
 <ul>
-<li><code>int()</code>: Convierte un valor a un número entero</li>
+<li><code>int()</code>: Converteix un valor a un nombre enter</li>
 <li>
-<p><code>float()</code>: Convierte un valor a un número de punto flotante</p>
+<p><code>float()</code>: Converteix un valor a un nombre de punt flotant</p>
 </li>
 <li>
-<p><code>bool()</code>: Convierte un valor a un booleano</p>
+<p><code>bool()</code>: Converteix un valor a un booleà</p>
 </li>
 </ul>
-<p>Podemos combinar <code>input()</code> con estas funciones para leer y convertir los datos en un solo paso:</p>
+<p>Podem combinar <code>input()</code> amb aquestes funcions per a llegir i convertir les dades en un sol pas:</p>
 <pre><code class="language-python">lec = int(input(&quot;¿Cuántas lecciones has visto? &quot;))
 total = 15
-faltan = total - lec # Ahora esto funciona, porque 'lec' es un int
+faltan = total - lec # Ara això funciona, perquè 'lec' és un int
 print(&quot;Te faltan&quot;, faltan, &quot;lecciones. ¡Ánimo!&quot;)
-# Resultado por pantalla:
-¿Cuántas lecciones has visto? 3
-Te faltan 12 lecciones. ¡Ánimo!
+# Resultat per pantalla:
+# ¿Cuántas lecciones has visto? 3
+# Te faltan 12 lecciones. ¡Ánimo!
 </code></pre>
-<p>Ahora que nuestro programa puede recibir una calificación, un nombre o una temperatura del usuario, ¿cómo podemos hacer que reaccione de forma inteligente a esa información? La respuesta está en las estructuras condicionales.</p>
-<h2 id="23-estructuras-condicionales">2.3. Estructuras Condicionales</h2>
-<p>Las estructuras condicionales son la base de la toma de decisiones en programación. Permiten que un programa evalúe una condición (una expresión que resulta ser <code>True</code> o <code>False</code>) y ejecute diferentes bloques de código dependiendo del resultado. Esto le da al programa la capacidad de reaccionar de manera diferente a distintas entradas o situaciones.</p>
+<p>Ara que el nostre programa pot rebre una qualificació, un nom o una temperatura de l'usuari, com podem fer que reaccione de manera intel·ligent a aquesta informació? La resposta està en les estructures condicionals.</p>
+<h2 id="23-estructures-condicionals">2.3. Estructures Condicionals</h2>
+<p>Les estructures condicionals són la base de la presa de decisions en programació. Permeten que un programa avalue una condició (una expressió que resulta ser <code>True</code> o <code>False</code>) i execute diferents blocs de codi depenent del resultat. Això li dona al programa la capacitat de reaccionar de manera diferent a distintes entrades o situacions.</p>
 <h3 id="if-else">if-else</h3>
 <p><img alt="Diagrama" src="../imagenes/image2.png" /></p>
-<p>Esta es la estructura condicional más completa. Evalúa una condición (expresión lógica): si es <code>True</code>, ejecuta el bloque de código que sigue al <code>if</code>; si es <code>False</code>, ejecuta un bloque de código alternativo dentro de la cláusula <code>else</code>.</p>
-<p><strong>La sintaxis requiere que los bloques de código estén indentados</strong> (generalmente con 4 espacios o tabulado) para indicar que pertenecen a la estructura.</p>
-<pre><code class="language-python"># Sintaxis
+<p>Aquesta és l'estructura condicional més completa. Avalua una condició (expressió lògica): si és <code>True</code>, executa el bloc de codi que segueix a l'<code>if</code>; si és <code>False</code>, executa un bloc de codi alternatiu dins de la clàusula <code>else</code>.</p>
+<p><strong>La sintaxi requereix que els blocs de codi estiguen indentats</strong> (generalment amb 4 espais o tabulat) per a indicar que pertanyen a l'estructura.</p>
+<pre><code class="language-python"># Sintaxi
 if &lt;condición&gt;:
-    # Bloque de código si la condición es True
+    # Bloc de codi si la condició és True
 else:
-    # Bloque de código si la condición es False
-# Ejemplo
+    # Bloc de codi si la condició és False
+# Exemple
 llueve = True
 if llueve == True:
     print(&quot;Llevaré paraguas&quot;)
 else:
     print(&quot;No llevaré paraguas&quot;)
-# Resultado: Muestra &quot;Llevaré paraguas&quot;
+# Resultat: Muestra &quot;Llevaré paraguas&quot;
 </code></pre>
-<h3 id="if-sin-else">if sin else</h3>
+<h3 id="if-sense-else">if sense else</h3>
 <p><img alt="" src="../imagenes/image3.png" /></p>
-<p>El bloque <code>else</code> es completamente opcional. Un <code>if</code> puede existir por sí solo. En este caso, el bloque de código indentado se ejecutará únicamente si la condición es <code>True</code>. Si la condición es <code>False</code>, el programa simplemente saltará ese bloque y continuará con la siguiente instrucción fuera del <code>if</code>.</p>
+<p>El bloc <code>else</code> és completament opcional. Un <code>if</code> pot existir per si sol. En aquest cas, el bloc de codi indentat s'executarà únicament si la condició és <code>True</code>. Si la condició és <code>False</code>, el programa simplement saltarà aquest bloc i continuarà amb la següent instrucció fora de l'<code>if</code>.</p>
 <pre><code class="language-python">charco = True
 if charco == True:
     print(&quot;A saltar!&quot;)
-print(&quot;Fin de la caminata&quot;) # Esta línea se ejecuta siempre al estar fuera del if
+print(&quot;Fin de la caminata&quot;) # Aquesta línia s'executa sempre en estar fora de l'if
 </code></pre>
-<p>Cabe destacar que no puede existir una cláusula <code>else</code> sin una instrucción <code>if</code> que la preceda.</p>
+<p>Cal destacar que no pot existir una clàusula <code>else</code> sense una instrucció <code>if</code> que la preceda.</p>
 <h3 id="elif">elif</h3>
-<p>Cuando necesitamos evaluar más de dos posibles caminos, podemos encadenar múltiples condiciones usando <code>elif</code> (contracción de "<code>else if</code>"). El programa evalúa las condiciones en orden: <strong>la primera que resulte <code>True</code> ejecutará su bloque de código, y el resto de la estructura <code>elif/else</code> será ignorada</strong>. El bloque else final es opcional y actúa como un caso por defecto si ninguna de las condiciones anteriores fue <code>True</code>.</p>
-<pre><code class="language-python"># Sintaxis General
+<p>Quan necessitem avaluar més de dos possibles camins, podem encadenar múltiples condicions usant <code>elif</code> (contracció de "<code>else if</code>"). El programa avalua les condicions en ordre: <strong>la primera que resulte <code>True</code> executarà el seu bloc de codi, i la resta de l'estructura <code>elif/else</code> serà ignorada</strong>. El bloc else final és opcional i actua com un cas per defecte si cap de les condicions anteriors va ser <code>True</code>.</p>
+<pre><code class="language-python"># Sintaxi General
 if &lt;condicion1&gt;:
     # ...
 elif &lt;condicion2&gt;:
@@ -384,7 +384,7 @@ elif &lt;condicion3&gt;:
     # ...
 else:
     # ...
-# Ejemplo
+# Exemple
 temperatura = 15
 llueve = True
 if temperatura &gt;= 18:
@@ -393,22 +393,22 @@ elif llueve == True:
     print(&quot;Llevaré paraguas y abrigo&quot;)
 else:
     print(&quot;Solo llevaré abrigo&quot;)
-# Resultado: Mostrará &quot;Llevaré paraguas y abrigo&quot;
+# Resultat: Mostrará &quot;Llevaré paraguas y abrigo&quot;
 </code></pre>
 <h3 id="match-case">match-case</h3>
-<p>Es una estructura que permite comparar un valor contra distintos patrones y ejecutar el bloque de código correspondiente al primer patrón que coincida.</p>
+<p>És una estructura que permet comparar un valor contra diferents patrons i executar el bloc de codi corresponent al primer patró que coincidisca.</p>
 <p><img alt="" src="../imagenes/image4.png" /></p>
-<p>Es similar al <code>switch</code> de otros lenguajes, pero más flexible.</p>
+<p>És similar al <code>switch</code> d'altres llenguatges, però més flexible.</p>
 <pre><code class="language-python">match &lt;variable&gt;:
     case &lt;patron1&gt;:
-        # código si coincide patron1
+        # codi si coincideix patron1
     case &lt;patron2&gt;:
-        # código si coincide patron2
+        # codi si coincideix patron2
     case _:
-        # caso por defecto
+        # cas per defecte
 </code></pre>
-<p><em>Python</em> evalúa los <code>case</code> en orden y ejecuta el primero que coincide. El <code>case _</code> funciona como el <code>else</code> de un <code>if</code> (por defecto, si no se cumple ninguno de los anteriores).</p>
-<p>La estructura <code>match-case</code> sirve para evitar muchos <code>if</code> / <code>elif</code> / <code>else</code> y hacer el código más legible.</p>
+<p><em>Python</em> avalua els <code>case</code> en ordre i executa el primer que coincideix. El <code>case _</code> funciona com l'<code>else</code> d'un <code>if</code> (per defecte, si no es compleix cap dels anteriors).</p>
+<p>L'estructura <code>match-case</code> serveix per a evitar molts <code>if</code> / <code>elif</code> / <code>else</code> i fer el codi més llegible.</p>
 <pre><code class="language-python">valor = int(input(&quot;Dame un entero: &quot;))
 match valor:
     case 1:
@@ -420,7 +420,7 @@ match valor:
     case _:
         print ( &quot;Otro valor&quot; )
 </code></pre>
-<p>En un <code>match-case</code> se pueden poner más de un valor, separando con “|”.</p>
+<p>En un <code>match-case</code> es poden posar més d'un valor, separant amb “|”.</p>
 <pre><code class="language-python">valor = int(input(&quot;Dame un entero: &quot;))
 match valor:
     case 1 | 2:
@@ -430,7 +430,7 @@ match valor:
     case _:
         print ( &quot;Otro valor mayor que 3&quot; )
 </code></pre>
-<p>Tomar decisiones es poderoso, pero ¿qué pasa cuando necesitamos que nuestro programa realice una acción una y otra vez?</p>
+<p>Prendre decisions és poderós, però què passa quan necessitem que el nostre programa realitze una acció una vegada i una altra?</p>
               
             </div>
           </div>
@@ -448,8 +448,8 @@ match valor:
           <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
-                href="../1-conceptos/"
-                title="01-Conceptos">
+                href="../1-conceptes/"
+                title="01-Conceptes">
                 &#8592; Previous Page
               </a>
             
@@ -473,7 +473,7 @@ match valor:
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-15 08:58:49.940264+00:00
+  Docs Build Date UTC : 2026-11-15 17:31:18.924877+00:00
   -->
 
   <!--

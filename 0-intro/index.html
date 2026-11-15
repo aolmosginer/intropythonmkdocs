@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>06-Ámbito - Intro Python</title>
+  <title>Què aprendrem? - Intro Python</title>
 
   <!-- Page description -->
   
@@ -150,8 +150,8 @@
 -->
 
 <li>
-  <a href="../0-introduccion/" class="side-bar__link ">
-    ¿Qué aprenderemos?
+  <a href="./" class="side-bar__link side-bar__link--active">
+    Què aprendrem?
   </a>
 </li>
 
@@ -161,8 +161,8 @@
 -->
 
 <li>
-  <a href="../1-conceptos/" class="side-bar__link ">
-    01-Conceptos
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
   </a>
 </li>
 
@@ -172,8 +172,8 @@
 -->
 
 <li>
-  <a href="../2-controlflujo/" class="side-bar__link ">
-    02-Control del Flujo
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
   </a>
 </li>
 
@@ -194,8 +194,8 @@
 -->
 
 <li>
-  <a href="../4-colecciones/" class="side-bar__link ">
-    04-Listas
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
   </a>
 </li>
 
@@ -205,8 +205,8 @@
 -->
 
 <li>
-  <a href="../5-funciones/" class="side-bar__link ">
-    05-Funciones
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
   </a>
 </li>
 
@@ -216,8 +216,8 @@
 -->
 
 <li>
-  <a href="./" class="side-bar__link side-bar__link--active">
-    06-Ámbito
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
   </a>
 </li>
 
@@ -227,8 +227,8 @@
 -->
 
 <li>
-  <a href="../7-modulos/" class="side-bar__link ">
-    07-Módulos
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
   </a>
 </li>
 
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="../8-cosaschulas/" class="side-bar__link ">
-    08-Cosas chulas
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
   </a>
 </li>
 
@@ -250,7 +250,7 @@
 
 <li>
   <a href="../about/" class="side-bar__link ">
-    Créditos
+    Crèdits
   </a>
 </li>
 
@@ -261,7 +261,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">06-Ámbito</div>
+        <div class="title-bar__title">Què aprendrem?</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -269,7 +269,7 @@
         <ul>
         
           
-            <li><a class="a" href="#6-ambito-o-scope">6: Ámbito o Scope</a></li>
+            <li><a class="a" href="#que-aprendrem">Què aprendrem?</a></li>
             
           
         
@@ -282,24 +282,82 @@
             <div class="card__body">
 
               
-              <h1 id="6-ambito-o-scope">6: Ámbito o <em>Scope</em></h1>
-<p>En <em>Python</em>, el ámbito de una variable se refiere en la región del código donde una variable es accesible. <em>Python</em> tiene reglas específicas para determinar donde una variable se puede utilizar o modificar.</p>
-<p>Una variable definida dentro de una función tiene un ámbito local. <strong>Solo puede ser accedida dentro de esta función</strong>. Si intentas acceder a una variable local fuera de su función, obtendrás un error.</p>
-<pre><code class="language-python">def funcion():
-    y = 5   # Variable local
-    print(y)
-
-funcion()   # Salida: 5
-print(y)  # Error: NameError, 'y' no está definida en ámbito global  
-</code></pre>
-<p>En cambio, <strong>los bloques <code>if</code>, <code>for</code> y <code>while</code> no crean un nuevo ámbito</strong> (<em>scope</em>). Solo las funciones, clases y módulos crean ámbitos nuevos.</p>
-<pre><code class="language-python">for i in range(3):
-    print(i)  # Salida: 0, 1, 2
-    x=10
-print(i)  # Salida: 2 (la variable 'i' sigue accesible fuera del bucle)
-print(x)  # Salida: 10
-</code></pre>
-<p>A diferencia otros lenguajes, en <em>Python</em> las variables definidas en un bucle o bloque no están limitadas a aquel bloque y pueden ser accedidas fuera de él.</p>
+              <h1 id="que-aprendrem">Què aprendrem?</h1>
+<ul>
+<li><a href="../1-conceptes/">1: Conceptes Fonamentals de Python</a><ul>
+<li>1.1. Tipus de Dades</li>
+<li>1.2. Operadors i Expressions</li>
+<li>1.3. Variables i Assignació</li>
+<li>1.4. Comentaris</li>
+</ul>
+</li>
+<li><a href="../2-controlfluxe/">2: Interactivitat i Control de Flux</a><ul>
+<li>2.1. La Funció <code>print()</code></li>
+<li>2.2. La Funció <code>input()</code></li>
+<li>2.3. Estructures Condicionals<ul>
+<li><code>if-else</code></li>
+<li><code>if</code> sense <code>else</code></li>
+<li><code>elif</code></li>
+<li><code>match-case</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../3-bucles/">3: Repetint Tasques amb Bucles</a><ul>
+<li>3.1. El Bucle <code>while</code></li>
+<li>3.2. El Bucle <code>for</code> i <code>range()</code></li>
+<li>3.3. Alteració de l'execució dels bucles<ul>
+<li><code>break</code></li>
+<li><code>continue</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../4-coleccions/">4: Treballant amb Col·leccions: Llistes</a><ul>
+<li>4.1. Creació i Definició de Llistes</li>
+<li>4.2. Accés i Modificació d'Elements d'una Llista</li>
+<li>4.3. Afegir i Eliminar Elements</li>
+<li>4.4. Funcions incorporades</li>
+</ul>
+</li>
+<li><a href="../5-funcions/">5: Introducció a les Funcions personalitzades</a><ul>
+<li>5.1. Paràmetres i Valor de Retorn</li>
+<li>5.2. Paràmetres opcionals</li>
+<li>5.3. Diversos valors de retorn</li>
+<li>5.4. Exemple Pràctic: Funcions Booleanes</li>
+</ul>
+</li>
+<li><a href="../6-ambit/">6: Àmbit o <em>Scope</em></a></li>
+<li><a href="../7-moduls/">7. Mòduls</a><ul>
+<li>7.1 Formes d'importar mòduls<ul>
+<li>Importar tot el mòdul</li>
+<li>Importar elements específics</li>
+<li>Importar tots els elements</li>
+<li>Canviar el nom del mòdul</li>
+</ul>
+</li>
+<li>7.2 Mòduls estàndard</li>
+<li>7.3 Ús de <code>__main__</code></li>
+<li>7.4 Estructura d'un programa</li>
+</ul>
+</li>
+<li><a href="../8-cosesxules/">8. Fem coses xules amb Python</a><ul>
+<li>8.1 Lectura de dades d'un CSV</li>
+<li>8.2 Escriptura de dades en un CSV</li>
+<li>8.3 Manipulació d'imatges<ul>
+<li>Característiques de les imatges</li>
+<li>Retallar, copiar i apegar</li>
+<li>Redimensionar i rotar</li>
+</ul>
+</li>
+<li>8.4 Creació de gràfics<ul>
+<li>Línies i Dispersió</li>
+<li>Barres i gràfics circulars</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div>
@@ -317,16 +375,16 @@ print(x)  # Salida: 10
           <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
-                href="../5-funciones/"
-                title="05-Funciones">
+                href=".."
+                title="Home">
                 &#8592; Previous Page
               </a>
             
             
             
               <a class="footer__link padding-top-0 navigation-next"
-                href="../7-modulos/"
-                title="07-Módulos"/>
+                href="../1-conceptes/"
+                title="01-Conceptes"/>
                 Next Page &#8594;
               </a>
             
@@ -342,7 +400,7 @@ print(x)  # Salida: 10
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-15 08:58:49.944871+00:00
+  Docs Build Date UTC : 2026-11-15 17:31:18.910949+00:00
   -->
 
   <!--

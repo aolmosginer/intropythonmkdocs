@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>08-Coses xules - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    08-Coses xules
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">08-Coses xules</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#81-lectura-de-dades-dun-csv">8.1 Lectura de dades d'un CSV</a></li>
+                
+            
+                <li><a class="a" href="#82-escriptura-de-dades-en-un-csv">8.2 Escriptura de dades en un CSV</a></li>
+                
+            
+                <li><a class="a" href="#83-manipulacio-dimatges">8.3 Manipulació d'imatges</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#caracteristiques-de-les-imatges">Característiques de les imatges</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#retallar-copiar-i-apegar">Retallar, copiar i apegar</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#redimensionar-i-rotar">Redimensionar i rotar</a></li>
+                
+            
+                <li><a class="a" href="#84-creacio-de-grafics">8.4 Creació de gràfics</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#linies-i-dispersio">Línies i Dispersió</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#barres-i-grafics-circulars">Barres i gràfics circulars</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="8-fem-coses-xules-amb-python">8. Fem coses xules amb Python</h1>
+<h2 id="81-lectura-de-dades-dun-csv">8.1 Lectura de dades d'un CSV</h2>
+<p>Un arxiu CSV (<em>Comma Separated Values</em>) conté dades organitzades per files en les quals la informació se separa normalment mitjançant comes (encara que es poden utilitzar altres caràcters de separació). S'solen utilitzar molt en informàtica per a guardar i processar gran quantitat de dades, ja que són fitxers que ocupen molt poc (arxius de text pla) i que són compatibles amb totes les plataformes (Windows, MacOS, Linux …).</p>
+<p>L'exemple següent mostra un arxiu que emmagatzema informació sobre una comanda de fruites. Cada fila conté, separat per comes <code>,</code>:</p>
+<ul>
+<li>la data i hora de la comanda</li>
+<li>la fruita</li>
+<li>un enter que indica la quantitat de peces sol·licitades</li>
+<li>un nombre real que és el preu per unitat d'aquesta fruita</li>
+</ul>
+<p><img alt="" src="../imagenes/image7.png" /></p>
+<p>Si volem llegir i processar les dades d'un arxiu CSV necessitem realitzar els següents passos:</p>
+<ol>
+<li>Importar el mòdul <code>csv</code> que ens permetrà usar funcions específiques per al processament d'arxius CSV</li>
+<li>Obrir l'arxiu CSV que volem processar mitjançant la funció incorporada <code>open()</code> i guardar l'objecte que aquesta crea en una variable</li>
+<li>Utilitzar la funció <code>csv.reader()</code> sobre la variable creada per a obtindre un <code>objeto</code> de tipus <code>reader</code> que podrem iterar per a anar llegint fila a fila tot l'arxiu CSV</li>
+</ol>
+<pre><code class="language-python">import csv
+arxiu = open('fruites.csv')
+arxiu_reader = csv.reader(arxiu)
+</code></pre>
+<p>Una vegada creat l'objecte iterable, el podem recórrer amb un bucle <code>for-in</code> que ens tornarà, en cada iteració del bucle, <strong>una llista amb les dades de cada fila</strong>.</p>
+<pre><code class="language-python">for fila in arxiu_reader:
+    print(str(fila))
+</code></pre>
+<p><img alt="" src="../imagenes/image10.png" /></p>
+<p>La llista <code>fila</code>, en cada iteració, contindrà la informació d'una de les fruites de la comanda. Podem accedir als diferents valors de la llista mitjançant indexació per a extraure les dades que ens interessen.</p>
+<pre><code class="language-python">for fila in arxiu_reader:
+    fruita = fila[1]
+    unitats = int(fila[2])    
+    print(fruita + ' --&gt; ' + str(unitats))
+</code></pre>
+<p><img alt="" src="../imagenes/image12.png" /></p>
+<p>En funció del tipus de dades, haurem de fer el canvi de tipus corresponent per a poder tractar les dades correctament (<code>int()</code>, <code>str()</code>, <code>float()</code> …).</p>
+<p>És important saber que <strong>només es pot iterar l'objecte reader una vegada</strong>. Per a tornar a llegir l'arxiu CSV, s'ha de tornar a cridar a <code>open()</code> i <code>csv.reader()</code> per a crear un altre objecte <code>reader</code>.</p>
+<p>Una precaució que s'ha de tindre quan es treballa amb arxius, és tancar qualsevol referència a aquests una vegada acabem de processar-los (en llegir-los i especialment en escriure'ls). Per a això simplement cridarem al mètode <code>close()</code> de l'objecte sobre el qual es va obrir l'arxiu.</p>
+<pre><code class="language-python">arxiu.close()
+</code></pre>
+<h2 id="82-escriptura-de-dades-en-un-csv">8.2 Escriptura de dades en un CSV</h2>
+<p>Si volem guardar dades utilitzades pel nostre programa <em>Python</em> per a un posterior processament o per a compartir-les, podem emmagatzemar-les en un fitxer CSV.</p>
+<p>Els passos que haurem de seguir són:</p>
+<ol>
+<li>Importar el mòdul <code>csv</code> que ens permetrà usar funcions específiques per al processament d'arxius CSV</li>
+<li>Obrir <strong>en mode escriptura</strong> <code>'w'</code> l'arxiu CSV en el qual volem guardar les dades mitjançant la funció <code>open(archivo, ‘w’, newline=’’)</code> i guardar l'objecte que aquesta crea en una variable</li>
+<li>Utilitzar la funció <code>csv.writer()</code> sobre la variable creada per a obtindre un <code>objeto</code> de tipus <code>writer</code> que podrem usar per a anar guardant llistes (línia a línia).</li>
+</ol>
+<pre><code class="language-python">import csv
+arxiu = open('animals.csv', 'w', newline='')
+arxiu_writer = csv.writer(arxiu)
+</code></pre>
+<p><strong>En Windows</strong>, s'ha de passar una cadena en blanc com a argument de <code>newline=’’</code> en la funció <code>open()</code>. Si s'oblida això, les files de l'arxiu CSV es mostraran a doble espai.</p>
+<p>Una vegada creat l'objecte <code>writer</code>, utilitzarem la seua funció <code>writerow()</code> per a emmagatzemar una llista en l'última fila de l'arxiu.</p>
+<pre><code class="language-python">arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
+arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
+arxiu_writer.writerow([1, 2, 3.141592, 4])
+arxiu.close()
+</code></pre>
+<p><img alt="" src="../imagenes/image16.png" /></p>
+<p>D'aquesta manera, els valors de la llista es guardaran separats per comes <code>,</code>. Recordeu que <strong>és molt important tancar l'ús de l'arxiu</strong> una vegada acabeu d'usar-lo <code>close()</code>. En alguns llenguatges de programació és just en aquest moment en el qual l'arxiu s'actualitza amb els canvis realitzats. Per la qual cosa és bona pràctica acostumar-se a tancar-lo sempre, amb independència del llenguatge usat.</p>
+<p>Si en lloc de tindre els valors del CSV separats per comes <code>,</code> els voleu guardar amb un altre delimitador, podeu indicar-ho amb la propietat <code>delimiter</code> de la crida a <code>csv.writer()</code>.</p>
+<pre><code class="language-python">arxiu_tab = open('animals_tab.csv', 'w', newline='')
+arxiu_writer = csv.writer(arxiu_tab, delimiter='\t')
+arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
+arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
+arxiu_writer.writerow([1, 2, 3.141592, 4])
+arxiu_tab.close()
+</code></pre>
+<p><img alt="" src="../imagenes/image18.png" /></p>
+<pre><code class="language-python">arxiu_linia = open('animals_linia.csv', 'w', newline='')
+arxiu_writer = csv.writer(arxiu_linia, delimiter='|')
+arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
+arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
+arxiu_writer.writerow([1, 2, 3.141592, 4])
+arxiu_linia.close()
+</code></pre>
+<p><img alt="" src="../imagenes/image20.png" /></p>
+<h2 id="83-manipulacio-dimatges">8.3 Manipulació d'imatges</h2>
+<p><strong>Pillow (<code>PIL</code>)</strong> és un paquet de Python de tercers (<em>third-party</em>) per a interactuar amb arxius d'imatge. Aquest paquet compta amb diverses funcions que faciliten retallar, redimensionar i editar el contingut d'una imatge. Per a poder fer-ho, importarem solament el mòdul <code>Image</code> de la llibreria.</p>
+<pre><code class="language-python">from PIL import Image
+imatge_gat = Image.open('zophie.png')
+imatge_gat.show()
+</code></pre>
+<p>Mitjançant la funció <code>open()</code> d'<code>Image</code> crearem un <code>objeto</code> de tipus imatge a partir d'un arxiu emmagatzemat en l'ordinador. Els diferents mètodes i atributs d'aquest <code>objeto</code> ens permetran modificar la imatge. Per exemple, mostrarem la imatge carregada mitjançant la funció <code>show()</code>.</p>
+<p><img alt="" src="../imagenes/image22.png" /></p>
+<h3 id="caracteristiques-de-les-imatges">Característiques de les imatges</h3>
+<p>Podem accedir als atributs de nom, format i grandària de la imatge de la següent manera.</p>
+<pre><code class="language-python">print('Nom: ' + imatge_gat.filename)
+print('Format: ' + imatge_gat.format)
+ample, alt = imatge_gat.size
+print('Ample =', ample, ' / Alt =', alt)
+#Guardem en un altre format (jpg)
+imatge_gat.save('zophie.jpg')
+</code></pre>
+<p><img alt="" src="../imagenes/image24.png" /></p>
+<p>Com veiem, es pot guardar la imatge en un format diferent mitjançant <code>save()</code>.</p>
+<p>En <em>Python</em>, els píxels d'una imatge s'adrecen mitjançant les coordenades <code>x</code> i <code>y</code>, que especifiquen, respectivament, la seua posició horitzontal i vertical. L'origen és el píxel en la cantonada superior esquerra de la imatge i s'especifica amb la notació <code>(0, 0)</code>.</p>
+<p><img alt="Icon of a computer window with the top-left corner labeled (0,0) and the bottom-right corner labeled (27,26). Horizontally, arrow points right and reads “x increases”. Vertically, an arrow points down and reads “y increases”." src="../imagenes/image25.jpeg" /></p>
+<p><img alt="A grid with columns and rows labeled 0 through 9. The cells beginning at row 1, column 3 in top-left corner and going to row 5, column 8 in the bottom-right corner are shaded." src="../imagenes/image26.jpeg" /></p>
+<p>El primer <code>0</code> representa la coordenada <code>x</code>, que comença en <code>0</code> a l'origen i augmenta d'esquerra a dreta. El segon <code>0</code> representa la coordenada <code>y</code>, que comença en <code>0</code> a l'origen i augmenta cap avall, la qual cosa és contrària a com s'expliquen normalment a la classe de matemàtiques.</p>
+<p>Moltes de les funcions de <code>Pillow</code> prenen com a argument una <code>tupla</code> de caixa (recorda que una <code>tupla</code> és “com una llista”, però immutable). Això significa que <code>Pillow</code> espera una <code>tupla</code> de quatre coordenades enteres que representen una regió rectangular en una imatge. Els quatre enters són, en ordre, els següents:</p>
+<ul>
+<li><code>Left</code>: La coordenada <code>x</code> de la vora més a l'esquerra de la caixa</li>
+<li><code>Top</code>: La coordenada <code>y</code> de la vora superior de la caixa</li>
+<li><code>Right</code>: La coordenada <code>x</code> d'un píxel a la dreta de la vora més a la dreta de la caixa. Aquest enter ha de ser major que l'enter esquerre</li>
+<li><code>Bottom</code>: La coordenada <code>y</code> d'un píxel per davall de la vora inferior de la caixa. Aquest enter ha de ser major que l'enter superior</li>
+</ul>
+<p>Cal tindre en compte que la caixa inclou les coordenades esquerra i superior, i arriba fins a, però no inclou, les coordenades dreta i inferior. Per exemple, la <code>tupla</code> de caixa <code>(3, 1, 9, 6)</code> representa tots els píxels de la caixa negra de la figura anterior.</p>
+<h3 id="retallar-copiar-i-apegar">Retallar, copiar i apegar</h3>
+<p>Una vegada coneixem la manera de referenciar els píxels d'una imatge en <em>Python</em>, podem retallar una imatge mitjançant la funció <code>crop()</code>, passant-li la caixa a tallar amb una <code>tupla</code> de la següent manera.</p>
+<pre><code class="language-python">#Creem una nova a partir d'un tall de l'original
+imatge_cara = imatge_gat.crop((150, 150, 240, 250))
+imatge_cara.save('tallada.png')
+imatge_cara.show()
+</code></pre>
+<p><img alt="" src="../imagenes/image28.png" /></p>
+<p>La imatge retallada podem, per exemple, apegar-la en diferents llocs de la imatge original. Ho farem sobre una còpia de l'original, creada mitjançant la funció <code>copy()</code>, per a així mantindre l'original sense canvis.</p>
+<pre><code class="language-python">#Pega la cara tallada sobre una còpia de la imatge original
+copia_gat = imatge_gat.copy()
+copia_gat.paste(imatge_cara, (0, 0))
+copia_gat.paste(imatge_cara, (250, 250))
+copia_gat.save('pegada.png')
+copia_gat.show()
+</code></pre>
+<p><img alt="" src="../imagenes/image30.png" /></p>
+<p>La funció <code>paste()</code> permet apegar una imatge sobre una altra, definint el píxel inicial a partir del qual s'apegarà mitjançant una <code>tupla</code> de 2 punts <code>(x, y)</code>.</p>
+<p>Jugant amb la funció <code>paste()</code> i 2 bucles <code>for</code> aniuats, podem aconseguir un mosaic de cares de gats sobre una còpia de la imatge original.</p>
+<pre><code class="language-python"># Crea un mosaic de cares damunt la imatge original
+ample_cara, alt_cara = imatge_cara.size
+mosaic_gat = imatge_gat.copy()
+#for left in range(0, ample, ample_cara):
+for left in range(0, 3*ample_cara, ample_cara):    
+    for top in range(0, alt, alt_cara):
+        print(left, top)
+        mosaic_gat.paste(imatge_cara, (left, top))
+mosaic_gat.show()
+mosaic_gat.save('mosaic.png')
+</code></pre>
+<p><img alt="" src="../imagenes/image32.png" /></p>
+<p>En aquest exemple utilitzem l'ample/alt de la imatge original <code>(ample, alt)</code> i el de la imatge de la cara <code>(ample_cara, alt_cara)</code> per a definir els valors <code>left/top</code> a partir dels quals s'apegarà cadascuna de les cares. El primer <code>for</code> recorrerà les files del mosaic, mentre que el <code>for</code> aniuat recorrerà les columnes:</p>
+<ul>
+<li>
+<p><code>range(0, ample, ample_cara)</code>: comença en el píxel horitzontal <code>0</code>, arriba a l'últim píxel de l'ample de la imatge original, incrementant en un nombre de píxels igual a l'ample de la imatge de la cara.</p>
+</li>
+<li>
+<p><code>range(0, alt, alt_cara)</code>: comença en el píxel vertical <code>0</code>, arriba a l'últim píxel de l'alt de la imatge original, incrementant en un nombre de píxels igual a l'alt de la imatge de la cara.</p>
+</li>
+</ul>
+<p>A mesura que es van realitzant iteracions completes del bucle aniuat, la imatge final anirà canviant de la següent manera.</p>
+<table>
+<thead>
+<tr>
+<th><img alt="" src="../imagenes/image33.png" /></th>
+<th><img alt="" src="../imagenes/image34.png" /></th>
+<th><img alt="" src="../imagenes/image35.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>left = 0</strong></td>
+<td><strong>left = ample_cara</strong></td>
+<td><strong>left = 2*ample_cara</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="redimensionar-i-rotar">Redimensionar i rotar</h3>
+<p>Les funcions <code>resize()</code> i <code>rotate()</code> ens permeten canviar la grandària d'una imatge i rotar-la respectivament.</p>
+<pre><code class="language-python"># Canvia el tamany
+imatge_reduida = imatge_gat.resize((int(ample / 2), int(alt / 2)))
+imatge_reduida.show()
+imatge_reduida.save('reduida.png')
+</code></pre>
+<p>El mètode <code>resize()</code> torna un <strong>nou objecte <code>Image</code></strong> amb l'ample i alt especificats (no modifica l'Image original). Accepta una <code>tupla</code> de dos enters que representa les noves dimensions. Com que només accepta nombres enters, és necessari convertir ambdues dimensions mitjançant <code>int()</code>.</p>
+<p>Per a assegurar la proporcionalitat de la imatge resultant, és convenient que les noves dimensions siguen múltiples de l'ample/alt original (d'ací l'ús d'<code>ample/2</code> i <code>alt/2</code> en aquest exemple).</p>
+<p>Si el que volem fer és rotar una imatge, el mètode <code>rotate()</code> torna un <strong>nou objecte <code>Image</code></strong> i deixa l'original sense canvis. El mètode accepta un enter o <code>float</code> que representa el nombre de graus que es rotarà la imatge en sentit antihorari.</p>
+<pre><code class="language-python"># Rotar imatges
+imatge_gat.rotate(90).save('rotada90.png')
+imatge_gat.rotate(180).save('rotada180.png')
+imatge_gat.rotate(6).save('rotada6.png')
+imatge_gat.rotate(6, expand=True).save('rotada6_expandida.png')
+</code></pre>
+<p>Com veiem, es poden encadenar crides de mètode cridant a <code>save()</code> directament en l'objecte <code>Image</code> tornat des de <code>rotate()</code>, sense necessitat de guardar-lo en una variable intermèdia. Les imatges obtingudes són les següents.</p>
+<p><img alt="" src="../imagenes/image38.png" /></p>
+<p><img alt="" src="../imagenes/image39.png" /></p>
+<p><img alt="" src="../imagenes/image40.png" /></p>
+<p><img alt="" src="../imagenes/image41.png" /></p>
+<p>El mètode <code>rotate()</code> té l'argument opcional <code>expand</code>, que es pot establir a <code>True</code> per a ampliar les dimensions de la imatge i que s'ajuste a tota la nova imatge rotada.</p>
+<p>Recordeu que, una vegada finalitzem el tractament de les imatges, és convenient tancar tots els objectes <code>Image</code>.</p>
+<pre><code class="language-python">#Tanca totes les imatges
+mosaic_gat.close()
+imatge_reduida.close()
+copia_gat.close()
+imatge_cara.close()
+imatge_gat.close()
+</code></pre>
+<h2 id="84-creacio-de-grafics">8.4 Creació de gràfics</h2>
+<p>La biblioteca <em>Matplotlib</em> permet crear una àmplia varietat de gràfics (gràfics de línies, de barres, de dispersió, circulars bàsics, 3D …). Podeu trobar la documentació completa en <a href="https://matplotlib.org">https://matplotlib.org</a>. Depenent del Sistema Operatiu i la configuració de <em>Python</em>, haureu de seguir uns passos per a la <a href="https://matplotlib.org/stable/install/index.html">instal·lació</a> de <em>Matplotlib</em>.</p>
+<h3 id="linies-i-dispersio">Línies i Dispersió</h3>
+<p>Un gràfic de línies és ideal per a mostrar els canvis en una mesura al llarg del temps. En <em>Matplotlib</em>, els termes <code>plot</code>, <code>graph</code> i <code>chart</code> s'usen indistintament, i el terme <code>figure</code> es refereix a la finestra que conté un o més gràfics.</p>
+<p>Importem <code>matplotlib.pyplot</code> amb el nom <code>plt</code> per a facilitar la introducció de les seues funcions.</p>
+<p>A continuació, per a representar els <strong>punts de dades en una figura 2D</strong>, hem de cridar a la funció <code>plt.plot()</code>. Primer associarem al gràfic els valors per als eixos horitzontal/vertical guardats en <code>x</code> i <code>y1</code>. Després de cridar a <code>plt.plot()</code> amb aquests valors, l'invoquem una segona vegada amb <code>x</code> ​​i <code>y2</code> per a afegir una segona línia al gràfic.</p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+x = [0, 1, 2, 3, 4, 5]
+y1 = [10, 13, 15, 18, 16, 20]
+y2 = [9, 11, 18, 16, 17, 19]
+plt.plot(x, y1)
+plt.plot(x, y2)
+# Per guardar un fitxer d'imatge del gràfic, heu de cridar 
+# plt.savefig() abans de cridar a plt.show()
+plt.savefig('linies.png')  
+plt.show() 
+</code></pre>
+<p><em>Matplotlib</em> seleccionarà automàticament els colors de les línies i una grandària adequada per al gràfic. Podem guardar el gràfic predeterminat com una imatge PNG cridant a <code>plt.savefig()</code>.</p>
+<p><img alt="Gráfico, Gráfico de líneas" src="../imagenes/image44.png" /></p>
+<p><em>Matplotlib</em> compta amb la funció <code>plt.show()</code> de vista prèvia que mostra el gràfic en una finestra. Cal remarcar que, si volem guardar el gràfic, hem de fer-ho abans de cridar a la funció <code>plt.show()</code>. La crida a la funció bloquejarà l'execució del codi i no tornarà fins que l'usuari tanque la finestra.</p>
+<p>Per a crear un <strong>gràfic de dispersió</strong> d'aquestes mateixes dades, passeu els valors de l'eix <code>x</code> i de l'eix <code>y</code> a la funció <code>plt.scatter()</code>.</p>
+<pre><code class="language-python"># Gràfica Scatter
+plt.scatter(x, y1)
+plt.scatter(x, y2)
+plt.savefig('scatter.png')
+plt.show()
+</code></pre>
+<p><img alt="Gráfico, Gráfico de dispersión" src="../imagenes/image46.png" /></p>
+<h3 id="barres-i-grafics-circulars">Barres i gràfics circulars</h3>
+<p>Els <strong>gràfics de barres</strong> són útils per a comparar el mateix tipus de dades en diferents categories. A diferència d'un gràfic de línies, l'ordre de les categories no és important, encara que solen estar ordenades alfabèticament.</p>
+<pre><code class="language-python"># Barres
+categories = ['Gats', 'Gossos', 'Ratolins', 'Pardals']
+valors = [100, 150, 30, 200]
+plt.bar(categories, valors)
+plt.savefig('barres.png')
+plt.show()
+</code></pre>
+<p>Passem les categories a enumerar en l'eix <code>x</code> com la primera llista a <code>plt.bar()</code> i els valors per a cada categoria com la segona llista.</p>
+<p><img alt="Gráfico, Gráfico de barras" src="../imagenes/image48.png" /></p>
+<p>Per a crear un gràfic circular, utilitzarem la funció <code>plt.pie()</code>. En lloc de categories i valors, un gràfic circular té sectors i etiquetes. La funció <code>plt.pie()</code> accepta una llista de grandàries de porció i una llista d'etiquetes per a cada porció.</p>
+<pre><code class="language-python"># Gràfic Circular
+porcions = [100, 150, 30, 200]  # El tamany de cada porció
+etiquetes = ['Gats', 'Gossos', 'Ratolins', 'Pardals'] 
+plt.pie(porcions, labels=etiquetes)
+plt.savefig('tarta.png')
+plt.show()
+</code></pre>
+<p>El primer argument posicional de <code>plt.pie()</code> fa referència a les porcions <code>x</code> (<code>porcions</code> en aquest exemple), però el segon no fa referència a les etiquetes, sinó a l'atribut <code>explode</code>, per la qual cosa per a assignar els valors d'<code>etiquetes</code> a l'atribut <code>labels</code> del <code>plt.pie()</code> hem d'especificar-ho en la crida a la funció. 
+Podeu consultar els detalls dels diferents paràmetres de <code>plt.pie()</code> en la seua <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html">documentació oficial</a>.</p>
+<p><img alt="" src="../imagenes/image50.png" /></p>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image51.png" /></p>
+<p>Entre la gran diversitat d'atributs que podem modificar per a obtindre el gràfic desitjat, l'atribut <code>autopct</code> ens permet mostrar el valor de cada porció com un % respecte del total.</p>
+<pre><code class="language-python">plt.pie(porcions, labels=etiquetes, autopct='%.1f%%')
+plt.savefig('tartaX100.png')
+plt.show()
+</code></pre>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image53.png" /></p>
+<p>L'atribut és una cadena d'especificació de format: la cadena <code>'%.1f%%'</code> especifica que el nombre ha de mostrar un dígit després del punt decimal i després del decimal es mostra el símbol de % (la cadena <code>'%.1f'</code> mostraria el mateix valor, però sense el símbol de % final).</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../7-moduls/"
+                title="07-Móduls">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../about/"
+                title="Crèdits"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-15 17:31:18.950243+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>01-Conceptes - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">01-Conceptes</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#11-tipus-de-dades">1.1. Tipus de Dades</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#nombres-enters-int">Nombres Enters (int)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#nombres-de-punt-flotant-float">Nombres de Punt Flotant (float)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#cadenes-de-text-str">Cadenes de Text (str)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#valors-logics-bool">Valors Lògics (bool)</a></li>
+                
+            
+                <li><a class="a" href="#12-operadors-i-expressions">1.2. Operadors i Expressions</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operadors-aritmetics">Operadors Aritmètics</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operadors-relacionals-de-comparacio">Operadors Relacionals (de Comparació)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operadors-logics">Operadors Lògics</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operadors-de-text">Operadors de Text</a></li>
+                
+            
+                <li><a class="a" href="#13-variables-i-assignacio">1.3. Variables i Assignació</a></li>
+                
+            
+                <li><a class="a" href="#14-comentaris">1.4. Comentaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#comentaris-duna-sola-linia">Comentaris d'una sola línia</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#comentaris-multilinia">Comentaris multilínia</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="1-conceptes-fonamentals-de-python">1: Conceptes Fonamentals de Python</h1>
+<h2 id="11-tipus-de-dades">1.1. Tipus de Dades</h2>
+<p>Perquè un programa puga realitzar qualsevol tasca, primer ha de ser capaç de representar la informació amb la qual treballa. En <em>Python</em>, els <strong>tipus de dades</strong> són la manera com el llenguatge classifica i entén diferents classes de valors, com ara números, text o valors lògics. Comprendre aquests tipus és el primer pas fonamental per a escriure codi coherent i funcional. A continuació, es presenten els quatre tipus de dades bàsics o primitius.</p>
+<h3 id="nombres-enters-int">Nombres Enters (<code>int</code>)</h3>
+<p>Representa nombres enters, tant positius com negatius, sense components decimals. Són la base per a comptar i realitzar càlculs aritmètics simples.</p>
+<ul>
+<li><strong>Exemples:</strong> 42, -139, 2017</li>
+</ul>
+<h3 id="nombres-de-punt-flotant-float">Nombres de Punt Flotant (<code>float</code>)</h3>
+<p>Representa nombres que tenen un punt decimal. S'utilitzen per a mesuraments precisos i càlculs que requereixen fraccions.</p>
+<ul>
+<li><strong>Exemples:</strong> 1.25, -42.3899, 5.0</li>
+</ul>
+<h3 id="cadenes-de-text-str">Cadenes de Text (<code>str</code>)</h3>
+<p>Representa seqüències de caràcters, com ara paraules, frases o qualsevol tipus de text. Es defineixen tancant els caràcters entre cometes.</p>
+<p>És crucial entendre que <strong>un nombre representat com a text no és el mateix que un nombre</strong>. Per exemple, 4 és un <em>int</em> amb el qual es pot operar matemàticament, mentre que "4" és un <em>str</em> que representa el caràcter "quatre".</p>
+<ul>
+<li><strong>Exemples:</strong> "Cristian", "Aprenc a programar", "98394255".</li>
+</ul>
+<h3 id="valors-logics-bool">Valors Lògics (<code>bool</code>)</h3>
+<p>Representa un de dos valors de veritat: <code>True</code> (Veritable) o <code>False</code> (Fals). Aquests són la base de la lògica i la presa de decisions en la programació. Tingueu en compte que s'han d'escriure sempre amb la primera lletra en majúscula.</p>
+<ul>
+<li><strong>Exemples:</strong> <code>True</code>, <code>False</code></li>
+</ul>
+<p>Per a verificar el tipus de dada de qualsevol valor en Python, podem utilitzar la funció <code>type()</code>. Per exemple, <code>type(42)</code> tornarà <code>&lt;class 'int'&gt;</code>, mentre que <code>type("Hola mundo")</code> tornarà <code>&lt;class 'str'&gt;</code>.</p>
+<p>Una vegada que entenem com <em>Python</em> representa les dades, podem començar a realitzar operacions amb elles.</p>
+<h2 id="12-operadors-i-expressions">1.2. Operadors i Expressions</h2>
+<p>Els <strong>operadors</strong> són els símbols especials que <em>Python</em> utilitza per a realitzar càlculs, comparacions i altres manipulacions de dades. Quan combinem valors i operadors, formem una <strong>expressió</strong>, que és una instrucció que <em>Python</em> avalua per a produir un nou valor. Per exemple, <code>7 + 5</code> és una expressió que utilitza l'operador + per a produir el valor <code>12</code>.</p>
+<h3 id="operadors-aritmetics">Operadors Aritmètics</h3>
+<p>Aquests operadors realitzen les operacions matemàtiques fonamentals.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Suma dos valors numèrics</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Resta un valor numèric d'un altre</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplica dos valors numèrics</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Realitza una divisió estàndard. El resultat és sempre un <code>float</code></td>
+</tr>
+<tr>
+<td>//</td>
+<td>Realitza una divisió entera, descartant la part decimal del resultat</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Operador de mòdul. Torna el residu d'una divisió entera</td>
+</tr>
+<tr>
+<td>**</td>
+<td>Operador d'exponenciació. Eleva un nombre a la potència d'un altre</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operadors-relacionals-de-comparacio">Operadors Relacionals (de Comparació)</h3>
+<p>Aquests operadors comparen dos valors i sempre tornen un resultat <em>booleà</em> (<code>True</code> o <code>False</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;</td>
+<td>Menor que</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Major que</td>
+</tr>
+<tr>
+<td>==</td>
+<td>Igual que</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>Diferent de</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Menor o igual que</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Major o igual que</td>
+</tr>
+</tbody>
+</table>
+<h3 id="operadors-logics">Operadors Lògics</h3>
+<p>Aquests operadors s'apliquen a valors <em>booleans</em> per a combinar-los i crear condicions més complexes.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>not</td>
+<td>Negació. Inverteix el valor <em>booleà</em> (<code>not True</code> és <code>False</code>)</td>
+</tr>
+<tr>
+<td>and</td>
+<td>Conjunció (I). Torna <code>True</code> només si els dos operands són <code>True</code></td>
+</tr>
+<tr>
+<td>or</td>
+<td>Disjunció (O). Torna <code>True</code> si almenys un dels operands és <code>True</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="operadors-de-text">Operadors de Text</h3>
+<p>Aquests operadors estan dissenyats per a treballar amb cadenes de text (<code>str</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Descripció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Concatenació. Uneix dues cadenes de text</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Repetició. Repeteix una cadena de text un nombre determinat de vegades</td>
+</tr>
+</tbody>
+</table>
+<p>Quan les expressions són complexes, com <code>(3+5//4-2)-2**4+3*(7-2)</code>, <em>Python</em> segueix un ordre específic conegut com a <strong>precedència d'operadors</strong> per a avaluar-les. Per a controlar aquest ordre i assegurar que els càlculs es realitzen com desitgem, podem utilitzar parèntesis (), ja que tenen la màxima prioritat. En absència de parèntesis, <em>Python</em> segueix un ordre estricte: primer s'avaluen les potències (**), després la multiplicació i divisió (*, /, //, %), i finalment la suma i resta (+, -).</p>
+<p>Però, de què serveix calcular un valor si el programa l'oblida immediatament? Per a construir programes útils, necessitem una manera de guardar aquests resultats, i per a això, utilitzarem <strong>variables</strong>.</p>
+<h2 id="13-variables-i-assignacio">1.3. Variables i Assignació</h2>
+<p>El propòsit fonamental de les <strong>variables</strong> és permetre'ns guardar un valor i assignar-li un nom per a poder recordar-lo i utilitzar-lo en múltiples llocs del nostre programa. Pensa en una variable com una etiqueta que posem a una dada en la memòria de l'ordinador.</p>
+<p>El procés de crear una variable i donar-li un valor s'anomena <strong>assignació</strong>, i es realitza amb l'operador d'assignació <code>=</code>. La sintaxi és simple:</p>
+<pre><code class="language-python">nombre = expresión
+</code></pre>
+<p>Per exemple, per a emmagatzemar el preu per hora en un programa d'estacionament, escriuríem: </p>
+<pre><code class="language-python">pesos_por_hora = 200
+</code></pre>
+<p>Una vegada que una variable ha sigut creada, el seu valor pot ser actualitzat en qualsevol moment amb una nova assignació, un procés conegut com a <strong>reassignació</strong>.</p>
+<p>En anomenar variables, hem de seguir algunes regles:</p>
+<ul>
+<li>Han de <strong>començar amb una lletra o un guió baix</strong> (_)</li>
+<li>
+<p>Poden contindre lletres (majúscules i minúscules), nombres i guions baixos</p>
+</li>
+<li>
+<p><strong>Les majúscules i minúscules importen</strong>. Una variable anomenada <code>Vivaldi</code> és diferent d'una anomenada <code>vivaldi</code></p>
+</li>
+<li>Utilitza sintaxi <strong>snake_case</strong> (ex: <code>mi_variable_nueva</code>) sempre que puguis</li>
+</ul>
+<p>És crucial evitar l'ús de <strong>"Paraules Reservades"</strong> com a noms de variables. Aquestes paraules, com <code>if</code>, <code>for</code>, <code>while</code>, <code>True</code>, i <code>False</code>, tenen un significat especial per a <em>Python</em> i el seu ús com a noms de variables causarà un error.</p>
+<p>Si intentes utilitzar una variable que no ha sigut definida prèviament (és a dir, a la qual no se li ha assignat un valor), <em>Python</em> generarà un error de tipus <code>NameError</code>.</p>
+<p>Amb la capacitat d'emmagatzemar i recordar informació, estem preparats perquè els nostres programes comencen a comunicar-se amb el món exterior.</p>
+<h2 id="14-comentaris">1.4. Comentaris</h2>
+<p>En <em>Python</em>, els comentaris s'utilitzen per a afegir notes dins del codi que ajuden a explicar-ne el funcionament i aclarir parts complexes. Els comentaris no són executats per l'intèrpret, per la qual cosa <strong>no afecten el comportament del programa</strong>. Hi ha dues formes principals d'escriure comentaris:</p>
+<h3 id="comentaris-duna-sola-linia">Comentaris d'una sola línia</h3>
+<p>Es creen utilitzant el símbol <code>#</code>. Tot el que aparega després d'aquest símbol en la mateixa línia serà ignorat.</p>
+<pre><code class="language-python"># Este és un comentari d'una sola línia
+x = 10  # També es pot comentar al final d'una línia de codi
+</code></pre>
+<h3 id="comentaris-multilinia">Comentaris multilínia</h3>
+<p>Es poden usar cadenes de text multilínia amb cometes triples (<code>"""</code> o <code>'''</code>). Aquestes cadenes no assignades a una variable són ignorades per l'intèrpret i s'usen habitualment per a documentar blocs de codi.</p>
+<pre><code class="language-python">&quot;&quot;&quot;
+Aquest bloc serveix com a comentari multilínia.
+Es pot usar per a explicar funcions extenses o fragments de codi més complexos.
+&quot;&quot;&quot;
+print(&quot;Hola, Mundo&quot;)
+</code></pre>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../0-intro/"
+                title="Què aprendrem?">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../2-controlfluxe/"
+                title="02-Control del Flux"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-15 17:31:18.916123+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>05-Funciones - Intro Python</title>
+  <title>05-Funcions - Intro Python</title>
 
   <!-- Page description -->
   
@@ -150,8 +150,8 @@
 -->
 
 <li>
-  <a href="../0-introduccion/" class="side-bar__link ">
-    ¿Qué aprenderemos?
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
   </a>
 </li>
 
@@ -161,8 +161,8 @@
 -->
 
 <li>
-  <a href="../1-conceptos/" class="side-bar__link ">
-    01-Conceptos
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
   </a>
 </li>
 
@@ -172,8 +172,8 @@
 -->
 
 <li>
-  <a href="../2-controlflujo/" class="side-bar__link ">
-    02-Control del Flujo
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
   </a>
 </li>
 
@@ -194,8 +194,8 @@
 -->
 
 <li>
-  <a href="../4-colecciones/" class="side-bar__link ">
-    04-Listas
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
   </a>
 </li>
 
@@ -206,7 +206,7 @@
 
 <li>
   <a href="./" class="side-bar__link side-bar__link--active">
-    05-Funciones
+    05-Funcions
   </a>
 </li>
 
@@ -216,8 +216,8 @@
 -->
 
 <li>
-  <a href="../6-ambito/" class="side-bar__link ">
-    06-Ámbito
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
   </a>
 </li>
 
@@ -227,8 +227,8 @@
 -->
 
 <li>
-  <a href="../7-modulos/" class="side-bar__link ">
-    07-Módulos
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
   </a>
 </li>
 
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="../8-cosaschulas/" class="side-bar__link ">
-    08-Cosas chulas
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
   </a>
 </li>
 
@@ -250,7 +250,7 @@
 
 <li>
   <a href="../about/" class="side-bar__link ">
-    Créditos
+    Crèdits
   </a>
 </li>
 
@@ -261,7 +261,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">05-Funciones</div>
+        <div class="title-bar__title">05-Funcions</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -270,16 +270,16 @@
         
           
             
-                <li><a class="a" href="#51-parametros-y-valor-de-retorno">5.1. Parámetros y Valor de Retorno</a></li>
+                <li><a class="a" href="#51-parametres-i-valor-de-retorn">5.1. Paràmetres i Valor de Retorn</a></li>
                 
             
-                <li><a class="a" href="#52-parametros-opcionales">5.2. Parámetros opcionales</a></li>
+                <li><a class="a" href="#52-parametres-opcionals">5.2. Paràmetres opcionals</a></li>
                 
             
-                <li><a class="a" href="#53-varios-valores-de-retorno">5.3. Varios valores de retorno</a></li>
+                <li><a class="a" href="#53-diversos-valors-de-retorn">5.3. Diversos valors de retorn</a></li>
                 
             
-                <li><a class="a" href="#54-ejemplo-practico-funciones-booleanas">5.4. Ejemplo Práctico: Funciones Booleanas</a></li>
+                <li><a class="a" href="#54-exemple-practic-funcions-booleanes">5.4. Exemple Pràctic: Funcions Booleanes</a></li>
                 
             
           
@@ -293,45 +293,45 @@
             <div class="card__body">
 
               
-              <h1 id="5-introduccion-a-las-funciones-personalizadas">5: Introducción a las Funciones personalizadas</h1>
-<h2 id="51-parametros-y-valor-de-retorno">5.1. Parámetros y Valor de Retorno</h2>
-<p>Las <strong>funciones</strong> personalizadas son bloques de código reutilizables diseñados para realizar una tarea específica. Nos permiten organizar nuestro código, evitar la repetición y hacerlo más legible. Dos conceptos clave en las funciones son los parámetros (o argumentos) y el valor de retorno.</p>
-<p>Los <strong>parámetros</strong> son las variables que una función recibe para poder trabajar. Actúan como los "datos de entrada" de la función. Se definen entre los paréntesis en la declaración de la función:</p>
+              <h1 id="5-introduccio-a-les-funcions-personalitzades">5: Introducció a les Funcions personalitzades</h1>
+<h2 id="51-parametres-i-valor-de-retorn">5.1. Paràmetres i Valor de Retorn</h2>
+<p>Les <strong>funcions</strong> personalitzades són blocs de codi reutilitzables dissenyats per a realitzar una tasca específica. Ens permeten organitzar el nostre codi, evitar la repetició i fer-lo més llegible. Dos conceptes clau en les funcions són els paràmetres (o arguments) i el valor de retorn.</p>
+<p>Els <strong>paràmetres</strong> són les variables que una funció rep per a poder treballar. Actuen com les "dades d'entrada" de la funció. Es defineixen entre els parèntesis en la declaració de la funció:</p>
 <pre><code class="language-python">def mi_funcion(&lt;parametro1&gt;, &lt;parametro2&gt;, &lt;parametro3&gt; …):
-    # Cuerpo de la función
+    # Cos de la funció
 </code></pre>
-<p>Cuando llamamos a la función (la usamos), debemos proporcionar los valores que tomarán estos parámetros:</p>
+<p>Quan cridem a la funció (l'usem), hem de proporcionar els valors que prendran aquests paràmetres:</p>
 <pre><code class="language-python">mi_funcion(valor1, valor2)
 </code></pre>
-<p>El <strong>valor de retorno</strong> es el "resultado" que una función entrega al finalizar su ejecución. Para devolver un valor, se utiliza la palabra clave <code>return</code>, seguida del valor que se desea entregar.</p>
-<p>Es importante destacar que la ejecución de la función termina inmediatamente en cuanto se encuentra una instrucción <code>return</code>. Cualquier código dentro de la función que se encuentre después de un <code>return</code> no será ejecutado.</p>
-<p>Veamos un ejemplo que combina ambos conceptos. La siguiente función recibe un número como parámetro, realiza un cálculo y devuelve el resultado:</p>
+<p>El <strong>valor de retorn</strong> és el "resultat" que una funció lliura en finalitzar la seua execució. Per a tornar un valor, s'utilitza la paraula clau <code>return</code>, seguida del valor que es vol lliurar.</p>
+<p>És important destacar que l'execució de la funció acaba immediatament així que es troba una instrucció <code>return</code>. Qualsevol codi dins de la funció que es trobe després d'un <code>return</code> no serà executat.</p>
+<p>Vegem un exemple que combina ambdós conceptes. La següent funció rep un nombre com a paràmetre, realitza un càlcul i torna el resultat:</p>
 <pre><code class="language-python">def calculo(numero):
     resultado = (numero - 3) ** 3
     return resultado
-# Para usar el valor de retorno, lo capturamos en una variable o lo usamos directamente
+# Per a usar el valor de retorn, el capturem en una variable o l'usem directament
 valor_calculado = calculo(8)
-print(valor_calculado) # Salida: 125
+print(valor_calculado) # Eixida: 125
 </code></pre>
-<p>Normalmente, las funciones tendrán varios parámetros y un valor de retorno, pero no es obligatorio. El siguiente ejemplo muestra una función sin parámetros ni valor de retorno.</p>
+<p>Normalment, les funcions tindran diversos paràmetres i un valor de retorn, però no és obligatori. L'exemple següent mostra una funció sense paràmetres ni valor de retorn.</p>
 <pre><code class="language-python">def saluda():
     print(&quot;Hola mundo&quot;)
     print(&quot;Soy Python !!&quot;)
-saluda()      # Esta función no retorna ningún valor, solo imprime por pantalla
+saluda()      # Aquesta funció no retorna cap valor, només imprimeix per pantalla
 # Hola mundo
 # Soy Python !!
 </code></pre>
-<h2 id="52-parametros-opcionales">5.2. Parámetros opcionales</h2>
-<p>Otra característica de las funciones es que pueden tener parámetros opcionales que, si no se declaran al llamar a la función, toman el valor por defecto definido.</p>
+<h2 id="52-parametres-opcionals">5.2. Paràmetres opcionals</h2>
+<p>Una altra característica de les funcions és que poden tindre paràmetres opcionals que, si no es declaren en cridar a la funció, prenen el valor per defecte definit.</p>
 <pre><code class="language-python">def multiplicar(a=0, b=1):
     return a * b
-print(multiplicar(4, 3)) # Salida: 12
-print(multiplicar(4))  # Salida: 4 
-print(multiplicar())  # Salida:  0
+print(multiplicar(4, 3)) # Eixida: 12
+print(multiplicar(4))  # Eixida: 4 
+print(multiplicar())  # Eixida:  0
 </code></pre>
-<p>Si no se pasa ningún valor a la función, utilizará los valores por defecto <code>a=0</code> y <code>b=1</code>. Si se pasa un solo valor, será asignado a la primera variable <code>a</code> y por lo tanto <code>b</code> tomará el valor por defecto <code>0</code>.</p>
-<h2 id="53-varios-valores-de-retorno">5.3. Varios valores de retorno</h2>
-<p>También podemos diseñar funciones que devuelvan más de un valor, asignando los diferentes valores separados por comas <code>,</code> después del <code>return</code>.</p>
+<p>Si no es passa cap valor a la funció, utilitzarà els valors per defecte <code>a=0</code> i <code>b=1</code>. Si es passa un sol valor, serà assignat a la primera variable <code>a</code> i per tant <code>b</code> prendrà el valor per defecte <code>0</code>.</p>
+<h2 id="53-diversos-valors-de-retorn">5.3. Diversos valors de retorn</h2>
+<p>També podem dissenyar funcions que tornen més d'un valor, assignant els diferents valors separats per comes <code>,</code> després del <code>return</code>.</p>
 <pre><code class="language-python">def operaciones(a, b):
     suma = a + b
     resta = a - b
@@ -339,41 +339,41 @@ print(multiplicar())  # Salida:  0
     return suma, resta, multi
 s,r,m = operaciones(10,5)
 print(&quot;suma =&quot;, s, &quot;resta =&quot;, r, &quot;multiplicación =&quot;, m)
-# Salida: suma = 15 resta = 5 multiplicación = 50
+# Eixida: suma = 15 resta = 5 multiplicación = 50
 </code></pre>
-<p>Al utilizar este tipo de funciones, debemos prever los valores que nos devolverá y almacenarlos en tantas variables como sea necesario <code>s,r,m = operaciones(10,5)</code>.</p>
-<p>Si no lo hacemos así, porque por ejemplo no sabemos cuántos valores nos va a devolver la función, <strong>se devolverán todos los valores dentro de una <code>tupla</code></strong> que deberemos tratar como corresponda.</p>
+<p>En utilitzar aquest tipus de funcions, hem de preveure els valors que ens tornarà i emmagatzemar-los en tantes variables com siga necessari <code>s,r,m = operaciones(10,5)</code>.</p>
+<p>Si no ho fem així, perquè per exemple no sabem quants valors ens tornarà la funció, <strong>es tornaran tots els valors dins d'una <code>tupla</code></strong> que haurem de tractar com corresponga.</p>
 <pre><code class="language-python">def operaciones(a, b):
     suma = a + b
     resta = a - b
     multi = a * b
     return suma, resta, multi
 resultados = operaciones(10,5)
-print(&quot;suma =&quot;, resultados[0]) # Salida: suma = 15
-print(&quot;resta =&quot;, resultados[1]) # Salida: resta = 5
-print(&quot;multiplicación =&quot;, resultados[2]) # Salida: multiplicación = 50
+print(&quot;suma =&quot;, resultados[0]) # Eixida: suma = 15
+print(&quot;resta =&quot;, resultados[1]) # Eixida: resta = 5
+print(&quot;multiplicación =&quot;, resultados[2]) # Eixida: multiplicación = 50
 </code></pre>
-<p>De momento asumiremos que una <code>tupla</code> es como una <code>lista[]</code>, pero que guarda valores inmutables (que no podemos modificar).</p>
-<h2 id="54-ejemplo-practico-funciones-booleanas">5.4. Ejemplo Práctico: Funciones Booleanas</h2>
-<p>Una función booleana es un tipo específico de función cuyo propósito es responder a una pregunta con un "sí" o un "no", es decir, que siempre devuelve un valor booleano (<code>True</code> o <code>False</code>). Son extremadamente útiles para encapsular la lógica de las condiciones.</p>
-<p>Un ejemplo claro es una función que determina si un número es par. Recibe un número como parámetro y devuelve <code>True</code> si el número es divisible por 2, y <code>False</code> en caso contrario.</p>
+<p>De moment assumirem que una <code>tupla</code> és com una <code>lista[]</code>, però que guarda valors immutables (que no podem modificar).</p>
+<h2 id="54-exemple-practic-funcions-booleanes">5.4. Exemple Pràctic: Funcions Booleanes</h2>
+<p>Una funció booleana és un tipus específic de funció el propòsit de la qual és respondre a una pregunta amb un "sí" o un "no", és a dir, que sempre torna un valor booleà (<code>True</code> o <code>False</code>). Són extremadament útils per a encapsular la lògica de les condicions.</p>
+<p>Un exemple clar és una funció que determina si un nombre és parell. Rep un nombre com a paràmetre i torna <code>True</code> si el nombre és divisible per 2, i <code>False</code> en cas contrari.</p>
 <pre><code class="language-python">def es_par(numero):
     if numero % 2 == 0:
         return True
     else:
         return False
-print(es_par(8)) # Salida: True
-print(es_par(7)) # Salida: False
+print(es_par(8)) # Eixida: True
+print(es_par(7)) # Eixida: False
 </code></pre>
-<p><strong>Refinando el Código Booleano</strong></p>
-<p>La función <code>es_par</code> anterior es perfectamente correcta y funcional. Sin embargo, un programador con experiencia buscaría una forma más directa y concisa de escribirla. La expresión <code>numero % 2 == 0</code> ya es en sí misma una expresión booleana: se evalúa como <code>True</code> si el número es par y <code>False</code> si no lo es.</p>
-<p>Por lo tanto, podemos reescribir la función a una sola línea que devuelve directamente el resultado de esta expresión.</p>
+<p><strong>Refinant el Codi Booleà</strong></p>
+<p>La funció <code>es_par</code> anterior és perfectament correcta i funcional. No obstant això, un programador amb experiència buscaria una manera més directa i concisa d'escriure-la. L'expressió <code>numero % 2 == 0</code> ja és en si mateixa una expressió booleana: s'avalua com a <code>True</code> si el nombre és parell i <code>False</code> si no ho és.</p>
+<p>Per tant, podem reescriure la funció a una sola línia que torna directament el resultat d'aquesta expressió.</p>
 <pre><code class="language-python">def es_par(numero):
     return numero % 2 == 0
 </code></pre>
-<p>Este estilo es considerado más "Pythonic" — elegante, legible y eficiente.</p>
-<p>Ambas versiones de la función producen exactamente el mismo resultado, pero la segunda demuestra una comprensión más profunda del lenguaje.</p>
-<p>El uso de funciones para encapsular la lógica, como en <code>es_par</code>, hace que el código principal sea mucho más limpio y fácil de entender, promoviendo una buena organización y reutilización.</p>
+<p>Aquest estil és considerat més "Pythonic" — elegant, llegible i eficient.</p>
+<p>Ambdues versions de la funció produeixen exactament el mateix resultat, però la segona demostra una comprensió més profunda del llenguatge.</p>
+<p>L'ús de funcions per a encapsular la lògica, com en <code>es_par</code>, fa que el codi principal siga molt més net i fàcil d'entendre, promovent una bona organització i reutilització.</p>
               
             </div>
           </div>
@@ -391,16 +391,16 @@ print(es_par(7)) # Salida: False
           <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
-                href="../4-colecciones/"
-                title="04-Listas">
+                href="../4-coleccions/"
+                title="04-Llistes">
                 &#8592; Previous Page
               </a>
             
             
             
               <a class="footer__link padding-top-0 navigation-next"
-                href="../6-ambito/"
-                title="06-Ámbito"/>
+                href="../6-ambit/"
+                title="06-Àmbit"/>
                 Next Page &#8594;
               </a>
             
@@ -416,7 +416,7 @@ print(es_par(7)) # Salida: False
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-15 08:58:49.943896+00:00
+  Docs Build Date UTC : 2026-11-15 17:31:18.940286+00:00
   -->
 
   <!--
