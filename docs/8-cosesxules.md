@@ -151,9 +151,11 @@ Com veiem, es pot guardar la imatge en un format diferent mitjançant `save()`.
 
 En *Python*, els píxels d'una imatge s'adrecen mitjançant les coordenades `x` i `y`, que especifiquen, respectivament, la seua posició horitzontal i vertical. L'origen és el píxel en la cantonada superior esquerra de la imatge i s'especifica amb la notació `(0, 0)`.
 
-![Icon of a computer window with the top-left corner labeled (0,0) and the bottom-right corner labeled (27,26). Horizontally, arrow points right and reads “x increases”. Vertically, an arrow points down and reads “y increases”.](imagenes/image25.jpeg)
-
-![A grid with columns and rows labeled 0 through 9. The cells beginning at row 1, column 3 in top-left corner and going to row 5, column 8 in the bottom-right corner are shaded.](imagenes/image26.jpeg)
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/image25.jpeg" style="width: 100%; max-width: 12em; min-width: 0; height: auto;" />    
+    <img src="../imagenes/image26.jpeg" style="width: 100%; max-width: 12em; min-width: 0; height: auto;" />
+</div>
+<br>
 
 El primer `0` representa la coordenada `x`, que comença en `0` a l'origen i augmenta d'esquerra a dreta. El segon `0` representa la coordenada `y`, que comença en `0` a l'origen i augmenta cap avall, la qual cosa és contrària a com s'expliquen normalment a la classe de matemàtiques.
 
