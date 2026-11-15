@@ -6,33 +6,33 @@ outline: [2, 3]
 aside: true
 ---
 
-# 3: Repitiendo Tareas con Bucles
+# 3: Repetint Tasques amb Bucles
 
 ## 3.1. El Bucle `while`
 
-El bucle `while` es una estructura de control que permite repetir un bloque de código de manera continua ***mientras* una condición específica se mantenga como `True`**.
+El bucle `while` és una estructura de control que permet repetir un bloc de codi de manera contínua ***mentre* una condició específica es mantinga com a `True`**.
 
 ![](imagenes/image5.png)
 
-El programa evalúa la condición al inicio de cada repetición (o iteración). Si es `True`, ejecuta el bloque de código; si es `False`, el bucle termina y el programa continúa con la siguiente instrucción.
+El programa avalua la condició a l'inici de cada repetició (o iteració). Si és `True`, executa el bloc de codi; si és `False`, el bucle acaba i el programa continua amb la següent instrucció.
 
-La sintaxis del bucle `while` es la siguiente, donde el bloque de instrucciones debe estar indentado:
+La sintaxi del bucle `while` és la següent, on el bloc d'instruccions ha d'estar indentat:
 
 ```python
 while <condición>:
-    # instrucciones a repetir
+    # instruccions a repetir
 ```
 
-Para que un bucle `while` no se ejecute indefinidamente, **es crucial que alguna de las variables involucradas en la condición cambie su valor *dentro* del bucle**, de modo que en algún momento la condición se vuelva `False`.
+Perquè un bucle `while` no s'execute indefinidament, **és crucial que alguna de les variables involucrades en la condició canvie el seu valor *dins* del bucle**, de manera que en algun moment la condició es torne `False`.
 
 ```python
-# Ejemplo de conversión de temperaturas de 32°F a 72°F
+# Exemple de conversió de temperatures de 32°F a 72°F
 temp = 32
 print("fº cº")
 while temp < 73:
     print(temp, " ", int((temp-32)*5/9))
-    temp = temp + 1 # Esta línea es crucial para evitar un bucle infinito
-# Resultado
+    temp = temp + 1 # Aquesta línia és crucial per a evitar un bucle infinit
+# Resultat
 fº cº
 32   0
 33   0
@@ -45,67 +45,67 @@ fº cº
 72   22
 ```
 
-Si la condición de un bucle `while` nunca se vuelve `False`, se produce un **bucle infinito**, lo que hará que el programa se "congele" y nunca termine.
+Si la condició d'un bucle `while` mai es torna `False`, es produeix un **bucle infinit**, la qual cosa farà que el programa es "congele" i mai acabe.
 
-Aunque `while` es flexible, existe una forma de bucle más adecuada para cuando conocemos de antemano el número exacto de repeticiones.
+Encara que `while` és flexible, existeix una forma de bucle més adequada per a quan coneixem per endavant el nombre exacte de repeticions.
 
-## 3.2. El Bucle *`for`* y *`range()`*
+## 3.2. El Bucle *`for`* i *`range()`*
 
-El bucle `for` es la estructura ideal cuando necesitamos iterar sobre una secuencia de elementos (como una lista) o cuando queremos repetir un bloque de código un número específico y predefinido de veces.
+El bucle `for` és l'estructura ideal quan necessitem iterar sobre una seqüència d'elements (com una llista) o quan volem repetir un bloc de codi un nombre específic i predefinit de vegades.
 
 ![](imagenes/image6.png)
 
-Para generar secuencias de números sobre las cuales iterar, el bucle `for` se combina comúnmente con la función `range()`.
+Per a generar seqüències de nombres sobre les quals iterar, el bucle `for` es combina comunament amb la funció `range()`.
 
-La función `range()` puede usarse de tres maneras para generar secuencias numéricas:
+La funció `range()` pot usar-se de tres maneres per a generar seqüències numèriques:
 
-- `range(fin)`: Genera una secuencia de números desde `0` hasta `fin-1`.
-- `range(inicio, fin)`: Genera una secuencia desde `inicio` hasta `fin-1`.
-- `range(inicio, fin, paso)`: Genera una secuencia desde `inicio` hasta `fin-1`, avanzando de `paso` en `paso`.
+- `range(fin)`: Genera una seqüència de nombres des de `0` fins a `fin-1`.
+- `range(inicio, fin)`: Genera una seqüència des d'`inicio` fins a `fin-1`.
+- `range(inicio, fin, paso)`: Genera una seqüència des d'`inicio` fins a `fin-1`, avançant de `paso` en `paso`.
 
-La sintaxis del bucle `for` es:
+La sintaxi del bucle `for` és:
 
 ```python
 for <variable> in <secuencia>:
-    # instrucciones
+    # instruccions
 ```
 
-En cada iteración, la variable tomará el siguiente valor de la secuencia hasta que se hayan recorrido todos los elementos. Comparado con `while`, el bucle `for` con `range()` es más conciso y menos propenso a errores de ciclos infinitos para repeticiones contadas.
+En cada iteració, la variable prendrà el següent valor de la seqüència fins que s'hagen recorregut tots els elements. Comparat amb `while`, el bucle `for` amb `range()` és més concís i menys propens a errors de cicles infinits per a repeticions comptades.
 
 ```python
-# Mismo ejemplo de conversión de temperaturas con un bucle for
+# Mateix exemple de conversió de temperatures amb un bucle for
 print("fº cº")
-for temp in range(32, 73): # range(32, 73) genera números de 32 a 72
+for temp in range(32, 73): # range(32, 73) genera nombres de 32 a 72
     print(temp, " ", int((temp-32)*5/9))
 ```
 
-Ahora que dominamos el flujo de nuestros programas, es momento de aprender a manejar no solo datos individuales, sino colecciones enteras de ellos.
+Ara que dominem el flux dels nostres programes, és el moment d'aprendre a manejar no només dades individuals, sinó col·leccions senceres d'elles.
 
-## 3.3. Alteración de la ejecución de los bucles
+## 3.3. Alteració de l'execució dels bucles
 
-En *Python* se pueden hacer saltos en el flujo de ejecución de los bucles, pero de una manera limitada y controlada.
+En *Python* es poden fer salts en el flux d'execució dels bucles, però d'una manera limitada i controlada.
 
 ### `break`
 
-Sale de un bucle (`for` o `while`) inmediatamente.
+Ix d'un bucle (`for` o `while`) immediatament.
 
 ```python
 for i in range(10):
     if i == 5:
         break
     print(i)
-# Salida: 0, 1, 2, 3, 4
+# Eixida: 0, 1, 2, 3, 4
 ```
 
 ### `continue`
 
-Salta a la siguiente iteración del bucle, sin ejecutar el resto del código de dentro
+Salta a la següent iteració del bucle, sense executar la resta del codi de dins
 
 ```python
 for i in range(5):
     if i == 2:
         continue
     print(i)
-# Salida: 0, 1, 3, 4
+# Eixida: 0, 1, 3, 4
 ```
 

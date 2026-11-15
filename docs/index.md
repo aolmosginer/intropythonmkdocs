@@ -1,10 +1,13 @@
-# 💻 Programación en Python 🐍️
+# 💻 Programació en Python 🐍️
 
-Esta web está pensada para ser una guía en los primeros pasos de la programación con *Python*. Su propósito es proporcionar a los estudiantes una base sólida y clara en los conceptos fundamentales del lenguaje. 
+Aquesta web està pensada per a ser una guia en els primers passos de la programació amb *Python*. El seu propòsit és proporcionar als estudiants una base sòlida i clara en els conceptes fonamentals del llenguatge. 
 
-A lo largo de sus apartados, se abordarán desde los tipos de datos más básicos y cómo manipularlos, hasta las estructuras que permiten a nuestros programas tomar decisiones y repetir tareas, culminando con el manejo de colecciones de datos (como las listas) y la creación y uso de funciones.
+Al llarg dels seus apartats, s'abordaran des dels tipus de dades més bàsics i com manipular-los, fins a les estructures que permeten als nostres programes prendre decisions i repetir tasques. 
 
-[Empezar →](0-introduccion.md)
+A continuació es mostrarà el maneig de col·leccions de dades (com les llistes) i la creació i ús de funcions. S'explicarà l'estructuració de projectes en mòduls i es desenvoluparan xicotets exemples pràctics de tractament d'arxius CSV, imatges i gràfics.
+
+
+[Començar →](0-intro.md)
 
 ---
 
