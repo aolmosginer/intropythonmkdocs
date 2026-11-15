@@ -399,8 +399,11 @@ imatge_gat.save('zophie.jpg')
 <p><img alt="" src="../imagenes/image24.png" /></p>
 <p>Com veiem, es pot guardar la imatge en un format diferent mitjançant <code>save()</code>.</p>
 <p>En <em>Python</em>, els píxels d'una imatge s'adrecen mitjançant les coordenades <code>x</code> i <code>y</code>, que especifiquen, respectivament, la seua posició horitzontal i vertical. L'origen és el píxel en la cantonada superior esquerra de la imatge i s'especifica amb la notació <code>(0, 0)</code>.</p>
-<p><img alt="Icon of a computer window with the top-left corner labeled (0,0) and the bottom-right corner labeled (27,26). Horizontally, arrow points right and reads “x increases”. Vertically, an arrow points down and reads “y increases”." src="../imagenes/image25.jpeg" /></p>
-<p><img alt="A grid with columns and rows labeled 0 through 9. The cells beginning at row 1, column 3 in top-left corner and going to row 5, column 8 in the bottom-right corner are shaded." src="../imagenes/image26.jpeg" /></p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/image25.jpeg" style="width: 100%; max-width: 12em; min-width: 0; height: auto;" />    
+    <img src="../imagenes/image26.jpeg" style="width: 100%; max-width: 12em; min-width: 0; height: auto;" />
+</div>
+<p><br></p>
 <p>El primer <code>0</code> representa la coordenada <code>x</code>, que comença en <code>0</code> a l'origen i augmenta d'esquerra a dreta. El segon <code>0</code> representa la coordenada <code>y</code>, que comença en <code>0</code> a l'origen i augmenta cap avall, la qual cosa és contrària a com s'expliquen normalment a la classe de matemàtiques.</p>
 <p>Moltes de les funcions de <code>Pillow</code> prenen com a argument una <code>tupla</code> de caixa (recorda que una <code>tupla</code> és “com una llista”, però immutable). Això significa que <code>Pillow</code> espera una <code>tupla</code> de quatre coordenades enteres que representen una regió rectangular en una imatge. Els quatre enters són, en ordre, els següents:</p>
 <ul>
@@ -597,7 +600,7 @@ plt.show()
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-15 17:31:18.950243+00:00
+  Docs Build Date UTC : 2026-11-15 18:09:03.362702+00:00
   -->
 
   <!--
