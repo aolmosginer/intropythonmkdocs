@@ -57,4 +57,11 @@ aside: true
     - 8.4 Creació de gràfics
         - Línies i Dispersió
         - Barres i gràfics circulars
+- [9. Tipus avançats](9-tipusavancats.md)
+  - 9.1 Tuples
+  - 9.2 Sets (conjunts)
+  - 9.3 Diccionaris
+  - 9.4 Python comprehension (Comprensió)
+- [10. Matrius](10-matrius.md)
+  - 10.1 Matrius
 

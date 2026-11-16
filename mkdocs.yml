@@ -11,10 +11,11 @@ nav:
   - 06-Àmbit: 6-ambit.md
   - 07-Móduls: 7-moduls.md
   - 08-Coses xules: 8-cosesxules.md
+  - 09-Tipus avançats: 9-tipusavancats.md
+  - 10-Matrius: 10-matrius.md
   - Crèdits: about.md
 
 theme: kpn
 #theme: readthedocs
 #theme: windmill
 #theme: dracula
-
