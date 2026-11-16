@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>09-Tipus avançats - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    09-Tipus avançats
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../10-matrius/" class="side-bar__link ">
+    10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">09-Tipus avançats</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#91-tuples">9.1 Tuples</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#caracteristiques">Característiques</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operacions-basiques-amb-tuples">Operacions bàsiques amb tuples</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#conversions-desempaquetat-i-recorregut">Conversions, desempaquetat i recorregut</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#mutabilitat-dels-elements">Mutabilitat dels elements</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#quan-usar-tuples-en-lloc-de-llistes">Quan usar tuples en lloc de llistes?</a></li>
+                
+            
+                <li><a class="a" href="#92-sets-conjunts">9.2 Sets (conjunts)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#caracteristiques_1">Característiques</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#modificacio-de-sets">Modificació de sets</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#com-recorrer-un-set">Com recórrer un set?</a></li>
+                
+            
+                <li><a class="a" href="#exercici-amb-tuples-i-sets">Exercici amb tuples i sets</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#solucio">Solució:</a></li>
+                
+            
+                <li><a class="a" href="#93-diccionaris">9.3 Diccionaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#caracteristiques_2">Característiques</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#modificacio-acces-a-diccionaris">Modificació / accés a diccionaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#metodes-particulars-i-iteracions-de-diccionaris">Mètodes particulars i iteracions de diccionaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#operacions-agregades-in-len-max-min-sum">Operacions agregades (in, len, max, min, sum)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#exercici-practic">Exercici pràctic:</a></li>
+                
+            
+                <li><a class="a" href="#94-python-comprehension-comprensio">9.4 Python comprehension (Comprensió)</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#exemples">Exemples</a></li>
+                
+            
+                <li><a class="a" href="#exercicis-sobre-python-comprehension">Exercicis sobre Python comprehension</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#1-primers-passos">1. Primers passos</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#2-treballant-amb-text">2. Treballant amb text</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#3-productes-de-la-botiga">3. Productes de la botiga</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="9-tipus-avancats">9. Tipus avançats</h1>
+<p>A més de les llistes que ja hem vist, <em>Python</em> ofereix altres tipus avançats de dades que vorem a contianució.</p>
+<h2 id="91-tuples">9.1 <em>Tuples</em></h2>
+<p>Les <em>tuples</em> són unes col.lecions de dades com les llistes però, una vegada declarades, no es poden modificar → <strong>immutables</strong></p>
+<h3 id="caracteristiques">Característiques</h3>
+<ul>
+<li>Els seus elements van declarats entre parèntesis <code>( )</code>, a diferència que les llistes, on es declaren  entre <code>[ ]</code></li>
+<li>Són <strong>ordenades</strong></li>
+<li>Suporten indexació i <em>slicing</em> (igual que fem amb les llistes)</li>
+<li>No es poden afegir o eliminar elements (inmutables)</li>
+<li>Es poden <strong>niar</strong> → una <em>tupla</em> pot contenir altres <em>tuples</em></li>
+</ul>
+<p><br></p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/tupla_objectes.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
+</div>
+<p><br></p>
+<pre><code class="language-python">mesosAny = (&quot;Gen&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Abr&quot;, &quot;Mai&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Ago&quot;, &quot;Set&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Des&quot;)
+print(mesosAny[1])           # accés al segon element
+print(mesosAny[-1])          # accés a l'últim element
+print(mesosAny[:3])          # slicing
+print(mesosAny[:10:2])       # slicing
+mesosAny[0] = 8        # ERROR, no podem modificar
+</code></pre>
+<pre><code class="language-text">Feb
+Des
+('Gen', 'Feb', 'Mar')
+('Gen', 'Mar', 'Mai', 'Jul', 'Set')
+TypeError: 'tuple' object does not support item assignment
+</code></pre>
+<h3 id="operacions-basiques-amb-tuples">Operacions bàsiques amb <em>tuples</em></h3>
+<p>Les llistes i les <em>tuples</em> compartixen gran part d'aquestes operacions bàsiques: concatenació, repetició ...</p>
+<pre><code class="language-python">tupla1 = (-5, 23, 8, 11, -45, 23, 13, -7)          
+tupla2 = (6,)         # tupla d'un sol element, cal posar la coma!
+print(tupla2)
+tupla3 = tupla1 + tupla2     # concatenar tuples
+print(tupla3)   
+print(tupla2 * 3)            # repetir la tupla 3 vegades
+print(&quot;Mai&quot; in mesosAny)     # retorna True
+</code></pre>
+<pre><code class="language-text">(6,)
+(-5, 23, 8, 11, -45, 23, 13, -7, 6)
+(6, 6, 6)
+True
+</code></pre>
+<p>Igualment, la majoria dels mètodes propis de les llistes també estan disponibles per a les <em>tuples</em>. Per exemple podem destacar:
+- <code>len()</code>: retorna el tamany de la <em>tupla</em>
+- <code>max()</code> <code>min()</code> <code>sum()</code>: només per a <em>tuples</em> amb elements compatibles
+- <code>tupla.count(element)</code>: compta el nombre de vegades que un determinat <code>element</code> està en la <em>tupla</em>
+- <code>tupla.index(element)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, el primer que trobe
+- <code>tupla.index(element, posicio)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, a partir d'una determinada posició</p>
+<pre><code class="language-python">print(len(tupla3))    # nombre d'elements
+print(max(tupla3))    # si els valors són compatibles
+print(min(tupla3))    # si els valors són compatibles
+print(sum(tupla3))    # si els valors són compatibles
+tupla4 = (4, 2, 'u', 'ww', 2, -5)
+print(sum(tupla4))    # ERROR, no podem sumar
+print(tupla1.count(23))      # comptar ocurrències
+print(tupla1.index(23))      # posició d'un valor
+print(tupla1.index(23, 3))   # a partir de la posició 3
+</code></pre>
+<pre><code class="language-text">9
+23
+-45
+27
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2
+1
+5
+</code></pre>
+<h3 id="conversions-desempaquetat-i-recorregut">Conversions, desempaquetat i recorregut</h3>
+<p>Podem <strong>convertir</strong> llistes a <em>tuples</em> utilitzant el mètode <code>tuple()</code> i fer-ho al contrari amb el mètode <code>list()</code>.</p>
+<pre><code class="language-python">llista = [&quot;poma&quot;, &quot;plàtan&quot;, &quot;cirera&quot;]
+fruites = tuple(llista)     # convertir una llista en tupla
+llista_ordenada = sorted(fruites)   # retorna una llista ordenada
+nova_llista = list(fruites)  # convertir una tupla en llista
+print(fruites)
+print(llista_ordenada)
+print(nova_llista)
+</code></pre>
+<pre><code class="language-text">('poma', 'plàtan', 'cirera')
+['cirera', 'plàtan', 'poma']
+['poma', 'plàtan', 'cirera']
+</code></pre>
+<p>El <strong>desempaquetat</strong> és l'utilitat de <em>Pyhton</em> que permet extraure el contingut d'una <em>tupla</em> a diferents variables en una sola comanda. Si el nombre de variables a l'esquerra de l'assignació no es correspon amb el nombre d'elements de la <em>tupla</em>, obtindrem un error <code>ValueError: too many values to unpack</code>.</p>
+<pre><code class="language-python">a, b, c = fruites   # desempaquetat
+print(b)  # --&gt; plàtan
+</code></pre>
+<p>Per a <strong><em>recòrrer</em></strong> una <em>tupla</em> i gestionar el seu contingut, ho podem fer com amb qualsevol element iterable: p.e. amb bucles <code>for</code>.</p>
+<pre><code class="language-python">for t in fruites: print(t)     # recorregut de la tupla
+for i in range(len(fruites)):
+    print(str(i+1)+ ' - ' + fruites[i])     #  i varia de 0 a len(fruites)
+</code></pre>
+<pre><code class="language-text">poma
+plàtan
+cirera
+1 - poma
+2 - plàtan
+3 - cirera
+</code></pre>
+<h3 id="mutabilitat-dels-elements">Mutabilitat dels elements</h3>
+<p>Havem explicat al principi que les <em>tuples</em> són inmutables, però <strong>els elements que contenen sí que poden ser mutables</strong>. És a dir, que podríem dir que les <em>tuples</em> són mutables i immutables a la vegada.</p>
+<p>Per exemple, una llista dins d'una <em>tupla</em> sí que pot canviar:</p>
+<pre><code class="language-python">tupla = (-5, 23, 8, llista, -45, 23, 13, -7)
+print(tupla)
+tupla[3][1] = 'taronja'
+print(tupla)
+</code></pre>
+<pre><code class="language-text">(-5, 23, 8, ['poma', 'plàtan', 'cirera'], -45, 23, 13, -7)
+(-5, 23, 8, ['poma', 'taronja', 'cirera'], -45, 23, 13, -7)
+</code></pre>
+<h3 id="quan-usar-tuples-en-lloc-de-llistes">Quan usar <em>tuples</em> en lloc de llistes?</h3>
+<ul>
+<li>Quan les dades no han de canviar. Exemple: coordenades, dies de la setmana</li>
+<li>Quan es busca més eficiència. Les <em>tuples</em> consumeixen menys memòria i són més ràpides</li>
+<li>Quan es necessiten dades <em>hashables</em>. Per exemple les <em>tuples</em> es poden usar com a claus en diccionaris (vorem més endavant el que és), les llistes no</li>
+</ul>
+<h2 id="92-sets-conjunts">9.2 Sets (conjunts)</h2>
+<p>Els <em>sets</em> són també una col.leció de dades com les llistes i les <em>tuples</em>, però amb unes particularitats que vorem a continuació.</p>
+<h3 id="caracteristiques_1">Característiques</h3>
+<ul>
+<li>Els seus elements van declarats entre claus <code>{ }</code></li>
+<li><strong>Elements únics:</strong> en un <em>set</em> no pot haver-hi duplicats</li>
+<li><strong>No ordenats:</strong> els elements no tenen un ordre específic dins el <em>set</em></li>
+<li><strong>Mutables:</strong> es poden afegir o eliminar elements</li>
+<li><strong>Els elements que conté han de ser immutables:</strong> podem afegir o llevar elements, però no modificar un element concret (p.e. no pot incloure llistes, ja que aquestes són mutables)</li>
+</ul>
+<pre><code class="language-python">conjunt_buit = set()   
+coses = {'a', 1, 2, 2, 3, 'vd', 'a', -5} # Elimina duplicats
+print(coses)               
+conjunt = set([1, 2, 3, 3])  # Convertir una llista en conjunt
+print(conjunt)
+</code></pre>
+<pre><code class="language-text">{1, 2, 'a', 3, -5, 'vd'}
+{1, 2, 3}
+</code></pre>
+<p>Com que els elements no tenen una posició específica, quan s'imprimeix un <em>set</em> o s'itera sobre ell, l'ordre dels elements mostrat pot ser diferent del que es va utilitzar en crear-lo.</p>
+<p>Dos execucions de <code>print(coses)</code> poden mostrar els elements en un ordre diferent:</p>
+<pre><code class="language-text">{'vd', 1, 2, 3, -5, 'a'}
+
+{1, 2, 3, 'vd', -5, 'a'}
+</code></pre>
+<h3 id="modificacio-de-sets">Modificació de sets</h3>
+<p>Com que els <em>sets</em> no estan ordenats, no podem indexar els seus elements com ho fem amb les llistes per a modificar-los <code>llista[3] = 44</code>. Per a gestionar el conjunts disposem de mètodes propis, entre els que podem destacar:</p>
+<ul>
+<li><code>conjunt.add(element)</code>: afegeix un <code>element</code> al <em>set</em> </li>
+<li><code>conjunt.update([e1,e2,e3...])</code>: afegir elements d'una llista "un a un" (cada element de la llista en una nova posició del <em>set</em>)</li>
+<li><code>conjunt.remove(element)</code>: elimina l'<code>element</code> referenciat. Dona error si l'<code>element</code> no existeix dins el conjunt.</li>
+<li><code>conjunt.discard(element)</code>: elimina l'<code>element</code> referenciat, però en aquest cas no dona error si no existeix</li>
+</ul>
+<pre><code class="language-python">conjunt.add(4)                 # afegix el nombre 4
+conjunt.add((5, 'e', 6))       # afegix la tupla (5, 'e', 6)
+print(conjunt)
+
+conjunt.update([3,'w',7,8])    # afegix elements d'una llista 
+# El 3 no s'afegix perque ja existeix en el conjunt
+print(conjunt)
+
+conjunt.remove(2)              # elimina el 2
+conjunt.discard('w')           # elimina la 'w' 
+conjunt.discard('paco')        # no dona error 
+print(conjunt)
+</code></pre>
+<pre><code class="language-text">{1, 2, 3, 4, (5, 'e', 6)}
+{1, 2, 3, 4, (5, 'e', 6), 7, 8, 'w'}
+{1, 3, 4, (5, 'e', 6), 7, 8}
+</code></pre>
+<h3 id="com-recorrer-un-set">Com recórrer un set?</h3>
+<p>Exactament igual que es fa amb les llistes i les tuples.</p>
+<pre><code class="language-python">conjunt = {1, 2.5, &quot;hola&quot;, (1, 2)}
+for element in conjunt:
+    print(element)
+</code></pre>
+<pre><code class="language-text">1
+2.5
+(1, 2)
+hola
+</code></pre>
+<p>Recorda que, al ser una col.lecció no ordenada, quan recorrem un <em>set</em> podem obtindre els resultats en un ordre diferent en cada execució. Fes la prova amb el codi anterior i voràs com cada vegada el <code>for</code> mostra els elements en un ordre diferent.</p>
+<h2 id="exercici-amb-tuples-i-sets">Exercici amb <em>tuples</em> i <em>sets</em></h2>
+<p>Una biblioteca escolar vol gestionar els llibres i els socis. </p>
+<p>Cada llibre es guarda com una <em>tupla</em> <code>(títol, autor, any)</code>:</p>
+<pre><code class="language-python">llibre1 = (&quot;Mirall trencat&quot;, &quot;Mercè Rodoreda&quot;, 1974)
+llibre2 = (&quot;La plaça del Diamant&quot;, &quot;Mercè Rodoreda&quot;, 1962)
+llibre3 = (&quot;Solitud&quot;, &quot;Víctor Català&quot;, 1905)
+</code></pre>
+<ol>
+<li>Mostra el títol de <code>llibre1</code> accedint-hi per la posició</li>
+<li>Mostra l’últim element de <code>llibre3</code> utilitzant un índex negatiu</li>
+<li>Fes un desempaquetat de <code>llibre2</code> en tres variables <code>titol, autor, any</code> i imprimeix: "La plaça del Diamant va ser escrit per Mercè Rodoreda el 1962"</li>
+<li>Crea una llista amb els tres llibres i ordena-la per llibre</li>
+</ol>
+<p>Dos grups de socis han fet préstecs aquesta setmana:</p>
+<pre><code class="language-python">grup_a = {&quot;Marta&quot;, &quot;Pau&quot;, &quot;Anna&quot;, &quot;Joan&quot;, &quot;Laia&quot;}
+grup_b = {&quot;Pau&quot;, &quot;Laia&quot;, &quot;Jordi&quot;, &quot;Núria&quot;, &quot;Marc&quot;}
+</code></pre>
+<ol>
+<li>Afegeix "Clara" al <code>grup_a</code> i elimina "Joan"</li>
+<li>Comprova si "Marc" és al <code>grup_b</code></li>
+<li>Intenta eliminar "Àngel" del <code>grup_b</code> sense que et done error</li>
+</ol>
+<h3 id="solucio">Solució:</h3>
+<pre><code class="language-python"># Part 1
+print(llibre1[0])                  
+print(llibre3[-1])                 
+titol, autor, any = llibre2
+print(f&quot;{titol} va ser escrit per {autor} el {any}&quot;)
+llibres = [llibre1, llibre2, llibre3]
+print(sorted(llibres))
+
+# Part 2
+grup_a.add(&quot;Clara&quot;)
+grup_a.remove(&quot;Joan&quot;)
+print(&quot;Marc&quot; in grup_b)            
+grup_b.discard(&quot;Àngel&quot;)
+</code></pre>
+<h2 id="93-diccionaris">9.3 Diccionaris</h2>
+<p>Un diccionari és una col.lecció de dades que guarda la informació en parelles <strong>clau → valor</strong>. En lloc d’accedir al valor d'un element per la seva posició (com en una llista), hi accedixes per la seva <strong>clau</strong>.</p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/diccionari_clau_valor.png" style="width: 100%; max-width: 32em; min-width: 0; height: auto;" />    
+</div>
+
+<h3 id="caracteristiques_2">Característiques</h3>
+<ul>
+<li>Els seus elements van declarats entre claus <code>{ }</code>, separant els elements amb comes <code>,</code></li>
+<li>Cada element està format per una parella <code>clau : valor</code></li>
+<li>Són <strong>mutables</strong></li>
+<li><strong>No permeten claus duplicades</strong></li>
+<li>Si s'afegix una clau repetida, el seu valor serà sobreescrit</li>
+<li>Les <strong>claus</strong> han de ser <strong>immutables</strong></li>
+<li>Poden ser <code>str</code>, <code>int</code>, <code>tuple</code>, però no <code>list</code> o <code>dict</code>.</li>
+<li>En el cap <strong>valor</strong> es pot guardar qualsevol tipus de dades (mutables o immutables)</li>
+<li>Els seus elements <code>clau : valor</code> mantenen l'ordre d'inserció</li>
+</ul>
+<h4 id="exemple">Exemple</h4>
+<pre><code class="language-python">dic = {}  # Diccionari buit
+persona = {&quot;nom&quot;: &quot;Carlos&quot;,
+           &quot;edat&quot;: 30,
+           &quot;ciutat&quot;: &quot;Madrid&quot;}
+print(persona)
+print(persona[&quot;nom&quot;])  # Accedeix al valor d'una clau.
+</code></pre>
+<pre><code class="language-text">{'nom': 'Carlos', 'edat': 30, 'ciutat': 'Madrid'}
+Carlos
+</code></pre>
+<h3 id="modificacio-acces-a-diccionaris">Modificació / accés a diccionaris</h3>
+<p>Podem afegir noves parelles clau/valor utilitzant la nomenclatura <code>diccionari[clau] = valor</code>.
+Si una clau ja existeix, la modificarà.</p>
+<p>El mètode <code>diccionari.update({ })</code> ens permet afegir/modificar vàries parelles clau/valor a la vegada.</p>
+<pre><code class="language-python">dic = {}  # Diccionari buit
+dic[&quot;ies&quot;] = &quot;teulada&quot;          # Afegir una nova clau
+dic[&quot;provincia&quot;] = &quot;alacant&quot;    
+dic[&quot;provincia&quot;] = &quot;california&quot; # Modificar el valor d'una clau existent
+
+dic.update({&quot;telefon&quot;: 965739045, &quot;estudis&quot;: ['ESO', 'BAT', 'FP']})
+print(dic)
+
+nom = dic[&quot;ies&quot;]  # Accedir a un valor (error si no existeix)
+print(nom)
+</code></pre>
+<pre><code class="language-text">{'ies': 'teulada', 'provincia': 'california', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
+teulada
+</code></pre>
+<p>Podem eliminar elements d'un diccionari de vàries formes:
+- <code>del diccionari[clau]</code>: Elimina una clau i el seu valor
+- <code>diccionari.pop[clau]</code>: Retorna el valor de la clau i després elimina l'element
+- <code>diccionari.clear()</code>: Buida el diccionari</p>
+<pre><code class="language-python">del dic[&quot;provincia&quot;]
+print(dic)
+estudis = dic.pop(&quot;estudis&quot;)
+print(dic)
+print(estudis)
+dic.clear()
+print(dic)
+</code></pre>
+<pre><code class="language-text">{'ies': 'teulada', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
+{'ies': 'teulada', 'telefon': 965739045}
+['ESO', 'BAT', 'FP']
+{}
+</code></pre>
+<h3 id="metodes-particulars-i-iteracions-de-diccionaris">Mètodes particulars i iteracions de diccionaris</h3>
+<p>Donada la particular estructura dels diccionaris, aquests disposen d'una sèrie de mètodes propis que ens ajuden a gestionar les dades emmagatzemades en ells.
+- <code>diccionari.keys()</code>: Retorna un <code>objecte</code> de tipus <code>dict_keys</code> (no una llista , string, <em>tupla</em> ...). Aquest <code>objecte</code> conté <strong>totes les claus</strong> del diccionari
+- <code>diccionari.values()</code>: Retorna un <code>objecte</code> de tipus <code>dict_values</code>que conté <strong>tots els valors</strong> del diccionari
+- <code>diccionari.items()</code>: Retorna un <code>objecte</code> de tipus <code>dict_items</code>que conté totes les parelles <code>(clau,valor)</code></p>
+<p>Si fem un <code>print()</code> d'aquestos objectes propis dels diccionaris vorem que no se'ns mostren com una llista, fet que ens ha de fer pensar que no podem tractar-los d'igual forma.</p>
+<pre><code class="language-python">persona = {&quot;nom&quot;: &quot;Carlos&quot;, 
+           &quot;edat&quot;: 30, 
+           &quot;ciutat&quot;: &quot;Madrid&quot;}
+claus = persona.keys()     # objecte dict_keys
+print(claus)
+valors = persona.values()  # objecte dict_values
+print(valors)
+items = persona.items()    # objecte dict_items
+print(items)
+</code></pre>
+<pre><code class="language-text">dict_keys(['nom', 'edat', 'ciutat'])
+dict_values(['Carlos', 30, 'Madrid'])
+dict_items([('nom', 'Carlos'), ('edat', 30), ('ciutat', 'Madrid')])
+</code></pre>
+<p>Els <code>objectes</code> retornats pels mètodes <code>.keys()</code>, <code>.values()</code> i <code>.items()</code> podem utilitzar-los, per exemple, per a iterar sobre els diccionaris (recórrer-los).</p>
+<pre><code class="language-python">for clau in persona.keys():
+    print(clau)
+
+for valor in persona.values():
+    print(valor)
+
+for clau, valor in persona.items():
+    print(clau, valor)
+</code></pre>
+<pre><code class="language-text">nom
+edat
+ciutat
+</code></pre>
+<pre><code class="language-text">Carlos
+30
+Madrid
+</code></pre>
+<pre><code class="language-text">nom Carlos
+edat 30
+ciutat Madrid
+</code></pre>
+<p>Podem simplificar el <code>for</code> si el que volem és iterar sobre les claus (serà el més habitual). Si es pasa directament el diccionari al bucle <code>for</code>, aquest iterarà sobre les seues claus. </p>
+<pre><code class="language-python">print('Les parelles clau/valor són:')
+for clau in persona:
+    print(clau, ' --&gt; ', persona[clau])
+</code></pre>
+<pre><code class="language-text">Les parelles clau/valor són:
+nom  --&gt;  Carlos
+edat  --&gt;  30
+ciutat  --&gt;  Madrid
+</code></pre>
+<p>Per tant, <code>for clau in persona.keys():</code> és equivalent a <code>for clau in persona:</code>.</p>
+<h3 id="operacions-agregades-in-len-max-min-sum">Operacions agregades (<code>in</code>, <code>len</code>, <code>max</code>, <code>min</code>, <code>sum</code>)</h3>
+<p>Les operacions agregades de <em>Python</em> poden utilitzar-se sobre els diccionaris. Moltes d'aquestes operacions treballen per defecte sobre les <strong>claus</strong> (<code>max</code>, <code>min</code>, <code>sum</code>). Si el que es vol és treballar amb els <strong>valors</strong>, s'ha d'utilitzar <code>.values()</code>.</p>
+<pre><code class="language-python">edats = {&quot;Anna&quot;: 20,
+         &quot;Pere&quot;: 25,
+         &quot;Joan&quot;: 18   }
+print(max(edats))                # &quot;Pere&quot;
+print(max(edats.values()))       # 25
+print(min(edats.values()))       # 18
+print(sum(edats.values()))       # 63
+&quot;Pere&quot; in edats                  # True → busca entre les claus
+25 in edats                      # False → NO busca entre els valors
+25 in edats.values()             # True → busca entre els valors
+</code></pre>
+<h3 id="exercici-practic">Exercici pràctic:</h3>
+<p>Fes ara l'exercici sobre diccionaris <strong>"La base de dades de la Rebel·lió 🌌"</strong></p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
+</div>
+
+<h2 id="94-python-comprehension-comprensio">9.4 Python comprehension (Comprensió)</h2>
+<p>La comprensió de <em>Python</em> és una manera concisa i eficient de crear col.leccions a partir d'iterables, modificant i/o filtrant el seu contingut.</p>
+<pre><code class="language-python">resultat = [expressió for element in iterable if condició]
+</code></pre>
+<ul>
+<li><code>expressió</code>: operació o transformació aplicada a cada element</li>
+<li><code>element</code>: variable que pren els valors de l'iterable en cada iteració </li>
+<li><code>iterable</code>: objecte iterable (llista, <em>tupla</em>, rang, <em>set</em>, etc.)</li>
+<li><code>condició</code> (opcional): filtra els elements</li>
+</ul>
+<h3 id="exemples">Exemples</h3>
+<p>Crear una llista de quadrats a partir d'un rang de nombres.</p>
+<pre><code class="language-python">quadrats = [x**2 for x in range(10)]
+print(quadrats)     # Llista  
+</code></pre>
+<pre><code class="language-text">[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+</code></pre>
+<p><br></p>
+<p>Filtrar els nombres parells d'un <em>set</em> i guardar-los en una llista.</p>
+<pre><code class="language-python">nombres = {0, 21, 44, 8, 7, 13, 50, 4, 16, 23, 12, 9}     # Set
+parells = [x for x in nombres if x % 2 == 0]
+print(parells)      # Llista 
+</code></pre>
+<pre><code class="language-text">[0, 4, 8, 44, 12, 16, 50]
+</code></pre>
+<p><br></p>
+<p>Convertir les paraules d'una <em>tupla</em> a majúscules i guardar-les en una llista. Fer després el mateix però guardant-les en un <em>set</em>, on s'eliminen duplicats i els elements queden desordenats.</p>
+<pre><code class="language-python">paraules = (&quot;hola&quot;, &quot;món&quot;, &quot;hola&quot;, &quot;python&quot;)    # Tupla
+majuscules = [paraula.upper() for paraula in paraules]
+print(majuscules)   # Llista  
+
+majuscules = {paraula.upper() for paraula in paraules}
+print(majuscules)   # Set   
+</code></pre>
+<pre><code class="language-text">['HOLA', 'MÓN', 'HOLA', 'PYTHON']
+{'MÓN', 'PYTHON', 'HOLA'}
+</code></pre>
+<h2 id="exercicis-sobre-python-comprehension">Exercicis sobre Python comprehension</h2>
+<h3 id="1-primers-passos">1. Primers passos</h3>
+<p>A partir de la següent llista:</p>
+<pre><code class="language-python">nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</code></pre>
+<ol>
+<li>Crea una llista amb el doble dels nombres senars</li>
+<li>Crea una llista amb els nombres més grans que 5</li>
+<li>Reescriu amb una list comprehension aquest bucle for:</li>
+</ol>
+<pre><code class="language-python">resultat = []
+for n in nombres:
+    resultat.append(n + 10) 
+</code></pre>
+<h4 id="solucio_1">Solució</h4>
+<pre><code class="language-python">print([n * 2 for n in nombres if n % 2 != 0])
+print([n for n in nombres if n &gt; 5])
+print([n + 10 for n in nombres])
+</code></pre>
+<h3 id="2-treballant-amb-text">2. Treballant amb text</h3>
+<p>A partir de la següent llista:</p>
+<pre><code class="language-python">noms = [&quot;marta&quot;, &quot;pau&quot;, &quot;anna&quot;, &quot;joan&quot;, &quot;laia&quot;, &quot;jordi&quot;]
+</code></pre>
+<ol>
+<li>Crea una llista amb els noms en majúscules</li>
+<li>Crea una llista amb la longitud de cada nom</li>
+<li>Crea una llista amb els noms que tenen més de 4 lletres</li>
+<li>Crea una llista amb la primera lletra de cada nom, en majúscula (["M", "P", ...])</li>
+</ol>
+<h4 id="solucio_2">Solució</h4>
+<pre><code class="language-python">print([nom.upper() for nom in noms])
+print([len(nom) for nom in noms])
+print([nom for nom in noms if len(nom) &gt; 4])
+print([nom[0].upper() for nom in noms])
+</code></pre>
+<h3 id="3-productes-de-la-botiga">3. Productes de la botiga</h3>
+<p>Una botiga en línia vol processar les seves dades. Cada producte és una tupla <code>(nom, preu, estoc)</code> dins la llista <code>productes</code>:</p>
+<pre><code class="language-python">productes = [
+    (&quot;Teclat&quot;, 25.0, 10),
+    (&quot;Ratolí&quot;, 12.5, 0),
+    (&quot;Monitor&quot;, 150.0, 4),
+    (&quot;Auriculars&quot;, 40.0, 0),
+    (&quot;Webcam&quot;, 30.0, 7),
+]
+</code></pre>
+<ol>
+<li>Crea una llista amb només els noms dels productes</li>
+<li>Crea una llista amb els noms dels productes disponibles (estoc &gt; 0).</li>
+<li>Crea una llista amb els preus amb un 21 % d’IVA afegit, arrodonits a 2 decimals (round()).</li>
+<li>Crea una llista amb els noms dels productes que costen menys de 35 €.</li>
+<li>Crea una llista de cadenes amb el format "Teclat: 25.0 €" per a cada producte</li>
+</ol>
+<p><strong>PISTA:</strong> Utilitza el desempaquetat de les <em>tuples</em> dins el <code>for</code> per a obtenir els 3 conceptes de cada producte per separat <code>for nom, preu, estoc in productes</code>.</p>
+<h4 id="solucio_3">Solució</h4>
+<pre><code class="language-python">print([nom for nom, preu, estoc in productes])
+print([nom for nom, preu, estoc in productes if estoc &gt; 0])
+print([round(preu * 1.21, 2) for nom, preu, estoc in productes])
+print([nom for nom, preu, estoc in productes if preu &lt; 35])
+print([f&quot;{nom}: {preu} €&quot; for nom, preu, estoc in productes])
+</code></pre>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../8-cosesxules/"
+                title="08-Coses xules">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../10-matrius/"
+                title="10-Matrius"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-16 20:33:13.926110+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>

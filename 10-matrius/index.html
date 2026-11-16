@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>10-Matrius - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlfluxe/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-cosesxules/" class="side-bar__link ">
+    08-Coses xules
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../9-tipusavancats/" class="side-bar__link ">
+    09-Tipus avançats
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">10-Matrius</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#101-definicio">10.1 Definició</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#matrius-de-3-dimensions">Matrius de 3 dimensions</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#matrius-de-mes-dimensions">Matrius de més dimensions</a></li>
+                
+            
+                <li><a class="a" href="#102-exemple-hundir-la-flota">10.2 Exemple: "Hundir la flota"</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#exemple">Exemple</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#pas-1-funcio-crear_tablero">Pas 1: funció crear_tablero</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#pas-2-funcio-rellenar_tablero">Pas 2: funció rellenar_tablero</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#pas-3-funcio-muestra_tablero">Pas 3: funció muestra_tablero</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#pas-4-mostrar-el-tauler-amb-coordenades">Pas 4: mostrar el tauler amb coordenades</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="10-matrius">10. Matrius</h1>
+<h2 id="101-definicio">10.1 Definició</h2>
+<p>Les matrius són <strong>llistes de llistes</strong>. Podem pensar en les matrius de 2 dimensions com les cel·les d'un full de càlcul (files i columnes).</p>
+<p><img alt="Matriu de 2 dimensions representada com un full de càlcul (5 files x 4 columnes)" src="../imagenes/matriu_full_calcul.png" /></p>
+<pre><code class="language-python">llista1 = [54, -9, 64, 44]
+llista2 = [-6, 0, 14, 24]
+matriu1 = [llista1 , llista2]
+
+matriu2 =[
+    ['a', 'b', 'c'],   # fila 0
+    ['x', 'y', 'z']    # fila 1
+]
+print(matriu2)
+print(matriu2[1])
+print(matriu2[0][2])
+</code></pre>
+<h3 id="matrius-de-3-dimensions">Matrius de 3 dimensions</h3>
+<p>Es pot treballar també amb matrius 3D. La seua gestió comença a complicar-se a l'haver de treballar amb 3 coordinades.</p>
+<pre><code class="language-python"># Crear una matriu 3D (2x3x4) utilitzant llistes niades
+matriu3d = [
+    [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],         # matriu 0
+    [[13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]] # matriu 1
+]
+
+# Accés als diferents elements
+print(matriu3d[0][1][2]) # columna 2 de la fila 1 de la matriu 0
+print(matriu3d[0][1])    # fila 1 de la matriu 0
+print(matriu3d[0])       # matriu 0
+print(matriu3d)          # matriu 3D
+</code></pre>
+<h3 id="matrius-de-mes-dimensions">Matrius de més dimensions</h3>
+<p>Podem crear matrius amb totes les dimensión que vulguem, però rarament necessitarem matrius de 4D, 5D, ... i la seua manipulació serà un veritable mal de cap.</p>
+<pre><code class="language-python">matriu4d = [
+    [[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],
+     [[13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]]
+    ],
+    [[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],
+     [[13, 14, 15, 16], [17, 18, 19, 20], [21, 22, 23, 24]]
+    ]
+]
+</code></pre>
+<p>Si realment necessitem matrius amb tantes dimensions, potser la solució passa per replantejar-se la solució al problema i utilitzar altres formes de gestió de dades.</p>
+<h2 id="102-exemple-hundir-la-flota">10.2 Exemple: "Hundir la flota"</h2>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/hundir_la_flota.jpeg" style="width: 100%; max-width: 26em; min-width: 0; height: auto;" />    
+</div>
+<p><br></p>
+<p>Anem a vorer a continuació l'exemple de programació del joc <strong>"Hundir la flota"</strong>, ja que es tracta d'un joc on la representació de les dades en format matricial és la solució més típica.</p>
+<p>No crearem un joc completament funcional, simplement utilitzarem matrius per a representar la disposició dels vaixells en el tauler.</p>
+<p>Els passos a seguir seran:</p>
+<ul>
+<li>Pas 1: Crear el tauler buit</li>
+<li>Pas 2: Omplir el tauler amb vaixells</li>
+<li>Pas 3: Mostrar el tauler bàsic</li>
+<li>Pas 4: Mostrar el tauler amb coordenades</li>
+</ul>
+<p>La solució es basa en la representació del tauler (el mar) com una matriu de <code>x</code> files per <code>y</code> columnes, on marcarem la posició dels vaixells com <code>1</code> i els espais sense vaixells com <code>0</code>.</p>
+<h4 id="exemple">Exemple</h4>
+<pre><code class="language-python">tablero = [
+[0, 0, 0], # Fila 0
+[0, 1, 0], # Fila 1
+[0, 0, 0]  # Fila 2
+]
+
+# Recòrrer una matriu de 3x3 amb 2 bucles for niats
+for i in range(3):      # Files
+    for j in range(3):  # Columnes
+        print(tablero[i][j], end=&quot; &quot;)
+    print() # Nova línia per a la següent fila
+</code></pre>
+<pre><code class="language-text">0 0 0
+0 1 0
+0 0 0
+</code></pre>
+<h3 id="pas-1-funcio-crear_tablero">Pas 1: funció <code>crear_tablero</code></h3>
+<p>Definirem una funció <code>crear_tablero</code> que cree un tauler buit:</p>
+<ul>
+<li>Estarà ple de <code>0</code>s (indica aigua, que no hi ha cap vaixell)</li>
+<li>La funció tindrà un paràmetre d'entrada que serà la dimensió del tauler (sempre serà un tauler quadrat, de 3x3, 5x5, 11x11 …)</li>
+<li>Retornarà una matriu que inclou el tauler</li>
+</ul>
+<p>Exemple de <code>print()</code> d'un tauler de 5x5:</p>
+<pre><code class="language-text">[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+</code></pre>
+<p><br></p>
+<hr />
+<h4 id="solucio">Solució:</h4>
+<pre><code class="language-python">def crear_tablero(dimension):
+    &quot;&quot;&quot;Crea un tablero cuadrado de dimension x dimension, donde cada celda es un 0 (agua).&quot;&quot;&quot;
+    tablero = []
+    for fila in range(dimension):
+        fila_actual = []
+        for columna in range(dimension):
+            fila_actual.append(0)
+        tablero.append(fila_actual)
+    return tablero
+</code></pre>
+<hr />
+<h3 id="pas-2-funcio-rellenar_tablero">Pas 2: funció <code>rellenar_tablero</code></h3>
+<p>Crearem una funció anomenada <code>rellenar_tablero</code> que:</p>
+<ul>
+<li>No té paràmetres d'entrada</li>
+<li>Pregunte a l'usuari pel tamany del tauler a crear i el genere utilitzant la funció <code>crear_tablero</code> anterior.</li>
+<li>Demane a l'usuari, coordenada per coordenada, si vol col·locar un vaixell.</li>
+<li>Retorne la matriu del tauler emplenat de vaixells.</li>
+</ul>
+<p>Exemple d'ús:</p>
+<pre><code class="language-python">tablero = rellenar_tablero()
+</code></pre>
+<p>Pistes:</p>
+<ul>
+<li>Usa <code>input()</code> per a preguntar: <code>"Fila 2, Columna 3 - ¿Colocar barco? (s/n)"</code>.</li>
+<li>Convertix la resposta positiva a un <code>1</code> i actualitza el tauler.</li>
+<li><code>len(matriu)</code> retorna el nombre de files d'una matriu.</li>
+<li><code>len(matriu[x])</code> retorna el nombre de columnes de la fila <code>x</code> d'una matriu.</li>
+</ul>
+<p>Exemple d'execució:</p>
+<pre><code class="language-text">¿Dimensión del tablero?: 3
+Fila 0, Columna 0 - ¿Colocar barco? (s/n): s
+Fila 0, Columna 1 - ¿Colocar barco? (s/n): s
+Fila 0, Columna 2 - ¿Colocar barco? (s/n): n
+Fila 1, Columna 0 - ¿Colocar barco? (s/n): n
+Fila 1, Columna 1 - ¿Colocar barco? (s/n): s
+Fila 1, Columna 2 - ¿Colocar barco? (s/n): s
+Fila 2, Columna 0 - ¿Colocar barco? (s/n): s
+Fila 2, Columna 1 - ¿Colocar barco? (s/n): s
+Fila 2, Columna 2 - ¿Colocar barco? (s/n): n
+</code></pre>
+<p>Resultat del <code>print()</code> del tauler:</p>
+<pre><code class="language-text">[[1, 1, 0], [0, 1, 1], [1, 1, 0]]
+</code></pre>
+<p><br></p>
+<hr />
+<h4 id="solucio_1">Solució:</h4>
+<pre><code class="language-python">def rellenar_tablero():
+    dimension = int(input(&quot;¿Dimensión del tablero?: &quot;))
+    tablero = crear_tablero(dimension)
+
+    for fila in range(len(tablero)):
+        for columna in range(len(tablero[fila])):
+            respuesta = input(f&quot;Fila {fila}, Columna {columna} - ¿Colocar barco? (s/n): &quot;)
+            if respuesta.lower() == 's':
+                tablero[fila][columna] = 1
+    return tablero
+</code></pre>
+<ul>
+<li><code>len(tablero)</code> → nombre de files.</li>
+<li><code>len(tablero[fila])</code> → nombre de columnes de la fila en la que ens trobem.</li>
+</ul>
+<p>Ús:</p>
+<pre><code class="language-python">tablero = rellenar_tablero()
+print(tablero)
+</code></pre>
+<hr />
+<h3 id="pas-3-funcio-muestra_tablero">Pas 3: funció <code>muestra_tablero</code></h3>
+<p>Crearem una funció anomenada <code>muestra_tablero</code> que:</p>
+<ul>
+<li>Accepte un tauler com a paràmetre d'entrada</li>
+<li>Recòrrega el tauler</li>
+<li>Mostre cada cel·la com <code>X</code> si hi ha un vaixell i com <code>~</code> si és aigua</li>
+</ul>
+<p>Exemple tauler 5x5:</p>
+<pre><code class="language-text">X X X ~ ~
+~ ~ X ~ X
+X X ~ ~ ~
+X X ~ ~ ~
+X X ~ ~ ~
+</code></pre>
+<p><br></p>
+<hr />
+<h4 id="solucio_2">Solució:</h4>
+<pre><code class="language-python">def muestra_tablero(tablero):
+    for i in range(len(tablero)): # Files
+        for j in range(len(tablero[i])): # Columnes
+            if tablero[i][j] == 0:
+                print(&quot;~&quot;, end=&quot; &quot;)
+            elif tablero[i][j] == 1:
+                print(&quot;X&quot;, end=&quot; &quot;)
+        print()
+</code></pre>
+<p>Ús:</p>
+<pre><code class="language-python">tablero = rellenar_tablero()
+muestra_tablero(tablero)
+</code></pre>
+<hr />
+<h3 id="pas-4-mostrar-el-tauler-amb-coordenades">Pas 4: mostrar el tauler amb coordenades</h3>
+<p>Crearem una nova funció, a partir de l'anterior, que mostre el tauler de la següent forma.</p>
+<p>Tauler 3x3:</p>
+<pre><code class="language-text">   A B C
+1 |X|~|~|
+2 |~|X|X|
+3 |~|X|X|
+</code></pre>
+<p>Tauler 5x5:</p>
+<pre><code class="language-text">   A B C D E
+1 |X|X|X|~|~|
+2 |~|~|X|~|X|
+3 |X|X|~|~|~|
+4 |X|X|~|~|~|
+5 |X|X|~|~|~|
+</code></pre>
+<p>Pistes:</p>
+<ul>
+<li>S'ha d'adaptar als diferents possibles tamanys dels taulers</li>
+<li>Intenta primer aconseguir la visualització amb només les barres horitzontals</li>
+<li>Després passes ja a incloure les lletres i els números de les capçaleres</li>
+<li>Recorda l'ús de la funció <code>chr()</code> i pensa com et podria servir</li>
+</ul>
+<p><br></p>
+<hr />
+<h4 id="solucio-1-resultat-intermedi-nomes-les-barres-sense-les-capcaleres-de-lletres-ni-numeros">Solució 1 - Resultat intermedi (només les barres, sense les capçaleres de lletres ni números):</h4>
+<pre><code class="language-python">def muestra_tablero(tablero):
+    for i in range(len(tablero)): # Files
+        print (&quot;|&quot;, end=&quot;&quot;)
+        for j in range(len(tablero[i])): # Columnes
+            if tablero[i][j] == 0:
+                print(&quot;~&quot;, end=&quot;|&quot;)
+            elif tablero[i][j] == 1:
+                print(&quot;X&quot;, end=&quot;|&quot;)
+        print()
+</code></pre>
+<p>Resultat per a un tauler 5x5:</p>
+<pre><code class="language-text">|X|X|X|~|~|
+|~|~|X|~|X|
+|X|X|~|~|~|
+|X|X|~|~|~|
+|X|X|~|~|~|
+</code></pre>
+<hr />
+<h4 id="solucio-2-afegint-les-capcaleres">Solució 2 - Afegint les capçaleres:</h4>
+<pre><code class="language-python">def muestra_tablero(tablero):
+    letras='ABCDEFGHIJKLMNOPQRSTUVWXYZ' # abecedari definit en un string
+    print()
+
+    print(&quot;   &quot;, end=&quot;&quot;)
+    for index in range(len(tablero[0])):
+        print(letras[index] + &quot; &quot;, end=&quot;&quot;)  # 1a línia amb les lletres necessàries
+    print()
+
+    for i in range(len(tablero)): # Files
+        print(f&quot;{i+1} |&quot;, end=&quot;&quot;)   # índex de cada fila al començar una nova línia
+        for j in range(len(tablero[i])): # Columnes
+            if tablero[i][j] == 0:
+                print(&quot;~&quot;, end=&quot;|&quot;)
+            elif tablero[i][j] == 1:
+                print(&quot;X&quot;, end=&quot;|&quot;)
+        print()
+</code></pre>
+<p>Resultat per a un tauler 5x5:</p>
+<pre><code class="language-text">   A B C D E
+1 |X|X|X|~|~|
+2 |~|~|X|~|X|
+3 |X|X|~|~|~|
+4 |X|X|~|~|~|
+5 |X|X|~|~|~|
+</code></pre>
+<hr />
+<h4 id="solucio-3-mateix-resultat-pero-utilitzant-els-caracters-de-la-taula-ascii">Solució 3 - Mateix resultat, però utilitzant els caràcters de la taula ASCII:</h4>
+<pre><code class="language-python">def muestra_tablero(tablero):
+    print()
+
+    print(&quot;   &quot;, end=&quot;&quot;)
+    for index in range(len(tablero[0])):
+        print(chr(index + 65) + &quot; &quot;, end=&quot;&quot;)    # comencem les lletres de l'abecedari a partir del caràcter ASCII #65 --&gt; A, 
+        # Després consecutivament #66 --&gt; B, #67 --&gt; C ...
+    print()
+
+    for i in range(len(tablero)): # Files
+        print(f&quot;{i+1} |&quot;, end=&quot;&quot;)
+        for j in range(len(tablero[i])): # Columnes
+            if tablero[i][j] == 0:
+                print(&quot;~&quot;, end=&quot;|&quot;)
+            elif tablero[i][j] == 1:
+                print(&quot;X&quot;, end=&quot;|&quot;)
+        print()
+</code></pre>
+<p>Visualment el resultat és el mateix, però la programació és més "professional":</p>
+<pre><code class="language-text">   A B C D E
+1 |X|X|X|~|~|
+2 |~|~|X|~|X|
+3 |X|X|~|~|~|
+4 |X|X|~|~|~|
+5 |X|X|~|~|~|
+</code></pre>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../9-tipusavancats/"
+                title="09-Tipus avançats">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../about/"
+                title="Crèdits"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-16 20:33:13.917470+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
