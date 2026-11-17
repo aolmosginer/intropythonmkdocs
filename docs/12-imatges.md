@@ -159,3 +159,18 @@ copia_gat.close()
 imatge_cara.close()
 imatge_gat.close()
 ```
+
+---
+## EXERCICI
+Crea, a partir de les 2 imatges proporcionades, una nova que mostre exactament el muntatge final.
+
+**Imatges inicials:**
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/VideoGames.jpg" style="width: 100%; max-width: 26em; min-width: 0; height: auto;" />    
+    <img src="../imagenes/ProgLang7.jpg" style="width: 100%; max-width: 16em; min-width: 0; height: auto;" />
+</div>
+
+**Resultat:**
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">    
+    <img src="../imagenes/montatge.png" style="width: 100%; max-width: 36em; min-width: 0; height: auto;" />
+</div>

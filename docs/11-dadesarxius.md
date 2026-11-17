@@ -117,3 +117,39 @@ arxiu_linia.close()
 
 ![](imagenes/image20.png)
 
+---
+## EXERCICIS
+### Exercici 1 - Fruites
+Crea un programa que llija les dades de la comanda de l'arxiu [fruites.csv](arxius/fruites.csv) i mostre per pantalla el resum de la comanda de la manera següent EXACTAMENT​.
+
+``` text
+//---------------------- COMADA ----------------------//
+# 1 --> Pomes:   112 * 0.8€/u    = 89.60000000000001
+# 2 --> Caquis:  85 * 1.3€/u     = 110.5
+# 3 --> Peres:   144 * 0.7€/u    = 100.8
+# 4 --> Llimes:  52 * 1.1€/u     = 57.2
+# 5 --> Melons:  23 * 4.7€/u     = 108.10000000000001
+----------------------- TOTAL -----------------------
+Nombre total de peces:  416
+Cost total:  466.20000000000005 €
+//----------------------------------------------------//
+```
+
+### Exercici 2 - Aleatoris
+Implementa un programa que guarde en un *CSV* 50 línies que incloguen, cada una, 20 nombres enters aleatoris de 2 dígits separats per punt i coma `;`.​
+
+![](imagenes/aleatoris.png)
+
+
+### Exercici 3 - Fruites Nou
+Crea un nou arxiu *“fruitesNou.csv”* a partir de *“fruites.csv”*, que continga la següent informació.
+
+``` text
+FRUITA|UNITATS|PREU
+Pomes|112|0.96
+Caquis|85|1.56
+Llimes|52|1.32
+Melons|23|5.64
+```
+
+Els preus s'han incrementat en un 20% i no inclou les *peres*.​

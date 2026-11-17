@@ -182,3 +182,43 @@ if __name__ == "__main__":
 
 Típicament, el codi principal d'un programa *Python* es defineix dins de la funció `main()`, que serà cridada directament després d'avaluar l'`if __name__ == "__main__"`.
 
+---
+## EXERCICIS
+### Exercici 1 - Importar
+Modifica [l'exercici de funcions](5-funcions.md) creant un mòdul. ​
+
+Després importa la funció `salutacio()` i usa-la en un nou programa.​
+```text
+Bona vesprada Aitana
+Bon dia Marc
+```
+El resultat és el mateix, però el programa en aquest cas utilitza un mòdul importat.
+
+### Exercici 2 - Aleatori
+Crea un programa en el qual:​
+
+- es demanen a l'usuari 2 enters (`a` i `b`)​
+- es crea un número `c` aleatori entre estos enters​
+- es mostra per pantalla el missatge **“El número `c` és un enter aleatori entre `a` i `b`”​**
+
+S'han d'incloure en un mòdul:​
+
+- la funció que retorna el número aleatori​
+- la funció que mostra el missatge per pantalla (no retorna res, només fa el `print`)​
+
+El programa principal importarà les funcions del mòdul i les usarà com corresponga​.
+
+```text
+Primer enter: 5
+Segon enter: 46
+El número 29 és un enter aleatori entre 5 i 46
+```
+
+### Exercici 3 - \_\_name\_\_
+Modifica l'exercici anterior incloent l'ús de `__name__` i creant la funció `principal()` com a punt d'entrada del programa principal​.
+```text
+Primer enter: 234
+Segon enter: 7655
+El número 3953 és un enter aleatori entre 234 i 7655
+```
+El resultat per pantalla no ha de canviar.

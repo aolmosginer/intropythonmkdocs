@@ -178,7 +178,7 @@ print(sum(edats.values()))       # 63
 ```
 
 ## EXERCICI
-Fes ara l'exercici sobre diccionaris **"La base de dades de la Rebel·lió 🌌"**
+Fes ara l'exercici sobre diccionaris [La base de dades de la Rebel·lió 🌌](arxius/ActivitatDiccionarisStarWars.pdf)
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    

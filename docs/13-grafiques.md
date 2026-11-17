@@ -95,3 +95,31 @@ plt.show()
 ![Gráfico, Gráfico circular](imagenes/image53.png)
 
 L'atribut és una cadena d'especificació de format: la cadena `'%.1f%%'` especifica que el nombre ha de mostrar un dígit després del punt decimal i després del decimal es mostra el símbol de % (la cadena `'%.1f'` mostraria el mateix valor, però sense el símbol de % final).
+
+---
+## EXERCICIS
+### Exercici 1 - Pel.lícules
+Crea el gràfic circular mostrat a partir de les dades proporcionades per ChatGPT​.
+Consulta la documentació i exemples de [matplotlib.pyplot.pie](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie) per a esbrinar com fer l'ombra i la separació entre porcions​.
+
+![](imagenes/pelicules3D.png)
+![](imagenes/taquilleras.png)
+
+### Exercici 2 - Consum elèctric
+Crea el gràfic mostrat a partir de les següents dades:​
+
+``` python
+x = [0, 1, 2, 3, 4, 5]
+y1 = [10, 13, 15, 18, 16, 20]
+y2 = [9, 11, 18, 16, 17, 19]
+```
+
+Consulta la documentació de [matplotlib.pyplot.plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot) i el *CheatSheet* d'AULES per a aconseguir els canvis​.
+
+![](imagenes/consum.png)
+
+### Exercici 3 - Temperatures
+Crea el gràfic mostrat a partir de les dades guardades en [temperatures_teulada_2025.csv](arxius/temperatures_teulada_2025.csv)​.
+Les línies puntejades i la llegenda mostren el valor mitjà de cada una de les temperatures​.
+
+![](imagenes/temperatures_teulada.png)
