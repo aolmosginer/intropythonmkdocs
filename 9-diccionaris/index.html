@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>09-Diccionaris - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlflux/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-tuples-sets/" class="side-bar__link ">
+    08-Tuples/Sets
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    09-Diccionaris
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../10-matrius/" class="side-bar__link ">
+    10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../11-dadesarxius/" class="side-bar__link ">
+    11-Dades en arxius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../12-imatges/" class="side-bar__link ">
+    12-Imatges
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../13-grafiques/" class="side-bar__link ">
+    13-Gràfiques
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">09-Diccionaris</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#91-caracteristiques">9.1 Característiques</a></li>
+                
+            
+                <li><a class="a" href="#92-modificacio-acces">9.2 Modificació / accés</a></li>
+                
+            
+                <li><a class="a" href="#93-metodes-particulars-i-iteracions">9.3 Mètodes particulars i iteracions</a></li>
+                
+            
+                <li><a class="a" href="#94-operacions-agregades-in-len-max-min-sum">9.4 Operacions agregades (in, len, max, min, sum)</a></li>
+                
+            
+                <li><a class="a" href="#exercici">EXERCICI</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="9-diccionaris">9. Diccionaris</h1>
+<p>Un diccionari és una col.lecció de dades que guarda la informació en parelles <strong>clau → valor</strong>. En lloc d’accedir al valor d'un element per la seva posició (com en una llista), hi accedixes per la seva <strong>clau</strong>.</p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/diccionari_clau_valor.png" style="width: 100%; max-width: 32em; min-width: 0; height: auto;" />    
+</div>
+
+<h2 id="91-caracteristiques">9.1 Característiques</h2>
+<ul>
+<li>Els seus elements van declarats entre claus <code>{ }</code>, separant els elements amb comes <code>,</code></li>
+<li>Cada element està format per una parella <code>clau : valor</code></li>
+<li>Són <strong>mutables</strong></li>
+<li><strong>No permeten claus duplicades</strong></li>
+<li>Si s'afegix una clau repetida, el seu valor serà sobreescrit</li>
+<li>Les <strong>claus</strong> han de ser <strong>immutables</strong></li>
+<li>Poden ser <code>str</code>, <code>int</code>, <code>tuple</code>, però no <code>list</code> o <code>dict</code>.</li>
+<li>En el cap <strong>valor</strong> es pot guardar qualsevol tipus de dades (mutables o immutables)</li>
+<li>Els seus elements <code>clau : valor</code> mantenen l'ordre d'inserció</li>
+</ul>
+<p><strong>Exemple</strong></p>
+<pre><code class="language-python">dic = {}  # Diccionari buit
+persona = {&quot;nom&quot;: &quot;Carlos&quot;,
+           &quot;edat&quot;: 30,
+           &quot;ciutat&quot;: &quot;Madrid&quot;}
+print(persona)
+print(persona[&quot;nom&quot;])  # Accedeix al valor d'una clau.
+</code></pre>
+<pre><code class="language-text">{'nom': 'Carlos', 'edat': 30, 'ciutat': 'Madrid'}
+Carlos
+</code></pre>
+<h2 id="92-modificacio-acces">9.2 Modificació / accés</h2>
+<p>Podem afegir noves parelles clau/valor utilitzant la nomenclatura <code>diccionari[clau] = valor</code>.
+Si una clau ja existeix, la modificarà.</p>
+<p>El mètode <code>diccionari.update({ })</code> ens permet afegir/modificar vàries parelles clau/valor a la vegada.</p>
+<pre><code class="language-python">dic = {}  # Diccionari buit
+dic[&quot;ies&quot;] = &quot;teulada&quot;          # Afegir una nova clau
+dic[&quot;provincia&quot;] = &quot;alacant&quot;    
+dic[&quot;provincia&quot;] = &quot;california&quot; # Modificar el valor d'una clau existent
+
+dic.update({&quot;telefon&quot;: 965739045, &quot;estudis&quot;: ['ESO', 'BAT', 'FP']})
+print(dic)
+
+nom = dic[&quot;ies&quot;]  # Accedir a un valor (error si no existeix)
+print(nom)
+</code></pre>
+<pre><code class="language-text">{'ies': 'teulada', 'provincia': 'california', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
+teulada
+</code></pre>
+<p>Podem eliminar elements d'un diccionari de vàries formes:
+- <code>del diccionari[clau]</code>: Elimina una clau i el seu valor
+- <code>diccionari.pop[clau]</code>: Retorna el valor de la clau i després elimina l'element
+- <code>diccionari.clear()</code>: Buida el diccionari</p>
+<pre><code class="language-python">del dic[&quot;provincia&quot;]
+print(dic)
+estudis = dic.pop(&quot;estudis&quot;)
+print(dic)
+print(estudis)
+dic.clear()
+print(dic)
+</code></pre>
+<pre><code class="language-text">{'ies': 'teulada', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
+{'ies': 'teulada', 'telefon': 965739045}
+['ESO', 'BAT', 'FP']
+{}
+</code></pre>
+<h2 id="93-metodes-particulars-i-iteracions">9.3 Mètodes particulars i iteracions</h2>
+<p>Donada la particular estructura dels diccionaris, aquests disposen d'una sèrie de mètodes propis que ens ajuden a gestionar les dades emmagatzemades en ells:</p>
+<ul>
+<li><code>diccionari.keys()</code>: Retorna un <code>objecte</code> de tipus <code>dict_keys</code> (no una llista , string, <em>tupla</em> ...). Aquest <code>objecte</code> conté <strong>totes les claus</strong> del diccionari</li>
+<li><code>diccionari.values()</code>: Retorna un <code>objecte</code> de tipus <code>dict_values</code>que conté <strong>tots els valors</strong> del diccionari</li>
+<li><code>diccionari.items()</code>: Retorna un <code>objecte</code> de tipus <code>dict_items</code>que conté totes les parelles <code>(clau,valor)</code></li>
+</ul>
+<p>Si fem un <code>print()</code> d'aquestos objectes propis dels diccionaris vorem que no se'ns mostren com una llista, fet que ens ha de fer pensar que no podem tractar-los d'igual forma.</p>
+<pre><code class="language-python">persona = {&quot;nom&quot;: &quot;Carlos&quot;, 
+           &quot;edat&quot;: 30, 
+           &quot;ciutat&quot;: &quot;Madrid&quot;}
+claus = persona.keys()     # objecte dict_keys
+print(claus)
+valors = persona.values()  # objecte dict_values
+print(valors)
+items = persona.items()    # objecte dict_items
+print(items)
+</code></pre>
+<pre><code class="language-text">dict_keys(['nom', 'edat', 'ciutat'])
+dict_values(['Carlos', 30, 'Madrid'])
+dict_items([('nom', 'Carlos'), ('edat', 30), ('ciutat', 'Madrid')])
+</code></pre>
+<p>Els <code>objectes</code> retornats pels mètodes <code>.keys()</code>, <code>.values()</code> i <code>.items()</code> podem utilitzar-los, per exemple, per a iterar sobre els diccionaris (recórrer-los).</p>
+<pre><code class="language-python">for clau in persona.keys():
+    print(clau)
+
+for valor in persona.values():
+    print(valor)
+
+for clau, valor in persona.items():
+    print(clau, valor)
+</code></pre>
+<pre><code class="language-text">nom
+edat
+ciutat
+</code></pre>
+<pre><code class="language-text">Carlos
+30
+Madrid
+</code></pre>
+<pre><code class="language-text">nom Carlos
+edat 30
+ciutat Madrid
+</code></pre>
+<p>Podem simplificar el <code>for</code> si el que volem és iterar sobre les claus (serà el més habitual). Si es pasa directament el diccionari al bucle <code>for</code>, aquest iterarà sobre les seues claus. </p>
+<pre><code class="language-python">print('Les parelles clau/valor són:')
+for clau in persona:
+    print(clau, ' --&gt; ', persona[clau])
+</code></pre>
+<pre><code class="language-text">Les parelles clau/valor són:
+nom  --&gt;  Carlos
+edat  --&gt;  30
+ciutat  --&gt;  Madrid
+</code></pre>
+<p>Per tant, <code>for clau in persona.keys():</code> és equivalent a <code>for clau in persona:</code>.</p>
+<h2 id="94-operacions-agregades-in-len-max-min-sum">9.4 Operacions agregades (<code>in</code>, <code>len</code>, <code>max</code>, <code>min</code>, <code>sum</code>)</h2>
+<p>Les operacions agregades de <em>Python</em> poden utilitzar-se sobre els diccionaris. Moltes d'aquestes operacions treballen per defecte sobre les <strong>claus</strong> (<code>max</code>, <code>min</code>, <code>sum</code>). Si el que es vol és treballar amb els <strong>valors</strong>, s'ha d'utilitzar <code>.values()</code>.</p>
+<pre><code class="language-python">edats = {&quot;Anna&quot;: 20,
+         &quot;Pere&quot;: 25,
+         &quot;Joan&quot;: 18   }
+print(max(edats))                # &quot;Pere&quot;
+print(max(edats.values()))       # 25
+print(min(edats.values()))       # 18
+print(sum(edats.values()))       # 63
+&quot;Pere&quot; in edats                  # True → busca entre les claus
+25 in edats                      # False → NO busca entre els valors
+25 in edats.values()             # True → busca entre els valors
+</code></pre>
+<h2 id="exercici">EXERCICI</h2>
+<p>Fes ara l'exercici sobre diccionaris <strong>"La base de dades de la Rebel·lió 🌌"</strong></p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
+</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../8-tuples-sets/"
+                title="08-Tuples/Sets">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../10-matrius/"
+                title="10-Matrius"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-17 18:26:51.109950+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>

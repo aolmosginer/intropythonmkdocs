@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>13-Gràfiques - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlflux/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-tuples-sets/" class="side-bar__link ">
+    08-Tuples/Sets
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../9-diccionaris/" class="side-bar__link ">
+    09-Diccionaris
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../10-matrius/" class="side-bar__link ">
+    10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../11-dadesarxius/" class="side-bar__link ">
+    11-Dades en arxius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../12-imatges/" class="side-bar__link ">
+    12-Imatges
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    13-Gràfiques
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">13-Gràfiques</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#131-linies-i-dispersio">13.1 Línies i Dispersió</a></li>
+                
+            
+                <li><a class="a" href="#132-barres-i-grafics-circulars">13.2 Barres i gràfics circulars</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="13-creacio-de-grafiques">13 Creació de gràfiques</h1>
+<p>La biblioteca <em>Matplotlib</em> permet crear una àmplia varietat de gràfics (gràfics de línies, de barres, de dispersió, circulars bàsics, 3D …). Podeu trobar la documentació completa en <a href="https://matplotlib.org">https://matplotlib.org</a>. Depenent del Sistema Operatiu i la configuració de <em>Python</em>, haureu de seguir uns passos per a la <a href="https://matplotlib.org/stable/install/index.html">instal·lació</a> de <em>Matplotlib</em>.</p>
+<h2 id="131-linies-i-dispersio">13.1 Línies i Dispersió</h2>
+<p>Un gràfic de línies és ideal per a mostrar els canvis en una mesura al llarg del temps. En <em>Matplotlib</em>, els termes <code>plot</code>, <code>graph</code> i <code>chart</code> s'usen indistintament, i el terme <code>figure</code> es refereix a la finestra que conté un o més gràfics.</p>
+<p>Importem <code>matplotlib.pyplot</code> amb el nom <code>plt</code> per a facilitar la introducció de les seues funcions.</p>
+<p>A continuació, per a representar els <strong>punts de dades en una figura 2D</strong>, hem de cridar a la funció <code>plt.plot()</code>. Primer associarem al gràfic els valors per als eixos horitzontal/vertical guardats en <code>x</code> i <code>y1</code>. Després de cridar a <code>plt.plot()</code> amb aquests valors, l'invoquem una segona vegada amb <code>x</code> ​​i <code>y2</code> per a afegir una segona línia al gràfic.</p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+x = [0, 1, 2, 3, 4, 5]
+y1 = [10, 13, 15, 18, 16, 20]
+y2 = [9, 11, 18, 16, 17, 19]
+plt.plot(x, y1)
+plt.plot(x, y2)
+# Per guardar un fitxer d'imatge del gràfic, heu de cridar 
+# plt.savefig() abans de cridar a plt.show()
+plt.savefig('linies.png')  
+plt.show() 
+</code></pre>
+<p><em>Matplotlib</em> seleccionarà automàticament els colors de les línies i una grandària adequada per al gràfic. Podem guardar el gràfic predeterminat com una imatge PNG cridant a <code>plt.savefig()</code>.</p>
+<p><img alt="Gráfico, Gráfico de líneas" src="../imagenes/image44.png" /></p>
+<p><em>Matplotlib</em> compta amb la funció <code>plt.show()</code> de vista prèvia que mostra el gràfic en una finestra. Cal remarcar que, si volem guardar el gràfic, hem de fer-ho abans de cridar a la funció <code>plt.show()</code>. La crida a la funció bloquejarà l'execució del codi i no tornarà fins que l'usuari tanque la finestra.</p>
+<p>Per a crear un <strong>gràfic de dispersió</strong> d'aquestes mateixes dades, passeu els valors de l'eix <code>x</code> i de l'eix <code>y</code> a la funció <code>plt.scatter()</code>.</p>
+<pre><code class="language-python"># Gràfica Scatter
+plt.scatter(x, y1)
+plt.scatter(x, y2)
+plt.savefig('scatter.png')
+plt.show()
+</code></pre>
+<p><img alt="Gráfico, Gráfico de dispersión" src="../imagenes/image46.png" /></p>
+<h2 id="132-barres-i-grafics-circulars">13.2 Barres i gràfics circulars</h2>
+<p>Els <strong>gràfics de barres</strong> són útils per a comparar el mateix tipus de dades en diferents categories. A diferència d'un gràfic de línies, l'ordre de les categories no és important, encara que solen estar ordenades alfabèticament.</p>
+<pre><code class="language-python"># Barres
+categories = ['Gats', 'Gossos', 'Ratolins', 'Pardals']
+valors = [100, 150, 30, 200]
+plt.bar(categories, valors)
+plt.savefig('barres.png')
+plt.show()
+</code></pre>
+<p>Passem les categories a enumerar en l'eix <code>x</code> com la primera llista a <code>plt.bar()</code> i els valors per a cada categoria com la segona llista.</p>
+<p><img alt="Gráfico, Gráfico de barras" src="../imagenes/image48.png" /></p>
+<p>Per a crear un gràfic circular, utilitzarem la funció <code>plt.pie()</code>. En lloc de categories i valors, un gràfic circular té sectors i etiquetes. La funció <code>plt.pie()</code> accepta una llista de grandàries de porció i una llista d'etiquetes per a cada porció.</p>
+<pre><code class="language-python"># Gràfic Circular
+porcions = [100, 150, 30, 200]  # El tamany de cada porció
+etiquetes = ['Gats', 'Gossos', 'Ratolins', 'Pardals'] 
+plt.pie(porcions, labels=etiquetes)
+plt.savefig('tarta.png')
+plt.show()
+</code></pre>
+<p>El primer argument posicional de <code>plt.pie()</code> fa referència a les porcions <code>x</code> (<code>porcions</code> en aquest exemple), però el segon no fa referència a les etiquetes, sinó a l'atribut <code>explode</code>, per la qual cosa per a assignar els valors d'<code>etiquetes</code> a l'atribut <code>labels</code> del <code>plt.pie()</code> hem d'especificar-ho en la crida a la funció. 
+Podeu consultar els detalls dels diferents paràmetres de <code>plt.pie()</code> en la seua <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html">documentació oficial</a>.</p>
+<p><img alt="" src="../imagenes/image50.png" /></p>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image51.png" /></p>
+<p>Entre la gran diversitat d'atributs que podem modificar per a obtindre el gràfic desitjat, l'atribut <code>autopct</code> ens permet mostrar el valor de cada porció com un % respecte del total.</p>
+<pre><code class="language-python">plt.pie(porcions, labels=etiquetes, autopct='%.1f%%')
+plt.savefig('tartaX100.png')
+plt.show()
+</code></pre>
+<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image53.png" /></p>
+<p>L'atribut és una cadena d'especificació de format: la cadena <code>'%.1f%%'</code> especifica que el nombre ha de mostrar un dígit després del punt decimal i després del decimal es mostra el símbol de % (la cadena <code>'%.1f'</code> mostraria el mateix valor, però sense el símbol de % final).</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../12-imatges/"
+                title="12-Imatges">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../about/"
+                title="Crèdits"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-17 18:26:51.099227+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>

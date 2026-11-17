@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>09-Tipus avançats - Intro Python</title>
+  <title>08-Tuples/Sets - Intro Python</title>
 
   <!-- Page description -->
   
@@ -172,7 +172,7 @@
 -->
 
 <li>
-  <a href="../2-controlfluxe/" class="side-bar__link ">
+  <a href="../2-controlflux/" class="side-bar__link ">
     02-Control del Flux
   </a>
 </li>
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="../8-cosesxules/" class="side-bar__link ">
-    08-Coses xules
+  <a href="./" class="side-bar__link side-bar__link--active">
+    08-Tuples/Sets
   </a>
 </li>
 
@@ -249,8 +249,8 @@
 -->
 
 <li>
-  <a href="./" class="side-bar__link side-bar__link--active">
-    09-Tipus avançats
+  <a href="../9-diccionaris/" class="side-bar__link ">
+    09-Diccionaris
   </a>
 </li>
 
@@ -262,6 +262,39 @@
 <li>
   <a href="../10-matrius/" class="side-bar__link ">
     10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../11-dadesarxius/" class="side-bar__link ">
+    11-Dades en arxius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../12-imatges/" class="side-bar__link ">
+    12-Imatges
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../13-grafiques/" class="side-bar__link ">
+    13-Gràfiques
   </a>
 </li>
 
@@ -283,7 +316,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">09-Tipus avançats</div>
+        <div class="title-bar__title">08-Tuples/Sets</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -292,7 +325,7 @@
         
           
             
-                <li><a class="a" href="#91-tuples">9.1 Tuples</a></li>
+                <li><a class="a" href="#81-tuples">8.1 Tuples</a></li>
                 
                     <li class="child-li"><a class="a child" href="#caracteristiques">Característiques</a></li>
                 
@@ -305,7 +338,7 @@
                     <li class="child-li"><a class="a child" href="#quan-usar-tuples-en-lloc-de-llistes">Quan usar tuples en lloc de llistes?</a></li>
                 
             
-                <li><a class="a" href="#92-sets-conjunts">9.2 Sets (conjunts)</a></li>
+                <li><a class="a" href="#82-sets-conjunts">8.2 Sets (conjunts)</a></li>
                 
                     <li class="child-li"><a class="a child" href="#caracteristiques_1">Característiques</a></li>
                 
@@ -314,36 +347,16 @@
                     <li class="child-li"><a class="a child" href="#com-recorrer-un-set">Com recórrer un set?</a></li>
                 
             
-                <li><a class="a" href="#exercici-amb-tuples-i-sets">Exercici amb tuples i sets</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#solucio">Solució:</a></li>
-                
-            
-                <li><a class="a" href="#93-diccionaris">9.3 Diccionaris</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#caracteristiques_2">Característiques</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#modificacio-acces-a-diccionaris">Modificació / accés a diccionaris</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#metodes-particulars-i-iteracions-de-diccionaris">Mètodes particulars i iteracions de diccionaris</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#operacions-agregades-in-len-max-min-sum">Operacions agregades (in, len, max, min, sum)</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#exercici-practic">Exercici pràctic:</a></li>
-                
-            
-                <li><a class="a" href="#94-python-comprehension-comprensio">9.4 Python comprehension (Comprensió)</a></li>
+                <li><a class="a" href="#83-python-comprehension-comprensio">8.3 Python comprehension (Comprensió)</a></li>
                 
                     <li class="child-li"><a class="a child" href="#exemples">Exemples</a></li>
                 
             
-                <li><a class="a" href="#exercicis-sobre-python-comprehension">Exercicis sobre Python comprehension</a></li>
+                <li><a class="a" href="#exercicis">EXERCICIS</a></li>
                 
-                    <li class="child-li"><a class="a child" href="#1-primers-passos">1. Primers passos</a></li>
+                    <li class="child-li"><a class="a child" href="#1-exercici-amb-tuples-i-sets">1. Exercici amb tuples i sets</a></li>
                 
-                    <li class="child-li"><a class="a child" href="#2-treballant-amb-text">2. Treballant amb text</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#3-productes-de-la-botiga">3. Productes de la botiga</a></li>
+                    <li class="child-li"><a class="a child" href="#2-exercicis-sobre-python-comprehension">2. Exercicis sobre Python comprehension</a></li>
                 
             
           
@@ -357,9 +370,9 @@
             <div class="card__body">
 
               
-              <h1 id="9-tipus-avancats">9. Tipus avançats</h1>
+              <h1 id="8-tipus-avancats">8. Tipus avançats</h1>
 <p>A més de les llistes que ja hem vist, <em>Python</em> ofereix altres tipus avançats de dades que vorem a contianució.</p>
-<h2 id="91-tuples">9.1 <em>Tuples</em></h2>
+<h2 id="81-tuples">8.1 <em>Tuples</em></h2>
 <p>Les <em>tuples</em> són unes col.lecions de dades com les llistes però, una vegada declarades, no es poden modificar → <strong>immutables</strong></p>
 <h3 id="caracteristiques">Característiques</h3>
 <ul>
@@ -402,12 +415,14 @@ print(&quot;Mai&quot; in mesosAny)     # retorna True
 (6, 6, 6)
 True
 </code></pre>
-<p>Igualment, la majoria dels mètodes propis de les llistes també estan disponibles per a les <em>tuples</em>. Per exemple podem destacar:
-- <code>len()</code>: retorna el tamany de la <em>tupla</em>
-- <code>max()</code> <code>min()</code> <code>sum()</code>: només per a <em>tuples</em> amb elements compatibles
-- <code>tupla.count(element)</code>: compta el nombre de vegades que un determinat <code>element</code> està en la <em>tupla</em>
-- <code>tupla.index(element)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, el primer que trobe
-- <code>tupla.index(element, posicio)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, a partir d'una determinada posició</p>
+<p>Igualment, la majoria dels mètodes propis de les llistes també estan disponibles per a les <em>tuples</em>. Per exemple podem destacar:</p>
+<ul>
+<li><code>len()</code>: retorna el tamany de la <em>tupla</em></li>
+<li><code>max()</code> <code>min()</code> <code>sum()</code>: només per a <em>tuples</em> amb elements compatibles</li>
+<li><code>tupla.count(element)</code>: compta el nombre de vegades que un determinat <code>element</code> està en la <em>tupla</em></li>
+<li><code>tupla.index(element)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, el primer que trobe</li>
+<li><code>tupla.index(element, posicio)</code>: retorna la posició de l'<code>element</code> dins la <em>tupla</em>, a partir d'una determinada posició</li>
+</ul>
 <pre><code class="language-python">print(len(tupla3))    # nombre d'elements
 print(max(tupla3))    # si els valors són compatibles
 print(min(tupla3))    # si els valors són compatibles
@@ -469,12 +484,13 @@ print(tupla)
 (-5, 23, 8, ['poma', 'taronja', 'cirera'], -45, 23, 13, -7)
 </code></pre>
 <h3 id="quan-usar-tuples-en-lloc-de-llistes">Quan usar <em>tuples</em> en lloc de llistes?</h3>
-<ul>
+<ol>
 <li>Quan les dades no han de canviar. Exemple: coordenades, dies de la setmana</li>
 <li>Quan es busca més eficiència. Les <em>tuples</em> consumeixen menys memòria i són més ràpides</li>
 <li>Quan es necessiten dades <em>hashables</em>. Per exemple les <em>tuples</em> es poden usar com a claus en diccionaris (vorem més endavant el que és), les llistes no</li>
-</ul>
-<h2 id="92-sets-conjunts">9.2 Sets (conjunts)</h2>
+</ol>
+<hr />
+<h2 id="82-sets-conjunts">8.2 Sets (conjunts)</h2>
 <p>Els <em>sets</em> són també una col.leció de dades com les llistes i les <em>tuples</em>, però amb unes particularitats que vorem a continuació.</p>
 <h3 id="caracteristiques_1">Característiques</h3>
 <ul>
@@ -536,180 +552,8 @@ for element in conjunt:
 hola
 </code></pre>
 <p>Recorda que, al ser una col.lecció no ordenada, quan recorrem un <em>set</em> podem obtindre els resultats en un ordre diferent en cada execució. Fes la prova amb el codi anterior i voràs com cada vegada el <code>for</code> mostra els elements en un ordre diferent.</p>
-<h2 id="exercici-amb-tuples-i-sets">Exercici amb <em>tuples</em> i <em>sets</em></h2>
-<p>Una biblioteca escolar vol gestionar els llibres i els socis. </p>
-<p>Cada llibre es guarda com una <em>tupla</em> <code>(títol, autor, any)</code>:</p>
-<pre><code class="language-python">llibre1 = (&quot;Mirall trencat&quot;, &quot;Mercè Rodoreda&quot;, 1974)
-llibre2 = (&quot;La plaça del Diamant&quot;, &quot;Mercè Rodoreda&quot;, 1962)
-llibre3 = (&quot;Solitud&quot;, &quot;Víctor Català&quot;, 1905)
-</code></pre>
-<ol>
-<li>Mostra el títol de <code>llibre1</code> accedint-hi per la posició</li>
-<li>Mostra l’últim element de <code>llibre3</code> utilitzant un índex negatiu</li>
-<li>Fes un desempaquetat de <code>llibre2</code> en tres variables <code>titol, autor, any</code> i imprimeix: "La plaça del Diamant va ser escrit per Mercè Rodoreda el 1962"</li>
-<li>Crea una llista amb els tres llibres i ordena-la per llibre</li>
-</ol>
-<p>Dos grups de socis han fet préstecs aquesta setmana:</p>
-<pre><code class="language-python">grup_a = {&quot;Marta&quot;, &quot;Pau&quot;, &quot;Anna&quot;, &quot;Joan&quot;, &quot;Laia&quot;}
-grup_b = {&quot;Pau&quot;, &quot;Laia&quot;, &quot;Jordi&quot;, &quot;Núria&quot;, &quot;Marc&quot;}
-</code></pre>
-<ol>
-<li>Afegeix "Clara" al <code>grup_a</code> i elimina "Joan"</li>
-<li>Comprova si "Marc" és al <code>grup_b</code></li>
-<li>Intenta eliminar "Àngel" del <code>grup_b</code> sense que et done error</li>
-</ol>
-<h3 id="solucio">Solució:</h3>
-<pre><code class="language-python"># Part 1
-print(llibre1[0])                  
-print(llibre3[-1])                 
-titol, autor, any = llibre2
-print(f&quot;{titol} va ser escrit per {autor} el {any}&quot;)
-llibres = [llibre1, llibre2, llibre3]
-print(sorted(llibres))
-
-# Part 2
-grup_a.add(&quot;Clara&quot;)
-grup_a.remove(&quot;Joan&quot;)
-print(&quot;Marc&quot; in grup_b)            
-grup_b.discard(&quot;Àngel&quot;)
-</code></pre>
-<h2 id="93-diccionaris">9.3 Diccionaris</h2>
-<p>Un diccionari és una col.lecció de dades que guarda la informació en parelles <strong>clau → valor</strong>. En lloc d’accedir al valor d'un element per la seva posició (com en una llista), hi accedixes per la seva <strong>clau</strong>.</p>
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="../imagenes/diccionari_clau_valor.png" style="width: 100%; max-width: 32em; min-width: 0; height: auto;" />    
-</div>
-
-<h3 id="caracteristiques_2">Característiques</h3>
-<ul>
-<li>Els seus elements van declarats entre claus <code>{ }</code>, separant els elements amb comes <code>,</code></li>
-<li>Cada element està format per una parella <code>clau : valor</code></li>
-<li>Són <strong>mutables</strong></li>
-<li><strong>No permeten claus duplicades</strong></li>
-<li>Si s'afegix una clau repetida, el seu valor serà sobreescrit</li>
-<li>Les <strong>claus</strong> han de ser <strong>immutables</strong></li>
-<li>Poden ser <code>str</code>, <code>int</code>, <code>tuple</code>, però no <code>list</code> o <code>dict</code>.</li>
-<li>En el cap <strong>valor</strong> es pot guardar qualsevol tipus de dades (mutables o immutables)</li>
-<li>Els seus elements <code>clau : valor</code> mantenen l'ordre d'inserció</li>
-</ul>
-<h4 id="exemple">Exemple</h4>
-<pre><code class="language-python">dic = {}  # Diccionari buit
-persona = {&quot;nom&quot;: &quot;Carlos&quot;,
-           &quot;edat&quot;: 30,
-           &quot;ciutat&quot;: &quot;Madrid&quot;}
-print(persona)
-print(persona[&quot;nom&quot;])  # Accedeix al valor d'una clau.
-</code></pre>
-<pre><code class="language-text">{'nom': 'Carlos', 'edat': 30, 'ciutat': 'Madrid'}
-Carlos
-</code></pre>
-<h3 id="modificacio-acces-a-diccionaris">Modificació / accés a diccionaris</h3>
-<p>Podem afegir noves parelles clau/valor utilitzant la nomenclatura <code>diccionari[clau] = valor</code>.
-Si una clau ja existeix, la modificarà.</p>
-<p>El mètode <code>diccionari.update({ })</code> ens permet afegir/modificar vàries parelles clau/valor a la vegada.</p>
-<pre><code class="language-python">dic = {}  # Diccionari buit
-dic[&quot;ies&quot;] = &quot;teulada&quot;          # Afegir una nova clau
-dic[&quot;provincia&quot;] = &quot;alacant&quot;    
-dic[&quot;provincia&quot;] = &quot;california&quot; # Modificar el valor d'una clau existent
-
-dic.update({&quot;telefon&quot;: 965739045, &quot;estudis&quot;: ['ESO', 'BAT', 'FP']})
-print(dic)
-
-nom = dic[&quot;ies&quot;]  # Accedir a un valor (error si no existeix)
-print(nom)
-</code></pre>
-<pre><code class="language-text">{'ies': 'teulada', 'provincia': 'california', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
-teulada
-</code></pre>
-<p>Podem eliminar elements d'un diccionari de vàries formes:
-- <code>del diccionari[clau]</code>: Elimina una clau i el seu valor
-- <code>diccionari.pop[clau]</code>: Retorna el valor de la clau i després elimina l'element
-- <code>diccionari.clear()</code>: Buida el diccionari</p>
-<pre><code class="language-python">del dic[&quot;provincia&quot;]
-print(dic)
-estudis = dic.pop(&quot;estudis&quot;)
-print(dic)
-print(estudis)
-dic.clear()
-print(dic)
-</code></pre>
-<pre><code class="language-text">{'ies': 'teulada', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
-{'ies': 'teulada', 'telefon': 965739045}
-['ESO', 'BAT', 'FP']
-{}
-</code></pre>
-<h3 id="metodes-particulars-i-iteracions-de-diccionaris">Mètodes particulars i iteracions de diccionaris</h3>
-<p>Donada la particular estructura dels diccionaris, aquests disposen d'una sèrie de mètodes propis que ens ajuden a gestionar les dades emmagatzemades en ells.
-- <code>diccionari.keys()</code>: Retorna un <code>objecte</code> de tipus <code>dict_keys</code> (no una llista , string, <em>tupla</em> ...). Aquest <code>objecte</code> conté <strong>totes les claus</strong> del diccionari
-- <code>diccionari.values()</code>: Retorna un <code>objecte</code> de tipus <code>dict_values</code>que conté <strong>tots els valors</strong> del diccionari
-- <code>diccionari.items()</code>: Retorna un <code>objecte</code> de tipus <code>dict_items</code>que conté totes les parelles <code>(clau,valor)</code></p>
-<p>Si fem un <code>print()</code> d'aquestos objectes propis dels diccionaris vorem que no se'ns mostren com una llista, fet que ens ha de fer pensar que no podem tractar-los d'igual forma.</p>
-<pre><code class="language-python">persona = {&quot;nom&quot;: &quot;Carlos&quot;, 
-           &quot;edat&quot;: 30, 
-           &quot;ciutat&quot;: &quot;Madrid&quot;}
-claus = persona.keys()     # objecte dict_keys
-print(claus)
-valors = persona.values()  # objecte dict_values
-print(valors)
-items = persona.items()    # objecte dict_items
-print(items)
-</code></pre>
-<pre><code class="language-text">dict_keys(['nom', 'edat', 'ciutat'])
-dict_values(['Carlos', 30, 'Madrid'])
-dict_items([('nom', 'Carlos'), ('edat', 30), ('ciutat', 'Madrid')])
-</code></pre>
-<p>Els <code>objectes</code> retornats pels mètodes <code>.keys()</code>, <code>.values()</code> i <code>.items()</code> podem utilitzar-los, per exemple, per a iterar sobre els diccionaris (recórrer-los).</p>
-<pre><code class="language-python">for clau in persona.keys():
-    print(clau)
-
-for valor in persona.values():
-    print(valor)
-
-for clau, valor in persona.items():
-    print(clau, valor)
-</code></pre>
-<pre><code class="language-text">nom
-edat
-ciutat
-</code></pre>
-<pre><code class="language-text">Carlos
-30
-Madrid
-</code></pre>
-<pre><code class="language-text">nom Carlos
-edat 30
-ciutat Madrid
-</code></pre>
-<p>Podem simplificar el <code>for</code> si el que volem és iterar sobre les claus (serà el més habitual). Si es pasa directament el diccionari al bucle <code>for</code>, aquest iterarà sobre les seues claus. </p>
-<pre><code class="language-python">print('Les parelles clau/valor són:')
-for clau in persona:
-    print(clau, ' --&gt; ', persona[clau])
-</code></pre>
-<pre><code class="language-text">Les parelles clau/valor són:
-nom  --&gt;  Carlos
-edat  --&gt;  30
-ciutat  --&gt;  Madrid
-</code></pre>
-<p>Per tant, <code>for clau in persona.keys():</code> és equivalent a <code>for clau in persona:</code>.</p>
-<h3 id="operacions-agregades-in-len-max-min-sum">Operacions agregades (<code>in</code>, <code>len</code>, <code>max</code>, <code>min</code>, <code>sum</code>)</h3>
-<p>Les operacions agregades de <em>Python</em> poden utilitzar-se sobre els diccionaris. Moltes d'aquestes operacions treballen per defecte sobre les <strong>claus</strong> (<code>max</code>, <code>min</code>, <code>sum</code>). Si el que es vol és treballar amb els <strong>valors</strong>, s'ha d'utilitzar <code>.values()</code>.</p>
-<pre><code class="language-python">edats = {&quot;Anna&quot;: 20,
-         &quot;Pere&quot;: 25,
-         &quot;Joan&quot;: 18   }
-print(max(edats))                # &quot;Pere&quot;
-print(max(edats.values()))       # 25
-print(min(edats.values()))       # 18
-print(sum(edats.values()))       # 63
-&quot;Pere&quot; in edats                  # True → busca entre les claus
-25 in edats                      # False → NO busca entre els valors
-25 in edats.values()             # True → busca entre els valors
-</code></pre>
-<h3 id="exercici-practic">Exercici pràctic:</h3>
-<p>Fes ara l'exercici sobre diccionaris <strong>"La base de dades de la Rebel·lió 🌌"</strong></p>
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
-</div>
-
-<h2 id="94-python-comprehension-comprensio">9.4 Python comprehension (Comprensió)</h2>
+<hr />
+<h2 id="83-python-comprehension-comprensio">8.3 Python comprehension (Comprensió)</h2>
 <p>La comprensió de <em>Python</em> és una manera concisa i eficient de crear col.leccions a partir d'iterables, modificant i/o filtrant el seu contingut.</p>
 <pre><code class="language-python">resultat = [expressió for element in iterable if condició]
 </code></pre>
@@ -746,8 +590,47 @@ print(majuscules)   # Set
 <pre><code class="language-text">['HOLA', 'MÓN', 'HOLA', 'PYTHON']
 {'MÓN', 'PYTHON', 'HOLA'}
 </code></pre>
-<h2 id="exercicis-sobre-python-comprehension">Exercicis sobre Python comprehension</h2>
-<h3 id="1-primers-passos">1. Primers passos</h3>
+<hr />
+<h2 id="exercicis">EXERCICIS</h2>
+<h3 id="1-exercici-amb-tuples-i-sets">1. Exercici amb <em>tuples</em> i <em>sets</em></h3>
+<p>Una biblioteca escolar vol gestionar els llibres i els socis. </p>
+<p>Cada llibre es guarda com una <em>tupla</em> <code>(títol, autor, any)</code>:</p>
+<pre><code class="language-python">llibre1 = (&quot;Mirall trencat&quot;, &quot;Mercè Rodoreda&quot;, 1974)
+llibre2 = (&quot;La plaça del Diamant&quot;, &quot;Mercè Rodoreda&quot;, 1962)
+llibre3 = (&quot;Solitud&quot;, &quot;Víctor Català&quot;, 1905)
+</code></pre>
+<ol>
+<li>Mostra el títol de <code>llibre1</code> accedint-hi per la posició</li>
+<li>Mostra l’últim element de <code>llibre3</code> utilitzant un índex negatiu</li>
+<li>Fes un desempaquetat de <code>llibre2</code> en tres variables <code>titol, autor, any</code> i imprimeix: "La plaça del Diamant va ser escrit per Mercè Rodoreda el 1962"</li>
+<li>Crea una llista amb els tres llibres i ordena-la per llibre</li>
+</ol>
+<p>Dos grups de socis han fet préstecs aquesta setmana:</p>
+<pre><code class="language-python">grup_a = {&quot;Marta&quot;, &quot;Pau&quot;, &quot;Anna&quot;, &quot;Joan&quot;, &quot;Laia&quot;}
+grup_b = {&quot;Pau&quot;, &quot;Laia&quot;, &quot;Jordi&quot;, &quot;Núria&quot;, &quot;Marc&quot;}
+</code></pre>
+<ol>
+<li>Afegeix "Clara" al <code>grup_a</code> i elimina "Joan"</li>
+<li>Comprova si "Marc" és al <code>grup_b</code></li>
+<li>Intenta eliminar "Àngel" del <code>grup_b</code> sense que et done error</li>
+</ol>
+<p><strong>SOLUCIÓ</strong> </p>
+<pre><code class="language-python"># Part 1
+print(llibre1[0])                  
+print(llibre3[-1])                 
+titol, autor, any = llibre2
+print(f&quot;{titol} va ser escrit per {autor} el {any}&quot;)
+llibres = [llibre1, llibre2, llibre3]
+print(sorted(llibres))
+
+# Part 2
+grup_a.add(&quot;Clara&quot;)
+grup_a.remove(&quot;Joan&quot;)
+print(&quot;Marc&quot; in grup_b)            
+grup_b.discard(&quot;Àngel&quot;)
+</code></pre>
+<h3 id="2-exercicis-sobre-python-comprehension">2. Exercicis sobre Python comprehension</h3>
+<h4 id="a-primers-passos">A. Primers passos</h4>
 <p>A partir de la següent llista:</p>
 <pre><code class="language-python">nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 </code></pre>
@@ -760,12 +643,12 @@ print(majuscules)   # Set
 for n in nombres:
     resultat.append(n + 10) 
 </code></pre>
-<h4 id="solucio_1">Solució</h4>
+<p><strong>SOLUCIÓ</strong> </p>
 <pre><code class="language-python">print([n * 2 for n in nombres if n % 2 != 0])
 print([n for n in nombres if n &gt; 5])
 print([n + 10 for n in nombres])
 </code></pre>
-<h3 id="2-treballant-amb-text">2. Treballant amb text</h3>
+<h4 id="b-treballant-amb-text">B. Treballant amb text</h4>
 <p>A partir de la següent llista:</p>
 <pre><code class="language-python">noms = [&quot;marta&quot;, &quot;pau&quot;, &quot;anna&quot;, &quot;joan&quot;, &quot;laia&quot;, &quot;jordi&quot;]
 </code></pre>
@@ -775,13 +658,13 @@ print([n + 10 for n in nombres])
 <li>Crea una llista amb els noms que tenen més de 4 lletres</li>
 <li>Crea una llista amb la primera lletra de cada nom, en majúscula (["M", "P", ...])</li>
 </ol>
-<h4 id="solucio_2">Solució</h4>
+<p><strong>SOLUCIÓ</strong> </p>
 <pre><code class="language-python">print([nom.upper() for nom in noms])
 print([len(nom) for nom in noms])
 print([nom for nom in noms if len(nom) &gt; 4])
 print([nom[0].upper() for nom in noms])
 </code></pre>
-<h3 id="3-productes-de-la-botiga">3. Productes de la botiga</h3>
+<h4 id="c-productes-de-la-botiga">C. Productes de la botiga</h4>
 <p>Una botiga en línia vol processar les seves dades. Cada producte és una tupla <code>(nom, preu, estoc)</code> dins la llista <code>productes</code>:</p>
 <pre><code class="language-python">productes = [
     (&quot;Teclat&quot;, 25.0, 10),
@@ -798,8 +681,8 @@ print([nom[0].upper() for nom in noms])
 <li>Crea una llista amb els noms dels productes que costen menys de 35 €.</li>
 <li>Crea una llista de cadenes amb el format "Teclat: 25.0 €" per a cada producte</li>
 </ol>
-<p><strong>PISTA:</strong> Utilitza el desempaquetat de les <em>tuples</em> dins el <code>for</code> per a obtenir els 3 conceptes de cada producte per separat <code>for nom, preu, estoc in productes</code>.</p>
-<h4 id="solucio_3">Solució</h4>
+<p><em>PISTA:</em> Utilitza el desempaquetat de les <em>tuples</em> dins el <code>for</code> per a obtenir els 3 conceptes de cada producte per separat <code>for nom, preu, estoc in productes</code>.</p>
+<p><strong>SOLUCIÓ</strong> </p>
 <pre><code class="language-python">print([nom for nom, preu, estoc in productes])
 print([nom for nom, preu, estoc in productes if estoc &gt; 0])
 print([round(preu * 1.21, 2) for nom, preu, estoc in productes])
@@ -823,16 +706,16 @@ print([f&quot;{nom}: {preu} €&quot; for nom, preu, estoc in productes])
           <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
-                href="../8-cosesxules/"
-                title="08-Coses xules">
+                href="../7-moduls/"
+                title="07-Móduls">
                 &#8592; Previous Page
               </a>
             
             
             
               <a class="footer__link padding-top-0 navigation-next"
-                href="../10-matrius/"
-                title="10-Matrius"/>
+                href="../9-diccionaris/"
+                title="09-Diccionaris"/>
                 Next Page &#8594;
               </a>
             
@@ -848,7 +731,7 @@ print([f&quot;{nom}: {preu} €&quot; for nom, preu, estoc in productes])
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-16 20:33:13.926110+00:00
+  Docs Build Date UTC : 2026-11-17 18:26:51.107561+00:00
   -->
 
   <!--

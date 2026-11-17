@@ -8,7 +8,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>08-Coses xules - Intro Python</title>
+  <title>12-Imatges - Intro Python</title>
 
   <!-- Page description -->
   
@@ -172,7 +172,7 @@
 -->
 
 <li>
-  <a href="../2-controlfluxe/" class="side-bar__link ">
+  <a href="../2-controlflux/" class="side-bar__link ">
     02-Control del Flux
   </a>
 </li>
@@ -238,8 +238,8 @@
 -->
 
 <li>
-  <a href="./" class="side-bar__link side-bar__link--active">
-    08-Coses xules
+  <a href="../8-tuples-sets/" class="side-bar__link ">
+    08-Tuples/Sets
   </a>
 </li>
 
@@ -249,8 +249,8 @@
 -->
 
 <li>
-  <a href="../9-tipusavancats/" class="side-bar__link ">
-    09-Tipus avançats
+  <a href="../9-diccionaris/" class="side-bar__link ">
+    09-Diccionaris
   </a>
 </li>
 
@@ -262,6 +262,39 @@
 <li>
   <a href="../10-matrius/" class="side-bar__link ">
     10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../11-dadesarxius/" class="side-bar__link ">
+    11-Dades en arxius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    12-Imatges
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../13-grafiques/" class="side-bar__link ">
+    13-Gràfiques
   </a>
 </li>
 
@@ -283,7 +316,7 @@
     <!-- MAIN BLOCK -->
     <main class="app-layout__main main">
       <div class="app-layout__title-bar title-bar no-print">
-        <div class="title-bar__title">08-Coses xules</div>
+        <div class="title-bar__title">12-Imatges</div>
       </div>
       
       <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
@@ -292,26 +325,13 @@
         
           
             
-                <li><a class="a" href="#81-lectura-de-dades-dun-csv">8.1 Lectura de dades d'un CSV</a></li>
+                <li><a class="a" href="#121-caracteristiques-de-les-imatges">12.1 Característiques de les imatges</a></li>
                 
             
-                <li><a class="a" href="#82-escriptura-de-dades-en-un-csv">8.2 Escriptura de dades en un CSV</a></li>
+                <li><a class="a" href="#122-retallar-copiar-i-apegar">12.2 Retallar, copiar i apegar</a></li>
                 
             
-                <li><a class="a" href="#83-manipulacio-dimatges">8.3 Manipulació d'imatges</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#caracteristiques-de-les-imatges">Característiques de les imatges</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#retallar-copiar-i-apegar">Retallar, copiar i apegar</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#redimensionar-i-rotar">Redimensionar i rotar</a></li>
-                
-            
-                <li><a class="a" href="#84-creacio-de-grafics">8.4 Creació de gràfics</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#linies-i-dispersio">Línies i Dispersió</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#barres-i-grafics-circulars">Barres i gràfics circulars</a></li>
+                <li><a class="a" href="#123-redimensionar-i-rotar">12.3 Redimensionar i rotar</a></li>
                 
             
           
@@ -325,83 +345,7 @@
             <div class="card__body">
 
               
-              <h1 id="8-fem-coses-xules-amb-python">8. Fem coses xules amb Python</h1>
-<h2 id="81-lectura-de-dades-dun-csv">8.1 Lectura de dades d'un CSV</h2>
-<p>Un arxiu CSV (<em>Comma Separated Values</em>) conté dades organitzades per files en les quals la informació se separa normalment mitjançant comes (encara que es poden utilitzar altres caràcters de separació). S'solen utilitzar molt en informàtica per a guardar i processar gran quantitat de dades, ja que són fitxers que ocupen molt poc (arxius de text pla) i que són compatibles amb totes les plataformes (Windows, MacOS, Linux …).</p>
-<p>L'exemple següent mostra un arxiu que emmagatzema informació sobre una comanda de fruites. Cada fila conté, separat per comes <code>,</code>:</p>
-<ul>
-<li>la data i hora de la comanda</li>
-<li>la fruita</li>
-<li>un enter que indica la quantitat de peces sol·licitades</li>
-<li>un nombre real que és el preu per unitat d'aquesta fruita</li>
-</ul>
-<p><img alt="" src="../imagenes/image7.png" /></p>
-<p>Si volem llegir i processar les dades d'un arxiu CSV necessitem realitzar els següents passos:</p>
-<ol>
-<li>Importar el mòdul <code>csv</code> que ens permetrà usar funcions específiques per al processament d'arxius CSV</li>
-<li>Obrir l'arxiu CSV que volem processar mitjançant la funció incorporada <code>open()</code> i guardar l'objecte que aquesta crea en una variable</li>
-<li>Utilitzar la funció <code>csv.reader()</code> sobre la variable creada per a obtindre un <code>objeto</code> de tipus <code>reader</code> que podrem iterar per a anar llegint fila a fila tot l'arxiu CSV</li>
-</ol>
-<pre><code class="language-python">import csv
-arxiu = open('fruites.csv')
-arxiu_reader = csv.reader(arxiu)
-</code></pre>
-<p>Una vegada creat l'objecte iterable, el podem recórrer amb un bucle <code>for-in</code> que ens tornarà, en cada iteració del bucle, <strong>una llista amb les dades de cada fila</strong>.</p>
-<pre><code class="language-python">for fila in arxiu_reader:
-    print(str(fila))
-</code></pre>
-<p><img alt="" src="../imagenes/image10.png" /></p>
-<p>La llista <code>fila</code>, en cada iteració, contindrà la informació d'una de les fruites de la comanda. Podem accedir als diferents valors de la llista mitjançant indexació per a extraure les dades que ens interessen.</p>
-<pre><code class="language-python">for fila in arxiu_reader:
-    fruita = fila[1]
-    unitats = int(fila[2])    
-    print(fruita + ' --&gt; ' + str(unitats))
-</code></pre>
-<p><img alt="" src="../imagenes/image12.png" /></p>
-<p>En funció del tipus de dades, haurem de fer el canvi de tipus corresponent per a poder tractar les dades correctament (<code>int()</code>, <code>str()</code>, <code>float()</code> …).</p>
-<p>És important saber que <strong>només es pot iterar l'objecte reader una vegada</strong>. Per a tornar a llegir l'arxiu CSV, s'ha de tornar a cridar a <code>open()</code> i <code>csv.reader()</code> per a crear un altre objecte <code>reader</code>.</p>
-<p>Una precaució que s'ha de tindre quan es treballa amb arxius, és tancar qualsevol referència a aquests una vegada acabem de processar-los (en llegir-los i especialment en escriure'ls). Per a això simplement cridarem al mètode <code>close()</code> de l'objecte sobre el qual es va obrir l'arxiu.</p>
-<pre><code class="language-python">arxiu.close()
-</code></pre>
-<h2 id="82-escriptura-de-dades-en-un-csv">8.2 Escriptura de dades en un CSV</h2>
-<p>Si volem guardar dades utilitzades pel nostre programa <em>Python</em> per a un posterior processament o per a compartir-les, podem emmagatzemar-les en un fitxer CSV.</p>
-<p>Els passos que haurem de seguir són:</p>
-<ol>
-<li>Importar el mòdul <code>csv</code> que ens permetrà usar funcions específiques per al processament d'arxius CSV</li>
-<li>Obrir <strong>en mode escriptura</strong> <code>'w'</code> l'arxiu CSV en el qual volem guardar les dades mitjançant la funció <code>open(archivo, ‘w’, newline=’’)</code> i guardar l'objecte que aquesta crea en una variable</li>
-<li>Utilitzar la funció <code>csv.writer()</code> sobre la variable creada per a obtindre un <code>objeto</code> de tipus <code>writer</code> que podrem usar per a anar guardant llistes (línia a línia).</li>
-</ol>
-<pre><code class="language-python">import csv
-arxiu = open('animals.csv', 'w', newline='')
-arxiu_writer = csv.writer(arxiu)
-</code></pre>
-<p><strong>En Windows</strong>, s'ha de passar una cadena en blanc com a argument de <code>newline=’’</code> en la funció <code>open()</code>. Si s'oblida això, les files de l'arxiu CSV es mostraran a doble espai.</p>
-<p>Una vegada creat l'objecte <code>writer</code>, utilitzarem la seua funció <code>writerow()</code> per a emmagatzemar una llista en l'última fila de l'arxiu.</p>
-<pre><code class="language-python">arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
-arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
-arxiu_writer.writerow([1, 2, 3.141592, 4])
-arxiu.close()
-</code></pre>
-<p><img alt="" src="../imagenes/image16.png" /></p>
-<p>D'aquesta manera, els valors de la llista es guardaran separats per comes <code>,</code>. Recordeu que <strong>és molt important tancar l'ús de l'arxiu</strong> una vegada acabeu d'usar-lo <code>close()</code>. En alguns llenguatges de programació és just en aquest moment en el qual l'arxiu s'actualitza amb els canvis realitzats. Per la qual cosa és bona pràctica acostumar-se a tancar-lo sempre, amb independència del llenguatge usat.</p>
-<p>Si en lloc de tindre els valors del CSV separats per comes <code>,</code> els voleu guardar amb un altre delimitador, podeu indicar-ho amb la propietat <code>delimiter</code> de la crida a <code>csv.writer()</code>.</p>
-<pre><code class="language-python">arxiu_tab = open('animals_tab.csv', 'w', newline='')
-arxiu_writer = csv.writer(arxiu_tab, delimiter='\t')
-arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
-arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
-arxiu_writer.writerow([1, 2, 3.141592, 4])
-arxiu_tab.close()
-</code></pre>
-<p><img alt="" src="../imagenes/image18.png" /></p>
-<pre><code class="language-python">arxiu_linia = open('animals_linia.csv', 'w', newline='')
-arxiu_writer = csv.writer(arxiu_linia, delimiter='|')
-arxiu_writer.writerow(['ocell', 'rata', 'serp', 'foca'])
-arxiu_writer.writerow(['Hello, world of animals!', 'gos', 'koala', 'elefant'])
-arxiu_writer.writerow([1, 2, 3.141592, 4])
-arxiu_linia.close()
-</code></pre>
-<p><img alt="" src="../imagenes/image20.png" /></p>
-<h2 id="83-manipulacio-dimatges">8.3 Manipulació d'imatges</h2>
+              <h1 id="12-manipulacio-dimatges">12 Manipulació d'imatges</h1>
 <p><strong>Pillow (<code>PIL</code>)</strong> és un paquet de Python de tercers (<em>third-party</em>) per a interactuar amb arxius d'imatge. Aquest paquet compta amb diverses funcions que faciliten retallar, redimensionar i editar el contingut d'una imatge. Per a poder fer-ho, importarem solament el mòdul <code>Image</code> de la llibreria.</p>
 <pre><code class="language-python">from PIL import Image
 imatge_gat = Image.open('zophie.png')
@@ -409,7 +353,7 @@ imatge_gat.show()
 </code></pre>
 <p>Mitjançant la funció <code>open()</code> d'<code>Image</code> crearem un <code>objeto</code> de tipus imatge a partir d'un arxiu emmagatzemat en l'ordinador. Els diferents mètodes i atributs d'aquest <code>objeto</code> ens permetran modificar la imatge. Per exemple, mostrarem la imatge carregada mitjançant la funció <code>show()</code>.</p>
 <p><img alt="" src="../imagenes/image22.png" /></p>
-<h3 id="caracteristiques-de-les-imatges">Característiques de les imatges</h3>
+<h2 id="121-caracteristiques-de-les-imatges">12.1 Característiques de les imatges</h2>
 <p>Podem accedir als atributs de nom, format i grandària de la imatge de la següent manera.</p>
 <pre><code class="language-python">print('Nom: ' + imatge_gat.filename)
 print('Format: ' + imatge_gat.format)
@@ -435,7 +379,7 @@ imatge_gat.save('zophie.jpg')
 <li><code>Bottom</code>: La coordenada <code>y</code> d'un píxel per davall de la vora inferior de la caixa. Aquest enter ha de ser major que l'enter superior</li>
 </ul>
 <p>Cal tindre en compte que la caixa inclou les coordenades esquerra i superior, i arriba fins a, però no inclou, les coordenades dreta i inferior. Per exemple, la <code>tupla</code> de caixa <code>(3, 1, 9, 6)</code> representa tots els píxels de la caixa negra de la figura anterior.</p>
-<h3 id="retallar-copiar-i-apegar">Retallar, copiar i apegar</h3>
+<h2 id="122-retallar-copiar-i-apegar">12.2 Retallar, copiar i apegar</h2>
 <p>Una vegada coneixem la manera de referenciar els píxels d'una imatge en <em>Python</em>, podem retallar una imatge mitjançant la funció <code>crop()</code>, passant-li la caixa a tallar amb una <code>tupla</code> de la següent manera.</p>
 <pre><code class="language-python">#Creem una nova a partir d'un tall de l'original
 imatge_cara = imatge_gat.crop((150, 150, 240, 250))
@@ -492,7 +436,7 @@ mosaic_gat.save('mosaic.png')
 </tr>
 </tbody>
 </table>
-<h3 id="redimensionar-i-rotar">Redimensionar i rotar</h3>
+<h2 id="123-redimensionar-i-rotar">12.3 Redimensionar i rotar</h2>
 <p>Les funcions <code>resize()</code> i <code>rotate()</code> ens permeten canviar la grandària d'una imatge i rotar-la respectivament.</p>
 <pre><code class="language-python"># Canvia el tamany
 imatge_reduida = imatge_gat.resize((int(ample / 2), int(alt / 2)))
@@ -522,64 +466,6 @@ copia_gat.close()
 imatge_cara.close()
 imatge_gat.close()
 </code></pre>
-<h2 id="84-creacio-de-grafics">8.4 Creació de gràfics</h2>
-<p>La biblioteca <em>Matplotlib</em> permet crear una àmplia varietat de gràfics (gràfics de línies, de barres, de dispersió, circulars bàsics, 3D …). Podeu trobar la documentació completa en <a href="https://matplotlib.org">https://matplotlib.org</a>. Depenent del Sistema Operatiu i la configuració de <em>Python</em>, haureu de seguir uns passos per a la <a href="https://matplotlib.org/stable/install/index.html">instal·lació</a> de <em>Matplotlib</em>.</p>
-<h3 id="linies-i-dispersio">Línies i Dispersió</h3>
-<p>Un gràfic de línies és ideal per a mostrar els canvis en una mesura al llarg del temps. En <em>Matplotlib</em>, els termes <code>plot</code>, <code>graph</code> i <code>chart</code> s'usen indistintament, i el terme <code>figure</code> es refereix a la finestra que conté un o més gràfics.</p>
-<p>Importem <code>matplotlib.pyplot</code> amb el nom <code>plt</code> per a facilitar la introducció de les seues funcions.</p>
-<p>A continuació, per a representar els <strong>punts de dades en una figura 2D</strong>, hem de cridar a la funció <code>plt.plot()</code>. Primer associarem al gràfic els valors per als eixos horitzontal/vertical guardats en <code>x</code> i <code>y1</code>. Després de cridar a <code>plt.plot()</code> amb aquests valors, l'invoquem una segona vegada amb <code>x</code> ​​i <code>y2</code> per a afegir una segona línia al gràfic.</p>
-<pre><code class="language-python">import matplotlib.pyplot as plt
-x = [0, 1, 2, 3, 4, 5]
-y1 = [10, 13, 15, 18, 16, 20]
-y2 = [9, 11, 18, 16, 17, 19]
-plt.plot(x, y1)
-plt.plot(x, y2)
-# Per guardar un fitxer d'imatge del gràfic, heu de cridar 
-# plt.savefig() abans de cridar a plt.show()
-plt.savefig('linies.png')  
-plt.show() 
-</code></pre>
-<p><em>Matplotlib</em> seleccionarà automàticament els colors de les línies i una grandària adequada per al gràfic. Podem guardar el gràfic predeterminat com una imatge PNG cridant a <code>plt.savefig()</code>.</p>
-<p><img alt="Gráfico, Gráfico de líneas" src="../imagenes/image44.png" /></p>
-<p><em>Matplotlib</em> compta amb la funció <code>plt.show()</code> de vista prèvia que mostra el gràfic en una finestra. Cal remarcar que, si volem guardar el gràfic, hem de fer-ho abans de cridar a la funció <code>plt.show()</code>. La crida a la funció bloquejarà l'execució del codi i no tornarà fins que l'usuari tanque la finestra.</p>
-<p>Per a crear un <strong>gràfic de dispersió</strong> d'aquestes mateixes dades, passeu els valors de l'eix <code>x</code> i de l'eix <code>y</code> a la funció <code>plt.scatter()</code>.</p>
-<pre><code class="language-python"># Gràfica Scatter
-plt.scatter(x, y1)
-plt.scatter(x, y2)
-plt.savefig('scatter.png')
-plt.show()
-</code></pre>
-<p><img alt="Gráfico, Gráfico de dispersión" src="../imagenes/image46.png" /></p>
-<h3 id="barres-i-grafics-circulars">Barres i gràfics circulars</h3>
-<p>Els <strong>gràfics de barres</strong> són útils per a comparar el mateix tipus de dades en diferents categories. A diferència d'un gràfic de línies, l'ordre de les categories no és important, encara que solen estar ordenades alfabèticament.</p>
-<pre><code class="language-python"># Barres
-categories = ['Gats', 'Gossos', 'Ratolins', 'Pardals']
-valors = [100, 150, 30, 200]
-plt.bar(categories, valors)
-plt.savefig('barres.png')
-plt.show()
-</code></pre>
-<p>Passem les categories a enumerar en l'eix <code>x</code> com la primera llista a <code>plt.bar()</code> i els valors per a cada categoria com la segona llista.</p>
-<p><img alt="Gráfico, Gráfico de barras" src="../imagenes/image48.png" /></p>
-<p>Per a crear un gràfic circular, utilitzarem la funció <code>plt.pie()</code>. En lloc de categories i valors, un gràfic circular té sectors i etiquetes. La funció <code>plt.pie()</code> accepta una llista de grandàries de porció i una llista d'etiquetes per a cada porció.</p>
-<pre><code class="language-python"># Gràfic Circular
-porcions = [100, 150, 30, 200]  # El tamany de cada porció
-etiquetes = ['Gats', 'Gossos', 'Ratolins', 'Pardals'] 
-plt.pie(porcions, labels=etiquetes)
-plt.savefig('tarta.png')
-plt.show()
-</code></pre>
-<p>El primer argument posicional de <code>plt.pie()</code> fa referència a les porcions <code>x</code> (<code>porcions</code> en aquest exemple), però el segon no fa referència a les etiquetes, sinó a l'atribut <code>explode</code>, per la qual cosa per a assignar els valors d'<code>etiquetes</code> a l'atribut <code>labels</code> del <code>plt.pie()</code> hem d'especificar-ho en la crida a la funció. 
-Podeu consultar els detalls dels diferents paràmetres de <code>plt.pie()</code> en la seua <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html">documentació oficial</a>.</p>
-<p><img alt="" src="../imagenes/image50.png" /></p>
-<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image51.png" /></p>
-<p>Entre la gran diversitat d'atributs que podem modificar per a obtindre el gràfic desitjat, l'atribut <code>autopct</code> ens permet mostrar el valor de cada porció com un % respecte del total.</p>
-<pre><code class="language-python">plt.pie(porcions, labels=etiquetes, autopct='%.1f%%')
-plt.savefig('tartaX100.png')
-plt.show()
-</code></pre>
-<p><img alt="Gráfico, Gráfico circular" src="../imagenes/image53.png" /></p>
-<p>L'atribut és una cadena d'especificació de format: la cadena <code>'%.1f%%'</code> especifica que el nombre ha de mostrar un dígit després del punt decimal i després del decimal es mostra el símbol de % (la cadena <code>'%.1f'</code> mostraria el mateix valor, però sense el símbol de % final).</p>
               
             </div>
           </div>
@@ -597,16 +483,16 @@ plt.show()
           <div class="col col--s-4 col--m space-between">
             
               <a class="footer__link padding-top-0 navigation-prev"
-                href="../7-moduls/"
-                title="07-Móduls">
+                href="../11-dadesarxius/"
+                title="11-Dades en arxius">
                 &#8592; Previous Page
               </a>
             
             
             
               <a class="footer__link padding-top-0 navigation-next"
-                href="../9-tipusavancats/"
-                title="09-Tipus avançats"/>
+                href="../13-grafiques/"
+                title="13-Gràfiques"/>
                 Next Page &#8594;
               </a>
             
@@ -622,7 +508,7 @@ plt.show()
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-16 20:33:13.923875+00:00
+  Docs Build Date UTC : 2026-11-17 18:26:51.097771+00:00
   -->
 
   <!--
