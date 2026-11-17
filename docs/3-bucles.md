@@ -109,3 +109,26 @@ for i in range(5):
 # Eixida: 0, 1, 3, 4
 ```
 
+---
+## EXERCICIS
+Usa un bucle `for` i `range()` per a generar i imprimir la taula de multiplicar d'un número sol·licitat a l'usuari.​
+
+Fes després el mateix utilitzant `while()`​.
+
+```text
+Quin és el nombre per a fer la taula de multiplicar?: 7
+//// Tabla del 7 ////
+7 x 0 = 0
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+```
+
+[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)

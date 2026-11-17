@@ -6,7 +6,7 @@ outline: [2, 3]
 aside: true
 ---
 
-# 5: Introducció a les Funcions personalitzades
+# 5: Funcions personalitzades
 
 ## 5.1. Paràmetres i Valor de Retorn
 
@@ -132,3 +132,19 @@ Ambdues versions de la funció produeixen exactament el mateix resultat, però l
 L'ús de funcions per a encapsular la lògica, com en `es_par`, fa que el codi principal siga molt més net i fàcil d'entendre, promovent una bona organització i reutilització.
 
 
+
+---
+## EXERCICIS
+Crea una funció anomenada `salutacio(nom, hora)`
+
+- Si és abans de migdia, retornarà la **cadena de caràcters** "Bon dia" + nom
+- Si no, retornarà la **cadena de caràcters** "Bona vesprada" + nom
+
+Prova la funció a diferents hores, mostrant el resultat en un `print()`
+
+```text
+Bona vesprada Aitana
+Bon dia Marc
+```
+
+[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)

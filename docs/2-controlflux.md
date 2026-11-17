@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Control del flujo
+title: Control del flux
 sidebar: true
 outline: [2, 3]
 aside: true
@@ -190,3 +190,19 @@ match valor:
 
 Prendre decisions és poderós, però què passa quan necessitem que el nostre programa realitze una acció una vegada i una altra?
 
+---
+## EXERCICI
+Escriu un programa que demane la temperatura actual i mostre els missatges “Fa calor”, “Fa fred” o “Temperat” segons les següents casuístiques​:
+
+- \> 30º: Fa calor
+- < 10º: Fa fred
+- altre: Temperat
+
+```text
+Quina és la temperatura?: 7
+Fa fred
+Quina és la temperatura?: 33
+Fa calor
+Quina és la temperatura?: 25
+Temperat
+```

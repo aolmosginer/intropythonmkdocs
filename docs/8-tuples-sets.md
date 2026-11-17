@@ -1,7 +1,15 @@
-# 9. Tipus avançats
+---
+layout: doc
+title: Funciones
+sidebar: true
+outline: [2, 3]
+aside: true
+---
+
+# 8. Tipus avançats
 A més de les llistes que ja hem vist, *Python* ofereix altres tipus avançats de dades que vorem a contianució.
 
-## 9.1 *Tuples*
+## 8.1 *Tuples*
 Les *tuples* són unes col.lecions de dades com les llistes però, una vegada declarades, no es poden modificar → **immutables**
 
 ### Característiques
@@ -53,6 +61,7 @@ True
 ```
 
 Igualment, la majoria dels mètodes propis de les llistes també estan disponibles per a les *tuples*. Per exemple podem destacar:
+
 - `len()`: retorna el tamany de la *tupla*
 - `max()` `min()` `sum()`: només per a *tuples* amb elements compatibles
 - `tupla.count(element)`: compta el nombre de vegades que un determinat `element` està en la *tupla*
@@ -140,11 +149,12 @@ print(tupla)
 
 ### Quan usar *tuples* en lloc de llistes?
 
-- Quan les dades no han de canviar. Exemple: coordenades, dies de la setmana
-- Quan es busca més eficiència. Les *tuples* consumeixen menys memòria i són més ràpides
-- Quan es necessiten dades *hashables*. Per exemple les *tuples* es poden usar com a claus en diccionaris (vorem més endavant el que és), les llistes no
+1. Quan les dades no han de canviar. Exemple: coordenades, dies de la setmana
+2. Quan es busca més eficiència. Les *tuples* consumeixen menys memòria i són més ràpides
+3. Quan es necessiten dades *hashables*. Per exemple les *tuples* es poden usar com a claus en diccionaris (vorem més endavant el que és), les llistes no
 
-## 9.2 Sets (conjunts)
+---
+## 8.2 Sets (conjunts)
 Els *sets* són també una col.leció de dades com les llistes i les *tuples*, però amb unes particularitats que vorem a continuació.
 
 ### Característiques
@@ -222,231 +232,8 @@ hola
 ```
 Recorda que, al ser una col.lecció no ordenada, quan recorrem un *set* podem obtindre els resultats en un ordre diferent en cada execució. Fes la prova amb el codi anterior i voràs com cada vegada el `for` mostra els elements en un ordre diferent.
 
-## Exercici amb *tuples* i *sets*
-Una biblioteca escolar vol gestionar els llibres i els socis. 
-
-Cada llibre es guarda com una *tupla* `(títol, autor, any)`:
-```python
-llibre1 = ("Mirall trencat", "Mercè Rodoreda", 1974)
-llibre2 = ("La plaça del Diamant", "Mercè Rodoreda", 1962)
-llibre3 = ("Solitud", "Víctor Català", 1905)
-```
-1. Mostra el títol de `llibre1` accedint-hi per la posició
-2. Mostra l’últim element de `llibre3` utilitzant un índex negatiu
-3. Fes un desempaquetat de `llibre2` en tres variables `titol, autor, any` i imprimeix: "La plaça del Diamant va ser escrit per Mercè Rodoreda el 1962"
-4. Crea una llista amb els tres llibres i ordena-la per llibre
-
-Dos grups de socis han fet préstecs aquesta setmana:
-```python
-grup_a = {"Marta", "Pau", "Anna", "Joan", "Laia"}
-grup_b = {"Pau", "Laia", "Jordi", "Núria", "Marc"}
-```
-5. Afegeix "Clara" al `grup_a` i elimina "Joan"
-6. Comprova si "Marc" és al `grup_b`
-7. Intenta eliminar "Àngel" del `grup_b` sense que et done error
-
-### Solució:
-```python
-# Part 1
-print(llibre1[0])                  
-print(llibre3[-1])                 
-titol, autor, any = llibre2
-print(f"{titol} va ser escrit per {autor} el {any}")
-llibres = [llibre1, llibre2, llibre3]
-print(sorted(llibres))
-
-# Part 2
-grup_a.add("Clara")
-grup_a.remove("Joan")
-print("Marc" in grup_b)            
-grup_b.discard("Àngel")
-```
-
-
-
-
-
-## 9.3 Diccionaris
-Un diccionari és una col.lecció de dades que guarda la informació en parelles **clau → valor**. En lloc d’accedir al valor d'un element per la seva posició (com en una llista), hi accedixes per la seva **clau**.
-
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="../imagenes/diccionari_clau_valor.png" style="width: 100%; max-width: 32em; min-width: 0; height: auto;" />    
-</div>
-
-
-### Característiques
-- Els seus elements van declarats entre claus `{ }`, separant els elements amb comes `,`
-- Cada element està format per una parella `clau : valor`
-- Són **mutables**
-- **No permeten claus duplicades**
-  - Si s'afegix una clau repetida, el seu valor serà sobreescrit
-- Les **claus** han de ser **immutables**
-  - Poden ser `str`, `int`, `tuple`, però no `list` o `dict`.
-- En el cap **valor** es pot guardar qualsevol tipus de dades (mutables o immutables)
-- Els seus elements `clau : valor` mantenen l'ordre d'inserció
-
-#### Exemple
-```python
-dic = {}  # Diccionari buit
-persona = {"nom": "Carlos",
-           "edat": 30,
-           "ciutat": "Madrid"}
-print(persona)
-print(persona["nom"])  # Accedeix al valor d'una clau.
-```
-
-```text
-{'nom': 'Carlos', 'edat': 30, 'ciutat': 'Madrid'}
-Carlos
-```
-
-### Modificació / accés a diccionaris
-Podem afegir noves parelles clau/valor utilitzant la nomenclatura `diccionari[clau] = valor`.
-Si una clau ja existeix, la modificarà.
-
-El mètode `diccionari.update({ })` ens permet afegir/modificar vàries parelles clau/valor a la vegada.
-
-```python
-dic = {}  # Diccionari buit
-dic["ies"] = "teulada"          # Afegir una nova clau
-dic["provincia"] = "alacant"    
-dic["provincia"] = "california" # Modificar el valor d'una clau existent
-
-dic.update({"telefon": 965739045, "estudis": ['ESO', 'BAT', 'FP']})
-print(dic)
-
-nom = dic["ies"]  # Accedir a un valor (error si no existeix)
-print(nom)
-```
-
-```text
-{'ies': 'teulada', 'provincia': 'california', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
-teulada
-```
-
-Podem eliminar elements d'un diccionari de vàries formes:
-- `del diccionari[clau]`: Elimina una clau i el seu valor
-- `diccionari.pop[clau]`: Retorna el valor de la clau i després elimina l'element
-- `diccionari.clear()`: Buida el diccionari
-
-
-```python
-del dic["provincia"]
-print(dic)
-estudis = dic.pop("estudis")
-print(dic)
-print(estudis)
-dic.clear()
-print(dic)
-```
-
-```text
-{'ies': 'teulada', 'telefon': 965739045, 'estudis': ['ESO', 'BAT', 'FP']}
-{'ies': 'teulada', 'telefon': 965739045}
-['ESO', 'BAT', 'FP']
-{}
-```
-
-
-
-### Mètodes particulars i iteracions de diccionaris
-Donada la particular estructura dels diccionaris, aquests disposen d'una sèrie de mètodes propis que ens ajuden a gestionar les dades emmagatzemades en ells.
-- `diccionari.keys()`: Retorna un `objecte` de tipus `dict_keys` (no una llista , string, *tupla* ...). Aquest `objecte` conté **totes les claus** del diccionari
-- `diccionari.values()`: Retorna un `objecte` de tipus `dict_values`que conté **tots els valors** del diccionari
-- `diccionari.items()`: Retorna un `objecte` de tipus `dict_items`que conté totes les parelles `(clau,valor)`
-
-Si fem un `print()` d'aquestos objectes propis dels diccionaris vorem que no se'ns mostren com una llista, fet que ens ha de fer pensar que no podem tractar-los d'igual forma.
-
-```python
-persona = {"nom": "Carlos", 
-           "edat": 30, 
-           "ciutat": "Madrid"}
-claus = persona.keys()     # objecte dict_keys
-print(claus)
-valors = persona.values()  # objecte dict_values
-print(valors)
-items = persona.items()    # objecte dict_items
-print(items)
-```
-```text
-dict_keys(['nom', 'edat', 'ciutat'])
-dict_values(['Carlos', 30, 'Madrid'])
-dict_items([('nom', 'Carlos'), ('edat', 30), ('ciutat', 'Madrid')])
-```
-
-Els `objectes` retornats pels mètodes `.keys()`, `.values()` i `.items()` podem utilitzar-los, per exemple, per a iterar sobre els diccionaris (recórrer-los).
-
-```python
-for clau in persona.keys():
-    print(clau)
-  
-for valor in persona.values():
-    print(valor)
-  
-for clau, valor in persona.items():
-    print(clau, valor)
-```
-```text
-nom
-edat
-ciutat
-```
-
-```text
-Carlos
-30
-Madrid
-```
-
-```text
-nom Carlos
-edat 30
-ciutat Madrid
-```
-
-Podem simplificar el `for` si el que volem és iterar sobre les claus (serà el més habitual). Si es pasa directament el diccionari al bucle `for`, aquest iterarà sobre les seues claus. 
-
-```python
-print('Les parelles clau/valor són:')
-for clau in persona:
-    print(clau, ' --> ', persona[clau])
-```
-```text
-Les parelles clau/valor són:
-nom  -->  Carlos
-edat  -->  30
-ciutat  -->  Madrid
-```
-
-Per tant, `for clau in persona.keys():` és equivalent a `for clau in persona:`.
-
-
-### Operacions agregades (`in`, `len`, `max`, `min`, `sum`)
-Les operacions agregades de *Python* poden utilitzar-se sobre els diccionaris. Moltes d'aquestes operacions treballen per defecte sobre les **claus** (`max`, `min`, `sum`). Si el que es vol és treballar amb els **valors**, s'ha d'utilitzar `.values()`.
-
-```python
-edats = {"Anna": 20,
-         "Pere": 25,
-         "Joan": 18   }
-print(max(edats))                # "Pere"
-print(max(edats.values()))       # 25
-print(min(edats.values()))       # 18
-print(sum(edats.values()))       # 63
-"Pere" in edats                  # True → busca entre les claus
-25 in edats                      # False → NO busca entre els valors
-25 in edats.values()             # True → busca entre els valors
-```
-
-### Exercici pràctic: 
-Fes ara l'exercici sobre diccionaris **"La base de dades de la Rebel·lió 🌌"**
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
-</div>
-
-
-## 9.4 Python comprehension (Comprensió)
+---
+## 8.3 Python comprehension (Comprensió)
 
 La comprensió de *Python* és una manera concisa i eficient de crear col.leccions a partir d'iterables, modificant i/o filtrant el seu contingut.
 
@@ -498,8 +285,50 @@ print(majuscules)   # Set
 ```
 
 
-## Exercicis sobre Python comprehension
-### 1. Primers passos
+---
+## EXERCICIS
+### 1. Exercici amb *tuples* i *sets*
+Una biblioteca escolar vol gestionar els llibres i els socis. 
+
+Cada llibre es guarda com una *tupla* `(títol, autor, any)`:
+```python
+llibre1 = ("Mirall trencat", "Mercè Rodoreda", 1974)
+llibre2 = ("La plaça del Diamant", "Mercè Rodoreda", 1962)
+llibre3 = ("Solitud", "Víctor Català", 1905)
+```
+1. Mostra el títol de `llibre1` accedint-hi per la posició
+2. Mostra l’últim element de `llibre3` utilitzant un índex negatiu
+3. Fes un desempaquetat de `llibre2` en tres variables `titol, autor, any` i imprimeix: "La plaça del Diamant va ser escrit per Mercè Rodoreda el 1962"
+4. Crea una llista amb els tres llibres i ordena-la per llibre
+
+Dos grups de socis han fet préstecs aquesta setmana:
+```python
+grup_a = {"Marta", "Pau", "Anna", "Joan", "Laia"}
+grup_b = {"Pau", "Laia", "Jordi", "Núria", "Marc"}
+```
+5. Afegeix "Clara" al `grup_a` i elimina "Joan"
+6. Comprova si "Marc" és al `grup_b`
+7. Intenta eliminar "Àngel" del `grup_b` sense que et done error
+
+**SOLUCIÓ** 
+```python
+# Part 1
+print(llibre1[0])                  
+print(llibre3[-1])                 
+titol, autor, any = llibre2
+print(f"{titol} va ser escrit per {autor} el {any}")
+llibres = [llibre1, llibre2, llibre3]
+print(sorted(llibres))
+
+# Part 2
+grup_a.add("Clara")
+grup_a.remove("Joan")
+print("Marc" in grup_b)            
+grup_b.discard("Àngel")
+```
+
+### 2. Exercicis sobre Python comprehension
+#### A. Primers passos
 A partir de la següent llista:
 ```python
 nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -513,14 +342,15 @@ resultat = []
 for n in nombres:
     resultat.append(n + 10) 
 ```
-#### Solució 
+
+**SOLUCIÓ** 
 ```python
 print([n * 2 for n in nombres if n % 2 != 0])
 print([n for n in nombres if n > 5])
 print([n + 10 for n in nombres])
 ```
 
-### 2. Treballant amb text
+#### B. Treballant amb text
 A partir de la següent llista:
 ```python
 noms = ["marta", "pau", "anna", "joan", "laia", "jordi"]
@@ -530,7 +360,7 @@ noms = ["marta", "pau", "anna", "joan", "laia", "jordi"]
 3. Crea una llista amb els noms que tenen més de 4 lletres
 4. Crea una llista amb la primera lletra de cada nom, en majúscula (["M", "P", ...])
 
-#### Solució 
+**SOLUCIÓ** 
 ```python
 print([nom.upper() for nom in noms])
 print([len(nom) for nom in noms])
@@ -538,7 +368,7 @@ print([nom for nom in noms if len(nom) > 4])
 print([nom[0].upper() for nom in noms])
 ```
 
-### 3. Productes de la botiga
+#### C. Productes de la botiga
 Una botiga en línia vol processar les seves dades. Cada producte és una tupla `(nom, preu, estoc)` dins la llista `productes`:
 ```python
 productes = [
@@ -555,9 +385,9 @@ productes = [
 4. Crea una llista amb els noms dels productes que costen menys de 35 €.
 5. Crea una llista de cadenes amb el format "Teclat: 25.0 €" per a cada producte
 
-**PISTA:** Utilitza el desempaquetat de les *tuples* dins el `for` per a obtenir els 3 conceptes de cada producte per separat `for nom, preu, estoc in productes`.
+*PISTA:* Utilitza el desempaquetat de les *tuples* dins el `for` per a obtenir els 3 conceptes de cada producte per separat `for nom, preu, estoc in productes`.
 
-#### Solució 
+**SOLUCIÓ** 
 ```python
 print([nom for nom, preu, estoc in productes])
 print([nom for nom, preu, estoc in productes if estoc > 0])

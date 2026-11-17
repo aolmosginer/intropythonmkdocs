@@ -13,7 +13,7 @@ aside: true
     - 1.2. Operadors i Expressions
     - 1.3. Variables i Assignació
     - 1.4. Comentaris
-- [2: Interactivitat i Control de Flux](2-controlfluxe.md)
+- [2: Interactivitat i Control de Flux](2-controlflux.md)
     - 2.1. La Funció `print()`
     - 2.2. La Funció `input()`
     - 2.3. Estructures Condicionals
@@ -47,21 +47,25 @@ aside: true
     - 7.2 Mòduls estàndard
     - 7.3 Ús de `__main__`
     - 7.4 Estructura d'un programa
-- [8. Fem coses xules amb Python](8-cosesxules.md)
-    - 8.1 Lectura de dades d'un CSV
-    - 8.2 Escriptura de dades en un CSV
-    - 8.3 Manipulació d'imatges
-        - Característiques de les imatges
-        - Retallar, copiar i apegar
-        - Redimensionar i rotar
-    - 8.4 Creació de gràfics
-        - Línies i Dispersió
-        - Barres i gràfics circulars
-- [9. Tipus avançats](9-tipusavancats.md)
-  - 9.1 Tuples
-  - 9.2 Sets (conjunts)
-  - 9.3 Diccionaris
-  - 9.4 Python comprehension (Comprensió)
+- [8. Tuples/Sets](8-tuples-sets.md)
+    - 8.1 Tuples
+    - 8.2 Sets (conjunts)
+    - 8.3 Python comprehension (Comprensió)
+- [9. Diccionaris](9-diccionaris.md)   
+    - 9.1 Característiques
+    - 9.2 Modificació / accés 
+    - 9.3 Mètodes particulars i iteracions
+    - 9.4 Operacions agregades
 - [10. Matrius](10-matrius.md)
-  - 10.1 Matrius
-
+    - 10.1 Matrius  
+    - 10.2 Exemple: "Hundir la flota"
+- [11. Gestió de dades en arxius](11-dadesarxius.md)
+    - 11.1 Lectura de dades d'un CSV
+    - 11.2 Escriptura de dades en un CSV
+- [12. Manipulació d'imatges](12-imatges.md)
+    - 12.1 Característiques de les imatges
+    - 12.2 Retallar, copiar i apegar
+    - 12.3 Redimensionar i rotar
+- [13. Creació de gràfiques](13-grafiques.md)
+    - 13.1 Línies i Dispersió
+    - 13.2 Barres i gràfics circulars

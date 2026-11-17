@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Colecciones-Listas
+title: Coleccions-Llistes
 sidebar: true
 outline: [2, 3]
 aside: true
@@ -205,3 +205,19 @@ print(numeros)
 Amb un bon maneig de les llistes, podem començar a organitzar el nostre codi de manera més eficient utilitzant funcions.
 
 
+---
+## EXERCICIS
+Implementa els següents passos:
+
+1. Crea una llista buida anomenada "motxilla"
+2. Afegix "Llaterna" i "Botella"
+3. Inserix "Mapa" al principi de la llista
+4. Mostra la llista de la següent forma
+
+```text
+1 - Mapa
+2 - Llanterna
+3 - Botella
+```
+
+[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)

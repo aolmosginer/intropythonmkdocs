@@ -4,15 +4,18 @@ nav:
   - Home: index.md
   - Què aprendrem?: 0-intro.md
   - 01-Conceptes: 1-conceptes.md
-  - 02-Control del Flux: 2-controlfluxe.md
+  - 02-Control del Flux: 2-controlflux.md
   - 03-Bucles: 3-bucles.md
   - 04-Llistes: 4-coleccions.md
   - 05-Funcions: 5-funcions.md
   - 06-Àmbit: 6-ambit.md
   - 07-Móduls: 7-moduls.md
-  - 08-Coses xules: 8-cosesxules.md
-  - 09-Tipus avançats: 9-tipusavancats.md
+  - 08-Tuples/Sets: 8-tuples-sets.md
+  - 09-Diccionaris: 9-diccionaris.md
   - 10-Matrius: 10-matrius.md
+  - 11-Dades en arxius: 11-dadesarxius.md
+  - 12-Imatges: 12-imatges.md
+  - 13-Gràfiques: 13-grafiques.md
   - Crèdits: about.md
 
 theme: kpn

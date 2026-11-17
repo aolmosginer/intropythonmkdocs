@@ -1,5 +1,12 @@
-# 10. Matrius
+---
+layout: doc
+title: Funciones
+sidebar: true
+outline: [2, 3]
+aside: true
+---
 
+# 10. Matrius
 ## 10.1 Definició
 
 Les matrius són **llistes de llistes**. Podem pensar en les matrius de 2 dimensions com les cel·les d'un full de càlcul (files i columnes).
