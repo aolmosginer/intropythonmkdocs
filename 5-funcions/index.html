@@ -339,6 +339,16 @@
             
                 <li><a class="a" href="#exercicis">EXERCICIS</a></li>
                 
+                    <li class="child-li"><a class="a child" href="#1-salutacio">1. Salutació</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#2-iva">2. IVA</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#3-rectangle">3. Rectangle</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#4-piramide-amb-modes">4. Piràmide amb modes</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#5-dni">5. DNI</a></li>
+                
             
           
         
@@ -434,6 +444,7 @@ print(es_par(7)) # Eixida: False
 <p>L'ús de funcions per a encapsular la lògica, com en <code>es_par</code>, fa que el codi principal siga molt més net i fàcil d'entendre, promovent una bona organització i reutilització.</p>
 <hr />
 <h2 id="exercicis">EXERCICIS</h2>
+<h3 id="1-salutacio">1. Salutació</h3>
 <p>Crea una funció anomenada <code>salutacio(nom, hora)</code></p>
 <ul>
 <li>Si és abans de migdia, retornarà la <strong>cadena de caràcters</strong> "Bon dia" + nom</li>
@@ -443,7 +454,76 @@ print(es_par(7)) # Eixida: False
 <pre><code class="language-text">Bona vesprada Aitana
 Bon dia Marc
 </code></pre>
-<p><a href="../arxius/AltresActivitats.pdf"><strong>--&gt; Més activitats de bucles, llistes i funcions ací &lt;--</strong></a></p>
+<h3 id="2-iva">2. IVA</h3>
+<p>Escriu un programa que demane cinc preus i després mostre per pantalla el preu de venda de cadascun després d’aplicar-li un 21% d'IVA. Implementa i utilitza la funció:</p>
+<p><code>def preu_amb_IVA(preu)</code></p>
+<pre><code class="language-text">Dona'm un preu (1/5): 5
+Dona'm un preu (2/5): 2.4
+Dona'm un preu (3/5): 10
+Dona'm un preu (4/5): 1
+Dona'm un preu (5/5): 11
+Els preus amb IVA són:
+5.0 --&gt; 6.05
+2.4 --&gt; 2.904
+10.0 --&gt; 12.1
+1.0 --&gt; 1.21
+11.0 --&gt; 13.309999999999999
+</code></pre>
+<h3 id="3-rectangle">3. Rectangle</h3>
+<p>Escriu un programa que demane l'<code>ample</code> i <code>alt</code> d'un rectangle i mostre per pantalla la seua àrea i el seu perímetre. Implementa i utilitza les funcions:</p>
+<p><code>def perimetre_rectangle(ample, alt)</code></p>
+<p><code>def area_rectangle(ample, alt)</code></p>
+<pre><code class="language-text">Quina és l'altura del rectangle?: 12.5
+Quina és l'amplaria del rectangle?: 24.8
+
+----- Resultats -----
+Perímetre del rectangle --&gt; 74.6
+Àrea del rectangle --&gt; 310.0
+</code></pre>
+<h3 id="4-piramide-amb-modes">4. Piràmide amb modes</h3>
+<p>Realitza un programa que demane un valor positiu <code>N</code> i després mostre per pantalla una piràmide de valors en funció del mode, que també es pregunta a l’usuari.</p>
+<ul>
+<li>El mode <code>1</code> mostrarà la piràmide amb tot <code>*</code></li>
+<li>El mode és <code>2</code> mostrarà els nombres des d'<code>1</code> fins a <code>N</code>, un en cada fila, repetint cada nombre tantes vegades com el seu valor</li>
+<li>Si es tria qualsevol altre mode, apareixerà un error i acabarà el programa</li>
+</ul>
+<p>Implementa i utilitza la funció: <code>def piramide(files, mode)</code></p>
+<pre><code class="language-text">Valor?: 5
+Quin mode? (1 - * / 2 - nombres): 1
+
+*
+**
+***
+****
+*****
+</code></pre>
+<pre><code class="language-text">Valor?: 8
+Quin mode? (1 - * / 2 - nombres): 2
+
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+</code></pre>
+<pre><code class="language-text">Valor?: 7
+Quin mode? (1 - * / 2 - nombres): 6
+
+**** Error: Mode incorrecte ****
+</code></pre>
+<h3 id="5-dni">5. DNI</h3>
+<p>El NIF (o lletra associada a un DNI) s'obté de la següent manera: Es divideix el número de DNI entre 23 i el residu és codificada per una lletra segons la següent equivalència:</p>
+<pre><code class="language-text">0: &quot;T&quot;, 1: &quot;R&quot;, 2: &quot;W&quot;, 3: &quot;A&quot;, 4: &quot;G&quot;, 5: &quot;M&quot;, 6: &quot;Y&quot;, 7: &quot;F&quot;, 8: &quot;P&quot;, 9: &quot;D&quot;, 10: &quot;X&quot;, 11: &quot;B&quot;, 12: &quot;N&quot;, 13: &quot;J&quot;, 14: &quot;Z&quot;, 15: &quot;S&quot;, 16: &quot;Q&quot;, 17: &quot;V&quot;, 18: &quot;H&quot;, 19: &quot;L&quot;, 20: &quot;C&quot;, 21: &quot;K&quot;, 22: &quot;E&quot;
+</code></pre>
+<p>Escriu un programa que demane el DNI i mostre per pantalla la lletra associada. Per a això s'haurà de crear una funció a la qual se li passe el número i retorne la lletra.</p>
+<p><code>def nif(dni)</code></p>
+<pre><code class="language-text">DNI?: 56321122
+
+El NIF associat a 56321122 és: X
+</code></pre>
               
             </div>
           </div>
@@ -486,7 +566,7 @@ Bon dia Marc
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.735155+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.652097+00:00
   -->
 
   <!--

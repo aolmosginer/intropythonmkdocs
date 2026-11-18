@@ -337,7 +337,15 @@
                 <li><a class="a" href="#94-operacions-agregades-in-len-max-min-sum">9.4 Operacions agregades (in, len, max, min, sum)</a></li>
                 
             
-                <li><a class="a" href="#exercici">EXERCICI</a></li>
+                <li><a class="a" href="#exercici-la-rebellio">Exercici: La Rebel·lió 🌌</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#part-1-creacio-de-diccionaris">Part 1: Creació de diccionaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#part-2-modificacio-de-diccionaris">Part 2: Modificació de diccionaris</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#part-3-extraccio-de-dades">Part 3: Extracció de dades</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#bonus">Bonus ⭐</a></li>
                 
             
           
@@ -483,11 +491,100 @@ print(sum(edats.values()))       # 63
 25 in edats                      # False → NO busca entre els valors
 25 in edats.values()             # True → busca entre els valors
 </code></pre>
-<h2 id="exercici">EXERCICI</h2>
-<p>Fes ara l'exercici sobre diccionaris <a href="../arxius/ActivitatDiccionarisStarWars.pdf">La base de dades de la Rebel·lió 🌌</a></p>
+<hr />
+<h2 id="exercici-la-rebellio">Exercici: La Rebel·lió 🌌</h2>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
 </div>
+
+<p>L’Aliança Rebel ha perdut part dels seus arxius i necessita la teua ajuda per reconstruir-los. Treballaràs amb <strong>diccionaris</strong> per gestionar la informació dels personatges de la galàxia.</p>
+<h3 id="part-1-creacio-de-diccionaris">Part 1: Creació de diccionaris</h3>
+<p><strong>1.1.</strong> Crea dos diccionaris, anomenats <code>luke</code> i <code>vader</code>, amb les dades següents:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Clau</strong></th>
+<th><strong>Valor (luke)</strong></th>
+<th><strong>Valor (vader)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nom</code></td>
+<td>"Luke Skywalker"</td>
+<td>"Darth Vader"</td>
+</tr>
+<tr>
+<td><code>planeta</code></td>
+<td>"Tatooine"</td>
+<td>"Tatooine"</td>
+</tr>
+<tr>
+<td><code>bandol</code> (sense accent)</td>
+<td>"Rebel·lió"</td>
+<td>"Imperi"</td>
+</tr>
+<tr>
+<td><code>edat</code></td>
+<td>19</td>
+<td>45</td>
+</tr>
+<tr>
+<td><code>arma</code></td>
+<td>"Sabre làser"</td>
+<td>"Sabre làser"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1.2.</strong> Crea una <strong>llista</strong> anomenada <code>personatges</code> que continga els dos diccionaris anteriors.</p>
+<h3 id="part-2-modificacio-de-diccionaris">Part 2: Modificació de diccionaris</h3>
+<p><strong>2.1.</strong> Han passat els anys i ara Luke té 35 anys. Actualitza el diccionari <code>luke</code>.</p>
+<p><strong>2.2.</strong> Afegeix una nova clau <code>rang</code> al diccionari <code>luke</code> amb el valor "Mestre Jedi".</p>
+<p><strong>2.3.</strong> Afegeix una nova clau <code>rang</code> al diccionari <code>vader</code> amb el valor "Lord Sith".</p>
+<p><strong>2.4.</strong> Vader s’ha redimit! Canvia el valor de <code>bandol</code> a "Rebel·lió".</p>
+<p><strong>2.5.</strong> Elimina la clau <code>arma</code> del diccionari <code>vader</code>.</p>
+<h3 id="part-3-extraccio-de-dades">Part 3: Extracció de dades</h3>
+<p><strong>3.1.</strong> Mostra per pantalla el nom i el planeta de Luke amb aquest format:</p>
+<pre><code class="language-text">Luke Skywalker ve de Tatooine
+</code></pre>
+<p><strong>3.2.</strong> Mostra totes les <strong>claus</strong> del diccionari <code>luke</code>.</p>
+<pre><code class="language-text">dict_keys(['nom', 'planeta', 'bandol', 'edat', 'arma', 'rang'])
+</code></pre>
+<p><strong>3.3.</strong> Mostra tots els <strong>valors</strong> del diccionari <code>luke</code>.</p>
+<pre><code class="language-text">dict_values(['Luke Skywalker', 'Tatooine', 'Rebel·lió', 35, 'Sabre làser', 'Mestre Jedi'])
+</code></pre>
+<p><strong>3.4.</strong> Recorre el diccionari <code>luke</code> amb un bucle <code>for</code> i mostra cada parella clau-valor així:</p>
+<pre><code class="language-text">nom: Luke Skywalker
+planeta: Tatooine
+etc ...
+</code></pre>
+<p><strong>3.5.</strong> Intenta obtenir la clau <code>nau</code> del diccionari <code>vader</code> utilitzant <code>.get()</code>, de manera que si no existeix mostre el missatge <code>"Sense nau assignada"</code> en lloc de donar error.</p>
+<p><strong>3.6.</strong> Recorre la llista <code>personatges</code> i mostra només el nom dels personatges que <strong>siguen de la Rebel·lió</strong>.</p>
+<h3 id="bonus">Bonus ⭐</h3>
+<p>Crea un diccionari <code>naus</code> on la clau siga el nom del pilot i el valor siga el nom de la nau:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Clau</strong></th>
+<th><strong>Valor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Luke</code></td>
+<td>"X-Wing"</td>
+</tr>
+<tr>
+<td><code>Han</code></td>
+<td>"Falcó Mil·lenari"</td>
+</tr>
+<tr>
+<td><code>Vader</code></td>
+<td>"TIE Advanced"</td>
+</tr>
+</tbody>
+</table>
+<p>Després, demana a l’usuari un nom amb <code>input()</code> i mostra la seua nau. Si el pilot no existeix, mostra "Pilot desconegut".</p>
               
             </div>
           </div>
@@ -530,7 +627,7 @@ print(sum(edats.values()))       # 63
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.739630+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.656787+00:00
   -->
 
   <!--

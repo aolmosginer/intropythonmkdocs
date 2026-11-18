@@ -339,6 +339,14 @@
             
                 <li><a class="a" href="#exercicis">EXERCICIS</a></li>
                 
+                    <li class="child-li"><a class="a child" href="#1-motxilla">1. Motxilla</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#2-mitjana-reals">2. Mitjana reals</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#3-ordenars-sencers">3. Ordenars sencers</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#4-menu">4. Menú</a></li>
+                
             
           
         
@@ -500,18 +508,91 @@ print(numeros)
 <p>Amb un bon maneig de les llistes, podem començar a organitzar el nostre codi de manera més eficient utilitzant funcions.</p>
 <hr />
 <h2 id="exercicis">EXERCICIS</h2>
+<h3 id="1-motxilla">1. Motxilla</h3>
 <p>Implementa els següents passos:</p>
 <ol>
-<li>Crea una llista buida anomenada "motxilla"</li>
-<li>Afegix "Llaterna" i "Botella"</li>
-<li>Inserix "Mapa" al principi de la llista</li>
+<li>Crea una llista buida anomenada <code>motxilla</code></li>
+<li>Afegix <code>Llaterna</code> i <code>Botella</code> a la llista</li>
+<li>Inserix <code>Mapa</code> al principi de la llista</li>
 <li>Mostra la llista de la següent forma</li>
 </ol>
 <pre><code class="language-text">1 - Mapa
 2 - Llanterna
 3 - Botella
 </code></pre>
-<p><a href="../arxius/AltresActivitats.pdf"><strong>--&gt; Més activitats de bucles, llistes i funcions ací &lt;--</strong></a></p>
+<h3 id="2-mitjana-reals">2. Mitjana reals</h3>
+<p>Crea un programa que demane 10 nombres <strong>reals</strong> per teclat, els emmagatzene en una llista i després la recórrega per a calcular i mostrar la mitjana.</p>
+<pre><code class="language-text">Dona'm un valor (1/10): 2.5
+Dona'm un valor (2/10): -44.5
+Dona'm un valor (3/10): 2.4
+Dona'm un valor (4/10): 11.54
+Dona'm un valor (5/10): -314.4
+Dona'm un valor (6/10): 65.555
+Dona'm un valor (7/10): 12.2
+Dona'm un valor (8/10): 64.6
+Dona'm un valor (9/10): -64
+Dona'm un valor (10/10): -2.01
+La mitjana de tots els nombres és  -26.6115
+</code></pre>
+<h3 id="3-ordenars-sencers">3. Ordenars sencers</h3>
+<p>Escriu un programa que accepte en una mateixa línia tots els nombres <strong>sencers</strong> que l’usuari vulga introduir. Després els mostrarà per pantalla ordenats.</p>
+<pre><code class="language-text">Quins són els nombres que vols ordenar: -5 41 -22 24 0 24
+-22
+-5
+0
+24
+24
+41
+</code></pre>
+<h3 id="4-menu">4. Menú</h3>
+<p>Implementa un programa que cree una llista de 10 valors, inicialment tots <code>0</code>s (<code>llista = [0] * 10</code>) i que després mostre el següent menú:</p>
+<pre><code class="language-text">a. Mostrar valors
+b. Introduir valor
+c. Eixir
+</code></pre>
+<ul>
+<li>L'opció <code>a</code> mostrarà tots els valors per pantalla en una mateixa línia</li>
+<li>L'opció <code>b</code> demanarà un valor <code>V</code> i una posició <code>P</code>i a continuació escriurà <code>V</code> en la posició <code>P</code> de la llista</li>
+<li>El menú es repetirà indefinidament fins que l'usuari trie l'opció <code>c</code> que acabarà el programa</li>
+</ul>
+<p>Si es tria una opció que no és <code>a</code>, <code>b</code> o <code>c</code>, mostrarà un missatge d'error i tornarà a mostrar el menú.</p>
+<p>Si es selecciona una posició <code>P</code> fora de la llista, mostrarà un missatge d'error i tornarà a mostrar el menú.</p>
+<pre><code class="language-text">MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: b
+
+Valor: 3
+Posició: 2
+
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: a
+
+0 0 3 0 0 0 0 0 0 0
+</code></pre>
+<pre><code class="language-text">MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: ee
+
+**** Opció incorrecta ****
+
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: b
+
+Valor: 23
+Posició: 44
+
+**** Posició fora del límit ****
+</code></pre>
               
             </div>
           </div>
@@ -554,7 +635,7 @@ print(numeros)
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.733940+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.649876+00:00
   -->
 
   <!--

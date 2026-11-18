@@ -354,9 +354,9 @@
             
                 <li><a class="a" href="#exercicis">EXERCICIS</a></li>
                 
-                    <li class="child-li"><a class="a child" href="#1-exercici-amb-tuples-i-sets">1. Exercici amb tuples i sets</a></li>
+                    <li class="child-li"><a class="a child" href="#1-tuples-i-sets">1. Tuples i Sets</a></li>
                 
-                    <li class="child-li"><a class="a child" href="#2-exercicis-sobre-python-comprehension">2. Exercicis sobre Python comprehension</a></li>
+                    <li class="child-li"><a class="a child" href="#2-python-comprehension">2. Python comprehension</a></li>
                 
             
           
@@ -592,7 +592,7 @@ print(majuscules)   # Set
 </code></pre>
 <hr />
 <h2 id="exercicis">EXERCICIS</h2>
-<h3 id="1-exercici-amb-tuples-i-sets">1. Exercici amb <em>tuples</em> i <em>sets</em></h3>
+<h3 id="1-tuples-i-sets">1. <em>Tuples</em> i <em>Sets</em></h3>
 <p>Una biblioteca escolar vol gestionar els llibres i els socis. </p>
 <p>Cada llibre es guarda com una <em>tupla</em> <code>(títol, autor, any)</code>:</p>
 <pre><code class="language-python">llibre1 = (&quot;Mirall trencat&quot;, &quot;Mercè Rodoreda&quot;, 1974)
@@ -614,22 +614,7 @@ grup_b = {&quot;Pau&quot;, &quot;Laia&quot;, &quot;Jordi&quot;, &quot;Núria&quo
 <li>Comprova si "Marc" és al <code>grup_b</code></li>
 <li>Intenta eliminar "Àngel" del <code>grup_b</code> sense que et done error</li>
 </ol>
-<p><strong>SOLUCIÓ</strong> </p>
-<pre><code class="language-python"># Part 1
-print(llibre1[0])                  
-print(llibre3[-1])                 
-titol, autor, any = llibre2
-print(f&quot;{titol} va ser escrit per {autor} el {any}&quot;)
-llibres = [llibre1, llibre2, llibre3]
-print(sorted(llibres))
-
-# Part 2
-grup_a.add(&quot;Clara&quot;)
-grup_a.remove(&quot;Joan&quot;)
-print(&quot;Marc&quot; in grup_b)            
-grup_b.discard(&quot;Àngel&quot;)
-</code></pre>
-<h3 id="2-exercicis-sobre-python-comprehension">2. Exercicis sobre Python comprehension</h3>
+<h3 id="2-python-comprehension">2. Python comprehension</h3>
 <h4 id="a-primers-passos">A. Primers passos</h4>
 <p>A partir de la següent llista:</p>
 <pre><code class="language-python">nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -637,16 +622,11 @@ grup_b.discard(&quot;Àngel&quot;)
 <ol>
 <li>Crea una llista amb el doble dels nombres senars</li>
 <li>Crea una llista amb els nombres més grans que 5</li>
-<li>Reescriu amb una list comprehension aquest bucle for:</li>
+<li>Reescriu amb una <em>list comprehension</em> aquest bucle <code>for</code>:</li>
 </ol>
 <pre><code class="language-python">resultat = []
 for n in nombres:
     resultat.append(n + 10) 
-</code></pre>
-<p><strong>SOLUCIÓ</strong> </p>
-<pre><code class="language-python">print([n * 2 for n in nombres if n % 2 != 0])
-print([n for n in nombres if n &gt; 5])
-print([n + 10 for n in nombres])
 </code></pre>
 <h4 id="b-treballant-amb-text">B. Treballant amb text</h4>
 <p>A partir de la següent llista:</p>
@@ -658,12 +638,6 @@ print([n + 10 for n in nombres])
 <li>Crea una llista amb els noms que tenen més de 4 lletres</li>
 <li>Crea una llista amb la primera lletra de cada nom, en majúscula (["M", "P", ...])</li>
 </ol>
-<p><strong>SOLUCIÓ</strong> </p>
-<pre><code class="language-python">print([nom.upper() for nom in noms])
-print([len(nom) for nom in noms])
-print([nom for nom in noms if len(nom) &gt; 4])
-print([nom[0].upper() for nom in noms])
-</code></pre>
 <h4 id="c-productes-de-la-botiga">C. Productes de la botiga</h4>
 <p>Una botiga en línia vol processar les seves dades. Cada producte és una tupla <code>(nom, preu, estoc)</code> dins la llista <code>productes</code>:</p>
 <pre><code class="language-python">productes = [
@@ -677,18 +651,11 @@ print([nom[0].upper() for nom in noms])
 <ol>
 <li>Crea una llista amb només els noms dels productes</li>
 <li>Crea una llista amb els noms dels productes disponibles (estoc &gt; 0).</li>
-<li>Crea una llista amb els preus amb un 21 % d’IVA afegit, arrodonits a 2 decimals (round()).</li>
+<li>Crea una llista amb els preus amb un 21 % d’IVA afegit, arrodonits a 2 decimals (<code>round()</code>).</li>
 <li>Crea una llista amb els noms dels productes que costen menys de 35 €.</li>
 <li>Crea una llista de cadenes amb el format "Teclat: 25.0 €" per a cada producte</li>
 </ol>
-<p><em>PISTA:</em> Utilitza el desempaquetat de les <em>tuples</em> dins el <code>for</code> per a obtenir els 3 conceptes de cada producte per separat <code>for nom, preu, estoc in productes</code>.</p>
-<p><strong>SOLUCIÓ</strong> </p>
-<pre><code class="language-python">print([nom for nom, preu, estoc in productes])
-print([nom for nom, preu, estoc in productes if estoc &gt; 0])
-print([round(preu * 1.21, 2) for nom, preu, estoc in productes])
-print([nom for nom, preu, estoc in productes if preu &lt; 35])
-print([f&quot;{nom}: {preu} €&quot; for nom, preu, estoc in productes])
-</code></pre>
+<p><ins><em>PISTA:</em></ins> Utilitza el desempaquetat de les <em>tuples</em> dins el <code>for</code> per a obtenir els 3 conceptes de cada producte per separat <code>for nom, preu, estoc in productes</code>.</p>
               
             </div>
           </div>
@@ -731,7 +698,7 @@ print([f&quot;{nom}: {preu} €&quot; for nom, preu, estoc in productes])
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.737597+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.654849+00:00
   -->
 
   <!--

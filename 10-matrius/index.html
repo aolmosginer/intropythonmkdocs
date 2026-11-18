@@ -332,9 +332,7 @@
                     <li class="child-li"><a class="a child" href="#matrius-de-mes-dimensions">Matrius de més dimensions</a></li>
                 
             
-                <li><a class="a" href="#102-exemple-hundir-la-flota">10.2 Exemple: "Hundir la flota"</a></li>
-                
-                    <li class="child-li"><a class="a child" href="#exemple">Exemple</a></li>
+                <li><a class="a" href="#exercici-hundir-la-flota">EXERCICI: "Hundir la flota"</a></li>
                 
                     <li class="child-li"><a class="a child" href="#pas-1-funcio-crear_tablero">Pas 1: funció crear_tablero</a></li>
                 
@@ -398,12 +396,13 @@ print(matriu3d)          # matriu 3D
 ]
 </code></pre>
 <p>Si realment necessitem matrius amb tantes dimensions, potser la solució passa per replantejar-se la solució al problema i utilitzar altres formes de gestió de dades.</p>
-<h2 id="102-exemple-hundir-la-flota">10.2 Exemple: "Hundir la flota"</h2>
+<hr />
+<h2 id="exercici-hundir-la-flota">EXERCICI: "Hundir la flota"</h2>
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="../imagenes/hundir_la_flota.jpeg" style="width: 100%; max-width: 26em; min-width: 0; height: auto;" />    
 </div>
 <p><br></p>
-<p>Anem a vorer a continuació l'exemple de programació del joc <strong>"Hundir la flota"</strong>, ja que es tracta d'un joc on la representació de les dades en format matricial és la solució més típica.</p>
+<p>Implementa la programació del joc <strong>"Hundir la flota"</strong>. Es tracta d'un joc on la representació de les dades en format matricial és la solució més típica.</p>
 <p>No crearem un joc completament funcional, simplement utilitzarem matrius per a representar la disposició dels vaixells en el tauler.</p>
 <p>Els passos a seguir seran:</p>
 <ul>
@@ -412,8 +411,8 @@ print(matriu3d)          # matriu 3D
 <li>Pas 3: Mostrar el tauler bàsic</li>
 <li>Pas 4: Mostrar el tauler amb coordenades</li>
 </ul>
-<p>La solució es basa en la representació del tauler (el mar) com una matriu de <code>x</code> files per <code>y</code> columnes, on marcarem la posició dels vaixells com <code>1</code> i els espais sense vaixells com <code>0</code>.</p>
-<h4 id="exemple">Exemple</h4>
+<p>La solució es basarà en la representació del tauler (el mar) com una matriu de <code>x</code> files per <code>y</code> columnes, on guardarem la posició dels vaixells com <code>1</code> i els espais sense vaixells com <code>0</code>.</p>
+<p><strong>Exemple</strong></p>
 <pre><code class="language-python">tablero = [
 [0, 0, 0], # Fila 0
 [0, 1, 0], # Fila 1
@@ -431,46 +430,33 @@ for i in range(3):      # Files
 0 0 0
 </code></pre>
 <h3 id="pas-1-funcio-crear_tablero">Pas 1: funció <code>crear_tablero</code></h3>
-<p>Definirem una funció <code>crear_tablero</code> que cree un tauler buit:</p>
+<p>Defineix una funció <code>crear_tablero</code> que cree un tauler buit:</p>
 <ul>
 <li>Estarà ple de <code>0</code>s (indica aigua, que no hi ha cap vaixell)</li>
-<li>La funció tindrà un paràmetre d'entrada que serà la dimensió del tauler (sempre serà un tauler quadrat, de 3x3, 5x5, 11x11 …)</li>
+<li>La funció tindrà un paràmetre d'entrada que serà la dimensió del tauler</li>
+<li>El tauler sempre serà un tauler quadrat, de 3x3, 5x5, 11x11 …</li>
 <li>Retornarà una matriu que inclou el tauler</li>
 </ul>
 <p>Exemple de <code>print()</code> d'un tauler de 5x5:</p>
 <pre><code class="language-text">[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 </code></pre>
-<p><br></p>
-<hr />
-<h4 id="solucio">Solució:</h4>
-<pre><code class="language-python">def crear_tablero(dimension):
-    &quot;&quot;&quot;Crea un tablero cuadrado de dimension x dimension, donde cada celda es un 0 (agua).&quot;&quot;&quot;
-    tablero = []
-    for fila in range(dimension):
-        fila_actual = []
-        for columna in range(dimension):
-            fila_actual.append(0)
-        tablero.append(fila_actual)
-    return tablero
-</code></pre>
-<hr />
 <h3 id="pas-2-funcio-rellenar_tablero">Pas 2: funció <code>rellenar_tablero</code></h3>
-<p>Crearem una funció anomenada <code>rellenar_tablero</code> que:</p>
+<p>Crea una funció anomenada <code>rellenar_tablero</code> que:</p>
 <ul>
 <li>No té paràmetres d'entrada</li>
-<li>Pregunte a l'usuari pel tamany del tauler a crear i el genere utilitzant la funció <code>crear_tablero</code> anterior.</li>
-<li>Demane a l'usuari, coordenada per coordenada, si vol col·locar un vaixell.</li>
-<li>Retorne la matriu del tauler emplenat de vaixells.</li>
+<li>Pregunte a l'usuari pel tamany del tauler a crear i el genere utilitzant la funció <code>crear_tablero</code> anterior</li>
+<li>Demane a l'usuari, coordenada per coordenada, si vol col·locar un vaixell</li>
+<li>Retorne la matriu del tauler emplenat de vaixells</li>
 </ul>
 <p>Exemple d'ús:</p>
 <pre><code class="language-python">tablero = rellenar_tablero()
 </code></pre>
 <p>Pistes:</p>
 <ul>
-<li>Usa <code>input()</code> per a preguntar: <code>"Fila 2, Columna 3 - ¿Colocar barco? (s/n)"</code>.</li>
-<li>Convertix la resposta positiva a un <code>1</code> i actualitza el tauler.</li>
-<li><code>len(matriu)</code> retorna el nombre de files d'una matriu.</li>
-<li><code>len(matriu[x])</code> retorna el nombre de columnes de la fila <code>x</code> d'una matriu.</li>
+<li>Usa <code>input()</code> per a preguntar: <code>"Fila 2, Columna 3 - ¿Colocar barco? (s/n)"</code></li>
+<li>Convertix la resposta positiva a un <code>1</code> i actualitza el tauler</li>
+<li><code>len(matriu)</code> retorna el nombre de files d'una matriu</li>
+<li><code>len(matriu[x])</code> retorna el nombre de columnes de la fila <code>x</code> d'una matriu</li>
 </ul>
 <p>Exemple d'execució:</p>
 <pre><code class="language-text">¿Dimensión del tablero?: 3
@@ -487,29 +473,6 @@ Fila 2, Columna 2 - ¿Colocar barco? (s/n): n
 <p>Resultat del <code>print()</code> del tauler:</p>
 <pre><code class="language-text">[[1, 1, 0], [0, 1, 1], [1, 1, 0]]
 </code></pre>
-<p><br></p>
-<hr />
-<h4 id="solucio_1">Solució:</h4>
-<pre><code class="language-python">def rellenar_tablero():
-    dimension = int(input(&quot;¿Dimensión del tablero?: &quot;))
-    tablero = crear_tablero(dimension)
-
-    for fila in range(len(tablero)):
-        for columna in range(len(tablero[fila])):
-            respuesta = input(f&quot;Fila {fila}, Columna {columna} - ¿Colocar barco? (s/n): &quot;)
-            if respuesta.lower() == 's':
-                tablero[fila][columna] = 1
-    return tablero
-</code></pre>
-<ul>
-<li><code>len(tablero)</code> → nombre de files.</li>
-<li><code>len(tablero[fila])</code> → nombre de columnes de la fila en la que ens trobem.</li>
-</ul>
-<p>Ús:</p>
-<pre><code class="language-python">tablero = rellenar_tablero()
-print(tablero)
-</code></pre>
-<hr />
 <h3 id="pas-3-funcio-muestra_tablero">Pas 3: funció <code>muestra_tablero</code></h3>
 <p>Crearem una funció anomenada <code>muestra_tablero</code> que:</p>
 <ul>
@@ -524,25 +487,8 @@ X X ~ ~ ~
 X X ~ ~ ~
 X X ~ ~ ~
 </code></pre>
-<p><br></p>
-<hr />
-<h4 id="solucio_2">Solució:</h4>
-<pre><code class="language-python">def muestra_tablero(tablero):
-    for i in range(len(tablero)): # Files
-        for j in range(len(tablero[i])): # Columnes
-            if tablero[i][j] == 0:
-                print(&quot;~&quot;, end=&quot; &quot;)
-            elif tablero[i][j] == 1:
-                print(&quot;X&quot;, end=&quot; &quot;)
-        print()
-</code></pre>
-<p>Ús:</p>
-<pre><code class="language-python">tablero = rellenar_tablero()
-muestra_tablero(tablero)
-</code></pre>
-<hr />
 <h3 id="pas-4-mostrar-el-tauler-amb-coordenades">Pas 4: mostrar el tauler amb coordenades</h3>
-<p>Crearem una nova funció, a partir de l'anterior, que mostre el tauler de la següent forma.</p>
+<p>Crearem una nova funció, modificant l'anterior, que mostre el tauler de la següent forma.</p>
 <p>Tauler 3x3:</p>
 <pre><code class="language-text">   A B C
 1 |X|~|~|
@@ -564,75 +510,14 @@ muestra_tablero(tablero)
 <li>Després passes ja a incloure les lletres i els números de les capçaleres</li>
 <li>Recorda l'ús de la funció <code>chr()</code> i pensa com et podria servir</li>
 </ul>
-<p><br></p>
-<hr />
-<h4 id="solucio-1-resultat-intermedi-nomes-les-barres-sense-les-capcaleres-de-lletres-ni-numeros">Solució 1 - Resultat intermedi (només les barres, sense les capçaleres de lletres ni números):</h4>
-<pre><code class="language-python">def muestra_tablero(tablero):
-    for i in range(len(tablero)): # Files
-        print (&quot;|&quot;, end=&quot;&quot;)
-        for j in range(len(tablero[i])): # Columnes
-            if tablero[i][j] == 0:
-                print(&quot;~&quot;, end=&quot;|&quot;)
-            elif tablero[i][j] == 1:
-                print(&quot;X&quot;, end=&quot;|&quot;)
-        print()
-</code></pre>
-<p>Resultat per a un tauler 5x5:</p>
+<p>1r només les barres:</p>
 <pre><code class="language-text">|X|X|X|~|~|
 |~|~|X|~|X|
 |X|X|~|~|~|
 |X|X|~|~|~|
 |X|X|~|~|~|
 </code></pre>
-<hr />
-<h4 id="solucio-2-afegint-les-capcaleres">Solució 2 - Afegint les capçaleres:</h4>
-<pre><code class="language-python">def muestra_tablero(tablero):
-    letras='ABCDEFGHIJKLMNOPQRSTUVWXYZ' # abecedari definit en un string
-    print()
-
-    print(&quot;   &quot;, end=&quot;&quot;)
-    for index in range(len(tablero[0])):
-        print(letras[index] + &quot; &quot;, end=&quot;&quot;)  # 1a línia amb les lletres necessàries
-    print()
-
-    for i in range(len(tablero)): # Files
-        print(f&quot;{i+1} |&quot;, end=&quot;&quot;)   # índex de cada fila al començar una nova línia
-        for j in range(len(tablero[i])): # Columnes
-            if tablero[i][j] == 0:
-                print(&quot;~&quot;, end=&quot;|&quot;)
-            elif tablero[i][j] == 1:
-                print(&quot;X&quot;, end=&quot;|&quot;)
-        print()
-</code></pre>
-<p>Resultat per a un tauler 5x5:</p>
-<pre><code class="language-text">   A B C D E
-1 |X|X|X|~|~|
-2 |~|~|X|~|X|
-3 |X|X|~|~|~|
-4 |X|X|~|~|~|
-5 |X|X|~|~|~|
-</code></pre>
-<hr />
-<h4 id="solucio-3-mateix-resultat-pero-utilitzant-els-caracters-de-la-taula-ascii">Solució 3 - Mateix resultat, però utilitzant els caràcters de la taula ASCII:</h4>
-<pre><code class="language-python">def muestra_tablero(tablero):
-    print()
-
-    print(&quot;   &quot;, end=&quot;&quot;)
-    for index in range(len(tablero[0])):
-        print(chr(index + 65) + &quot; &quot;, end=&quot;&quot;)    # comencem les lletres de l'abecedari a partir del caràcter ASCII #65 --&gt; A, 
-        # Després consecutivament #66 --&gt; B, #67 --&gt; C ...
-    print()
-
-    for i in range(len(tablero)): # Files
-        print(f&quot;{i+1} |&quot;, end=&quot;&quot;)
-        for j in range(len(tablero[i])): # Columnes
-            if tablero[i][j] == 0:
-                print(&quot;~&quot;, end=&quot;|&quot;)
-            elif tablero[i][j] == 1:
-                print(&quot;X&quot;, end=&quot;|&quot;)
-        print()
-</code></pre>
-<p>Visualment el resultat és el mateix, però la programació és més "professional":</p>
+<p>Una vegada tingues l'anterior, crees les capçaleres:</p>
 <pre><code class="language-text">   A B C D E
 1 |X|X|X|~|~|
 2 |~|~|X|~|X|
@@ -682,7 +567,7 @@ muestra_tablero(tablero)
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.727229+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.641217+00:00
   -->
 
   <!--

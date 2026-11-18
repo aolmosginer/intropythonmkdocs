@@ -340,6 +340,16 @@
             
                 <li><a class="a" href="#exercicis">EXERCICIS</a></li>
                 
+                    <li class="child-li"><a class="a child" href="#1-taula-multiplicar">1. Taula multiplicar</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#2-positius-negatius">2. Positius / Negatius</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#3-parells-senars">3. Parells / Senars</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#4-piramide">4. Piràmide</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#5-bitllets">5. Bitllets €</a></li>
+                
             
           
         
@@ -423,6 +433,7 @@ for temp in range(32, 73): # range(32, 73) genera nombres de 32 a 72
 </code></pre>
 <hr />
 <h2 id="exercicis">EXERCICIS</h2>
+<h3 id="1-taula-multiplicar">1. Taula multiplicar</h3>
 <p>Usa un bucle <code>for</code> i <code>range()</code> per a generar i imprimir la taula de multiplicar d'un número sol·licitat a l'usuari.​</p>
 <p>Fes després el mateix utilitzant <code>while()</code>​.</p>
 <pre><code class="language-text">Quin és el nombre per a fer la taula de multiplicar?: 7
@@ -439,7 +450,77 @@ for temp in range(32, 73): # range(32, 73) genera nombres de 32 a 72
 7 x 9 = 63
 7 x 10 = 70
 </code></pre>
-<p><a href="../arxius/AltresActivitats.pdf"><strong>--&gt; Més activitats de bucles, llistes i funcions ací &lt;--</strong></a></p>
+<h3 id="2-positius-negatius">2. Positius / Negatius</h3>
+<p>Realitza un programa que llija una seqüència de nombres fins que s'introduïsca un <code>0</code>. Després mostrarà quants positius i quants negatius s’han introduït (el <code>0</code> no es compta).</p>
+<p>Passos:</p>
+<ol>
+<li>Fer un bucle i preguntar per un nombre en cada iteració</li>
+<li>Comprovar si és positiu o negatiu i incrementar el comptador corresponent</li>
+<li>Quan s’escriga un <code>0</code>, el bucle acabarà i es mostrarà el nombre de positius i negatius trobats</li>
+</ol>
+<pre><code class="language-text">Dona'm un nombre: 5
+Dona'm un nombre: 22
+Dona'm un nombre: -47
+Dona'm un nombre: 2
+Dona'm un nombre: -4
+Dona'm un nombre: 0
+Positius --&gt;  3
+Negatius --&gt; 2
+</code></pre>
+<h3 id="3-parells-senars">3. Parells / Senars</h3>
+<p>Implementa un programa que sume independentment els parells i els senars dels nombres compresos entre 2 valors introduïts per l’usuari i després mostre per pantalla totes dues sumes.</p>
+<p>Passos:</p>
+<ol>
+<li>Preguntar pels valors <code>inicial</code> i <code>final</code></li>
+<li>Fer un bucle entre els 2 valors</li>
+<li>En cada iteració, comprovar si el nombre es parell o senar i incrementar el sumatori corresponent</li>
+<li>Quan acabe el bucle, mostrar els resultats</li>
+</ol>
+<pre><code class="language-text">Valor inicial?: 22
+Valor final?: 45
+
+Suma de tots els parells entre 22 i 45: 396
+Suma de tots els senars entre 22 i 45: 408
+</code></pre>
+<h3 id="4-piramide">4. Piràmide</h3>
+<p>Realitza un programa que demane un nombre positiu <code>N</code> i després mostre per pantalla els nombres des d'1 fins a <code>N</code>, un en cada línia, repetint cada nombre tantes vegades com el seu valor.</p>
+<p>Passos: ... (ara et toca a tu)</p>
+<pre><code class="language-text">Valor?: 7
+1
+22
+333
+4444
+55555
+666666
+7777777
+</code></pre>
+<h3 id="5-bitllets">5. Bitllets €</h3>
+<p>Realitza un programa que, donada una <code>quantitat</code> d'euros, mostrarà els bitllets de cada tipus que són necessaris per a aconseguir aquesta quantitat.</p>
+<ul>
+<li>Es poden utilitzar bitllets de 500, 200, 100, 50, 20, 10 i 5</li>
+<li>El valor de la <code>quantitat</code> introduïda ha de ser múltiple de 5€</li>
+<li>Si el valor introduït no és múltiples de 5€, es mostra error i el programa acaba</li>
+<li>Cal indicar el mínim de bitllets possible per a arribar a la <code>quantitat</code>. </li>
+</ul>
+<p>Per exemple, si l'usuari introdueix 145, el programa mostrarà que serà necessari:</p>
+<ul>
+<li>1 bitllet de 100 €</li>
+<li>2 bitllets de 20 €</li>
+<li>1 bitllet de 5 €</li>
+</ul>
+<p>No serà vàlid 29 bitllets de 5€, que encara que sume 145€ no és el mínim nombre de bitllets possible.</p>
+<pre><code class="language-text">Digues la quantitat (múltiple de 5€): 145
+0 bitllets de 500
+0 bitllets de 200
+1 bitllets de 100
+0 bitllets de 50
+2 bitllets de 20
+0 bitllets de 10
+1 bitllets de 5
+</code></pre>
+<pre><code class="language-text">Digues la quantitat (múltiple de 5€): 144
+144 no és múltiple de 5€
+</code></pre>
               
             </div>
           </div>
@@ -482,7 +563,7 @@ for temp in range(32, 73): # range(32, 73) genera nombres de 32 a 72
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-17 19:32:28.733078+00:00
+  Docs Build Date UTC : 2026-11-18 11:14:26.646912+00:00
   -->
 
   <!--
