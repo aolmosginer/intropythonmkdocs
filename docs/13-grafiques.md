@@ -8,7 +8,111 @@ aside: true
 
 # 13 Creació de gràfiques
 
-La biblioteca *Matplotlib* permet crear una àmplia varietat de gràfics (gràfics de línies, de barres, de dispersió, circulars bàsics, 3D …). Podeu trobar la documentació completa en [https://matplotlib.org](https://matplotlib.org). Depenent del Sistema Operatiu i la configuració de *Python*, haureu de seguir uns passos per a la [instal·lació](https://matplotlib.org/stable/install/index.html) de *Matplotlib*.
+La biblioteca *Matplotlib* permet crear una àmplia varietat de gràfics (gràfics de línies, de barres, de dispersió, circulars bàsics, 3D …). Podeu trobar la documentació completa en [https://matplotlib.org](https://matplotlib.org). 
+
+## 13.1 Creació d'un *virtual environment*
+Per a poder treballar amb *Matplotlib*, el primer que caldrà fer és importar els components de la llibreria que necessitem. Per exemple, per a utilitzar `pyplot()` faríem:
+``` python
+import matplotlib.pyplot as plt
+```
+Com que *Matplotlib* no és una llibreria nativa de *Python*, a l'executar el nostre codi el primer que obtindrem serà un error com aquest.
+``` python
+Traceback (most recent call last):
+  File "/home/profe/Documents/grafiquesMatploLib/iniiciar.py", line 1, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+```
+Que ve a dir que el mòdul `matplotlib` no es troba en instal.lat.
+Depenent del Sistema Operatiu i la configuració de *Python*, haureu de seguir uns passos per a la [instal·lació](https://matplotlib.org/stable/install/index.html) de *Matplotlib*.
+
+
+### Utilitzant VSC
+Per al nostre SO i instal.lació global de *Python*, farem el següent en la terminal de *Visual Studio Code* (VSC):
+``` python
+pip install matplotlib
+```
+
+I segurament obtindreu el següent avís en la terminal:
+``` python
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.13/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. 
+You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+```
+
+A més a més, també és possible que VSC ens oferisca la possibilitat de crear un *Virtual Environment*.
+![](imagenes/venv.png)
+
+Aquestos avisos venen a dir que, com que la nostra instal.lació de *Python* és global per a tots els usuaris i projectes de l'equip, instal.lar o modificar paquets de forma global pot fer que altres projectes deixen de funcionar.
+
+Una solució per a evitar aquests tipus de conflictes és treballar amb **entorns virtuals** de *Python* (els *virtual environments*).
+
+Un entorn virtual és un **entorn de desenvolupament totalment autònom**, amb el seu propi intèrpret de *Python*, les seues pròpies llibreries i les dependències necessàries. Això crea una configuració "mini" de *Python* separada, completament aïllada de la instal·lació de *Python* del sistema i de qualsevol altre entorn virtual que puguem tindre.
+
+Aprofitarem que VSC ens oferix la possibilitat de crear un *virtual environment* per al nostre projecte i apretarem sobre el botó **Create**. En la barra superior de VSC apareixerà un missatge semblant al següent, i caldrà que fem click en ell:
+
+![](imagenes/create_venv.png)
+
+VSC crearà el *virtual environment* i realitzarà ja la instal.lació de `matplotlib`. Podem comprovar si estem treballant amb l'entorn virtual en la barra inferior dreta de VSC, on apareixerà: 
+
+![](imagenes/versio_venv.png)
+
+`.venv(3.13.3)` fa referència a que estem treballant en un entorn virtual amb la versió 3.13.3 de *Python*.
+
+Si executem ara un codi que simplement faça una importació des de `matplotlib`, 
+
+``` python
+import matplotlib.pyplot as plt
+```
+no obtindrem l'error d'importació del mòdul i a més podrem vorer que el *prompt* de la terminal indica ara que estem treballant dins l'entorn virtual.
+
+``` bash
+(.venv) profe@osboxes:~/Documents/grafiquesMatploLib$ 
+```
+
+### Des del terminal de Linux
+Si no treballem amb VSC, podem igualment crear i utilitzar entorns virtuals des de la terminal del nostre equip.
+
+Primer crearem la carpeta del nostre projecte i a continuació crearem l'entorn virtual.
+``` bash
+mkdir grafiques
+cd grafiques
+python3 -m venv venv-grafiques
+```
+
+Dins la carpeta del nostre projecte s'haurà creat l'entorn virtual `venv-grafiques`.
+``` bash
+profe@osboxes:~/Documents/grafiques$ ll
+total 12
+drwxr-xr-x 3 profe profes 4096 Nov 18 13:28 ./
+drwxr-xr-x 8 profe profes 4096 Nov 18 13:28 ../
+drwxr-xr-x 5 profe profes 4096 Nov 18 13:28 venv-grafiques/
+profe@osboxes:~/Documents/grafiques$ 
+```
+
+Una vegada creat el *venv*, caldrà activar-lo per a poder utilitzar-lo.
+
+``` bash
+profe@osboxes:~/Documents/grafiques$ source venv-grafiques/bin/activate
+(venv-grafiques) profe@osboxes:~/Documents/grafiques$ 
+```
+
+Vorem com el prompt del terminal canvia, indicant que el *venv* està activat.
+
+Podem ja començar a implementar el codi dins la carpeta del projecte i a importar les llibreries necessàries sense modificar la instal.lació global de *Python* de l'equip.
+
 
 ## 13.1 Línies i Dispersió
 
