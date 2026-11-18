@@ -135,6 +135,7 @@ L'ús de funcions per a encapsular la lògica, com en `es_par`, fa que el codi p
 
 ---
 ## EXERCICIS
+### 1. Salutació
 Crea una funció anomenada `salutacio(nom, hora)`
 
 - Si és abans de migdia, retornarà la **cadena de caràcters** "Bon dia" + nom
@@ -147,4 +148,93 @@ Bona vesprada Aitana
 Bon dia Marc
 ```
 
-[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)
+### 2. IVA
+Escriu un programa que demane cinc preus i després mostre per pantalla el preu de venda de cadascun després d’aplicar-li un 21% d'IVA. Implementa i utilitza la funció:
+
+`def preu_amb_IVA(preu)`
+
+```text
+Dona'm un preu (1/5): 5
+Dona'm un preu (2/5): 2.4
+Dona'm un preu (3/5): 10
+Dona'm un preu (4/5): 1
+Dona'm un preu (5/5): 11
+Els preus amb IVA són:
+5.0 --> 6.05
+2.4 --> 2.904
+10.0 --> 12.1
+1.0 --> 1.21
+11.0 --> 13.309999999999999
+```
+
+### 3. Rectangle
+Escriu un programa que demane l'`ample` i `alt` d'un rectangle i mostre per pantalla la seua àrea i el seu perímetre. Implementa i utilitza les funcions:
+
+`def perimetre_rectangle(ample, alt)`
+
+`def area_rectangle(ample, alt)`
+
+```text
+Quina és l'altura del rectangle?: 12.5
+Quina és l'amplaria del rectangle?: 24.8
+
+----- Resultats -----
+Perímetre del rectangle --> 74.6
+Àrea del rectangle --> 310.0
+```
+
+### 4. Piràmide amb modes
+Realitza un programa que demane un valor positiu `N` i després mostre per pantalla una piràmide de valors en funció del mode, que també es pregunta a l’usuari.
+
+- El mode `1` mostrarà la piràmide amb tot `*`
+- El mode és `2` mostrarà els nombres des d'`1` fins a `N`, un en cada fila, repetint cada nombre tantes vegades com el seu valor
+- Si es tria qualsevol altre mode, apareixerà un error i acabarà el programa
+
+Implementa i utilitza la funció: `def piramide(files, mode)`
+
+```text
+Valor?: 5
+Quin mode? (1 - * / 2 - nombres): 1
+
+*
+**
+***
+****
+*****
+```
+
+```text
+Valor?: 8
+Quin mode? (1 - * / 2 - nombres): 2
+
+1
+22
+333
+4444
+55555
+666666
+7777777
+88888888
+```
+
+```text
+Valor?: 7
+Quin mode? (1 - * / 2 - nombres): 6
+
+**** Error: Mode incorrecte ****
+```
+
+### 5. DNI
+El NIF (o lletra associada a un DNI) s'obté de la següent manera: Es divideix el número de DNI entre 23 i el residu és codificada per una lletra segons la següent equivalència:
+``` text
+0: "T", 1: "R", 2: "W", 3: "A", 4: "G", 5: "M", 6: "Y", 7: "F", 8: "P", 9: "D", 10: "X", 11: "B", 12: "N", 13: "J", 14: "Z", 15: "S", 16: "Q", 17: "V", 18: "H", 19: "L", 20: "C", 21: "K", 22: "E"
+```
+Escriu un programa que demane el DNI i mostre per pantalla la lletra associada. Per a això s'haurà de crear una funció a la qual se li passe el número i retorne la lletra.
+
+`def nif(dni)`
+
+```text
+DNI?: 56321122
+
+El NIF associat a 56321122 és: X
+```

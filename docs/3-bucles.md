@@ -111,6 +111,7 @@ for i in range(5):
 
 ---
 ## EXERCICIS
+### 1. Taula multiplicar
 Usa un bucle `for` i `range()` per a generar i imprimir la taula de multiplicar d'un número sol·licitat a l'usuari.​
 
 Fes després el mateix utilitzant `while()`​.
@@ -131,4 +132,88 @@ Quin és el nombre per a fer la taula de multiplicar?: 7
 7 x 10 = 70
 ```
 
-[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)
+### 2. Positius / Negatius
+Realitza un programa que llija una seqüència de nombres fins que s'introduïsca un `0`. Després mostrarà quants positius i quants negatius s’han introduït (el `0` no es compta).
+
+Passos:
+
+1. Fer un bucle i preguntar per un nombre en cada iteració
+2. Comprovar si és positiu o negatiu i incrementar el comptador corresponent
+3. Quan s’escriga un `0`, el bucle acabarà i es mostrarà el nombre de positius i negatius trobats
+
+```text
+Dona'm un nombre: 5
+Dona'm un nombre: 22
+Dona'm un nombre: -47
+Dona'm un nombre: 2
+Dona'm un nombre: -4
+Dona'm un nombre: 0
+Positius -->  3
+Negatius --> 2
+```
+
+### 3. Parells / Senars
+Implementa un programa que sume independentment els parells i els senars dels nombres compresos entre 2 valors introduïts per l’usuari i després mostre per pantalla totes dues sumes.
+
+Passos:
+
+1. Preguntar pels valors `inicial` i `final`
+2. Fer un bucle entre els 2 valors
+3. En cada iteració, comprovar si el nombre es parell o senar i incrementar el sumatori corresponent
+4. Quan acabe el bucle, mostrar els resultats
+
+```text
+Valor inicial?: 22
+Valor final?: 45
+
+Suma de tots els parells entre 22 i 45: 396
+Suma de tots els senars entre 22 i 45: 408
+```
+
+### 4. Piràmide
+Realitza un programa que demane un nombre positiu `N` i després mostre per pantalla els nombres des d'1 fins a `N`, un en cada línia, repetint cada nombre tantes vegades com el seu valor.
+
+Passos: ... (ara et toca a tu)
+
+```text
+Valor?: 7
+1
+22
+333
+4444
+55555
+666666
+7777777
+```
+
+### 5. Bitllets €
+Realitza un programa que, donada una `quantitat` d'euros, mostrarà els bitllets de cada tipus que són necessaris per a aconseguir aquesta quantitat.
+
+- Es poden utilitzar bitllets de 500, 200, 100, 50, 20, 10 i 5
+- El valor de la `quantitat` introduïda ha de ser múltiple de 5€
+- Si el valor introduït no és múltiples de 5€, es mostra error i el programa acaba
+- Cal indicar el mínim de bitllets possible per a arribar a la `quantitat`. 
+
+Per exemple, si l'usuari introdueix 145, el programa mostrarà que serà necessari:
+
+- 1 bitllet de 100 €
+- 2 bitllets de 20 €
+- 1 bitllet de 5 €
+
+No serà vàlid 29 bitllets de 5€, que encara que sume 145€ no és el mínim nombre de bitllets possible.
+
+```text
+Digues la quantitat (múltiple de 5€): 145
+0 bitllets de 500
+0 bitllets de 200
+1 bitllets de 100
+0 bitllets de 50
+2 bitllets de 20
+0 bitllets de 10
+1 bitllets de 5
+```
+
+```text
+Digues la quantitat (múltiple de 5€): 144
+144 no és múltiple de 5€
+```

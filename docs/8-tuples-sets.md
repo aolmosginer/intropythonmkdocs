@@ -287,7 +287,7 @@ print(majuscules)   # Set
 
 ---
 ## EXERCICIS
-### 1. Exercici amb *tuples* i *sets*
+### 1. *Tuples* i *Sets*
 Una biblioteca escolar vol gestionar els llibres i els socis. 
 
 Cada llibre es guarda com una *tupla* `(títol, autor, any)`:
@@ -310,24 +310,8 @@ grup_b = {"Pau", "Laia", "Jordi", "Núria", "Marc"}
 6. Comprova si "Marc" és al `grup_b`
 7. Intenta eliminar "Àngel" del `grup_b` sense que et done error
 
-**SOLUCIÓ** 
-```python
-# Part 1
-print(llibre1[0])                  
-print(llibre3[-1])                 
-titol, autor, any = llibre2
-print(f"{titol} va ser escrit per {autor} el {any}")
-llibres = [llibre1, llibre2, llibre3]
-print(sorted(llibres))
 
-# Part 2
-grup_a.add("Clara")
-grup_a.remove("Joan")
-print("Marc" in grup_b)            
-grup_b.discard("Àngel")
-```
-
-### 2. Exercicis sobre Python comprehension
+### 2. Python comprehension
 #### A. Primers passos
 A partir de la següent llista:
 ```python
@@ -336,18 +320,11 @@ nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 1. Crea una llista amb el doble dels nombres senars
 2. Crea una llista amb els nombres més grans que 5
-3. Reescriu amb una list comprehension aquest bucle for:
+3. Reescriu amb una *list comprehension* aquest bucle `for`:
 ```python
 resultat = []
 for n in nombres:
     resultat.append(n + 10) 
-```
-
-**SOLUCIÓ** 
-```python
-print([n * 2 for n in nombres if n % 2 != 0])
-print([n for n in nombres if n > 5])
-print([n + 10 for n in nombres])
 ```
 
 #### B. Treballant amb text
@@ -359,14 +336,6 @@ noms = ["marta", "pau", "anna", "joan", "laia", "jordi"]
 2. Crea una llista amb la longitud de cada nom
 3. Crea una llista amb els noms que tenen més de 4 lletres
 4. Crea una llista amb la primera lletra de cada nom, en majúscula (["M", "P", ...])
-
-**SOLUCIÓ** 
-```python
-print([nom.upper() for nom in noms])
-print([len(nom) for nom in noms])
-print([nom for nom in noms if len(nom) > 4])
-print([nom[0].upper() for nom in noms])
-```
 
 #### C. Productes de la botiga
 Una botiga en línia vol processar les seves dades. Cada producte és una tupla `(nom, preu, estoc)` dins la llista `productes`:
@@ -381,17 +350,9 @@ productes = [
 ```
 1. Crea una llista amb només els noms dels productes
 2. Crea una llista amb els noms dels productes disponibles (estoc > 0).
-3. Crea una llista amb els preus amb un 21 % d’IVA afegit, arrodonits a 2 decimals (round()).
+3. Crea una llista amb els preus amb un 21 % d’IVA afegit, arrodonits a 2 decimals (`round()`).
 4. Crea una llista amb els noms dels productes que costen menys de 35 €.
 5. Crea una llista de cadenes amb el format "Teclat: 25.0 €" per a cada producte
 
-*PISTA:* Utilitza el desempaquetat de les *tuples* dins el `for` per a obtenir els 3 conceptes de cada producte per separat `for nom, preu, estoc in productes`.
+<ins>*PISTA:*</ins> Utilitza el desempaquetat de les *tuples* dins el `for` per a obtenir els 3 conceptes de cada producte per separat `for nom, preu, estoc in productes`.
 
-**SOLUCIÓ** 
-```python
-print([nom for nom, preu, estoc in productes])
-print([nom for nom, preu, estoc in productes if estoc > 0])
-print([round(preu * 1.21, 2) for nom, preu, estoc in productes])
-print([nom for nom, preu, estoc in productes if preu < 35])
-print([f"{nom}: {preu} €" for nom, preu, estoc in productes])
-```

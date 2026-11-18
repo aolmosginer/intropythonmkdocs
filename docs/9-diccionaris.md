@@ -176,11 +176,81 @@ print(sum(edats.values()))       # 63
 25 in edats                      # False → NO busca entre els valors
 25 in edats.values()             # True → busca entre els valors
 ```
-
-## EXERCICI
-Fes ara l'exercici sobre diccionaris [La base de dades de la Rebel·lió 🌌](arxius/ActivitatDiccionarisStarWars.pdf)
+---
+## Exercici: La Rebel·lió 🌌
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
     <img src="../imagenes/x_wing_rebel.png" style="width: 100%; max-width: 24em; min-width: 0; height: auto;" />    
 </div>
 
+L’Aliança Rebel ha perdut part dels seus arxius i necessita la teua ajuda per reconstruir-los. Treballaràs amb **diccionaris** per gestionar la informació dels personatges de la galàxia.
+
+### Part 1: Creació de diccionaris
+
+**1.1.** Crea dos diccionaris, anomenats `luke` i `vader`, amb les dades següents:
+
+| **Clau**              | **Valor (luke)** | **Valor (vader)** |
+|-----------------------|------------------|---------------|
+| `nom`                   | "Luke Skywalker" | "Darth Vader" |
+| `planeta`               | "Tatooine"       | "Tatooine"    |
+| `bandol` (sense accent) | "Rebel·lió"      | "Imperi"      |
+| `edat`                  | 19               | 45            |
+| `arma`                  | "Sabre làser"    | "Sabre làser" |
+
+**1.2.** Crea una **llista** anomenada `personatges` que continga els dos diccionaris anteriors.
+
+### Part 2: Modificació de diccionaris
+
+**2.1.** Han passat els anys i ara Luke té 35 anys. Actualitza el diccionari `luke`.
+
+**2.2.** Afegeix una nova clau `rang` al diccionari `luke` amb el valor "Mestre Jedi".
+
+**2.3.** Afegeix una nova clau `rang` al diccionari `vader` amb el valor "Lord Sith".
+
+**2.4.** Vader s’ha redimit! Canvia el valor de `bandol` a "Rebel·lió".
+
+**2.5.** Elimina la clau `arma` del diccionari `vader`.
+
+### Part 3: Extracció de dades
+
+**3.1.** Mostra per pantalla el nom i el planeta de Luke amb aquest format:
+
+```text
+Luke Skywalker ve de Tatooine
+```
+
+**3.2.** Mostra totes les **claus** del diccionari `luke`.
+```text
+dict_keys(['nom', 'planeta', 'bandol', 'edat', 'arma', 'rang'])
+```
+
+**3.3.** Mostra tots els **valors** del diccionari `luke`.
+
+```text
+dict_values(['Luke Skywalker', 'Tatooine', 'Rebel·lió', 35, 'Sabre làser', 'Mestre Jedi'])
+```
+
+**3.4.** Recorre el diccionari `luke` amb un bucle `for` i mostra cada parella clau-valor així:
+
+```text
+nom: Luke Skywalker
+planeta: Tatooine
+etc ...
+```
+
+**3.5.** Intenta obtenir la clau `nau` del diccionari `vader` utilitzant `.get()`, de manera que si no existeix mostre el missatge `"Sense nau assignada"` en lloc de donar error.
+
+**3.6.** Recorre la llista `personatges` i mostra només el nom dels personatges que **siguen de la Rebel·lió**.
+
+### Bonus ⭐
+
+Crea un diccionari `naus` on la clau siga el nom del pilot i el valor siga el nom de la nau:
+
+| **Clau**              | **Valor** |
+|-----------------------|------------------|
+| `Luke`                   | "X-Wing" |
+| `Han`               | "Falcó Mil·lenari"       |
+| `Vader`  | "TIE Advanced"      |
+
+
+Després, demana a l’usuari un nom amb `input()` i mostra la seua nau. Si el pilot no existeix, mostra "Pilot desconegut".

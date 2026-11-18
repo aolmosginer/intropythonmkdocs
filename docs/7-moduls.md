@@ -184,8 +184,8 @@ Típicament, el codi principal d'un programa *Python* es defineix dins de la fun
 
 ---
 ## EXERCICIS
-### Exercici 1 - Importar
-Modifica [l'exercici de funcions](5-funcions.md) creant un mòdul. ​
+### 1. Importar
+Modifica [l'exercici "1. Salutació" de funcions](5-funcions.md/#1-salutacio) creant un mòdul. ​
 
 Després importa la funció `salutacio()` i usa-la en un nou programa.​
 ```text
@@ -194,7 +194,7 @@ Bon dia Marc
 ```
 El resultat és el mateix, però el programa en aquest cas utilitza un mòdul importat.
 
-### Exercici 2 - Aleatori
+### 2. Aleatori
 Crea un programa en el qual:​
 
 - es demanen a l'usuari 2 enters (`a` i `b`)​
@@ -214,7 +214,7 @@ Segon enter: 46
 El número 29 és un enter aleatori entre 5 i 46
 ```
 
-### Exercici 3 - \_\_name\_\_
+### 3. \_\_name\_\_
 Modifica l'exercici anterior incloent l'ús de `__name__` i creant la funció `principal()` com a punt d'entrada del programa principal​.
 ```text
 Primer enter: 234

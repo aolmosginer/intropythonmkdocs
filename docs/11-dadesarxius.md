@@ -119,7 +119,7 @@ arxiu_linia.close()
 
 ---
 ## EXERCICIS
-### Exercici 1 - Fruites
+### 1. Fruites
 Crea un programa que llija les dades de la comanda de l'arxiu [fruites.csv](arxius/fruites.csv) i mostre per pantalla el resum de la comanda de la manera següent EXACTAMENT​.
 
 ``` text
@@ -135,13 +135,13 @@ Cost total:  466.20000000000005 €
 //----------------------------------------------------//
 ```
 
-### Exercici 2 - Aleatoris
+### 2. Aleatoris
 Implementa un programa que guarde en un *CSV* 50 línies que incloguen, cada una, 20 nombres enters aleatoris de 2 dígits separats per punt i coma `;`.​
 
 ![](imagenes/aleatoris.png)
 
 
-### Exercici 3 - Fruites Nou
+### 3. Fruites Nou
 Crea un nou arxiu *“fruitesNou.csv”* a partir de *“fruites.csv”*, que continga la següent informació.
 
 ``` text

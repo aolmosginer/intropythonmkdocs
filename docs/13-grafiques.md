@@ -98,14 +98,14 @@ L'atribut és una cadena d'especificació de format: la cadena `'%.1f%%'` especi
 
 ---
 ## EXERCICIS
-### Exercici 1 - Pel.lícules
+### 1. Pel.lícules
 Crea el gràfic circular mostrat a partir de les dades proporcionades per ChatGPT​.
 Consulta la documentació i exemples de [matplotlib.pyplot.pie](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html#matplotlib.pyplot.pie) per a esbrinar com fer l'ombra i la separació entre porcions​.
 
 ![](imagenes/pelicules3D.png)
 ![](imagenes/taquilleras.png)
 
-### Exercici 2 - Consum elèctric
+### 2. Consum elèctric
 Crea el gràfic mostrat a partir de les següents dades:​
 
 ``` python
@@ -118,7 +118,7 @@ Consulta la documentació de [matplotlib.pyplot.plot](https://matplotlib.org/sta
 
 ![](imagenes/consum.png)
 
-### Exercici 3 - Temperatures
+### 3. Temperatures
 Crea el gràfic mostrat a partir de les dades guardades en [temperatures_teulada_2025.csv](arxius/temperatures_teulada_2025.csv)​.
 Les línies puntejades i la llegenda mostren el valor mitjà de cada una de les temperatures​.
 

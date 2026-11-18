@@ -207,11 +207,12 @@ Amb un bon maneig de les llistes, podem començar a organitzar el nostre codi de
 
 ---
 ## EXERCICIS
+### 1. Motxilla
 Implementa els següents passos:
 
-1. Crea una llista buida anomenada "motxilla"
-2. Afegix "Llaterna" i "Botella"
-3. Inserix "Mapa" al principi de la llista
+1. Crea una llista buida anomenada `motxilla`
+2. Afegix `Llaterna` i `Botella` a la llista
+3. Inserix `Mapa` al principi de la llista
 4. Mostra la llista de la següent forma
 
 ```text
@@ -220,4 +221,89 @@ Implementa els següents passos:
 3 - Botella
 ```
 
-[**--> Més activitats de bucles, llistes i funcions ací <--**](arxius/AltresActivitats.pdf)
+### 2. Mitjana reals
+Crea un programa que demane 10 nombres **reals** per teclat, els emmagatzene en una llista i després la recórrega per a calcular i mostrar la mitjana.
+
+```text
+Dona'm un valor (1/10): 2.5
+Dona'm un valor (2/10): -44.5
+Dona'm un valor (3/10): 2.4
+Dona'm un valor (4/10): 11.54
+Dona'm un valor (5/10): -314.4
+Dona'm un valor (6/10): 65.555
+Dona'm un valor (7/10): 12.2
+Dona'm un valor (8/10): 64.6
+Dona'm un valor (9/10): -64
+Dona'm un valor (10/10): -2.01
+La mitjana de tots els nombres és  -26.6115
+```
+
+### 3. Ordenars sencers
+Escriu un programa que accepte en una mateixa línia tots els nombres **sencers** que l’usuari vulga introduir. Després els mostrarà per pantalla ordenats.
+
+```text
+Quins són els nombres que vols ordenar: -5 41 -22 24 0 24
+-22
+-5
+0
+24
+24
+41
+```
+
+### 4. Menú
+Implementa un programa que cree una llista de 10 valors, inicialment tots `0`s (`llista = [0] * 10`) i que després mostre el següent menú:
+
+```text
+a. Mostrar valors
+b. Introduir valor
+c. Eixir
+```
+
+- L'opció `a` mostrarà tots els valors per pantalla en una mateixa línia
+- L'opció `b` demanarà un valor `V` i una posició `P`i a continuació escriurà `V` en la posició `P` de la llista
+- El menú es repetirà indefinidament fins que l'usuari trie l'opció `c` que acabarà el programa
+
+Si es tria una opció que no és `a`, `b` o `c`, mostrarà un missatge d'error i tornarà a mostrar el menú.
+
+Si es selecciona una posició `P` fora de la llista, mostrarà un missatge d'error i tornarà a mostrar el menú.
+
+```text
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: b
+
+Valor: 3
+Posició: 2
+
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: a
+
+0 0 3 0 0 0 0 0 0 0
+```
+
+```text
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: ee
+
+**** Opció incorrecta ****
+
+MENU PRINCIPAL
+a. Mostrar valores
+b. Introducir valor
+c. Salir
+Tria una opció: b
+
+Valor: 23
+Posició: 44
+
+**** Posició fora del límit ****
+```
