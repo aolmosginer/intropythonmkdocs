@@ -69,3 +69,4 @@ aside: true
 - [13. Creació de gràfiques](13-grafiques.md)
     - 13.1 Línies i Dispersió
     - 13.2 Barres i gràfics circulars
+- [14. Interficies gràfiques](14-guis.md)
