@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>14-GUIs - Intro Python</title>
+
+  <!-- Page description -->
+  
+
+  <!-- Redirect -->
+  
+
+  <!-- Page author -->
+  
+  <!--
+    Just add a favicon.ico image to the docs.
+  -->
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="stylesheet" href="../css/colors.css">
+  <link rel="stylesheet" href="../css/bundle.css">
+  <link rel="stylesheet" href="../css/theme.css">
+  <link media="print" onload="this.media='all'" rel="stylesheet" href="../css/atom-dark-one.min.css">
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+
+</head>
+
+<body>
+<input id="dark-mode" type="checkbox" />
+<!--
+  The JS has to be loaded here for maximum performance, right after the #dark-mode
+-->
+<script src="../js/theme.js"></script>
+<div class="app-body">
+  <!-- KPN STYLE Beginning -->
+  <div class="app-layout ">
+    <!-- Top Bar -->
+    <nav class="app-layout__top-bar top-bar no-print">
+      <a class="top-bar__logo">
+        <img alt="KPN Logo" src="../img/logo-kpn.svg" />
+      </a>
+      <div class="top-bar__title no-print">Intro Python</div>
+      <ul class="top-bar__menu no-print">
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+          <li class="top-bar__item">
+
+            <span role="search" id="search-input-wrapper">
+              <form action="../search.html" method="get">
+                <input type="text" class="input" id="search-input" name="q" placeholder="Search..." />
+              </form>
+            </span >
+          </li>
+        <!--
+          Versioning support
+        -->
+        
+        <!--
+          Support repo URL
+        -->
+        <li class="top-bar__item">
+          
+
+        </li>
+        
+
+        <li class="top-bar__item">
+            <label class="top-bar__link" id="label-dark-mode" for="dark-mode" title="Dark mode">
+              <svg alt="dark mode" width="24" height="24">
+                <image xlink:href="../img/ui-bulb.svg" width="24" height="24"/>
+            </svg>
+            </label>
+        </li>
+        <li class="top-bar__item top-bar__item--trigger"></li>
+
+        <!-- <li class="top-bar__item">
+
+          <a class="top-bar__link top-bar__link--active">Home</a>
+        </li>
+        <li class="top-bar__item"><a class="top-bar__link">Information</a></li>
+        <li class="top-bar__item">
+          <a class="top-bar__link top-bar__link--collapsed">Getting Started</a>
+
+        </li>
+        <li class="top-bar__item top-bar__item--trigger">Menu</li> -->
+      </ul>
+    </nav>
+
+    <!--
+      Create the navigation for the documentation.
+
+      Because we don't know how many levels deep the navigation is, it needs to
+      be included in it's own file so it can be recursive. Otherwise the theme
+      can also only support a specific number of levels.
+
+      See the nav.html file for more details about how this works.
+    -->
+    <nav class="app-layout__side-bar side-bar no-print">
+      <div class="side-bar__action-bar">
+        <a class="side-bar__link" href="/">Intro Python</a>
+        <!--
+          Versioning support
+        -->
+        
+        <button class="side-bar__close"></button>
+      </div>
+      <ul class="side-bar__menu">
+        
+        
+          <!--
+
+-->
+
+<li>
+  <a href=".." class="side-bar__link ">
+    Home
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../0-intro/" class="side-bar__link ">
+    Què aprendrem?
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../1-conceptes/" class="side-bar__link ">
+    01-Conceptes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../2-controlflux/" class="side-bar__link ">
+    02-Control del Flux
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../3-bucles/" class="side-bar__link ">
+    03-Bucles
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../4-coleccions/" class="side-bar__link ">
+    04-Llistes
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../5-funcions/" class="side-bar__link ">
+    05-Funcions
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../6-ambit/" class="side-bar__link ">
+    06-Àmbit
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../7-moduls/" class="side-bar__link ">
+    07-Móduls
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../8-tuples-sets/" class="side-bar__link ">
+    08-Tuples/Sets
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../9-diccionaris/" class="side-bar__link ">
+    09-Diccionaris
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../10-matrius/" class="side-bar__link ">
+    10-Matrius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../11-dadesarxius/" class="side-bar__link ">
+    11-Dades en arxius
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../12-imatges/" class="side-bar__link ">
+    12-Imatges
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../13-grafiques/" class="side-bar__link ">
+    13-Gràfiques
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="./" class="side-bar__link side-bar__link--active">
+    14-GUIs
+  </a>
+</li>
+
+        
+          <!--
+
+-->
+
+<li>
+  <a href="../about/" class="side-bar__link ">
+    Crèdits
+  </a>
+</li>
+
+        
+      </ul>
+    </nav>
+
+    <!-- MAIN BLOCK -->
+    <main class="app-layout__main main">
+      <div class="app-layout__title-bar title-bar no-print">
+        <div class="title-bar__title">14-GUIs</div>
+      </div>
+      
+      <div class="sidebar--secondary hidden-s hidden-xs md-sidebar--secondary">
+        <h4>Table of contents</h4>
+        <ul>
+        
+          
+            
+                <li><a class="a" href="#141-primers-passos">14.1 Primers passos</a></li>
+                
+            
+                <li><a class="a" href="#142-afegir-ginys">14.2 Afegir ginys</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#regla-1">Regla 1</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#regla-2">Regla 2</a></li>
+                
+            
+                <li><a class="a" href="#143-ginys-basics">14.3 Ginys bàsics</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#text">Text</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#textbox">TextBox</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#pushbutton">PushButton</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#slider">Slider</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#picture">Picture</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#combo">Combo</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#checkbox">CheckBox</a></li>
+                
+                    <li class="child-li"><a class="a child" href="#buttongroup">ButtonGroup</a></li>
+                
+            
+                <li><a class="a" href="#144-obtindre-un-valor">14.4 Obtindre un valor</a></li>
+                
+            
+                <li><a class="a" href="#exercici">EXERCICI</a></li>
+                
+            
+          
+        
+        </ul>
+      </div>
+      
+      <div class="container content-block">
+        <div class="kpn-style">
+          <div class="card">
+            <div class="card__body">
+
+              
+              <h1 id="14-introduccio-a-les-gui">14 Introducció a les GUI</h1>
+<p>En aquest apartat aprendrem a crear <strong>interfícies gràfiques d'usuari (GUI)</strong> molt senzilles amb la llibreria <code>guizero</code>. El que farem és crear una interfície <em>Frankenstein</em> amb molts ginys, com la mostrada a continuació, per a familiaritzar-nos amb l'ús de <code>guizero</code>. Una vegada presentats els ginys, ja podreu fer les vostres pròpies GUIs.</p>
+<p><strong>Exemple:</strong> </p>
+<p><img alt="" src="../GUIs/01-final.png" /></p>
+<h2 id="141-primers-passos">14.1 Primers passos</h2>
+<ul>
+<li>Instal·la <code>tkinter</code> amb el gestor de paquets de la teva distribució. Per a Ubuntu/Debian:</li>
+</ul>
+<pre><code class="language-bash">sudo apt install python3-tk
+</code></pre>
+<ul>
+<li>
+<p>Activa un entorn virtual de <em>Python</em>. Revisa l'apartat <a href="../13-grafiques/#131-creacio-dun-virtual-environment">Creació d'un virtual environment</a> si no recordes com es fa.</p>
+</li>
+<li>
+<p>Una vegada treballant en l'entorn virtual, instal·la la llibreria <code>guizero</code> escrivint al terminal de VSC:</p>
+</li>
+</ul>
+<pre><code class="language-bash">pip install guizero
+</code></pre>
+<ul>
+<li>Crea un nou arxiu, afegix este codi i executa'l. Et permetrà comprovar que tot està ben configurat.</li>
+</ul>
+<pre><code class="language-python">from guizero import App
+app = App(title=&quot;Hola Pirindola&quot;)
+app.display()
+</code></pre>
+<ul>
+<li>Hauries de vorer una finestra de GUI com esta (titulada «Hola Pirindola» i buida). L'aspecte de la finestra serà diferent segons el SO.</li>
+</ul>
+<p><img alt="" src="../GUIs/02-hola.png" /></p>
+<h2 id="142-afegir-ginys">14.2 Afegir ginys</h2>
+<p>Pots afegir text, quadres de text, botons i altres elements a una GUI. Estos elements s'anomenen <strong>ginys</strong> (<em>widgets</em>). Cada vegada que afegisques un giny, segueix estes dos regles:</p>
+<h3 id="regla-1">Regla 1</h3>
+<p>Afegix el giny a la llista d'<code>imports</code> de l'inici del programa. Cada tipus de giny només s'ha d'afegir una vegada a la llista, i després el pots utilitzar tantes vegades com vulgues en la GUI.</p>
+<p>El següent codi importa dos ginys: <code>App</code> i <code>Text</code>.</p>
+<pre><code class="language-python">from guizero import App, Text
+</code></pre>
+<h3 id="regla-2">Regla 2</h3>
+<p>Afegix tot el codi dels ginys entre la línia de codi que crea l'<code>App</code> i la línia de codi que la mostra <code>app.display()</code>.</p>
+<pre><code class="language-python">from guizero import App
+app = App(title=&quot;Hola Pirindola&quot;)
+#
+# Tot el codi dels ginys ací
+#
+app.display()
+</code></pre>
+<h2 id="143-ginys-basics">14.3 Ginys bàsics</h2>
+<h3 id="text">Text</h3>
+<p>El giny <code>Text</code> mostra text en pantalla.</p>
+<p>Afegix <code>Text</code> a la llista de ginys a l'inici del programa i crea un giny <code>Text</code>.</p>
+<pre><code class="language-python">from guizero import App, Text
+
+app = App(title=&quot;Hola Pirindola&quot;)
+benvinguda = Text(app, text=&quot;Se vienen cositas&quot;)
+app.display()
+</code></pre>
+<p>Executa el codi. Hauries de veure el text en la GUI («Se vienen cositas»).</p>
+<p><img alt="" src="../GUIs/03-sevienen.png" /></p>
+<p>Pots canviar la mida, el tipus de lletra i el color del text així:</p>
+<pre><code class="language-python">from guizero import App, Text
+
+app = App(title=&quot;Hola Pirindola&quot;)
+benvinguda = Text(
+   app,
+   text=&quot;Se vienen cositas&quot;,
+   size=40,
+   font=&quot;Times New Roman&quot;,
+   color=&quot;lightblue&quot;
+)
+app.display()
+</code></pre>
+<p>Separar les propietats dels objectes <code>Text()</code> en diferents línies ajuda a llegir i entrendre el codi.</p>
+<p><img alt="" src="../GUIs/04-sevienenBlue.png" /></p>
+<h3 id="textbox">TextBox</h3>
+<p>El giny <code>TextBox</code> permet a l'usuari escriure dades.</p>
+<p>Afegix <code>TextBox</code> a la llista de ginys a l'inici del programa i crea un giny <code>TextBox</code> al final del codi.</p>
+<pre><code class="language-python">from guizero import App, Text, TextBox
+
+app = App(title=&quot;Hola Pirindola&quot;)
+benvinguda = Text(
+   app,
+   text=&quot;Se vienen cositas&quot;,
+   size=40,
+   font=&quot;Times New Roman&quot;,
+   color=&quot;lightblue&quot;
+)
+nom = TextBox(app)
+app.display()
+</code></pre>
+<p>Executa el codi. Hauries de vorer un quadre de text xicotet baix del text principal.</p>
+<p><img alt="" src="../GUIs/05-textBox.png" /></p>
+<h3 id="pushbutton">PushButton</h3>
+<p>El giny <code>PushButton</code> crea un botó que es pot apretar. Quan s'apreta el botó, es crida una funció indicada en la propietat <code>command</code>.</p>
+<p>Este exemple mostrarà un acudit, amb un botó per a apretar que mostrarà la resposta.</p>
+<p>Afegix <code>PushButton</code> a la llista de ginys a l'inici del programa i escriu una funció anomenada <code>mostra_missatge()</code> a continuació:</p>
+<pre><code class="language-python">from guizero import App, Text, TextBox, PushButton
+def mostra_missatge():
+    missatge.value = &quot;Totes&quot;
+</code></pre>
+<p>Configurarem que aquesta funció siga "cridada" a l'apretar el botó i ens servirà per a canviar el contingut d'un giny de <code>Text</code> referenciat per la variable <code>missatge</code>.</p>
+<p>Afegix un giny <code>Text</code> amb el començament de l'acudit i guarda la seua referència a la variable <code>missatge</code>.</p>
+<pre><code class="language-python">missatge = Text(app, text=&quot;Quantes dominades pot fer Chuck Norris?&quot;)
+</code></pre>
+<p>Crea un giny <code>PushButton</code> i programa'l per a que cride a la funció <code>mostra_missatge</code> quan s'aprete el botó. Entre els diferents paràmetres que tenen els ginys de <code>PushButton</code>, tenim:</p>
+<ul>
+<li><code>command</code>: que indica la funció a cridar quan s'apreta el botó</li>
+<li><code>text</code>: és el text que apareix al botó</li>
+</ul>
+<p>Per tant, el nostre botó podria quedar codificat de la següent forma:</p>
+<pre><code class="language-python">actualitza_text = PushButton(
+       app,
+       command = mostra_missatge,
+       text = &quot;Resposta&quot;
+)
+</code></pre>
+<p>A l'apretar el botó s'executa el mètode <code>mostra_missatge</code>, que canvia el valor (<code>.value</code>) referenciat per la variable <code>missatge</code> a <strong>"Totes"</strong>.</p>
+<p>A l'executar el codi hauries de veure la pregunta ... </p>
+<p><img alt="" src="../GUIs/06-push.png" /></p>
+<p>... i quan apretes el botó, es mostrarà la resposta.</p>
+<p><img alt="" src="../GUIs/06-pushB.png" /></p>
+<h3 id="slider">Slider</h3>
+<p>Un control lliscant <code>Slider</code> permet als usuaris triar fàcilment un valor d'un interval. Funciona de manera similar al control de volum.</p>
+<p>Este exemple et permetrà canviar la mida de la lletra amb un control lliscant.</p>
+<p>Afegix <code>Slider</code> a la llista de ginys a l'inici del programa (<code>import</code>) i crea a continuació un giny <code>Slider</code>. </p>
+<p>Cada vegada que es mou el control lliscant, <code>Slider</code> crida a la funció que se li passe a través del paràmetre <code>command</code>. El que farem és programar que cride a la funció <code>canviar_mida_text</code> que codificarem després.</p>
+<pre><code class="language-python">mida_text = Slider(
+   app,
+   command = canviar_mida_text,
+   start = 10,
+   end = 80
+)
+</code></pre>
+<p>Els paràmetres <code>start</code> i <code>end</code> determinen els valors mínim i màxim del control lliscant (les mides de lletra en aquest exemple).</p>
+<p>Crearem ara un giny de tipus <code>Text</code>a qui li canviarem la mida de la lletra mitjançant el <code>Slider</code>. Afegix un <code>Text</code> a l'App i guarda la seua referència a la variable <code>text_de_mostra</code>.</p>
+<pre><code class="language-python">text_de_mostra = Text(app, text=&quot;Mira com canvie de mida !!&quot;)
+</code></pre>
+<p>Queda per escriure la funció <code>canviar_mida_text</code>, que rebrà com a paràmetre d'entrada el valor actual del slider <code>valor_slider</code> i l'utilitzarà per a aplicar-lo a la mida (<code>.size</code>) del giny <code>Text</code> referenciat per <code>text_de_mostra</code>.</p>
+<pre><code class="language-python">def canviar_mida_text(valor_slider):
+   text_de_mostra.size = valor_slider
+</code></pre>
+<p>A l'executar el codi hauries de vorer el text d'exemple ... </p>
+<p><img alt="" src="../GUIs/07-sliderA.png" /></p>
+<p>...i quan mous el control lliscant, el text es farà més gran o més xicotet.</p>
+<p><img alt="" src="../GUIs/08-sliderB.png" /></p>
+<h3 id="picture">Picture</h3>
+<p>Pots afegir una imatge a una GUI amb el giny <code>Picture</code>. Busca una imatge i guarda-la en la mateixa carpeta que el teu fitxer de <em>Python</em>.</p>
+<p>Inclou <code>Picture</code> a l'<code>import</code> del programa i afegix un giny de la següent forma.</p>
+<pre><code class="language-python">imatge = Picture(app, image=&quot;avatar.png&quot;)
+</code></pre>
+<p>El paràmetre <code>image</code> inclourà el <em>path</em> a l'arxiu d'imatge que vulgues incloure.</p>
+<p><img alt="" src="../GUIs/09-imatge.png" /></p>
+<h3 id="combo">Combo</h3>
+<p>El giny <code>Combo</code> et permet seleccionar una opció d'un menú desplegable.</p>
+<p>Afegirem <code>Combo</code> a la llista de ginys a l'inici del programa i inclourem un giny de la següent forma.</p>
+<pre><code class="language-python">selector = Combo(app, 
+                options = [&quot;La vida de Brian&quot;,
+                         &quot;El gran Lebowski&quot;,
+                         &quot;Spaceballs&quot;,
+                         &quot;Dias de fútbol&quot;],
+)
+</code></pre>
+<p>El selector ens permet triar entre una sèrie d'opcions que es codifiquen dins una llista que es passa a través del paràmetre <code>options</code>.</p>
+<p><img alt="" src="../GUIs/10-combo.png" /></p>
+<p>Per a vorer l'efecte de seleccionar una opció, crearem un giny de tipus <code>Text</code>, amb un text inicial, i que modificarem amb el valor seleccionat al <code>Combo</code>.</p>
+<pre><code class="language-python">text_peli = Text(app, text=&quot;Tria la millor comèdia&quot;)
+</code></pre>
+<p>Modificarem el <code>Combo</code> per a incloure l'acció que caldrà fer quan es trie una opció del giny. El paràmetre <code>comand</code> definirà la funció que es llançarà.</p>
+<pre><code class="language-python">selector = Combo(app, 
+                options = [&quot;La vida de Brian&quot;,
+                         &quot;El gran Lebowski&quot;,
+                         &quot;Spaceballs&quot;,
+                         &quot;Dias de fútbol&quot;],
+                width = 30,
+                height = 2,
+                command = actualitza_peli
+)
+</code></pre>
+<p>Cada vegada que l'usuari canvie l'opció del selector, es cridarà a <code>actualitza_peli</code>. La crida inclourà el valor de l'opció triada en el selector i que es podrà utilitzar dins la funció. També s'ha aprofitat per a modificar la mida del <code>Combo</code>, mitjançant els seus paràmetres <code>width</code> i <code>height</code>.</p>
+<p>Queda només programar la funció <code>actualitza_peli</code> per a que actualitze el text de giny <code>text_peli</code>.</p>
+<pre><code class="language-python">def actualitza_peli(seleccionada):
+    text_peli.value = seleccionada
+</code></pre>
+<p>A l'executar el programa podrem modificar el giny de text al canviar la selecció del <code>Combo</code>.</p>
+<p><img alt="" src="../GUIs/10-comboB.png" />
+<img alt="" src="../GUIs/10-comboC.png" /></p>
+<h3 id="checkbox">CheckBox</h3>
+<p>El giny <code>CheckBox</code> et permet seleccionar o desseleccionar una opció.</p>
+<pre><code class="language-python">cookies = CheckBox(app, text=&quot;Acceptar cookies del dimoni&quot;)
+</code></pre>
+<p><img alt="" src="../GUIs/11-check.png" /></p>
+<p>Com la majoria dels ginys vistos fins ara, aquest també es pot parametritzar mitjançant els paràmetres <code>width</code>, <code>height</code>, <code>command</code> ... Els IDEs en general solen mostrar ajudes dels diferents paràmetres i tipus d'aquests mentre piques el codi.</p>
+<p><strong>Exemple de VSC</strong></p>
+<p><img alt="" src="../GUIs/parametres.png" /></p>
+<h3 id="buttongroup">ButtonGroup</h3>
+<p>El giny <code>ButtonGroup</code> et permet crear un grup de botons ràdio per a triar una opció d'un conjunt. Cal afegir <code>ButtonGroup</code> a la llista de ginys a l'import del programa i a continuació definir el grup de la següent forma.</p>
+<pre><code class="language-python">assignatures = ButtonGroup(
+      app,
+      options = [ [&quot;Física&quot;, &quot;F&quot;], [&quot;Mates&quot;, &quot;M&quot;],[&quot;Biologia&quot;, &quot;B&quot;] ],
+      selected = &quot;M&quot;,
+)
+</code></pre>
+<p><img alt="" src="../GUIs/12-radio.png" /></p>
+<p>Cada botó queda definit per una llista de 2 valors <code>[1r, 2n]</code>: el 1r és el text que apareix al botó i el 2n és la referència que s'utilitza per a gestionar el botó (ha de ser única). El conjunt de botons quedarà definit com una matriu, formada per una llista de llistes de botons.</p>
+<pre><code class="language-python">[ [&quot;Física&quot;, &quot;F&quot;], 
+  [&quot;Mates&quot;, &quot;M&quot;],
+  [&quot;Biologia&quot;, &quot;B&quot;] 
+]
+</code></pre>
+<p>El paràmetre <code>selected</code> definix quin és el botó seleccionat per defecte, mitjançant la seua referencia (<code>M</code> en este exemple). </p>
+<h2 id="144-obtindre-un-valor">14.4 Obtindre un valor</h2>
+<p>Com ja hem fet anteriorment, podem obtindre el valor de qualsevol giny accedint al seu atribut <code>.value</code>.</p>
+<p>En aquest exemple agafarem el text escrit en un <code>TextBox</code> per a actualitzar el valor d'un giny de tipus <code>Text</code> a l'apretar un <code>PushButton</code>.</p>
+<p>Afegix els ginys, posant de moment <code>???</code> com a text al giny.</p>
+<pre><code class="language-python">entrada = TextBox(app)
+eixida = Text(app, text=&quot;???&quot;)
+boto = PushButton(app, text=&quot;Actualitza el text&quot;, command=nou_text)
+</code></pre>
+<p><img alt="" src="../GUIs/13-valorA.png" /></p>
+<p><code>nou_text</code> és la funció que es cridarà a l'apretar el botó. La funció agafarà el valor escrit en el quadre de text i l'escriurà en el text d'eixida.</p>
+<pre><code class="language-python">def nou_text():
+   eixida.value = entrada.value
+</code></pre>
+<p>A l'apretar el botó, el text del <code>TextBox</code> es mostrarà al <code>Text</code>.</p>
+<p><img alt="" src="../GUIs/13-valorB.png" /></p>
+<h2 id="exercici">EXERCICI</h2>
+<ul>
+<li>Crea la teua pròpia GUI amb alguns dels ginys que has après.</li>
+<li>Consulta la <a href="https://lawsie.github.io/guizero/widgetoverview/">documentació de guizero</a> per a descobrir com personalitzar els ginys.</li>
+<li>Utilitza un giny diferent que hages trobat en la <a href="https://lawsie.github.io/guizero/widgetoverview/">documentació de guizero</a>.</li>
+</ul>
+<hr />
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__body">
+        
+        <div class="row">
+          <div class="col col--s-4 col--m-3 col--l-2">
+          </div>
+          <div class="col col--s-4 col--m space-between">
+            
+              <a class="footer__link padding-top-0 navigation-prev"
+                href="../13-grafiques/"
+                title="13-Gràfiques">
+                &#8592; Previous Page
+              </a>
+            
+            
+            
+              <a class="footer__link padding-top-0 navigation-next"
+                href="../about/"
+                title="Crèdits"/>
+                Next Page &#8594;
+              </a>
+            
+          </div>
+          <div class="col col--s-4 col--m-3 ">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+
+
+  <!--
+  MkDocs version      : 1.6.1
+  Docs Build Date UTC : 2026-11-19 09:43:44.173542+00:00
+  -->
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/highlight.min.js"></script>
+  <script src="../js/languages/groovy.min.js"></script>
+  <script src="../js/languages/asciidoc.min.js"></script>
+  <script src="../js/languages/nix.min.js"></script>
+
+  <script>
+    hljs.highlightAll();
+  </script>
+  <script async src="../js/detail.js"></script>
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+    <script src="../search/main.js"></script>
+  
+
+
+  <script>
+  function getMermaidTheme() {
+    if (document.getElementById("dark-mode").checked) {
+      return 'dark'
+    }
+    return 'forest'
+  }
+
+  function initMermaid() {
+    mermaid.initialize({
+      theme: getMermaidTheme(),
+      logLevel: 1,
+    });
+  }
+  var mermaidClass = document.getElementsByClassName('mermaid');
+  if (mermaidClass.length > 0) {
+
+    var mermaidScript = document.createElement('script');
+    mermaidScript.setAttribute("src", "../js/mermaid.min.js");
+    mermaidScript.setAttribute("async", "false");
+    mermaidScript.setAttribute("type", "text/javascript");
+    mermaidScript.onload = initMermaid;
+    document.body.appendChild(mermaidScript)
+
+  }
+  </script>
+
+</div>
+</body>
+</html>
