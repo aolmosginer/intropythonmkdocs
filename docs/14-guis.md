@@ -94,7 +94,7 @@ benvinguda = Text(
 app.display()
 ```
 
-Separar les propietats dels objectes `Text()` en diferents línies ajuda a llegir i entrendre el codi.
+Separar les propietats dels objectes `Text()` en diferents línies ajuda a llegir i entendre el codi.
 
 ![](GUIs/04-sevienenBlue.png)
 
@@ -145,7 +145,7 @@ Afegix un giny `Text` amb el començament de l'acudit i guarda la seua referènc
 missatge = Text(app, text="Quantes dominades pot fer Chuck Norris?")
 ```
 
-Crea un giny `PushButton` i programa'l per a que cride a la funció `mostra_missatge` quan s'aprete el botó. Entre els diferents paràmetres que tenen els ginys de `PushButton`, tenim:
+Crea un giny `PushButton` i programa'l perquè cride a la funció `mostra_missatge` quan s'aprete el botó. Entre els diferents paràmetres que tenen els ginys de `PushButton`, tenim:
 
 - `command`: que indica la funció a cridar quan s'apreta el botó
 - `text`: és el text que apareix al botó
@@ -195,7 +195,7 @@ Crearem ara un giny de tipus `Text`a qui li canviarem la mida de la lletra mitja
 ```python
 text_de_mostra = Text(app, text="Mira com canvie de mida !!")
 ```
-Queda per escriure la funció `canviar_mida_text`, que rebrà com a paràmetre d'entrada el valor actual del slider `valor_slider` i l'utilitzarà per a aplicar-lo a la mida (`.size`) del giny `Text` referenciat per `text_de_mostra`.
+Queda per escriure la funció `canviar_mida_text`, que rebrà com a paràmetre d'entrada el valor actual del *slider* `valor_slider` i l'utilitzarà per a aplicar-lo a la mida (`.size`) del giny `Text` referenciat per `text_de_mostra`.
 
 ```python
 def canviar_mida_text(valor_slider):
@@ -260,7 +260,7 @@ selector = Combo(app,
 ```
 Cada vegada que l'usuari canvie l'opció del selector, es cridarà a `actualitza_peli`. La crida inclourà el valor de l'opció triada en el selector i que es podrà utilitzar dins la funció. També s'ha aprofitat per a modificar la mida del `Combo`, mitjançant els seus paràmetres `width` i `height`.
 
-Queda només programar la funció `actualitza_peli` per a que actualitze el text de giny `text_peli`.
+Queda només programar la funció `actualitza_peli` perquè actualitze el text de giny `text_peli`.
 
 ```python
 def actualitza_peli(seleccionada):
@@ -309,7 +309,48 @@ Cada botó queda definit per una llista de 2 valors `[1r, 2n]`: el 1r és el tex
 ]
 ```
 
-El paràmetre `selected` definix quin és el botó seleccionat per defecte, mitjançant la seua referencia (`M` en este exemple). 
+El paràmetre `selected` definix quin és el botó seleccionat per defecte, mitjançant la seua referència (`M` en este exemple). 
+
+### Box
+
+Les caixes `Box` són contenidors que ens permeten distribuir i ordenar altres ginys en el seu interior. Per defecte són elements buits i sense vora, que abraçaran el tamany dels ginys que incloga el `Box`.
+
+```python
+Text(app, text="La següent imatge ha estat modificada")
+imatge_box = Box(app, width="fill")
+Picture(imatge_box, image="educacio.png")
+
+Text(app, text="Guardar els canvis?")
+botons_box = Box(app, height="fill")
+PushButton(botons_box, text="Acceptar")
+PushButton(botons_box, text="Cancelar")
+```
+La 1a caixa només inclou la imatge. Per a col.locar-la dins de la caixa, ho indiquem en el 1r paràmetre del constructor de la imatge `Picture(imatge_box, image="educacio.png")`.
+
+La caixa ocuparà tot l'ample de la finestra `width="fill"` i serà tan alta com la imatge.
+
+La 2a caixa conté 2 botons. Al constructor de cada botó li passem la referència a la caixa `PushButton(botons_box, text="Acceptar")` perquè es col.loquen dins el `Box`.
+
+La caixa dels botons té la mateixa amplària que els botons que conté i ocuparà tot l'alt de la finestra `height="fill"`. 
+
+![](GUIs/21-box_sense_vores.png)
+
+Durant les fases de disseny de les GUIs, es sol donar vora a les caixes per a localitzar-les i identificar clarament els ginys que contenen, l'alineament i la distribució d'aquests.
+
+Per a fer-ho podem afegir el paràmetre `border = True` al constructor de `Box` perquè es mostre una vora mínima, o `border = x` perquè es mostre una vora del gruix `x` que vulguem.
+
+```python
+Text(app, text="La següent imatge ha estat modificada")
+imatge_box = Box(app, width="fill", border=True)
+Picture(imatge_box, image="educacio.png")
+
+Text(app, text="Guardar els canvis?")
+botons_box = Box(app, height="fill", border=5)
+PushButton(botons_box, text="Acceptar")
+PushButton(botons_box, text="Cancelar")
+```
+
+![](GUIs/21-box_amb_vores.png)
 
 
 
@@ -339,11 +380,178 @@ A l'apretar el botó, el text del `TextBox` es mostrarà al `Text`.
 ![](GUIs/13-valorB.png)
 
 
-## EXERCICI
 
-- Crea la teua pròpia GUI amb alguns dels ginys que has après.
-- Consulta la [documentació de guizero](https://lawsie.github.io/guizero/widgetoverview/) per a descobrir com personalitzar els ginys.
-- Utilitza un giny diferent que hages trobat en la [documentació de guizero](https://lawsie.github.io/guizero/widgetoverview/).
+## 14.5  Layouts
 
----
+El disseny (*layout*) d'una interfície gràfica és la manera com s'organitzen els ginys dins de la finestra.
+
+Els ginys es poden organitzar en «contenidors» (p. e. `App`, `Window`, `Box`) amb qualsevol d'aquests dos posicionaments:
+
+- `auto`: els ginys es col·loquen automàticament
+- `grid`: tu especifiques en quina posició d'una graella ha d'anar cada giny
+
+El posicionament s'establix amb el paràmetre `layout` del contenidor, per exemple:
+
+```python
+app = App(layout="auto")
+formulari_box = Box(app, layout="grid", border=True)
+```
+
+Si no s'especifica el paràmetre `layout`, s'utilitza `auto` per defecte.
+
+### Posicionament `auto`
+
+Tots els ginys s'organitzen segons l'ordre en què es creen i s'alineen al centre. Per exemple, el codi següent crea un botó entre dos ginys `Text`, un damunt de l'altre.
+
+```python
+Text(app, text = "damunt del botó")
+PushButton(app, text = "STOP")
+Text(app, text = "baix del botó")
+```
+
+![Text damunt i davall](GUIs/14-auto.png)
+
+#### Alineació
+
+Els ginys es poden alinear a dalt (`top`), a baix (`bottom`), a l'esquerra (`left`) o a la dreta (`right`) mitjançant la propietat `align` en crear-los.
+
+Alinear un giny fa que quede «apegat» a eixe costat del contenidor, per exemple:
+
+```python
+PushButton(app, text = "dalt",  align="top")
+PushButton(app, text = "esquerra",  align="left")
+PushButton(app, text = "dreta",  align="right")
+PushButton(app, text = "baix",  align="bottom")
+```
+
+![Text alineat a cada vora](GUIs/15-alineament.png)
+
+Si alinees diversos ginys al mateix costat del contenidor, s'apilaran:
+
+```python
+PushButton(app, text = "Dreta 1",  align="right")
+PushButton(app, text = "Dreta 2",  align="right")
+PushButton(app, text = "Baix 1",  align="bottom")
+PushButton(app, text = "Baix 2",  align="bottom")
+```
+
+![Ginys apilats a un costat](GUIs/16-apilar.png)
+
+Els ginys s'apilen segons l'ordre de creació, de manera que el giny que es crea primer queda més prop de la vora en la direcció indicada.
+
+#### Omplir (fill)
+
+També es pot fer que els ginys «òmpliguen» tot l'espai disponible establint els paràmetres `width` i `height` al valor `fill`.
+
+```python
+TextBox(app, text="Escriu alguna cosa", width="fill")
+ListBox(app, items=["Cosa", "Coses", "Cosetes"], height="fill", align="left")
+```
+
+![](GUIs/17-fill.png)
+
+El `TextBox` ocupa tota l'amplària del contenidor gràcies al `width="fill"`, mentre que el `ListBox` ocupa tot l'alt del costat esquerre gràcies a `height="fill", align="left"`
+
+**Nota:** Utilitzar `fill` pot no tindre sempre l'efecte que esperes, ja que és el sistema operatiu qui repartix l'espai de la pantalla.
+
+### Posicionament `grid`
+
+El disseny `grid` et permet situar els ginys en una graella virtual.
+
+Quan crees un giny, hauràs de passar-li un paràmetre addicional anomenat `grid`, que és una llista amb les coordenades `[x,y]` on vols que aparega el giny:
+
+- `x` fa referència a la columna
+- `y` fa referència a la fila
+
+No cal especificar l'amplària ni l'altura de la graella: s'ampliarà segons les coordenades que indiques per a cada giny. Això sí, les cel·les de la graella que no contenen cap objecte no tindran ni altura ni amplària.
+
+Això és molt útil quan vols crear interfícies en què els ginys queden alineats. Per exemple, pots crear un teclat numèric de telèfon.
+
+```python
+app = App(title = "Telèfon", height=200, width=300, layout="grid")
+
+button1 = PushButton(app, text="1", grid=[0,0])
+button2 = PushButton(app, text="2", grid=[1,0])
+button3 = PushButton(app, text="3", grid=[2,0])
+button4 = PushButton(app, text="4", grid=[0,1])
+button5 = PushButton(app, text="5", grid=[1,1])
+button6 = PushButton(app, text="6", grid=[2,1])
+button7 = PushButton(app, text="7", grid=[0,2])
+button8 = PushButton(app, text="8", grid=[1,2])
+button9 = PushButton(app, text="9", grid=[2,2])
+button0 = PushButton(app, text="0", grid=[1,3])
+```
+
+![Teclat numèric amb 10 botons](GUIs/18-grid.png)
+
+També pots alinear els ginys dins de la graella, cosa que resulta útil quan crees un formulari.
+
+```python
+app = App(title = "Formulari", height=200, width=300, layout="grid")
+
+Text(app, text="Nom", grid=[0,0], align="left")
+TextBox(app, grid=[1,0])
+Text(app, text="Cognom", grid=[0,1], align="left")
+TextBox(app, grid=[1,1])
+Text(app, text="email", grid=[0,2], align="left")
+TextBox(app, grid=[1,2])
+CheckBox(app, text="Accepte el tractament de dades", grid=[1,3])
+PushButton(app, text="Enviar", grid=[1,4], align="right")
+```
+
+![Disseny d'un formulari d'entrada de dades](GUIs/19-formulari.png)
+
+### Ús de contenidors
+
+Amb el contenidor `Box` pots dividir la teua interfície en diferents seccions i, així, organitzar-la de la manera que vulgues.
+
+```python
+from guizero import App, Box, Text, TextBox, PushButton
+app = App(title = "Exemple Box")
+
+titol_box = Box(app, width="fill", align="top", border=True)
+Text(titol_box, text="TÍTOL")
+
+botons_box = Box(app, width="fill", align="bottom", border=True, layout="grid")
+Text(botons_box, text="BOTONS", grid=[0,0])
+PushButton(botons_box, text="Guardar", grid=[0,1])
+PushButton(botons_box, text="Cancelar", grid=[1,1])
+
+opcions_box = Box(app, height="fill", align="right", border=True)
+Text(opcions_box, text="OPCIONS")
+
+contingut_box = Box(app, align="top", width="fill", border=True)
+Text(contingut_box, text="CONTINGUT")
+
+formulari_box = Box(contingut_box, layout="grid", width="fill", align="left", border=True)
+Text(formulari_box, grid=[0,0], text="FORMULARI", align="right")
+Text(formulari_box, grid=[0,1], text="Nom", align="left")
+Text(formulari_box, grid=[0,2], text="Cognom", align="left")
+TextBox(formulari_box, grid=[1,1], text="Escriu ací el teu nom", width="fill")
+TextBox(formulari_box, grid=[1,2], text="Escriu ací el teu cognom", width="fill")
+
+app.display()
+```
+
+En este exemple podem vorer com es combinen *layouts* de tipus `auto` i `grid`. L'App principal utilitza un posicionament `auto`, mentre que alguns dels `Box` utilitzen `grid` com a posicionament: 
+```python
+botons_box = Box(app, width="fill", align="bottom", border=True, layout="grid")
+```
+
+![Disseny amb diverses caixes](GUIs/20-box.png)
+
+Com a bones pràctiques:
+
+- assignarem cada contenidor a una variable, p.e. `titol_box = Box(app, width="fill", align="top", border=True)`
+- utilitzarem la variable posteriorment com a referència per a col.locar els ginys que vulguem dins d'ella `Text(titol_box, text="TÍTOL")`
+- ajuda incloure en el nom de la variable a quin tipus de contenidor fa referència `opcions_box`, `contingut_box` ...
+- inicialment, durant la fase de disseny del *layout*, li posarem vora `border=True` als contenidors. Una vegada finalitzada la GUI, llevarem les vores.
+
+
+
+**Nota:** Pots posar un `Box` dins d'un altre `Box`, la qual cosa et permet superposar caixes i situar els ginys on vulgues.
+
+**Consell:** Quan crees una interfície, et pot resultar més fàcil dissenyar-la primer en paper i anotar on aniran situades les caixes.
+
+![Interfície dibuixada a mà](https://lawsie.github.io/guizero/images/layout_boxes.jpg)
 

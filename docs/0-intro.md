@@ -74,3 +74,4 @@ aside: true
     - 14.2 Afegir ginys
     - 14.3 Ginys bàsics
     - 14.4 Obtindre un valor
+    - 14.5  Layouts
