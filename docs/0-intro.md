@@ -70,3 +70,7 @@ aside: true
     - 13.1 Línies i Dispersió
     - 13.2 Barres i gràfics circulars
 - [14. Interficies gràfiques](14-guis.md)
+    - 14.1 Primers passos
+    - 14.2 Afegir ginys
+    - 14.3 Ginys bàsics
+    - 14.4 Obtindre un valor
