@@ -627,13 +627,51 @@ Quan l'usuari aprete el botó de registre:
 ### 2. Formulari millorat
 Creareu ara un formulari amb un *layout* millorat i amb algunes ampliacions. L'exercici es basa en una modificació de l'exercici anterior.
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../GUIs/25-exercici2.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />        
+</div>
 
 #### Més funcionalitats
 
 Afegiu aquestes funcionalitats extra:
 
-1. **Validació de camps buits.** Si el nom o el cognom estan buits, mostreu un missatge d'error en roig i no registreu l'alumne
-2. **Neteja després del registre.** Buideu els quadres de text i desmarqueu la casella quan el registre siga correcte
-3. **Segona assignatura.** Afegiu un segon `Combo` perquè l'alumne puga triar una assignatura optativa i mostreu les dos al missatge final.
-4. **Comptador de registres.** Afegiu un `Text` que mostre el nombre d'alumnes registrats des que s'ha obert el programa.
-5. **Gènere**: Incloeu un giny per a seleccionar el gènere de l'usuari i aixina modificar el missatge de registre: `"registrat"` o `"registrada"` 
+1. **Validació de camps buits**: Si el nom o el cognom estan buits, mostreu un missatge d'error en roig i no registreu l'alumne
+2. **Neteja després del registre**: Buideu els quadres de text i desmarqueu el *checkbox* quan el registre siga correcte
+3. **Segona assignatura**: Afegiu un segon `Combo` perquè l'alumne puga triar una assignatura optativa (les mateixes pels 2 cursos) i mostreu les dos al missatge final
+4. **Gènere**: Incloeu un giny per a seleccionar el gènere de l'alumne/a i aixina modificar el missatge de registre: `"registrat"` o `"registrada"` 
+5. **Llista de registres**: Inclou un giny `ListBox` a la dreta que vaja mostrant en tot moment els registres fets amb el format `nom_cognom | assignatura | optativa`
+6. **Comptador de registres**: Afegiu un `Text` que mostre el nombre d'alumnes registrats des que s'ha obert el programa. Col.loqueu-ho damunt del `ListBox`
+7. **Esborrar**: Un nou botó esborrarà tots els registres fets, deixant la llista buida i el comptador a `0`
+
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../GUIs/26-senseNomCognom.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />        
+</div>
+<br>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">    
+    <img src="../GUIs/26-registreOK.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />
+</div>
+
+#### Posicionament dels ginys
+Aquesta versió de la GUI caldrà que tinga un *layout* més ordenat, posicionant els diferents ginys com es mostra en la proposta de solució.
+
+Implementa primer totes les funcionalitats anteriors i, una vegada funcionen, comença a preocupar-te pel posicionament dels components.
+
+1. En la part superior estarà el títol i la imatge
+2. Al centre esquerra els ginys del formulari
+3. Al centre dreta la llista dels registres i el comptador
+4. Baix els botons, *checkbox* i el missatge d'error/registre
+
+**Consells de posicionament**
+
+- Definir `app` com a posicionament de graella `layout = "grid"`
+- Col.locar les 4 agrupacions de ginys mostrades anteriorment cadascuna dins un `Box`
+- Posicionar cada `Box` en un cel.la de la graella d'`app`
+
+**Refinant el posicionament**
+Si has seguit els consells i has utilitzat `grid` per a posicionar la majoria dels elements, possiblement no t'hauran quedat centrats com desitges. 
+
+Perquè queden millor posicionats, totes les cel.les de les graelles han de tindre contingut, però com que hi ha columnes de determinades files que no tenen cap giny, la solució és ampliar l'ocupació de les cel.les amb components sobre les cel.les buides.
+
+Aquest mètode es coneix com *Spanning columns/rows* i caldrà que consultes la documentació oficial de guizero sobre [layouts](https://lawsie.github.io/guizero/layout/) per a saber com es fa i aplicar-ho a aquesta GUI.
+
