@@ -15,4 +15,7 @@
 ## Imatges
 - [Automate the boring stuff with Python - Al Sweigart](https://automatetheboringstuff.com/)
 - [Matplotlib](https://matplotlib.org/)
+- [Icona registre - Flaticon](https://www.flaticon.es/iconos-gratis/formulario-de-inscripcion")
+- [Defensem l'educacio Publica - Plaggi](https://plaggi.cat/defensem-educacio-publica/)
+- [Avatar - Draftbit](https://personas.draftbit.com)
 
