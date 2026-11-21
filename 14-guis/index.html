@@ -838,15 +838,48 @@ app.display()
 </ol>
 <h3 id="2-formulari-millorat">2. Formulari millorat</h3>
 <p>Creareu ara un formulari amb un <em>layout</em> millorat i amb algunes ampliacions. L'exercici es basa en una modificació de l'exercici anterior.</p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../GUIs/25-exercici2.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />        
+</div>
+
 <h4 id="mes-funcionalitats">Més funcionalitats</h4>
 <p>Afegiu aquestes funcionalitats extra:</p>
 <ol>
-<li><strong>Validació de camps buits.</strong> Si el nom o el cognom estan buits, mostreu un missatge d'error en roig i no registreu l'alumne</li>
-<li><strong>Neteja després del registre.</strong> Buideu els quadres de text i desmarqueu la casella quan el registre siga correcte</li>
-<li><strong>Segona assignatura.</strong> Afegiu un segon <code>Combo</code> perquè l'alumne puga triar una assignatura optativa i mostreu les dos al missatge final.</li>
-<li><strong>Comptador de registres.</strong> Afegiu un <code>Text</code> que mostre el nombre d'alumnes registrats des que s'ha obert el programa.</li>
-<li><strong>Gènere</strong>: Incloeu un giny per a seleccionar el gènere de l'usuari i aixina modificar el missatge de registre: <code>"registrat"</code> o <code>"registrada"</code> </li>
+<li><strong>Validació de camps buits</strong>: Si el nom o el cognom estan buits, mostreu un missatge d'error en roig i no registreu l'alumne</li>
+<li><strong>Neteja després del registre</strong>: Buideu els quadres de text i desmarqueu el <em>checkbox</em> quan el registre siga correcte</li>
+<li><strong>Segona assignatura</strong>: Afegiu un segon <code>Combo</code> perquè l'alumne puga triar una assignatura optativa (les mateixes pels 2 cursos) i mostreu les dos al missatge final</li>
+<li><strong>Gènere</strong>: Incloeu un giny per a seleccionar el gènere de l'alumne/a i aixina modificar el missatge de registre: <code>"registrat"</code> o <code>"registrada"</code> </li>
+<li><strong>Llista de registres</strong>: Inclou un giny <code>ListBox</code> a la dreta que vaja mostrant en tot moment els registres fets amb el format <code>nom_cognom | assignatura | optativa</code></li>
+<li><strong>Comptador de registres</strong>: Afegiu un <code>Text</code> que mostre el nombre d'alumnes registrats des que s'ha obert el programa. Col.loqueu-ho damunt del <code>ListBox</code></li>
+<li><strong>Esborrar</strong>: Un nou botó esborrarà tots els registres fets, deixant la llista buida i el comptador a <code>0</code></li>
 </ol>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <img src="../GUIs/26-senseNomCognom.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />        
+</div>
+<p><br></p>
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">    
+    <img src="../GUIs/26-registreOK.png" style="width: 100%; max-width: 30em; min-width: 0; height: auto;" />
+</div>
+
+<h4 id="posicionament-dels-ginys">Posicionament dels ginys</h4>
+<p>Aquesta versió de la GUI caldrà que tinga un <em>layout</em> més ordenat, posicionant els diferents ginys com es mostra en la proposta de solució.</p>
+<p>Implementa primer totes les funcionalitats anteriors i, una vegada funcionen, comença a preocupar-te pel posicionament dels components.</p>
+<ol>
+<li>En la part superior estarà el títol i la imatge</li>
+<li>Al centre esquerra els ginys del formulari</li>
+<li>Al centre dreta la llista dels registres i el comptador</li>
+<li>Baix els botons, <em>checkbox</em> i el missatge d'error/registre</li>
+</ol>
+<p><strong>Consells de posicionament</strong></p>
+<ul>
+<li>Definir <code>app</code> com a posicionament de graella <code>layout = "grid"</code></li>
+<li>Col.locar les 4 agrupacions de ginys mostrades anteriorment cadascuna dins un <code>Box</code></li>
+<li>Posicionar cada <code>Box</code> en un cel.la de la graella d'<code>app</code></li>
+</ul>
+<p><strong>Refinant el posicionament</strong>
+Si has seguit els consells i has utilitzat <code>grid</code> per a posicionar la majoria dels elements, possiblement no t'hauran quedat centrats com desitges. </p>
+<p>Perquè queden millor posicionats, totes les cel.les de les graelles han de tindre contingut, però com que hi ha columnes de determinades files que no tenen cap giny, la solució és ampliar l'ocupació de les cel.les amb components sobre les cel.les buides.</p>
+<p>Aquest mètode es coneix com <em>Spanning columns/rows</em> i caldrà que consultes la documentació oficial de guizero sobre <a href="https://lawsie.github.io/guizero/layout/">layouts</a> per a saber com es fa i aplicar-ho a aquesta GUI.</p>
               
             </div>
           </div>
@@ -889,7 +922,7 @@ app.display()
 
   <!--
   MkDocs version      : 1.6.1
-  Docs Build Date UTC : 2026-11-21 12:57:56.383667+00:00
+  Docs Build Date UTC : 2026-11-21 18:26:59.097673+00:00
   -->
 
   <!--
